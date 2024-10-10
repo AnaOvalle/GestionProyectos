@@ -401,7 +401,7 @@
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel1.Size = new System.Drawing.Size(231, 44);
             this.bunifuLabel1.TabIndex = 0;
-            this.bunifuLabel1.Text = "Iniciar sesión";
+            this.bunifuLabel1.Text = "Iniciar sesion";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
