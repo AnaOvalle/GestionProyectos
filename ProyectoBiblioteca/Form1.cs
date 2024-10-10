@@ -82,5 +82,10 @@ namespace ProyectoBiblioteca
             principal.Show();
             this.Hide();
         }
+
+        private void bunifuLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
