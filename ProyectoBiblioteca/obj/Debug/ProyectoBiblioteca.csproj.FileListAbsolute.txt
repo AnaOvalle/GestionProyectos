@@ -83,3 +83,14 @@ C:\Users\asfix\OneDrive\Escritorio\ProyectoBiblioteca\obj\Debug\ProyectoBibliote
 C:\Users\asfix\OneDrive\Escritorio\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.Registro.resources
 C:\Users\asfix\OneDrive\Escritorio\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.RegistroUsuarios.resources
 C:\Users\asfix\OneDrive\Escritorio\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.FrmAltaUsuarios.resources
+C:\ProyectoGPS\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.csproj.AssemblyReference.cache
+C:\ProyectoGPS\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.Login.resources
+C:\ProyectoGPS\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.Menu.resources
+C:\ProyectoGPS\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.FrmAltaUsuarios.resources
+C:\ProyectoGPS\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.Inicio.resources
+C:\ProyectoGPS\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.Properties.Resources.resources
+C:\ProyectoGPS\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.Registro.resources
+C:\ProyectoGPS\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.RegistroUsuarios.resources
+C:\ProyectoGPS\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.csproj.GenerateResource.cache
+C:\ProyectoGPS\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.exe.licenses
+C:\ProyectoGPS\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.csproj.CoreCompileInputs.cache

@@ -307,8 +307,6 @@
     <None Include="Resources\VOLVER.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\As Relíquias da Morte.jpeg" />
-    <Content Include="Resources\cancel_8532373.png" />
     <Content Include="Resources\descargar %282%29.jpeg" />
     <Content Include="Resources\Harry Potter Y El Misterio Del Príncipe.jpeg" />
     <Content Include="Resources\Harry Potter y el prisionero de Azkaban.jpeg" />
@@ -316,7 +314,7 @@
     <Content Include="Resources\icons8-back-50.png" />
     <Content Include="Resources\icons8-book-10.png" />
     <Content Include="Resources\icons8-book-32.png" />
-    <Content Include="Resources\icons8-book-50 %281%29.png" />
+    <Content Include="Resources\icons8book50.png" />
     <Content Include="Resources\icons8-book-50.png" />
     <Content Include="Resources\icons8-down-30.png" />
     <Content Include="Resources\icons8-left-arrow-50.png" />
