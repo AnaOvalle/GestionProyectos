@@ -221,16 +221,12 @@ namespace ProyectoBiblioteca
 
         private void btnRestaurar_Click(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Normal;
-            btnRestaurar.Visible = false;
-            btnMaximizar.Visible = true;
+  
         }
 
         private void btnMaximizar_Click(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Maximized;
-            btnMaximizar.Visible = false;
-            btnRestaurar.Visible = true;
+ 
         }
 
         private void minimizar_Click(object sender, EventArgs e)
@@ -248,7 +244,6 @@ namespace ProyectoBiblioteca
               Inicio home = new Inicio();
               home.TopLevel = false; // Establece que no es un formulario de nivel superior
               home.FormBorderStyle = FormBorderStyle.None; // Quita el borde del formulario
-              PanelContenido.Controls.Add(home);
               home.Dock = DockStyle.Fill; // Ajusta el tamaño del formulario al panel
               home.Show(); // Muestra el formulario
 
@@ -263,6 +258,62 @@ namespace ProyectoBiblioteca
             //{
             //    ini.BringToFront();
             //}
+        }
+
+        private void bunifuGradientPanel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuImageButton1_Click(object sender, EventArgs e)
+        {
+            PanelUsuario.Visible = !PanelUsuario.Visible;
+        }
+
+        private void bunifuButton6_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+        bool siderbarExpand = true;
+        private void sidebarTransistor_Tick(object sender, EventArgs e)
+        {
+            if (siderbarExpand)
+            {
+                sedebar.Width -= 10;
+                if (sedebar.Width <= 45)
+                {
+                    siderbarExpand = false;
+                    sidebarTransistor.Stop();
+                }
+
+            }
+            else
+            {
+                sedebar.Width += 10;
+                if (sedebar.Width >= 219)
+                {
+                    siderbarExpand = true;
+                    sidebarTransistor.Stop();
+                }
+
+            }
+        }
+
+        private void bunifuImageButton2_Click(object sender, EventArgs e)
+        {
+            sidebarTransistor.Start();
+        }
+
+        private void btnLibros_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuButton7_Click(object sender, EventArgs e)
+        {
+            RegistroUsuarios Ru = new RegistroUsuarios();
+            Ru.Show();
+            this.Hide();
         }
     }
 }
