@@ -1,49 +1,49 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Biblioteca\\ProyectoBiblioteca\\",
+  "WorkspaceRootPath": "C:\\GPS\\ProyectoBiblioteca\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|c:\\biblioteca\\proyectobiblioteca\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|C:\\Biblioteca\\ProyectoBiblioteca\\registro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|solutionrelative:registro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|C:\\Biblioteca\\ProyectoBiblioteca\\inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|solutionrelative:inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|C:\\Biblioteca\\ProyectoBiblioteca\\Form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|solutionrelative:Form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|C:\\Biblioteca\\ProyectoBiblioteca\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|solutionrelative:form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|C:\\Biblioteca\\ProyectoBiblioteca\\registrousuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|C:\\GPS\\ProyectoBiblioteca\\registrousuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|solutionrelative:registrousuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|C:\\Biblioteca\\ProyectoBiblioteca\\Inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|C:\\GPS\\ProyectoBiblioteca\\Form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|solutionrelative:Form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|c:\\gps\\proyectobiblioteca\\inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|solutionrelative:inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|C:\\GPS\\ProyectoBiblioteca\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|C:\\GPS\\ProyectoBiblioteca\\registro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|solutionrelative:registro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|C:\\GPS\\ProyectoBiblioteca\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|solutionrelative:form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|C:\\GPS\\ProyectoBiblioteca\\Inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|solutionrelative:Inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|C:\\Biblioteca\\ProyectoBiblioteca\\Registro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|C:\\GPS\\ProyectoBiblioteca\\Registro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|solutionrelative:Registro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|C:\\Biblioteca\\ProyectoBiblioteca\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|C:\\GPS\\ProyectoBiblioteca\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|solutionrelative:Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|C:\\Biblioteca\\ProyectoBiblioteca\\Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|C:\\GPS\\ProyectoBiblioteca\\Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|solutionrelative:Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|C:\\Biblioteca\\ProyectoBiblioteca\\Form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|C:\\GPS\\ProyectoBiblioteca\\Form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|solutionrelative:Form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -54,17 +54,25 @@
       "DocumentGroups": [
         {
           "DockedWidth": 345,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Registro.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Biblioteca\\ProyectoBiblioteca\\Registro.cs",
+              "DocumentMoniker": "C:\\GPS\\ProyectoBiblioteca\\Registro.cs",
               "RelativeDocumentMoniker": "Registro.cs",
               "ToolTip": "C:\\Users\\asfix\\OneDrive\\Escritorio\\ProyectoBiblioteca\\Registro.cs [Dise\u00F1o]",
               "RelativeToolTip": "..\\..\\Users\\asfix\\OneDrive\\Escritorio\\ProyectoBiblioteca\\Registro.cs [Dise\u00F1o]",
@@ -75,41 +83,42 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Inicio.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Biblioteca\\ProyectoBiblioteca\\Inicio.cs",
+              "DocumentMoniker": "C:\\GPS\\ProyectoBiblioteca\\Inicio.cs",
               "RelativeDocumentMoniker": "Inicio.cs",
-              "ToolTip": "C:\\Users\\asfix\\OneDrive\\Escritorio\\ProyectoBiblioteca\\Inicio.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\Users\\asfix\\OneDrive\\Escritorio\\ProyectoBiblioteca\\Inicio.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\GPS\\ProyectoBiblioteca\\Inicio.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Inicio.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-07T07:27:27.439Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form1.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Biblioteca\\ProyectoBiblioteca\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Biblioteca\\ProyectoBiblioteca\\Form1.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Form1.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-07T00:23:58.006Z",
+              "WhenOpened": "2024-10-07T07:27:27.439Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Form2.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Biblioteca\\ProyectoBiblioteca\\Form2.cs",
-              "RelativeDocumentMoniker": "Form2.cs",
-              "ToolTip": "C:\\Users\\asfix\\OneDrive\\Escritorio\\ProyectoBiblioteca\\Form2.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\Users\\asfix\\OneDrive\\Escritorio\\ProyectoBiblioteca\\Form2.cs [Dise\u00F1o]",
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\GPS\\ProyectoBiblioteca\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\GPS\\ProyectoBiblioteca\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Form1.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-07T03:55:29.004Z"
+              "WhenOpened": "2024-10-07T00:23:58.006Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
+              "Title": "Form2.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\GPS\\ProyectoBiblioteca\\Form2.cs",
+              "RelativeDocumentMoniker": "Form2.cs",
+              "ToolTip": "C:\\GPS\\ProyectoBiblioteca\\Form2.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Form2.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T03:55:29.004Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Form3.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Biblioteca\\ProyectoBiblioteca\\Form3.cs",
+              "DocumentMoniker": "C:\\GPS\\ProyectoBiblioteca\\Form3.cs",
               "RelativeDocumentMoniker": "Form3.cs",
               "ToolTip": "C:\\Users\\asfix\\OneDrive\\Escritorio\\ProyectoBiblioteca\\Form3.cs [Dise\u00F1o]",
               "RelativeToolTip": "..\\..\\Users\\asfix\\OneDrive\\Escritorio\\ProyectoBiblioteca\\Form3.cs [Dise\u00F1o]",
@@ -118,22 +127,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "RegistroUsuarios.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Biblioteca\\ProyectoBiblioteca\\RegistroUsuarios.cs",
+              "DocumentMoniker": "C:\\GPS\\ProyectoBiblioteca\\RegistroUsuarios.cs",
               "RelativeDocumentMoniker": "RegistroUsuarios.cs",
-              "ToolTip": "C:\\Users\\asfix\\OneDrive\\Escritorio\\ProyectoBiblioteca\\RegistroUsuarios.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\Users\\asfix\\OneDrive\\Escritorio\\ProyectoBiblioteca\\RegistroUsuarios.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\GPS\\ProyectoBiblioteca\\RegistroUsuarios.cs [Dise\u00F1o]",
+              "RelativeToolTip": "RegistroUsuarios.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-07T09:56:45.963Z"
+              "WhenOpened": "2024-10-07T09:56:45.963Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "Inicio.cs",
-              "DocumentMoniker": "C:\\Biblioteca\\ProyectoBiblioteca\\Inicio.cs",
+              "DocumentMoniker": "C:\\GPS\\ProyectoBiblioteca\\Inicio.cs",
               "RelativeDocumentMoniker": "Inicio.cs",
-              "ToolTip": "C:\\Biblioteca\\ProyectoBiblioteca\\Inicio.cs",
+              "ToolTip": "C:\\GPS\\ProyectoBiblioteca\\Inicio.cs",
               "RelativeToolTip": "Inicio.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAAwBUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -143,9 +153,9 @@
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "Registro.cs",
-              "DocumentMoniker": "C:\\Biblioteca\\ProyectoBiblioteca\\Registro.cs",
+              "DocumentMoniker": "C:\\GPS\\ProyectoBiblioteca\\Registro.cs",
               "RelativeDocumentMoniker": "Registro.cs",
-              "ToolTip": "C:\\Biblioteca\\ProyectoBiblioteca\\Registro.cs",
+              "ToolTip": "C:\\GPS\\ProyectoBiblioteca\\Registro.cs",
               "RelativeToolTip": "Registro.cs",
               "ViewState": "AgIAABkAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -155,9 +165,9 @@
               "$type": "Document",
               "DocumentIndex": 8,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Biblioteca\\ProyectoBiblioteca\\Program.cs",
+              "DocumentMoniker": "C:\\GPS\\ProyectoBiblioteca\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Biblioteca\\ProyectoBiblioteca\\Program.cs",
+              "ToolTip": "C:\\GPS\\ProyectoBiblioteca\\Program.cs",
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -167,9 +177,9 @@
               "$type": "Document",
               "DocumentIndex": 9,
               "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Biblioteca\\ProyectoBiblioteca\\Form1.cs",
+              "DocumentMoniker": "C:\\GPS\\ProyectoBiblioteca\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Biblioteca\\ProyectoBiblioteca\\Form1.cs",
+              "ToolTip": "C:\\GPS\\ProyectoBiblioteca\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
               "ViewState": "AgIAAC0AAAAAAAAAAAAAwDMAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -179,13 +189,14 @@
               "$type": "Document",
               "DocumentIndex": 10,
               "Title": "Form2.cs",
-              "DocumentMoniker": "C:\\Biblioteca\\ProyectoBiblioteca\\Form2.cs",
+              "DocumentMoniker": "C:\\GPS\\ProyectoBiblioteca\\Form2.cs",
               "RelativeDocumentMoniker": "Form2.cs",
-              "ToolTip": "C:\\Biblioteca\\ProyectoBiblioteca\\Form2.cs",
+              "ToolTip": "C:\\GPS\\ProyectoBiblioteca\\Form2.cs",
               "RelativeToolTip": "Form2.cs",
               "ViewState": "AgIAAOkAAAAAAAAAAAAYwP0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-07T04:09:35.21Z"
+              "WhenOpened": "2024-10-07T04:09:35.21Z",
+              "EditorCaption": ""
             }
           ]
         }
