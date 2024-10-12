@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "C:\\ProyectoGPS\\ProyectoBiblioteca\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|c:\\proyectogps\\proyectobiblioteca\\form2.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|solutionrelative:form2.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|c:\\proyectogps\\proyectobiblioteca\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|solutionrelative:form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -46,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 345,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -57,21 +53,12 @@
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form2.Designer.cs",
-              "DocumentMoniker": "C:\\ProyectoGPS\\ProyectoBiblioteca\\Form2.Designer.cs",
-              "RelativeDocumentMoniker": "Form2.Designer.cs",
-              "ToolTip": "C:\\ProyectoGPS\\ProyectoBiblioteca\\Form2.Designer.cs*",
-              "RelativeToolTip": "Form2.Designer.cs*",
-              "ViewState": "AgIAAL0AAAAAAAAAAAAAAKUAAABlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-12T06:13:25.163Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Form2.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\ProyectoGPS\\ProyectoBiblioteca\\Form2.cs",
               "RelativeDocumentMoniker": "Form2.cs",
@@ -83,7 +70,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Form1.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\ProyectoGPS\\ProyectoBiblioteca\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
@@ -95,7 +82,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "Inicio.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\ProyectoGPS\\ProyectoBiblioteca\\Inicio.cs",
               "RelativeDocumentMoniker": "Inicio.cs",
@@ -107,7 +94,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Registro.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\ProyectoGPS\\ProyectoBiblioteca\\Registro.cs",
               "RelativeDocumentMoniker": "Registro.cs",
@@ -119,7 +106,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "Form3.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\ProyectoGPS\\ProyectoBiblioteca\\Form3.cs",
               "RelativeDocumentMoniker": "Form3.cs",
@@ -131,7 +118,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "RegistroUsuarios.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\ProyectoGPS\\ProyectoBiblioteca\\RegistroUsuarios.cs",
               "RelativeDocumentMoniker": "RegistroUsuarios.cs",
@@ -143,7 +130,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\ProyectoGPS\\ProyectoBiblioteca\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -155,7 +142,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\ProyectoGPS\\ProyectoBiblioteca\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
