@@ -138,9 +138,15 @@
     <Reference Include="Bunifu.UI.WinForms.Deprecated, Version=5.0.6.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
       <HintPath>packages\Bunifu.UI.WinForms.5.0.6\lib\Bunifu.UI.WinForms.Deprecated.dll</HintPath>
     </Reference>
+    <Reference Include="FontAwesome.Sharp, Version=6.6.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>packages\FontAwesome.Sharp.6.6.0\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Messaging" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -150,6 +156,7 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Form1.cs">
@@ -298,6 +305,29 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\VOLVER.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\As Relíquias da Morte.jpeg" />
+    <Content Include="Resources\cancel_8532373.png" />
+    <Content Include="Resources\descargar %282%29.jpeg" />
+    <Content Include="Resources\Harry Potter Y El Misterio Del Príncipe.jpeg" />
+    <Content Include="Resources\Harry Potter y el prisionero de Azkaban.jpeg" />
+    <Content Include="Resources\icons8-arrow-64.png" />
+    <Content Include="Resources\icons8-back-50.png" />
+    <Content Include="Resources\icons8-book-10.png" />
+    <Content Include="Resources\icons8-book-32.png" />
+    <Content Include="Resources\icons8-book-50 %281%29.png" />
+    <Content Include="Resources\icons8-book-50.png" />
+    <Content Include="Resources\icons8-down-30.png" />
+    <Content Include="Resources\icons8-left-arrow-50.png" />
+    <Content Include="Resources\icons8-menu-50 %281%29.png" />
+    <Content Include="Resources\icons8-menu-50 %282%29.png" />
+    <Content Include="Resources\icons8-menu-50.png" />
+    <Content Include="Resources\icons8-open-book-50.png" />
+    <Content Include="Resources\icons8-x-48.png" />
+    <Content Include="Resources\New Harry Potter ebook covers revealed!.jpeg" />
+    <Content Include="Resources\password_12631835.png" />
+    <Content Include="Resources\usuario.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
