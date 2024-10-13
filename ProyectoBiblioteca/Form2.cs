@@ -82,10 +82,7 @@ namespace ProyectoBiblioteca
 
         }
 
-        private void btnCategorias_Click(object sender, EventArgs e)
-        {
-            ShowSubmenu(PanelCategorias);
-        }
+     
 
         private void btnFiccion_Click(object sender, EventArgs e)
         {
@@ -194,30 +191,13 @@ namespace ProyectoBiblioteca
             HideSubmenu();
         }
 
-        private void btnReportes_Click(object sender, EventArgs e)
-        {
-            ShowSubmenu(PanelReportes);
-        }
+     
 
-        private void btngestion_Click_1(object sender, EventArgs e)
-        {
-            ShowSubmenu(PanelGestion);
-        }
+  
 
-        private void btnPrestamos_Click_1(object sender, EventArgs e)
-        {
-            ShowSubmenu(PanelPrestamos);
-        }
 
-        private void btnReportes_Click_1(object sender, EventArgs e)
-        {
-            ShowSubmenu(PanelReportes);
-        }
+    
 
-        private void btnCerrar_Click_1(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
 
         private void btnRestaurar_Click(object sender, EventArgs e)
         {
@@ -247,6 +227,11 @@ namespace ProyectoBiblioteca
               home.Dock = DockStyle.Fill; // Ajusta el tamaño del formulario al panel
               home.Show(); // Muestra el formulario
 
+            // Agrega esta línea para agregar el formulario al panel
+            PanelContenido.Controls.Add(home); // reemplaza "panel1" con el nombre de tu panel
+
+            home.Show();
+
 
             //Inicio ini = new Inicio();
             //if (PanelContenido.Contains(ini) == false)
@@ -274,6 +259,8 @@ namespace ProyectoBiblioteca
         {
             Application.Exit();
         }
+
+
         bool siderbarExpand = true;
         private void sidebarTransistor_Tick(object sender, EventArgs e)
         {
@@ -311,9 +298,34 @@ namespace ProyectoBiblioteca
 
         private void bunifuButton7_Click(object sender, EventArgs e)
         {
-            RegistroUsuarios Ru = new RegistroUsuarios();
+            FrmAltaUsuarios Ru = new FrmAltaUsuarios();
             Ru.Show();
             this.Hide();
+        }
+
+        private void btnPrestamos_Click(object sender, EventArgs e)
+        {
+            ShowSubmenu(PanelPrestamos);
+        }
+
+        private void btngestion_Click(object sender, EventArgs e)
+        {
+            ShowSubmenu(PanelGestion);
+        }
+
+        private void btnReportes_Click_2(object sender, EventArgs e)
+        {
+            ShowSubmenu(PanelReportes);
+        }
+
+        private void btnCategorias_Click_1(object sender, EventArgs e)
+        {
+            ShowSubmenu(PanelCategorias);
+        }
+
+        private void bunifuPictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
