@@ -169,3 +169,5 @@ C:\ProyectoGPS\ProyectoBiblioteca\bin\Debug\Bunifu.UI.WinForms.BunifuUserControl
 C:\ProyectoGPS\ProyectoBiblioteca\obj\Debug\Proyecto.02D7E3BE.Up2Date
 C:\ProyectoGPS\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.exe
 C:\ProyectoGPS\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.pdb
+C:\ProyectoGPS\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.Inventario.resources
+C:\ProyectoGPS\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.Libros.resources

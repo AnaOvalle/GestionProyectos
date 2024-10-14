@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\ProyectoBiblioteca"
+    "\\ProyectoBiblioteca",
+    "\\ProyectoBiblioteca\\Resources"
   ],
-  "SelectedNode": "\\ProyectoBiblioteca\\Form1.cs",
+  "SelectedNode": "\\ProyectoBiblioteca\\Registro.cs",
   "PreviewInSolutionExplorer": false
 }

@@ -21,5 +21,10 @@ namespace ProyectoBiblioteca
         {
 
         }
+
+        private void bunifuTextBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
