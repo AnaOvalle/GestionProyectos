@@ -266,7 +266,7 @@
             this.bunifuPictureBox1.TabIndex = 29;
             this.bunifuPictureBox1.TabStop = false;
             this.bunifuPictureBox1.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
-            this.bunifuPictureBox1.Click += new System.EventHandler(this.bunifuPictureBox1_Click);
+            //this.bunifuPictureBox1.Click += new System.EventHandler(this.bunifuPictureBox1_Click);
             // 
             // PanelContenido
             // 
@@ -1099,7 +1099,7 @@
             this.btnReportes.TextMarginLeft = 0;
             this.btnReportes.TextPadding = new System.Windows.Forms.Padding(25, 0, 0, 0);
             this.btnReportes.UseDefaultRadiusAndThickness = true;
-            this.btnReportes.Click += new System.EventHandler(this.btnReportes_Click_2);
+            //this.btnReportes.Click += new System.EventHandler(this.btnReportes_Click_2);
             // 
             // PanelPrestamos
             // 
@@ -1475,7 +1475,7 @@
             this.btnPrestamos.TextMarginLeft = 0;
             this.btnPrestamos.TextPadding = new System.Windows.Forms.Padding(25, 0, 0, 0);
             this.btnPrestamos.UseDefaultRadiusAndThickness = true;
-            this.btnPrestamos.Click += new System.EventHandler(this.btnPrestamos_Click);
+            //this.btnPrestamos.Click += new System.EventHandler(this.btnPrestamos_Click);
             // 
             // PanelGestion
             // 
@@ -2121,7 +2121,7 @@
             this.btngestion.TextMarginLeft = 0;
             this.btngestion.TextPadding = new System.Windows.Forms.Padding(25, 0, 0, 0);
             this.btngestion.UseDefaultRadiusAndThickness = true;
-            this.btngestion.Click += new System.EventHandler(this.btngestion_Click);
+            //this.btngestion.Click += new System.EventHandler(this.btngestion_Click);
             // 
             // PanelCategorias
             // 
@@ -2964,7 +2964,7 @@
             this.btnCategorias.TextMarginLeft = 0;
             this.btnCategorias.TextPadding = new System.Windows.Forms.Padding(25, 0, 0, 0);
             this.btnCategorias.UseDefaultRadiusAndThickness = true;
-            this.btnCategorias.Click += new System.EventHandler(this.btnCategorias_Click_1);
+            //this.btnCategorias.Click += new System.EventHandler(this.btnCategorias_Click_1);
             // 
             // btnLibros
             // 

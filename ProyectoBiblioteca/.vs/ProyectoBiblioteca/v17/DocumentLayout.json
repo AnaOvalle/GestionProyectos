@@ -3,56 +3,60 @@
   "WorkspaceRootPath": "C:\\ProyectoGPS\\ProyectoBiblioteca\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|c:\\proyectogps\\proyectobiblioteca\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|solutionrelative:form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|C:\\ProyectoGPS\\ProyectoBiblioteca\\Form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|solutionrelative:Form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|c:\\proyectogps\\proyectobiblioteca\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|solutionrelative:form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|C:\\ProyectoGPS\\ProyectoBiblioteca\\Form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|solutionrelative:Form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|c:\\proyectogps\\proyectobiblioteca\\registrousuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|solutionrelative:registrousuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|c:\\proyectogps\\proyectobiblioteca\\inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|solutionrelative:inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|c:\\proyectogps\\proyectobiblioteca\\inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|solutionrelative:inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|c:\\proyectogps\\proyectobiblioteca\\inventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|solutionrelative:inventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|C:\\ProyectoGPS\\ProyectoBiblioteca\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|c:\\proyectogps\\proyectobiblioteca\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|C:\\ProyectoGPS\\ProyectoBiblioteca\\libros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|solutionrelative:libros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|c:\\proyectogps\\proyectobiblioteca\\form2.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|solutionrelative:form2.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|C:\\ProyectoGPS\\ProyectoBiblioteca\\registrousuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|solutionrelative:registrousuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|C:\\ProyectoGPS\\ProyectoBiblioteca\\registro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|solutionrelative:registro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|C:\\ProyectoGPS\\ProyectoBiblioteca\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|C:\\ProyectoGPS\\ProyectoBiblioteca\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|solutionrelative:Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|c:\\proyectogps\\proyectobiblioteca\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|solutionrelative:form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|C:\\ProyectoGPS\\ProyectoBiblioteca\\libros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|solutionrelative:libros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|C:\\ProyectoGPS\\ProyectoBiblioteca\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|C:\\ProyectoGPS\\ProyectoBiblioteca\\inventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|solutionrelative:inventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|C:\\ProyectoGPS\\ProyectoBiblioteca\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|solutionrelative:form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|C:\\ProyectoGPS\\ProyectoBiblioteca\\inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|solutionrelative:inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|C:\\ProyectoGPS\\ProyectoBiblioteca\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|solutionrelative:form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|C:\\ProyectoGPS\\ProyectoBiblioteca\\Form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|solutionrelative:Form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|C:\\ProyectoGPS\\ProyectoBiblioteca\\Inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|solutionrelative:Inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|C:\\ProyectoGPS\\ProyectoBiblioteca\\Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|solutionrelative:Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,7 +66,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 345,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 14,
           "Children": [
             {
               "$type": "Bookmark",
@@ -78,7 +82,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "Form2.Designer.cs",
+              "DocumentMoniker": "C:\\ProyectoGPS\\ProyectoBiblioteca\\Form2.Designer.cs",
+              "RelativeDocumentMoniker": "Form2.Designer.cs",
+              "ToolTip": "C:\\ProyectoGPS\\ProyectoBiblioteca\\Form2.Designer.cs",
+              "RelativeToolTip": "Form2.Designer.cs",
+              "ViewState": "AgIAAIsLAAAAAAAAAAAowJYLAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T06:31:30.395Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\ProyectoGPS\\ProyectoBiblioteca\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\ProyectoGPS\\ProyectoBiblioteca\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T06:06:59.534Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Form2.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\ProyectoGPS\\ProyectoBiblioteca\\Form2.cs",
               "RelativeDocumentMoniker": "Form2.cs",
@@ -90,7 +119,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 12,
               "Title": "Inicio.cs",
               "DocumentMoniker": "C:\\ProyectoGPS\\ProyectoBiblioteca\\Inicio.cs",
               "RelativeDocumentMoniker": "Inicio.cs",
@@ -103,7 +132,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "Inicio.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\ProyectoGPS\\ProyectoBiblioteca\\Inicio.cs",
               "RelativeDocumentMoniker": "Inicio.cs",
@@ -115,7 +144,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "RegistroUsuarios.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\ProyectoGPS\\ProyectoBiblioteca\\RegistroUsuarios.cs",
               "RelativeDocumentMoniker": "RegistroUsuarios.cs",
@@ -127,7 +156,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "Inventario.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\ProyectoGPS\\ProyectoBiblioteca\\Inventario.cs",
               "RelativeDocumentMoniker": "Inventario.cs",
@@ -139,7 +168,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 10,
               "Title": "Form3.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\ProyectoGPS\\ProyectoBiblioteca\\Form3.cs",
               "RelativeDocumentMoniker": "Form3.cs",
@@ -151,7 +180,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Form3.cs",
               "DocumentMoniker": "C:\\ProyectoGPS\\ProyectoBiblioteca\\Form3.cs",
               "RelativeDocumentMoniker": "Form3.cs",
@@ -164,7 +193,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 5,
               "Title": "Registro.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\ProyectoGPS\\ProyectoBiblioteca\\Registro.cs",
               "RelativeDocumentMoniker": "Registro.cs",
@@ -188,13 +217,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 0,
               "Title": "Form2.cs",
               "DocumentMoniker": "C:\\ProyectoGPS\\ProyectoBiblioteca\\Form2.cs",
               "RelativeDocumentMoniker": "Form2.cs",
               "ToolTip": "C:\\ProyectoGPS\\ProyectoBiblioteca\\Form2.cs",
               "RelativeToolTip": "Form2.cs",
-              "ViewState": "AgIAACEBAAAAAAAAAAAqwCwBAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAAIYAAAAAAAAAAAAwwDUBAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-12T23:46:46.085Z",
               "EditorCaption": ""
@@ -202,18 +231,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Form1.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\ProyectoGPS\\ProyectoBiblioteca\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\ProyectoGPS\\ProyectoBiblioteca\\Form1.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Form1.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-12T06:06:59.534Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\ProyectoGPS\\ProyectoBiblioteca\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -221,11 +238,12 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-07T02:04:41.773Z"
+              "WhenOpened": "2024-10-07T02:04:41.773Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\ProyectoGPS\\ProyectoBiblioteca\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",

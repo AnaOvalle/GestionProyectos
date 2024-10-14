@@ -82,7 +82,10 @@ namespace ProyectoBiblioteca
 
         }
 
-     
+        private void btnCategorias_Click(object sender, EventArgs e)
+        {
+            ShowSubmenu(PanelCategorias);
+        }
 
         private void btnFiccion_Click(object sender, EventArgs e)
         {
@@ -191,13 +194,30 @@ namespace ProyectoBiblioteca
             HideSubmenu();
         }
 
-     
+        private void btnReportes_Click(object sender, EventArgs e)
+        {
+            ShowSubmenu(PanelReportes);
+        }
 
-  
+        private void btngestion_Click_1(object sender, EventArgs e)
+        {
+            ShowSubmenu(PanelGestion);
+        }
 
+        private void btnPrestamos_Click_1(object sender, EventArgs e)
+        {
+            ShowSubmenu(PanelPrestamos);
+        }
 
-    
+        private void btnReportes_Click_1(object sender, EventArgs e)
+        {
+            ShowSubmenu(PanelReportes);
+        }
 
+        private void btnCerrar_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
 
         private void btnRestaurar_Click(object sender, EventArgs e)
         {
@@ -227,11 +247,6 @@ namespace ProyectoBiblioteca
               home.Dock = DockStyle.Fill; // Ajusta el tamaño del formulario al panel
               home.Show(); // Muestra el formulario
 
-            // Agrega esta línea para agregar el formulario al panel
-            PanelContenido.Controls.Add(home); // reemplaza "panel1" con el nombre de tu panel
-
-            home.Show();
-
 
             //Inicio ini = new Inicio();
             //if (PanelContenido.Contains(ini) == false)
@@ -259,8 +274,6 @@ namespace ProyectoBiblioteca
         {
             Application.Exit();
         }
-
-
         bool siderbarExpand = true;
         private void sidebarTransistor_Tick(object sender, EventArgs e)
         {
@@ -293,39 +306,39 @@ namespace ProyectoBiblioteca
 
         private void btnLibros_Click(object sender, EventArgs e)
         {
+            //PanelLibros.Visible = !PanelLibros.Visible;
+            //Inicio menupr = new Inicio();
+
+            //// Remover cualquier control anterior del panel
+            //PanelLibros.Controls.Clear();
+
+            //// Ajustar el formulario a modo de panel (sin bordes, etc.)
+            //menupr.TopLevel = false; // Esto es clave para que se muestre dentro de otro contenedor
+            //menupr.FormBorderStyle = FormBorderStyle.None;
+            //menupr.Dock = DockStyle.Fill; // Ajustar el formulario al tamaño del panel
+
+            //// Añadir el formulario como control al panel
+            //PanelLibros.Controls.Add(menupr);
+
+            //// Mostrar el formulario
+            //menupr.Show();
 
         }
 
         private void bunifuButton7_Click(object sender, EventArgs e)
         {
-            FrmAltaUsuarios Ru = new FrmAltaUsuarios();
+            RegistroUsuarios Ru = new RegistroUsuarios();
             Ru.Show();
             this.Hide();
         }
 
-        private void btnPrestamos_Click(object sender, EventArgs e)
+        private void bunifuButton8_Click(object sender, EventArgs e)
         {
-            ShowSubmenu(PanelPrestamos);
-        }
-
-        private void btngestion_Click(object sender, EventArgs e)
-        {
-            ShowSubmenu(PanelGestion);
-        }
-
-        private void btnReportes_Click_2(object sender, EventArgs e)
-        {
-            ShowSubmenu(PanelReportes);
-        }
-
-        private void btnCategorias_Click_1(object sender, EventArgs e)
-        {
-            ShowSubmenu(PanelCategorias);
-        }
-
-        private void bunifuPictureBox1_Click(object sender, EventArgs e)
-        {
-
+            
+            FrmAltaUsuarios alta =new FrmAltaUsuarios();
+            alta.Show();
+            this.Hide();
+  
         }
     }
 }
