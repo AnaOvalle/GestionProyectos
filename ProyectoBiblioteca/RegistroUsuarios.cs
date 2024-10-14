@@ -21,5 +21,12 @@ namespace ProyectoBiblioteca
         {
 
         }
+
+        private void bunifuImageButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Menu menu = new Menu();
+            menu.Show();
+        }
     }
 }
