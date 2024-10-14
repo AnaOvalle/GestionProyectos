@@ -84,7 +84,7 @@ namespace ProyectoBiblioteca
 
         private void btnCategorias_Click(object sender, EventArgs e)
         {
-            ShowSubmenu(PanelCategorias);
+            
         }
 
         private void btnFiccion_Click(object sender, EventArgs e)
@@ -339,6 +339,26 @@ namespace ProyectoBiblioteca
             alta.Show();
             this.Hide();
   
+        }
+
+        private void btnCategorias_Click_1(object sender, EventArgs e)
+        {
+            ShowSubmenu(PanelCategorias);
+        }
+
+        private void btngestion_Click(object sender, EventArgs e)
+        {
+            ShowSubmenu(PanelGestion);
+        }
+
+        private void btnPrestamos_Click(object sender, EventArgs e)
+        {
+            ShowSubmenu(PanelPrestamos);
+        }
+
+        private void btnReportes_Click_2(object sender, EventArgs e)
+        {
+            ShowSubmenu(PanelReportes);
         }
     }
 }

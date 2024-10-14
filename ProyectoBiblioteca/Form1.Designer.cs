@@ -278,7 +278,7 @@
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.bunifuTextBox2.OnIdleState = stateProperties4;
             this.bunifuTextBox2.Padding = new System.Windows.Forms.Padding(3);
-            this.bunifuTextBox2.PasswordChar = '\0';
+            this.bunifuTextBox2.PasswordChar = '*';
             this.bunifuTextBox2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
             this.bunifuTextBox2.PlaceholderText = "*******";
             this.bunifuTextBox2.ReadOnly = false;

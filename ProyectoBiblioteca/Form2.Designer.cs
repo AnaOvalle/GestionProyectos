@@ -75,6 +75,7 @@
             this.sedebar = new Bunifu.UI.WinForms.BunifuGradientPanel();
             this.bunifuButton1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.bunifuPictureBox2 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.PanelReportes = new Bunifu.UI.WinForms.BunifuPanel();
@@ -107,19 +108,18 @@
             this.btnFiccion = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnCategorias = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnLibros = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.bunifuPictureBox2 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.bunifuPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
             this.PanelContenido.SuspendLayout();
             this.PanelUsuario.SuspendLayout();
             this.sedebar.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
             this.PanelReportes.SuspendLayout();
             this.PanelPrestamos.SuspendLayout();
             this.PanelGestion.SuspendLayout();
             this.PanelCategorias.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -245,7 +245,7 @@
             this.bunifuLabel1.Location = new System.Drawing.Point(386, 12);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(227, 32);
+            this.bunifuLabel1.Size = new System.Drawing.Size(227, 35);
             this.bunifuLabel1.TabIndex = 0;
             this.bunifuLabel1.Text = "ADMINISTRADOR";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -266,7 +266,6 @@
             this.bunifuPictureBox1.TabIndex = 29;
             this.bunifuPictureBox1.TabStop = false;
             this.bunifuPictureBox1.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
-            //this.bunifuPictureBox1.Click += new System.EventHandler(this.bunifuPictureBox1_Click);
             // 
             // PanelContenido
             // 
@@ -544,7 +543,7 @@
             this.bunifuButton1.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
             this.bunifuButton1.IconSize = 25;
             this.bunifuButton1.IdleBorderColor = System.Drawing.Color.Transparent;
-            this.bunifuButton1.IdleBorderRadius = 57;
+            this.bunifuButton1.IdleBorderRadius = 58;
             this.bunifuButton1.IdleBorderThickness = 1;
             this.bunifuButton1.IdleFillColor = System.Drawing.Color.Transparent;
             this.bunifuButton1.IdleIconLeftImage = global::ProyectoBiblioteca.Properties.Resources.icons8_casa_50;
@@ -584,7 +583,7 @@
             this.bunifuButton1.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.bunifuButton1.OnPressedState.IconLeftImage = null;
             this.bunifuButton1.OnPressedState.IconRightImage = null;
-            this.bunifuButton1.Size = new System.Drawing.Size(219, 59);
+            this.bunifuButton1.Size = new System.Drawing.Size(219, 60);
             this.bunifuButton1.TabIndex = 0;
             this.bunifuButton1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.bunifuButton1.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -601,6 +600,22 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(219, 100);
             this.panel2.TabIndex = 29;
+            // 
+            // bunifuPictureBox2
+            // 
+            this.bunifuPictureBox2.AllowFocused = false;
+            this.bunifuPictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuPictureBox2.AutoSizeHeight = true;
+            this.bunifuPictureBox2.BorderRadius = 34;
+            this.bunifuPictureBox2.Image = global::ProyectoBiblioteca.Properties.Resources.logo1;
+            this.bunifuPictureBox2.IsCircle = true;
+            this.bunifuPictureBox2.Location = new System.Drawing.Point(6, 17);
+            this.bunifuPictureBox2.Name = "bunifuPictureBox2";
+            this.bunifuPictureBox2.Size = new System.Drawing.Size(68, 68);
+            this.bunifuPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuPictureBox2.TabIndex = 29;
+            this.bunifuPictureBox2.TabStop = false;
+            this.bunifuPictureBox2.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
             // 
             // bunifuLabel2
             // 
@@ -647,7 +662,7 @@
             this.PanelReportes.Controls.Add(this.bunifuButton4);
             this.PanelReportes.Controls.Add(this.bunifuButton5);
             this.PanelReportes.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PanelReportes.Location = new System.Drawing.Point(0, 707);
+            this.PanelReportes.Location = new System.Drawing.Point(0, 710);
             this.PanelReportes.Name = "PanelReportes";
             this.PanelReportes.ShowBorders = true;
             this.PanelReportes.Size = new System.Drawing.Size(213, 87);
@@ -1058,7 +1073,7 @@
             this.btnReportes.IdleIconLeftImage = global::ProyectoBiblioteca.Properties.Resources.icons8_health_graph_50;
             this.btnReportes.IdleIconRightImage = null;
             this.btnReportes.IndicateFocus = false;
-            this.btnReportes.Location = new System.Drawing.Point(0, 640);
+            this.btnReportes.Location = new System.Drawing.Point(0, 643);
             this.btnReportes.Name = "btnReportes";
             this.btnReportes.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnReportes.OnDisabledState.BorderRadius = 1;
@@ -1099,7 +1114,7 @@
             this.btnReportes.TextMarginLeft = 0;
             this.btnReportes.TextPadding = new System.Windows.Forms.Padding(25, 0, 0, 0);
             this.btnReportes.UseDefaultRadiusAndThickness = true;
-            //this.btnReportes.Click += new System.EventHandler(this.btnReportes_Click_2);
+            this.btnReportes.Click += new System.EventHandler(this.btnReportes_Click_2);
             // 
             // PanelPrestamos
             // 
@@ -1113,7 +1128,7 @@
             this.PanelPrestamos.Controls.Add(this.btnConsultarP);
             this.PanelPrestamos.Controls.Add(this.btnrealPrestamos);
             this.PanelPrestamos.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PanelPrestamos.Location = new System.Drawing.Point(0, 575);
+            this.PanelPrestamos.Location = new System.Drawing.Point(0, 578);
             this.PanelPrestamos.Name = "PanelPrestamos";
             this.PanelPrestamos.ShowBorders = true;
             this.PanelPrestamos.Size = new System.Drawing.Size(213, 65);
@@ -1434,7 +1449,7 @@
             this.btnPrestamos.IdleIconLeftImage = global::ProyectoBiblioteca.Properties.Resources.icons8_libros_50;
             this.btnPrestamos.IdleIconRightImage = null;
             this.btnPrestamos.IndicateFocus = false;
-            this.btnPrestamos.Location = new System.Drawing.Point(0, 508);
+            this.btnPrestamos.Location = new System.Drawing.Point(0, 511);
             this.btnPrestamos.Name = "btnPrestamos";
             this.btnPrestamos.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnPrestamos.OnDisabledState.BorderRadius = 1;
@@ -1475,7 +1490,7 @@
             this.btnPrestamos.TextMarginLeft = 0;
             this.btnPrestamos.TextPadding = new System.Windows.Forms.Padding(25, 0, 0, 0);
             this.btnPrestamos.UseDefaultRadiusAndThickness = true;
-            //this.btnPrestamos.Click += new System.EventHandler(this.btnPrestamos_Click);
+            this.btnPrestamos.Click += new System.EventHandler(this.btnPrestamos_Click);
             // 
             // PanelGestion
             // 
@@ -1492,7 +1507,7 @@
             this.PanelGestion.Controls.Add(this.btnusuarios);
             this.PanelGestion.Controls.Add(this.btnclientes);
             this.PanelGestion.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PanelGestion.Location = new System.Drawing.Point(0, 361);
+            this.PanelGestion.Location = new System.Drawing.Point(0, 364);
             this.PanelGestion.Name = "PanelGestion";
             this.PanelGestion.ShowBorders = true;
             this.PanelGestion.Size = new System.Drawing.Size(213, 147);
@@ -2080,7 +2095,7 @@
             this.btngestion.IdleIconLeftImage = global::ProyectoBiblioteca.Properties.Resources.icons8_editar_propiedad_501;
             this.btngestion.IdleIconRightImage = null;
             this.btngestion.IndicateFocus = false;
-            this.btngestion.Location = new System.Drawing.Point(0, 294);
+            this.btngestion.Location = new System.Drawing.Point(0, 297);
             this.btngestion.Name = "btngestion";
             this.btngestion.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btngestion.OnDisabledState.BorderRadius = 1;
@@ -2121,7 +2136,7 @@
             this.btngestion.TextMarginLeft = 0;
             this.btngestion.TextPadding = new System.Windows.Forms.Padding(25, 0, 0, 0);
             this.btngestion.UseDefaultRadiusAndThickness = true;
-            //this.btngestion.Click += new System.EventHandler(this.btngestion_Click);
+            this.btngestion.Click += new System.EventHandler(this.btngestion_Click);
             // 
             // PanelCategorias
             // 
@@ -2140,7 +2155,7 @@
             this.PanelCategorias.Controls.Add(this.btnCientifico);
             this.PanelCategorias.Controls.Add(this.btnFiccion);
             this.PanelCategorias.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PanelCategorias.Location = new System.Drawing.Point(0, 131);
+            this.PanelCategorias.Location = new System.Drawing.Point(0, 134);
             this.PanelCategorias.Name = "PanelCategorias";
             this.PanelCategorias.ShowBorders = true;
             this.PanelCategorias.Size = new System.Drawing.Size(213, 163);
@@ -2923,7 +2938,7 @@
             this.btnCategorias.IdleIconLeftImage = global::ProyectoBiblioteca.Properties.Resources.icons8_categorizar_64;
             this.btnCategorias.IdleIconRightImage = null;
             this.btnCategorias.IndicateFocus = true;
-            this.btnCategorias.Location = new System.Drawing.Point(0, 64);
+            this.btnCategorias.Location = new System.Drawing.Point(0, 67);
             this.btnCategorias.Name = "btnCategorias";
             this.btnCategorias.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnCategorias.OnDisabledState.BorderRadius = 1;
@@ -2964,7 +2979,7 @@
             this.btnCategorias.TextMarginLeft = 0;
             this.btnCategorias.TextPadding = new System.Windows.Forms.Padding(25, 0, 0, 0);
             this.btnCategorias.UseDefaultRadiusAndThickness = true;
-            //this.btnCategorias.Click += new System.EventHandler(this.btnCategorias_Click_1);
+            this.btnCategorias.Click += new System.EventHandler(this.btnCategorias_Click_1);
             // 
             // btnLibros
             // 
@@ -3008,7 +3023,7 @@
             this.btnLibros.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
             this.btnLibros.IconSize = 25;
             this.btnLibros.IdleBorderColor = System.Drawing.Color.Transparent;
-            this.btnLibros.IdleBorderRadius = 62;
+            this.btnLibros.IdleBorderRadius = 65;
             this.btnLibros.IdleBorderThickness = 1;
             this.btnLibros.IdleFillColor = System.Drawing.Color.Transparent;
             this.btnLibros.IdleIconLeftImage = global::ProyectoBiblioteca.Properties.Resources.icons8_book_502;
@@ -3048,7 +3063,7 @@
             this.btnLibros.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnLibros.OnPressedState.IconLeftImage = null;
             this.btnLibros.OnPressedState.IconRightImage = null;
-            this.btnLibros.Size = new System.Drawing.Size(213, 64);
+            this.btnLibros.Size = new System.Drawing.Size(213, 67);
             this.btnLibros.TabIndex = 5;
             this.btnLibros.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnLibros.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -3056,22 +3071,6 @@
             this.btnLibros.TextPadding = new System.Windows.Forms.Padding(25, 0, 0, 0);
             this.btnLibros.UseDefaultRadiusAndThickness = true;
             this.btnLibros.Click += new System.EventHandler(this.btnLibros_Click);
-            // 
-            // bunifuPictureBox2
-            // 
-            this.bunifuPictureBox2.AllowFocused = false;
-            this.bunifuPictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuPictureBox2.AutoSizeHeight = true;
-            this.bunifuPictureBox2.BorderRadius = 34;
-            this.bunifuPictureBox2.Image = global::ProyectoBiblioteca.Properties.Resources.logo1;
-            this.bunifuPictureBox2.IsCircle = true;
-            this.bunifuPictureBox2.Location = new System.Drawing.Point(6, 17);
-            this.bunifuPictureBox2.Name = "bunifuPictureBox2";
-            this.bunifuPictureBox2.Size = new System.Drawing.Size(68, 68);
-            this.bunifuPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuPictureBox2.TabIndex = 29;
-            this.bunifuPictureBox2.TabStop = false;
-            this.bunifuPictureBox2.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
             // 
             // Menu
             // 
@@ -3097,12 +3096,12 @@
             this.sedebar.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox2)).EndInit();
             this.panel1.ResumeLayout(false);
             this.PanelReportes.ResumeLayout(false);
             this.PanelPrestamos.ResumeLayout(false);
             this.PanelGestion.ResumeLayout(false);
             this.PanelCategorias.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
