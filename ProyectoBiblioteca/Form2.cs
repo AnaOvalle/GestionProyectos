@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Bunifu.UI.WinForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -6,6 +7,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Controls;
 using System.Windows.Forms;
 
 namespace ProyectoBiblioteca
@@ -45,7 +47,7 @@ namespace ProyectoBiblioteca
             }
         }
 
-        private void ShowSubmenu(Panel Submenu)
+        private void ShowSubmenu(BunifuPanel Submenu)
         {
             if (Submenu.Visible == false)
             {
@@ -245,9 +247,12 @@ namespace ProyectoBiblioteca
               home.TopLevel = false; // Establece que no es un formulario de nivel superior
               home.FormBorderStyle = FormBorderStyle.None; // Quita el borde del formulario
               home.Dock = DockStyle.Fill; // Ajusta el tamaño del formulario al panel
-              home.Show(); // Muestra el formulario
 
+             PanelContenido.Controls.Clear(); // Limpia los controles anteriores en el panel
+             PanelContenido.Controls.Add(home);
+             home.Show(); // Muestra el formulario
 
+              
             //Inicio ini = new Inicio();
             //if (PanelContenido.Contains(ini) == false)
             //{
@@ -341,7 +346,7 @@ namespace ProyectoBiblioteca
   
         }
 
-        private void btnCategorias_Click_1(object sender, EventArgs e)
+        private void BtnCategorias_Click_1(object sender, EventArgs e)
         {
             ShowSubmenu(PanelCategorias);
         }

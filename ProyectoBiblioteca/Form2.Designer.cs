@@ -2979,7 +2979,7 @@
             this.btnCategorias.TextMarginLeft = 0;
             this.btnCategorias.TextPadding = new System.Windows.Forms.Padding(25, 0, 0, 0);
             this.btnCategorias.UseDefaultRadiusAndThickness = true;
-            this.btnCategorias.Click += new System.EventHandler(this.btnCategorias_Click_1);
+            this.btnCategorias.Click += new System.EventHandler(this.BtnCategorias_Click_1);
             // 
             // btnLibros
             // 
