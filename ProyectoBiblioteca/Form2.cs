@@ -389,5 +389,10 @@ namespace ProyectoBiblioteca
         {
             lblHora.Text = DateTime.Now.ToString("HH:mm:ss");
         }
+
+        private void bunifuPictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
