@@ -1024,7 +1024,7 @@
             this.Controls.Add(this.Buscar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Inventario";
-            this.Text = "Inventario";
+            this.Text = " ";
             this.bunifuPanel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuDataGridView1)).EndInit();
             this.bunifuGradientPanel1.ResumeLayout(false);
