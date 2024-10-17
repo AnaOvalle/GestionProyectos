@@ -396,6 +396,7 @@
             this.lblHora.Text = "bunifu";
             this.lblHora.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.lblHora.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.lblHora.Click += new System.EventHandler(this.lblHora_Click);
             // 
             // Hora
             // 

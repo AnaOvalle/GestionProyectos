@@ -108,6 +108,8 @@
             this.btnFiccion = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnCategorias = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnLibros = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.lblHora = new Bunifu.UI.WinForms.BunifuLabel();
+            this.Hora = new System.Windows.Forms.Timer(this.components);
             this.bunifuPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
             this.PanelContenido.SuspendLayout();
@@ -152,14 +154,15 @@
             this.bunifuPanel1.BorderColor = System.Drawing.Color.Transparent;
             this.bunifuPanel1.BorderRadius = 3;
             this.bunifuPanel1.BorderThickness = 1;
+            this.bunifuPanel1.Controls.Add(this.lblHora);
             this.bunifuPanel1.Controls.Add(this.bunifuImageButton2);
             this.bunifuPanel1.Controls.Add(this.bunifuImageButton1);
             this.bunifuPanel1.Controls.Add(this.bunifuLabel1);
             this.bunifuPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.bunifuPanel1.Location = new System.Drawing.Point(219, 0);
+            this.bunifuPanel1.Location = new System.Drawing.Point(238, 0);
             this.bunifuPanel1.Name = "bunifuPanel1";
             this.bunifuPanel1.ShowBorders = true;
-            this.bunifuPanel1.Size = new System.Drawing.Size(821, 57);
+            this.bunifuPanel1.Size = new System.Drawing.Size(1056, 57);
             this.bunifuPanel1.TabIndex = 27;
             // 
             // bunifuImageButton2
@@ -219,7 +222,7 @@
             this.bunifuImageButton1.ImageSize = new System.Drawing.Size(18, 17);
             this.bunifuImageButton1.ImageZoomSize = new System.Drawing.Size(58, 57);
             this.bunifuImageButton1.InitialImage = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.InitialImage")));
-            this.bunifuImageButton1.Location = new System.Drawing.Point(763, 0);
+            this.bunifuImageButton1.Location = new System.Drawing.Point(998, 0);
             this.bunifuImageButton1.Name = "bunifuImageButton1";
             this.bunifuImageButton1.Rotation = 0;
             this.bunifuImageButton1.ShowActiveImage = true;
@@ -240,16 +243,17 @@
             this.bunifuLabel1.AutoEllipsis = false;
             this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold);
+            this.bunifuLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
             this.bunifuLabel1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.bunifuLabel1.Location = new System.Drawing.Point(386, 12);
+            this.bunifuLabel1.Location = new System.Drawing.Point(813, 12);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(246, 33);
+            this.bunifuLabel1.Size = new System.Drawing.Size(179, 29);
             this.bunifuLabel1.TabIndex = 0;
             this.bunifuLabel1.Text = "ADMINISTRADOR";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuLabel1.Click += new System.EventHandler(this.bunifuLabel1_Click);
             // 
             // bunifuPictureBox1
             // 
@@ -259,7 +263,7 @@
             this.bunifuPictureBox1.BorderRadius = 210;
             this.bunifuPictureBox1.Image = global::ProyectoBiblioteca.Properties.Resources.logo1;
             this.bunifuPictureBox1.IsCircle = true;
-            this.bunifuPictureBox1.Location = new System.Drawing.Point(509, 149);
+            this.bunifuPictureBox1.Location = new System.Drawing.Point(636, 169);
             this.bunifuPictureBox1.Name = "bunifuPictureBox1";
             this.bunifuPictureBox1.Size = new System.Drawing.Size(421, 421);
             this.bunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -278,10 +282,10 @@
             this.PanelContenido.BorderThickness = 1;
             this.PanelContenido.Controls.Add(this.PanelUsuario);
             this.PanelContenido.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PanelContenido.Location = new System.Drawing.Point(219, 57);
+            this.PanelContenido.Location = new System.Drawing.Point(238, 57);
             this.PanelContenido.Name = "PanelContenido";
             this.PanelContenido.ShowBorders = true;
-            this.PanelContenido.Size = new System.Drawing.Size(821, 583);
+            this.PanelContenido.Size = new System.Drawing.Size(1056, 624);
             this.PanelContenido.TabIndex = 30;
             // 
             // PanelUsuario
@@ -294,7 +298,7 @@
             this.PanelUsuario.BorderThickness = 1;
             this.PanelUsuario.Controls.Add(this.bunifuButton7);
             this.PanelUsuario.Controls.Add(this.bunifuButton6);
-            this.PanelUsuario.Location = new System.Drawing.Point(858, 6);
+            this.PanelUsuario.Location = new System.Drawing.Point(858, 3);
             this.PanelUsuario.Name = "PanelUsuario";
             this.PanelUsuario.ShowBorders = true;
             this.PanelUsuario.Size = new System.Drawing.Size(186, 137);
@@ -498,7 +502,7 @@
             this.sedebar.Location = new System.Drawing.Point(0, 0);
             this.sedebar.Name = "sedebar";
             this.sedebar.Quality = 10;
-            this.sedebar.Size = new System.Drawing.Size(219, 640);
+            this.sedebar.Size = new System.Drawing.Size(238, 681);
             this.sedebar.TabIndex = 3;
             this.sedebar.Click += new System.EventHandler(this.bunifuGradientPanel1_Click);
             // 
@@ -584,13 +588,14 @@
             this.bunifuButton1.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.bunifuButton1.OnPressedState.IconLeftImage = null;
             this.bunifuButton1.OnPressedState.IconRightImage = null;
-            this.bunifuButton1.Size = new System.Drawing.Size(219, 60);
+            this.bunifuButton1.Size = new System.Drawing.Size(238, 60);
             this.bunifuButton1.TabIndex = 0;
             this.bunifuButton1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.bunifuButton1.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.bunifuButton1.TextMarginLeft = 0;
             this.bunifuButton1.TextPadding = new System.Windows.Forms.Padding(0);
             this.bunifuButton1.UseDefaultRadiusAndThickness = true;
+            this.bunifuButton1.Click += new System.EventHandler(this.bunifuButton1_Click_1);
             // 
             // panel2
             // 
@@ -599,7 +604,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(219, 100);
+            this.panel2.Size = new System.Drawing.Size(238, 100);
             this.panel2.TabIndex = 29;
             // 
             // bunifuPictureBox2
@@ -610,7 +615,7 @@
             this.bunifuPictureBox2.BorderRadius = 34;
             this.bunifuPictureBox2.Image = global::ProyectoBiblioteca.Properties.Resources.logo1;
             this.bunifuPictureBox2.IsCircle = true;
-            this.bunifuPictureBox2.Location = new System.Drawing.Point(6, 17);
+            this.bunifuPictureBox2.Location = new System.Drawing.Point(6, 12);
             this.bunifuPictureBox2.Name = "bunifuPictureBox2";
             this.bunifuPictureBox2.Size = new System.Drawing.Size(68, 68);
             this.bunifuPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -647,7 +652,7 @@
             this.panel1.Controls.Add(this.btnLibros);
             this.panel1.Location = new System.Drawing.Point(3, 149);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(213, 529);
+            this.panel1.Size = new System.Drawing.Size(237, 529);
             this.panel1.TabIndex = 11;
             // 
             // PanelReportes
@@ -666,7 +671,7 @@
             this.PanelReportes.Location = new System.Drawing.Point(0, 710);
             this.PanelReportes.Name = "PanelReportes";
             this.PanelReportes.ShowBorders = true;
-            this.PanelReportes.Size = new System.Drawing.Size(213, 87);
+            this.PanelReportes.Size = new System.Drawing.Size(237, 87);
             this.PanelReportes.TabIndex = 28;
             // 
             // bunifuButton2
@@ -751,7 +756,7 @@
             this.bunifuButton2.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.bunifuButton2.OnPressedState.IconLeftImage = null;
             this.bunifuButton2.OnPressedState.IconRightImage = null;
-            this.bunifuButton2.Size = new System.Drawing.Size(213, 20);
+            this.bunifuButton2.Size = new System.Drawing.Size(237, 20);
             this.bunifuButton2.TabIndex = 14;
             this.bunifuButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bunifuButton2.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1108,7 +1113,7 @@
             this.btnReportes.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnReportes.OnPressedState.IconLeftImage = null;
             this.btnReportes.OnPressedState.IconRightImage = null;
-            this.btnReportes.Size = new System.Drawing.Size(213, 67);
+            this.btnReportes.Size = new System.Drawing.Size(237, 67);
             this.btnReportes.TabIndex = 27;
             this.btnReportes.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnReportes.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1132,7 +1137,7 @@
             this.PanelPrestamos.Location = new System.Drawing.Point(0, 578);
             this.PanelPrestamos.Name = "PanelPrestamos";
             this.PanelPrestamos.ShowBorders = true;
-            this.PanelPrestamos.Size = new System.Drawing.Size(213, 65);
+            this.PanelPrestamos.Size = new System.Drawing.Size(237, 65);
             this.PanelPrestamos.TabIndex = 26;
             // 
             // btndevolucion
@@ -1484,7 +1489,7 @@
             this.btnPrestamos.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnPrestamos.OnPressedState.IconLeftImage = null;
             this.btnPrestamos.OnPressedState.IconRightImage = null;
-            this.btnPrestamos.Size = new System.Drawing.Size(213, 67);
+            this.btnPrestamos.Size = new System.Drawing.Size(237, 67);
             this.btnPrestamos.TabIndex = 25;
             this.btnPrestamos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnPrestamos.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1511,7 +1516,7 @@
             this.PanelGestion.Location = new System.Drawing.Point(0, 364);
             this.PanelGestion.Name = "PanelGestion";
             this.PanelGestion.ShowBorders = true;
-            this.PanelGestion.Size = new System.Drawing.Size(213, 147);
+            this.PanelGestion.Size = new System.Drawing.Size(237, 147);
             this.PanelGestion.TabIndex = 24;
             // 
             // btnsagas
@@ -1780,6 +1785,7 @@
             this.btninventario.TextMarginLeft = 0;
             this.btninventario.TextPadding = new System.Windows.Forms.Padding(45, 0, 0, 0);
             this.btninventario.UseDefaultRadiusAndThickness = true;
+            this.btninventario.Click += new System.EventHandler(this.btninventario_Click_1);
             // 
             // btngestionLibros
             // 
@@ -1958,6 +1964,7 @@
             this.btnusuarios.TextMarginLeft = 0;
             this.btnusuarios.TextPadding = new System.Windows.Forms.Padding(45, 0, 0, 0);
             this.btnusuarios.UseDefaultRadiusAndThickness = true;
+            this.btnusuarios.Click += new System.EventHandler(this.btnusuarios_Click_1);
             // 
             // btnclientes
             // 
@@ -2130,7 +2137,7 @@
             this.btngestion.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btngestion.OnPressedState.IconLeftImage = null;
             this.btngestion.OnPressedState.IconRightImage = null;
-            this.btngestion.Size = new System.Drawing.Size(213, 67);
+            this.btngestion.Size = new System.Drawing.Size(237, 67);
             this.btngestion.TabIndex = 23;
             this.btngestion.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btngestion.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2159,7 +2166,7 @@
             this.PanelCategorias.Location = new System.Drawing.Point(0, 134);
             this.PanelCategorias.Name = "PanelCategorias";
             this.PanelCategorias.ShowBorders = true;
-            this.PanelCategorias.Size = new System.Drawing.Size(213, 163);
+            this.PanelCategorias.Size = new System.Drawing.Size(237, 163);
             this.PanelCategorias.TabIndex = 0;
             this.PanelCategorias.Click += new System.EventHandler(this.bunifuPanel6_Click);
             // 
@@ -2245,7 +2252,7 @@
             this.Arte.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.Arte.OnPressedState.IconLeftImage = null;
             this.Arte.OnPressedState.IconRightImage = null;
-            this.Arte.Size = new System.Drawing.Size(213, 20);
+            this.Arte.Size = new System.Drawing.Size(237, 20);
             this.Arte.TabIndex = 22;
             this.Arte.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Arte.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2336,7 +2343,7 @@
             this.btnInfantil.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnInfantil.OnPressedState.IconLeftImage = null;
             this.btnInfantil.OnPressedState.IconRightImage = null;
-            this.btnInfantil.Size = new System.Drawing.Size(213, 20);
+            this.btnInfantil.Size = new System.Drawing.Size(237, 20);
             this.btnInfantil.TabIndex = 12;
             this.btnInfantil.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnInfantil.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2427,7 +2434,7 @@
             this.btnJuvenil.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnJuvenil.OnPressedState.IconLeftImage = null;
             this.btnJuvenil.OnPressedState.IconRightImage = null;
-            this.btnJuvenil.Size = new System.Drawing.Size(213, 20);
+            this.btnJuvenil.Size = new System.Drawing.Size(237, 20);
             this.btnJuvenil.TabIndex = 14;
             this.btnJuvenil.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnJuvenil.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2518,7 +2525,7 @@
             this.btnFantasy.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnFantasy.OnPressedState.IconLeftImage = null;
             this.btnFantasy.OnPressedState.IconRightImage = null;
-            this.btnFantasy.Size = new System.Drawing.Size(213, 20);
+            this.btnFantasy.Size = new System.Drawing.Size(237, 20);
             this.btnFantasy.TabIndex = 20;
             this.btnFantasy.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnFantasy.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2609,7 +2616,7 @@
             this.btnNoFiccion.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnNoFiccion.OnPressedState.IconLeftImage = null;
             this.btnNoFiccion.OnPressedState.IconRightImage = null;
-            this.btnNoFiccion.Size = new System.Drawing.Size(213, 20);
+            this.btnNoFiccion.Size = new System.Drawing.Size(237, 20);
             this.btnNoFiccion.TabIndex = 10;
             this.btnNoFiccion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnNoFiccion.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2700,7 +2707,7 @@
             this.btnAcade.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnAcade.OnPressedState.IconLeftImage = null;
             this.btnAcade.OnPressedState.IconRightImage = null;
-            this.btnAcade.Size = new System.Drawing.Size(213, 20);
+            this.btnAcade.Size = new System.Drawing.Size(237, 20);
             this.btnAcade.TabIndex = 16;
             this.btnAcade.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAcade.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2791,7 +2798,7 @@
             this.btnCientifico.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnCientifico.OnPressedState.IconLeftImage = null;
             this.btnCientifico.OnPressedState.IconRightImage = null;
-            this.btnCientifico.Size = new System.Drawing.Size(213, 20);
+            this.btnCientifico.Size = new System.Drawing.Size(237, 20);
             this.btnCientifico.TabIndex = 18;
             this.btnCientifico.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCientifico.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2882,7 +2889,7 @@
             this.btnFiccion.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnFiccion.OnPressedState.IconLeftImage = null;
             this.btnFiccion.OnPressedState.IconRightImage = null;
-            this.btnFiccion.Size = new System.Drawing.Size(213, 20);
+            this.btnFiccion.Size = new System.Drawing.Size(237, 20);
             this.btnFiccion.TabIndex = 8;
             this.btnFiccion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnFiccion.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2973,7 +2980,7 @@
             this.btnCategorias.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnCategorias.OnPressedState.IconLeftImage = null;
             this.btnCategorias.OnPressedState.IconRightImage = null;
-            this.btnCategorias.Size = new System.Drawing.Size(213, 67);
+            this.btnCategorias.Size = new System.Drawing.Size(237, 67);
             this.btnCategorias.TabIndex = 11;
             this.btnCategorias.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCategorias.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -3064,7 +3071,7 @@
             this.btnLibros.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnLibros.OnPressedState.IconLeftImage = null;
             this.btnLibros.OnPressedState.IconRightImage = null;
-            this.btnLibros.Size = new System.Drawing.Size(213, 67);
+            this.btnLibros.Size = new System.Drawing.Size(237, 67);
             this.btnLibros.TabIndex = 5;
             this.btnLibros.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnLibros.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -3073,12 +3080,34 @@
             this.btnLibros.UseDefaultRadiusAndThickness = true;
             this.btnLibros.Click += new System.EventHandler(this.btnLibros_Click);
             // 
+            // lblHora
+            // 
+            this.lblHora.AllowParentOverrides = false;
+            this.lblHora.AutoEllipsis = false;
+            this.lblHora.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lblHora.CursorType = System.Windows.Forms.Cursors.Default;
+            this.lblHora.Font = new System.Drawing.Font("Cooper Black", 13F);
+            this.lblHora.Location = new System.Drawing.Point(70, 20);
+            this.lblHora.Name = "lblHora";
+            this.lblHora.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblHora.Size = new System.Drawing.Size(59, 20);
+            this.lblHora.TabIndex = 26;
+            this.lblHora.Text = "bunifu";
+            this.lblHora.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.lblHora.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.lblHora.Click += new System.EventHandler(this.lblHora_Click);
+            // 
+            // Hora
+            // 
+            this.Hora.Enabled = true;
+            this.Hora.Tick += new System.EventHandler(this.Hora_Tick);
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1040, 640);
+            this.ClientSize = new System.Drawing.Size(1294, 681);
             this.ControlBox = false;
             this.Controls.Add(this.bunifuPictureBox1);
             this.Controls.Add(this.PanelContenido);
@@ -3157,5 +3186,7 @@
         private System.Windows.Forms.Panel panel2;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel2;
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox2;
+        private Bunifu.UI.WinForms.BunifuLabel lblHora;
+        private System.Windows.Forms.Timer Hora;
     }
 }

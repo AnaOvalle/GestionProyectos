@@ -31,5 +31,10 @@ namespace ProyectoBiblioteca
         {
 
         }
+
+        private void lblHora_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

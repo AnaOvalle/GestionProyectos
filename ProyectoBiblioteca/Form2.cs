@@ -26,6 +26,8 @@ namespace ProyectoBiblioteca
             PanelGestion.Visible = false;
             PanelPrestamos.Visible = false;
             PanelReportes.Visible = false;
+       
+           
         }
         private void HideSubmenu()
         {
@@ -62,16 +64,7 @@ namespace ProyectoBiblioteca
 
         private void bunifuButton1_Click(object sender, EventArgs e)
         {
-            //Inicio home = new Inicio();
-            //if (PanelContenido.Contains(home) == false)
-            //{
-            //    PanelContenido.Controls.Add(home);
-            //    home.BringToFront();
-            //}
-            //else
-            //{
-            //    home.BringToFront();
-            //}
+           
         }
 
         private void bunifuPanel6_Click(object sender, EventArgs e)
@@ -221,20 +214,9 @@ namespace ProyectoBiblioteca
             Application.Exit();
         }
 
-        private void btnRestaurar_Click(object sender, EventArgs e)
-        {
-  
-        }
 
-        private void btnMaximizar_Click(object sender, EventArgs e)
-        {
- 
-        }
+        
 
-        private void minimizar_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
-        }
 
         private void PanelContenido_Click(object sender, EventArgs e)
         {
@@ -243,26 +225,17 @@ namespace ProyectoBiblioteca
 
         private void Menu_Load(object sender, EventArgs e)
         {
-              Inicio home = new Inicio();
-              home.TopLevel = false; // Establece que no es un formulario de nivel superior
-              home.FormBorderStyle = FormBorderStyle.None; // Quita el borde del formulario
-              home.Dock = DockStyle.Fill; // Ajusta el tamaño del formulario al panel
+             // Inicio home = new Inicio();
+             // home.TopLevel = false; // Establece que no es un formulario de nivel superior
+             // home.FormBorderStyle = FormBorderStyle.None; // Quita el borde del formulario
+             // home.Dock = DockStyle.Fill; // Ajusta el tamaño del formulario al panel
 
-             PanelContenido.Controls.Clear(); // Limpia los controles anteriores en el panel
-             PanelContenido.Controls.Add(home);
-             home.Show(); // Muestra el formulario
+             //PanelContenido.Controls.Clear(); // Limpia los controles anteriores en el panel
+             //PanelContenido.Controls.Add(home);
+             //bunifuPictureBox1.Hide();
+             //home.Show(); // Muestra el formulario
 
-              
-            //Inicio ini = new Inicio();
-            //if (PanelContenido.Contains(ini) == false)
-            //{
-            //    PanelContenido.Controls.Add(ini);
-            //    ini.BringToFront();
-            //}
-            //else
-            //{
-            //    ini.BringToFront();
-            //}
+        
         }
 
         private void bunifuGradientPanel1_Click(object sender, EventArgs e)
@@ -273,6 +246,7 @@ namespace ProyectoBiblioteca
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
             PanelUsuario.Visible = !PanelUsuario.Visible;
+            
         }
 
         private void bunifuButton6_Click(object sender, EventArgs e)
@@ -311,22 +285,15 @@ namespace ProyectoBiblioteca
 
         private void btnLibros_Click(object sender, EventArgs e)
         {
-            //PanelLibros.Visible = !PanelLibros.Visible;
-            //Inicio menupr = new Inicio();
+            Libros book = new Libros();
+            book.TopLevel = false; // Establece que no es un formulario de nivel superior
+            book.FormBorderStyle = FormBorderStyle.None; // Quita el borde del formulario
+            book.Dock = DockStyle.Fill; // Ajusta el tamaño del formulario al panel
 
-            //// Remover cualquier control anterior del panel
-            //PanelLibros.Controls.Clear();
-
-            //// Ajustar el formulario a modo de panel (sin bordes, etc.)
-            //menupr.TopLevel = false; // Esto es clave para que se muestre dentro de otro contenedor
-            //menupr.FormBorderStyle = FormBorderStyle.None;
-            //menupr.Dock = DockStyle.Fill; // Ajustar el formulario al tamaño del panel
-
-            //// Añadir el formulario como control al panel
-            //PanelLibros.Controls.Add(menupr);
-
-            //// Mostrar el formulario
-            //menupr.Show();
+            PanelContenido.Controls.Clear(); // Limpia los controles anteriores en el panel
+            PanelContenido.Controls.Add(book);
+            bunifuPictureBox1.Hide();
+            book.Show(); // Muestra el formulario
 
         }
 
@@ -364,6 +331,63 @@ namespace ProyectoBiblioteca
         private void btnReportes_Click_2(object sender, EventArgs e)
         {
             ShowSubmenu(PanelReportes);
+        }
+
+        private void btnusuarios_Click_1(object sender, EventArgs e)
+        {
+          
+            RegistroUsuarios Ru = new RegistroUsuarios();
+            Ru.TopLevel = false; // Establece que no es un formulario de nivel superior
+            Ru.FormBorderStyle = FormBorderStyle.None; // Quita el borde del formulario
+            Ru.Dock = DockStyle.Fill; // Ajusta el tamaño del formulario al panel
+
+            PanelContenido.Controls.Clear(); // Limpia los controles anteriores en el panel
+            PanelContenido.Controls.Add(Ru);
+            bunifuPictureBox1.Hide();
+            Ru.Show(); // Muestra el formulario
+        
+
+        }
+
+        private void bunifuLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuButton1_Click_1(object sender, EventArgs e)
+        {
+            Inicio home = new Inicio();
+            home.TopLevel = false; // Establece que no es un formulario de nivel superior
+            home.FormBorderStyle = FormBorderStyle.None; // Quita el borde del formulario
+            home.Dock = DockStyle.Fill; // Ajusta el tamaño del formulario al panel
+
+            PanelContenido.Controls.Clear(); // Limpia los controles anteriores en el panel
+            PanelContenido.Controls.Add(home);
+            bunifuPictureBox1.Hide();
+            home.Show(); // Muestra el formulario
+        }
+
+        private void btninventario_Click_1(object sender, EventArgs e)
+        {
+            Inventario stock = new Inventario();
+            stock.TopLevel = false; // Establece que no es un formulario de nivel superior
+            stock.FormBorderStyle = FormBorderStyle.None; // Quita el borde del formulario
+            stock.Dock = DockStyle.Fill; // Ajusta el tamaño del formulario al panel
+
+            PanelContenido.Controls.Clear(); // Limpia los controles anteriores en el panel
+            PanelContenido.Controls.Add(stock);
+            bunifuPictureBox1.Hide();
+            stock.Show(); // Muestra el formulario
+        }
+
+        private void lblHora_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Hora_Tick(object sender, EventArgs e)
+        {
+            lblHora.Text = DateTime.Now.ToString("HH:mm:ss");
         }
     }
 }

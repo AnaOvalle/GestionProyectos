@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Bunifu.UI.WinForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -27,6 +28,14 @@ namespace ProyectoBiblioteca
             this.Close();
             Menu menu = new Menu();
             menu.Show();
+        }
+
+        private void btnAltasCuenta_Click(object sender, EventArgs e)
+        {
+            FrmAltaUsuarios login = new FrmAltaUsuarios();
+            
+            login.Show(); // Muestra el formulario
+            this.Hide();
         }
     }
 }
