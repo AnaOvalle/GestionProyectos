@@ -159,7 +159,7 @@
             this.bunifuPanel1.Location = new System.Drawing.Point(219, 0);
             this.bunifuPanel1.Name = "bunifuPanel1";
             this.bunifuPanel1.ShowBorders = true;
-            this.bunifuPanel1.Size = new System.Drawing.Size(1056, 57);
+            this.bunifuPanel1.Size = new System.Drawing.Size(821, 57);
             this.bunifuPanel1.TabIndex = 27;
             // 
             // bunifuImageButton2
@@ -219,7 +219,7 @@
             this.bunifuImageButton1.ImageSize = new System.Drawing.Size(18, 17);
             this.bunifuImageButton1.ImageZoomSize = new System.Drawing.Size(58, 57);
             this.bunifuImageButton1.InitialImage = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.InitialImage")));
-            this.bunifuImageButton1.Location = new System.Drawing.Point(998, 0);
+            this.bunifuImageButton1.Location = new System.Drawing.Point(763, 0);
             this.bunifuImageButton1.Name = "bunifuImageButton1";
             this.bunifuImageButton1.Rotation = 0;
             this.bunifuImageButton1.ShowActiveImage = true;
@@ -240,12 +240,12 @@
             this.bunifuLabel1.AutoEllipsis = false;
             this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel1.Font = new System.Drawing.Font("Century Gothic", 21F, System.Drawing.FontStyle.Bold);
+            this.bunifuLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold);
             this.bunifuLabel1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.bunifuLabel1.Location = new System.Drawing.Point(386, 12);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(227, 35);
+            this.bunifuLabel1.Size = new System.Drawing.Size(246, 33);
             this.bunifuLabel1.TabIndex = 0;
             this.bunifuLabel1.Text = "ADMINISTRADOR";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -266,6 +266,7 @@
             this.bunifuPictureBox1.TabIndex = 29;
             this.bunifuPictureBox1.TabStop = false;
             this.bunifuPictureBox1.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
+            this.bunifuPictureBox1.Visible = false;
             // 
             // PanelContenido
             // 
@@ -280,7 +281,7 @@
             this.PanelContenido.Location = new System.Drawing.Point(219, 57);
             this.PanelContenido.Name = "PanelContenido";
             this.PanelContenido.ShowBorders = true;
-            this.PanelContenido.Size = new System.Drawing.Size(1056, 624);
+            this.PanelContenido.Size = new System.Drawing.Size(821, 583);
             this.PanelContenido.TabIndex = 30;
             // 
             // PanelUsuario
@@ -329,7 +330,7 @@
             this.bunifuButton7.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.bunifuButton7.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.bunifuButton7.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.bunifuButton7.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuButton7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuButton7.ForeColor = System.Drawing.Color.Black;
             this.bunifuButton7.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bunifuButton7.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -419,7 +420,7 @@
             this.bunifuButton6.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.bunifuButton6.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.bunifuButton6.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.bunifuButton6.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuButton6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuButton6.ForeColor = System.Drawing.Color.Black;
             this.bunifuButton6.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bunifuButton6.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -497,7 +498,7 @@
             this.sedebar.Location = new System.Drawing.Point(0, 0);
             this.sedebar.Name = "sedebar";
             this.sedebar.Quality = 10;
-            this.sedebar.Size = new System.Drawing.Size(219, 681);
+            this.sedebar.Size = new System.Drawing.Size(219, 640);
             this.sedebar.TabIndex = 3;
             this.sedebar.Click += new System.EventHandler(this.bunifuGradientPanel1_Click);
             // 
@@ -531,7 +532,7 @@
             this.bunifuButton1.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.bunifuButton1.Dock = System.Windows.Forms.DockStyle.Top;
             this.bunifuButton1.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.bunifuButton1.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Bold);
+            this.bunifuButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold);
             this.bunifuButton1.ForeColor = System.Drawing.Color.Black;
             this.bunifuButton1.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bunifuButton1.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -623,11 +624,11 @@
             this.bunifuLabel2.AutoEllipsis = false;
             this.bunifuLabel2.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel2.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel2.Font = new System.Drawing.Font("Script MT Bold", 17F, System.Drawing.FontStyle.Bold);
+            this.bunifuLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Bold);
             this.bunifuLabel2.Location = new System.Drawing.Point(75, 45);
             this.bunifuLabel2.Name = "bunifuLabel2";
             this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel2.Size = new System.Drawing.Size(138, 28);
+            this.bunifuLabel2.Size = new System.Drawing.Size(158, 29);
             this.bunifuLabel2.TabIndex = 29;
             this.bunifuLabel2.Text = "Librery Island";
             this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -698,7 +699,7 @@
             this.bunifuButton2.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.bunifuButton2.Dock = System.Windows.Forms.DockStyle.Top;
             this.bunifuButton2.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.bunifuButton2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuButton2.ForeColor = System.Drawing.Color.Black;
             this.bunifuButton2.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bunifuButton2.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -787,7 +788,7 @@
             this.bunifuButton3.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.bunifuButton3.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.bunifuButton3.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.bunifuButton3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuButton3.ForeColor = System.Drawing.Color.Black;
             this.bunifuButton3.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bunifuButton3.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -876,7 +877,7 @@
             this.bunifuButton4.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.bunifuButton4.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.bunifuButton4.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.bunifuButton4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuButton4.ForeColor = System.Drawing.Color.Black;
             this.bunifuButton4.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bunifuButton4.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -965,7 +966,7 @@
             this.bunifuButton5.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.bunifuButton5.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.bunifuButton5.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.bunifuButton5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuButton5.ForeColor = System.Drawing.Color.Black;
             this.bunifuButton5.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bunifuButton5.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -1055,7 +1056,7 @@
             this.btnReportes.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btnReportes.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnReportes.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btnReportes.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Bold);
+            this.btnReportes.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold);
             this.btnReportes.ForeColor = System.Drawing.Color.Black;
             this.btnReportes.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnReportes.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -1163,7 +1164,7 @@
             this.btndevolucion.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.btndevolucion.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btndevolucion.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btndevolucion.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btndevolucion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btndevolucion.ForeColor = System.Drawing.Color.Black;
             this.btndevolucion.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btndevolucion.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -1252,7 +1253,7 @@
             this.btnConsultarP.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.btnConsultarP.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btnConsultarP.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btnConsultarP.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConsultarP.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConsultarP.ForeColor = System.Drawing.Color.Black;
             this.btnConsultarP.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnConsultarP.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -1341,7 +1342,7 @@
             this.btnrealPrestamos.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.btnrealPrestamos.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btnrealPrestamos.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btnrealPrestamos.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnrealPrestamos.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnrealPrestamos.ForeColor = System.Drawing.Color.Black;
             this.btnrealPrestamos.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnrealPrestamos.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -1431,7 +1432,7 @@
             this.btnPrestamos.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btnPrestamos.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnPrestamos.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btnPrestamos.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Bold);
+            this.btnPrestamos.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold);
             this.btnPrestamos.ForeColor = System.Drawing.Color.Black;
             this.btnPrestamos.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPrestamos.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -1542,7 +1543,7 @@
             this.btnsagas.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.btnsagas.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btnsagas.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btnsagas.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsagas.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsagas.ForeColor = System.Drawing.Color.Black;
             this.btnsagas.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnsagas.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -1631,7 +1632,7 @@
             this.btnPerdidas.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.btnPerdidas.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btnPerdidas.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btnPerdidas.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPerdidas.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPerdidas.ForeColor = System.Drawing.Color.Black;
             this.btnPerdidas.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPerdidas.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -1720,7 +1721,7 @@
             this.btninventario.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.btninventario.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btninventario.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btninventario.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btninventario.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btninventario.ForeColor = System.Drawing.Color.Black;
             this.btninventario.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btninventario.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -1809,7 +1810,7 @@
             this.btngestionLibros.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.btngestionLibros.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btngestionLibros.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btngestionLibros.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btngestionLibros.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btngestionLibros.ForeColor = System.Drawing.Color.Black;
             this.btngestionLibros.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btngestionLibros.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -1898,7 +1899,7 @@
             this.btnusuarios.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.btnusuarios.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btnusuarios.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btnusuarios.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnusuarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnusuarios.ForeColor = System.Drawing.Color.Black;
             this.btnusuarios.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnusuarios.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -1987,7 +1988,7 @@
             this.btnclientes.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.btnclientes.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btnclientes.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btnclientes.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnclientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnclientes.ForeColor = System.Drawing.Color.Black;
             this.btnclientes.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnclientes.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -2077,7 +2078,7 @@
             this.btngestion.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btngestion.Dock = System.Windows.Forms.DockStyle.Top;
             this.btngestion.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btngestion.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Bold);
+            this.btngestion.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold);
             this.btngestion.ForeColor = System.Drawing.Color.Black;
             this.btngestion.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btngestion.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -2192,7 +2193,7 @@
             this.Arte.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.Arte.Dock = System.Windows.Forms.DockStyle.Top;
             this.Arte.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.Arte.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Arte.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Arte.ForeColor = System.Drawing.Color.Black;
             this.Arte.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Arte.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -2283,7 +2284,7 @@
             this.btnInfantil.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btnInfantil.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnInfantil.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btnInfantil.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInfantil.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInfantil.ForeColor = System.Drawing.Color.Black;
             this.btnInfantil.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnInfantil.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -2374,7 +2375,7 @@
             this.btnJuvenil.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btnJuvenil.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnJuvenil.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btnJuvenil.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnJuvenil.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnJuvenil.ForeColor = System.Drawing.Color.Black;
             this.btnJuvenil.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnJuvenil.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -2465,7 +2466,7 @@
             this.btnFantasy.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btnFantasy.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnFantasy.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btnFantasy.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFantasy.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFantasy.ForeColor = System.Drawing.Color.Black;
             this.btnFantasy.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnFantasy.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -2556,7 +2557,7 @@
             this.btnNoFiccion.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btnNoFiccion.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnNoFiccion.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btnNoFiccion.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNoFiccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNoFiccion.ForeColor = System.Drawing.Color.Black;
             this.btnNoFiccion.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnNoFiccion.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -2647,7 +2648,7 @@
             this.btnAcade.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btnAcade.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnAcade.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btnAcade.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAcade.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAcade.ForeColor = System.Drawing.Color.Black;
             this.btnAcade.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAcade.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -2738,7 +2739,7 @@
             this.btnCientifico.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btnCientifico.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnCientifico.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btnCientifico.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCientifico.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCientifico.ForeColor = System.Drawing.Color.Black;
             this.btnCientifico.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCientifico.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -2829,7 +2830,7 @@
             this.btnFiccion.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btnFiccion.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnFiccion.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btnFiccion.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFiccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFiccion.ForeColor = System.Drawing.Color.Black;
             this.btnFiccion.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnFiccion.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -2920,7 +2921,7 @@
             this.btnCategorias.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btnCategorias.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnCategorias.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btnCategorias.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Bold);
+            this.btnCategorias.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
             this.btnCategorias.ForeColor = System.Drawing.Color.Black;
             this.btnCategorias.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCategorias.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -3011,7 +3012,7 @@
             this.btnLibros.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btnLibros.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnLibros.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btnLibros.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Bold);
+            this.btnLibros.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold);
             this.btnLibros.ForeColor = System.Drawing.Color.Black;
             this.btnLibros.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLibros.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -3077,7 +3078,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1275, 681);
+            this.ClientSize = new System.Drawing.Size(1040, 640);
             this.ControlBox = false;
             this.Controls.Add(this.bunifuPictureBox1);
             this.Controls.Add(this.PanelContenido);
