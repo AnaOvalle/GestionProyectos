@@ -64,6 +64,7 @@
             this.sidebarTransistor = new System.Windows.Forms.Timer(this.components);
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.lblHora = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuImageButton2 = new Bunifu.UI.WinForms.BunifuImageButton();
             this.bunifuImageButton1 = new Bunifu.UI.WinForms.BunifuImageButton();
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
@@ -108,7 +109,6 @@
             this.btnFiccion = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnCategorias = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnLibros = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.lblHora = new Bunifu.UI.WinForms.BunifuLabel();
             this.Hora = new System.Windows.Forms.Timer(this.components);
             this.bunifuPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
@@ -164,6 +164,23 @@
             this.bunifuPanel1.ShowBorders = true;
             this.bunifuPanel1.Size = new System.Drawing.Size(1056, 57);
             this.bunifuPanel1.TabIndex = 27;
+            // 
+            // lblHora
+            // 
+            this.lblHora.AllowParentOverrides = false;
+            this.lblHora.AutoEllipsis = false;
+            this.lblHora.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lblHora.CursorType = System.Windows.Forms.Cursors.Default;
+            this.lblHora.Font = new System.Drawing.Font("Cooper Black", 13F);
+            this.lblHora.Location = new System.Drawing.Point(70, 20);
+            this.lblHora.Name = "lblHora";
+            this.lblHora.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblHora.Size = new System.Drawing.Size(59, 20);
+            this.lblHora.TabIndex = 26;
+            this.lblHora.Text = "bunifu";
+            this.lblHora.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.lblHora.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.lblHora.Click += new System.EventHandler(this.lblHora_Click);
             // 
             // bunifuImageButton2
             // 
@@ -248,7 +265,7 @@
             this.bunifuLabel1.Location = new System.Drawing.Point(813, 12);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(179, 29);
+            this.bunifuLabel1.Size = new System.Drawing.Size(179, 25);
             this.bunifuLabel1.TabIndex = 0;
             this.bunifuLabel1.Text = "ADMINISTRADOR";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -652,7 +669,7 @@
             this.panel1.Controls.Add(this.btnLibros);
             this.panel1.Location = new System.Drawing.Point(3, 149);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(237, 529);
+            this.panel1.Size = new System.Drawing.Size(229, 529);
             this.panel1.TabIndex = 11;
             // 
             // PanelReportes
@@ -671,7 +688,7 @@
             this.PanelReportes.Location = new System.Drawing.Point(0, 710);
             this.PanelReportes.Name = "PanelReportes";
             this.PanelReportes.ShowBorders = true;
-            this.PanelReportes.Size = new System.Drawing.Size(237, 87);
+            this.PanelReportes.Size = new System.Drawing.Size(229, 87);
             this.PanelReportes.TabIndex = 28;
             // 
             // bunifuButton2
@@ -756,7 +773,7 @@
             this.bunifuButton2.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.bunifuButton2.OnPressedState.IconLeftImage = null;
             this.bunifuButton2.OnPressedState.IconRightImage = null;
-            this.bunifuButton2.Size = new System.Drawing.Size(237, 20);
+            this.bunifuButton2.Size = new System.Drawing.Size(229, 20);
             this.bunifuButton2.TabIndex = 14;
             this.bunifuButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bunifuButton2.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1113,7 +1130,7 @@
             this.btnReportes.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnReportes.OnPressedState.IconLeftImage = null;
             this.btnReportes.OnPressedState.IconRightImage = null;
-            this.btnReportes.Size = new System.Drawing.Size(237, 67);
+            this.btnReportes.Size = new System.Drawing.Size(229, 67);
             this.btnReportes.TabIndex = 27;
             this.btnReportes.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnReportes.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1137,7 +1154,7 @@
             this.PanelPrestamos.Location = new System.Drawing.Point(0, 578);
             this.PanelPrestamos.Name = "PanelPrestamos";
             this.PanelPrestamos.ShowBorders = true;
-            this.PanelPrestamos.Size = new System.Drawing.Size(237, 65);
+            this.PanelPrestamos.Size = new System.Drawing.Size(229, 65);
             this.PanelPrestamos.TabIndex = 26;
             // 
             // btndevolucion
@@ -1489,7 +1506,7 @@
             this.btnPrestamos.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnPrestamos.OnPressedState.IconLeftImage = null;
             this.btnPrestamos.OnPressedState.IconRightImage = null;
-            this.btnPrestamos.Size = new System.Drawing.Size(237, 67);
+            this.btnPrestamos.Size = new System.Drawing.Size(229, 67);
             this.btnPrestamos.TabIndex = 25;
             this.btnPrestamos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnPrestamos.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1516,7 +1533,7 @@
             this.PanelGestion.Location = new System.Drawing.Point(0, 364);
             this.PanelGestion.Name = "PanelGestion";
             this.PanelGestion.ShowBorders = true;
-            this.PanelGestion.Size = new System.Drawing.Size(237, 147);
+            this.PanelGestion.Size = new System.Drawing.Size(229, 147);
             this.PanelGestion.TabIndex = 24;
             // 
             // btnsagas
@@ -2137,7 +2154,7 @@
             this.btngestion.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btngestion.OnPressedState.IconLeftImage = null;
             this.btngestion.OnPressedState.IconRightImage = null;
-            this.btngestion.Size = new System.Drawing.Size(237, 67);
+            this.btngestion.Size = new System.Drawing.Size(229, 67);
             this.btngestion.TabIndex = 23;
             this.btngestion.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btngestion.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2166,7 +2183,7 @@
             this.PanelCategorias.Location = new System.Drawing.Point(0, 134);
             this.PanelCategorias.Name = "PanelCategorias";
             this.PanelCategorias.ShowBorders = true;
-            this.PanelCategorias.Size = new System.Drawing.Size(237, 163);
+            this.PanelCategorias.Size = new System.Drawing.Size(229, 163);
             this.PanelCategorias.TabIndex = 0;
             this.PanelCategorias.Click += new System.EventHandler(this.bunifuPanel6_Click);
             // 
@@ -2252,7 +2269,7 @@
             this.Arte.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.Arte.OnPressedState.IconLeftImage = null;
             this.Arte.OnPressedState.IconRightImage = null;
-            this.Arte.Size = new System.Drawing.Size(237, 20);
+            this.Arte.Size = new System.Drawing.Size(229, 20);
             this.Arte.TabIndex = 22;
             this.Arte.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Arte.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2343,7 +2360,7 @@
             this.btnInfantil.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnInfantil.OnPressedState.IconLeftImage = null;
             this.btnInfantil.OnPressedState.IconRightImage = null;
-            this.btnInfantil.Size = new System.Drawing.Size(237, 20);
+            this.btnInfantil.Size = new System.Drawing.Size(229, 20);
             this.btnInfantil.TabIndex = 12;
             this.btnInfantil.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnInfantil.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2434,7 +2451,7 @@
             this.btnJuvenil.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnJuvenil.OnPressedState.IconLeftImage = null;
             this.btnJuvenil.OnPressedState.IconRightImage = null;
-            this.btnJuvenil.Size = new System.Drawing.Size(237, 20);
+            this.btnJuvenil.Size = new System.Drawing.Size(229, 20);
             this.btnJuvenil.TabIndex = 14;
             this.btnJuvenil.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnJuvenil.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2525,7 +2542,7 @@
             this.btnFantasy.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnFantasy.OnPressedState.IconLeftImage = null;
             this.btnFantasy.OnPressedState.IconRightImage = null;
-            this.btnFantasy.Size = new System.Drawing.Size(237, 20);
+            this.btnFantasy.Size = new System.Drawing.Size(229, 20);
             this.btnFantasy.TabIndex = 20;
             this.btnFantasy.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnFantasy.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2616,7 +2633,7 @@
             this.btnNoFiccion.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnNoFiccion.OnPressedState.IconLeftImage = null;
             this.btnNoFiccion.OnPressedState.IconRightImage = null;
-            this.btnNoFiccion.Size = new System.Drawing.Size(237, 20);
+            this.btnNoFiccion.Size = new System.Drawing.Size(229, 20);
             this.btnNoFiccion.TabIndex = 10;
             this.btnNoFiccion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnNoFiccion.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2707,7 +2724,7 @@
             this.btnAcade.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnAcade.OnPressedState.IconLeftImage = null;
             this.btnAcade.OnPressedState.IconRightImage = null;
-            this.btnAcade.Size = new System.Drawing.Size(237, 20);
+            this.btnAcade.Size = new System.Drawing.Size(229, 20);
             this.btnAcade.TabIndex = 16;
             this.btnAcade.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAcade.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2798,7 +2815,7 @@
             this.btnCientifico.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnCientifico.OnPressedState.IconLeftImage = null;
             this.btnCientifico.OnPressedState.IconRightImage = null;
-            this.btnCientifico.Size = new System.Drawing.Size(237, 20);
+            this.btnCientifico.Size = new System.Drawing.Size(229, 20);
             this.btnCientifico.TabIndex = 18;
             this.btnCientifico.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCientifico.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2889,7 +2906,7 @@
             this.btnFiccion.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnFiccion.OnPressedState.IconLeftImage = null;
             this.btnFiccion.OnPressedState.IconRightImage = null;
-            this.btnFiccion.Size = new System.Drawing.Size(237, 20);
+            this.btnFiccion.Size = new System.Drawing.Size(229, 20);
             this.btnFiccion.TabIndex = 8;
             this.btnFiccion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnFiccion.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2980,7 +2997,7 @@
             this.btnCategorias.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnCategorias.OnPressedState.IconLeftImage = null;
             this.btnCategorias.OnPressedState.IconRightImage = null;
-            this.btnCategorias.Size = new System.Drawing.Size(237, 67);
+            this.btnCategorias.Size = new System.Drawing.Size(229, 67);
             this.btnCategorias.TabIndex = 11;
             this.btnCategorias.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCategorias.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -3071,7 +3088,7 @@
             this.btnLibros.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnLibros.OnPressedState.IconLeftImage = null;
             this.btnLibros.OnPressedState.IconRightImage = null;
-            this.btnLibros.Size = new System.Drawing.Size(237, 67);
+            this.btnLibros.Size = new System.Drawing.Size(229, 67);
             this.btnLibros.TabIndex = 5;
             this.btnLibros.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnLibros.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -3079,23 +3096,6 @@
             this.btnLibros.TextPadding = new System.Windows.Forms.Padding(25, 0, 0, 0);
             this.btnLibros.UseDefaultRadiusAndThickness = true;
             this.btnLibros.Click += new System.EventHandler(this.btnLibros_Click);
-            // 
-            // lblHora
-            // 
-            this.lblHora.AllowParentOverrides = false;
-            this.lblHora.AutoEllipsis = false;
-            this.lblHora.Cursor = System.Windows.Forms.Cursors.Default;
-            this.lblHora.CursorType = System.Windows.Forms.Cursors.Default;
-            this.lblHora.Font = new System.Drawing.Font("Cooper Black", 13F);
-            this.lblHora.Location = new System.Drawing.Point(70, 20);
-            this.lblHora.Name = "lblHora";
-            this.lblHora.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblHora.Size = new System.Drawing.Size(59, 20);
-            this.lblHora.TabIndex = 26;
-            this.lblHora.Text = "bunifu";
-            this.lblHora.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.lblHora.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            this.lblHora.Click += new System.EventHandler(this.lblHora_Click);
             // 
             // Hora
             // 
