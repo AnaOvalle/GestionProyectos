@@ -394,5 +394,10 @@ namespace ProyectoBiblioteca
         {
 
         }
+
+        private void btnsagas_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
