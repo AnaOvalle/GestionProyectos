@@ -162,7 +162,7 @@
             this.bunifuPanel1.Location = new System.Drawing.Point(238, 0);
             this.bunifuPanel1.Name = "bunifuPanel1";
             this.bunifuPanel1.ShowBorders = true;
-            this.bunifuPanel1.Size = new System.Drawing.Size(802, 57);
+            this.bunifuPanel1.Size = new System.Drawing.Size(1056, 57);
             this.bunifuPanel1.TabIndex = 27;
             // 
             // lblHora
@@ -239,7 +239,7 @@
             this.bunifuImageButton1.ImageSize = new System.Drawing.Size(18, 17);
             this.bunifuImageButton1.ImageZoomSize = new System.Drawing.Size(58, 57);
             this.bunifuImageButton1.InitialImage = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.InitialImage")));
-            this.bunifuImageButton1.Location = new System.Drawing.Point(744, 0);
+            this.bunifuImageButton1.Location = new System.Drawing.Point(998, 0);
             this.bunifuImageButton1.Name = "bunifuImageButton1";
             this.bunifuImageButton1.Rotation = 0;
             this.bunifuImageButton1.ShowActiveImage = true;
@@ -280,7 +280,7 @@
             this.bunifuPictureBox1.BorderRadius = 210;
             this.bunifuPictureBox1.Image = global::ProyectoBiblioteca.Properties.Resources.logo1;
             this.bunifuPictureBox1.IsCircle = true;
-            this.bunifuPictureBox1.Location = new System.Drawing.Point(49, 89);
+            this.bunifuPictureBox1.Location = new System.Drawing.Point(339, 79);
             this.bunifuPictureBox1.Name = "bunifuPictureBox1";
             this.bunifuPictureBox1.Size = new System.Drawing.Size(421, 421);
             this.bunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -303,7 +303,7 @@
             this.PanelContenido.Location = new System.Drawing.Point(238, 57);
             this.PanelContenido.Name = "PanelContenido";
             this.PanelContenido.ShowBorders = true;
-            this.PanelContenido.Size = new System.Drawing.Size(802, 583);
+            this.PanelContenido.Size = new System.Drawing.Size(1056, 624);
             this.PanelContenido.TabIndex = 30;
             // 
             // PanelUsuario
@@ -520,7 +520,7 @@
             this.sedebar.Location = new System.Drawing.Point(0, 0);
             this.sedebar.Name = "sedebar";
             this.sedebar.Quality = 10;
-            this.sedebar.Size = new System.Drawing.Size(238, 640);
+            this.sedebar.Size = new System.Drawing.Size(238, 681);
             this.sedebar.TabIndex = 3;
             this.sedebar.Click += new System.EventHandler(this.bunifuGradientPanel1_Click);
             // 
@@ -3110,7 +3110,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1040, 640);
+            this.ClientSize = new System.Drawing.Size(1294, 681);
             this.ControlBox = false;
             this.Controls.Add(this.PanelContenido);
             this.Controls.Add(this.bunifuPanel1);
