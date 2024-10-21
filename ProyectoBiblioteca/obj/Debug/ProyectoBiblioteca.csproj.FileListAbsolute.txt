@@ -91,7 +91,6 @@ C:\ProyectoGPS\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.Inicio.resources
 C:\ProyectoGPS\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.Inventario.resources
 C:\ProyectoGPS\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.Libros.resources
 C:\ProyectoGPS\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.Properties.Resources.resources
-C:\ProyectoGPS\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.Registro.resources
 C:\ProyectoGPS\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.RegistroUsuarios.resources
 C:\ProyectoGPS\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.csproj.GenerateResource.cache
 C:\ProyectoGPS\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.exe.licenses
@@ -260,3 +259,10 @@ C:\ProyectoGPS\ProyectoBiblioteca\bin\Debug\Bunifu.UI.WinForms.BunifuUserControl
 C:\ProyectoGPS\ProyectoBiblioteca\obj\Debug\Proyecto.02D7E3BE.Up2Date
 C:\ProyectoGPS\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.exe
 C:\ProyectoGPS\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.pdb
+C:\ProyectoGPS\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.Clientes.resources
+C:\ProyectoGPS\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.ConsultaPrestamos.resources
+C:\ProyectoGPS\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.Devolucion.resources
+C:\ProyectoGPS\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.Prestamo.resources
+C:\ProyectoGPS\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.Colecciones.resources
+C:\ProyectoGPS\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.RegistroColeccion.resources
+C:\ProyectoGPS\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.RegistroLibros.resources

@@ -245,8 +245,14 @@ namespace ProyectoBiblioteca
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
+            //PanelUsuario.Visible = !PanelUsuario.Visible;
+
             PanelUsuario.Visible = !PanelUsuario.Visible;
-            
+            if (PanelUsuario.Visible)
+            {
+                PanelUsuario.BringToFront();
+            }
+
         }
 
         private void bunifuButton6_Click(object sender, EventArgs e)
@@ -397,7 +403,80 @@ namespace ProyectoBiblioteca
 
         private void btnsagas_Click(object sender, EventArgs e)
         {
-            //
+            RegistroColeccion book = new RegistroColeccion();
+            book.TopLevel = false; // Establece que no es un formulario de nivel superior
+            book.FormBorderStyle = FormBorderStyle.None; // Quita el borde del formulario
+            book.Dock = DockStyle.Fill; // Ajusta el tamaño del formulario al panel
+
+            PanelContenido.Controls.Clear(); // Limpia los controles anteriores en el panel
+            PanelContenido.Controls.Add(book);
+            bunifuPictureBox1.Hide();
+            book.Show(); // Muestra el formulario
+        }
+
+        private void btngestionLibros_Click_1(object sender, EventArgs e)
+        {
+            RegistroLibros book = new RegistroLibros();
+            book.TopLevel = false; // Establece que no es un formulario de nivel superior
+            book.FormBorderStyle = FormBorderStyle.None; // Quita el borde del formulario
+            book.Dock = DockStyle.Fill; // Ajusta el tamaño del formulario al panel
+
+            PanelContenido.Controls.Clear(); // Limpia los controles anteriores en el panel
+            PanelContenido.Controls.Add(book);
+            bunifuPictureBox1.Hide();
+            book.Show(); // Muestra el formulario
+        }
+
+        private void btnclientes_Click_1(object sender, EventArgs e)
+        {
+            Clientes cli = new Clientes();
+            cli.TopLevel = false; // Establece que no es un formulario de nivel superior
+            cli.FormBorderStyle = FormBorderStyle.None; // Quita el borde del formulario
+            cli.Dock = DockStyle.Fill; // Ajusta el tamaño del formulario al panel
+
+            PanelContenido.Controls.Clear(); // Limpia los controles anteriores en el panel
+            PanelContenido.Controls.Add(cli);
+            bunifuPictureBox1.Hide();
+            cli.Show(); // Muestra el formulario
+        }
+
+        private void btnRealizarP_Click(object sender, EventArgs e)
+        {
+            Prestamo pres = new Prestamo();
+            pres.TopLevel = false; // Establece que no es un formulario de nivel superior
+            pres.FormBorderStyle = FormBorderStyle.None; // Quita el borde del formulario
+            pres.Dock = DockStyle.Fill; // Ajusta el tamaño del formulario al panel
+
+            PanelContenido.Controls.Clear(); // Limpia los controles anteriores en el panel
+            PanelContenido.Controls.Add(pres);
+            bunifuPictureBox1.Hide();
+            pres.Show(); // Muestra el formulario
+        }
+
+        private void btnConsulPrestamos_Click(object sender, EventArgs e)
+        {
+            ConsultaPrestamos book = new ConsultaPrestamos();
+            book.TopLevel = false; // Establece que no es un formulario de nivel superior
+            book.FormBorderStyle = FormBorderStyle.None; // Quita el borde del formulario
+            book.Dock = DockStyle.Fill; // Ajusta el tamaño del formulario al panel
+
+            PanelContenido.Controls.Clear(); // Limpia los controles anteriores en el panel
+            PanelContenido.Controls.Add(book);
+            bunifuPictureBox1.Hide();
+            book.Show(); // Muestra el formulario
+        }
+
+        private void btndevolucion_Click_1(object sender, EventArgs e)
+        {
+            Devolucion book = new Devolucion();
+            book.TopLevel = false; // Establece que no es un formulario de nivel superior
+            book.FormBorderStyle = FormBorderStyle.None; // Quita el borde del formulario
+            book.Dock = DockStyle.Fill; // Ajusta el tamaño del formulario al panel
+
+            PanelContenido.Controls.Clear(); // Limpia los controles anteriores en el panel
+            PanelContenido.Controls.Add(book);
+            bunifuPictureBox1.Hide();
+            book.Show(); // Muestra el formulario
         }
     }
 }
