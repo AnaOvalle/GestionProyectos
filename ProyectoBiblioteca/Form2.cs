@@ -245,13 +245,13 @@ namespace ProyectoBiblioteca
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
-            //PanelUsuario.Visible = !PanelUsuario.Visible;
-
             PanelUsuario.Visible = !PanelUsuario.Visible;
-            if (PanelUsuario.Visible)
-            {
-                PanelUsuario.BringToFront();
-            }
+
+            //PanelUsuario.Visible = !PanelUsuario.Visible;
+            //if (PanelUsuario.Visible)
+            //{
+            //    PanelUsuario.BringToFront();
+            //}
 
         }
 
