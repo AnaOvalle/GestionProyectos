@@ -478,5 +478,10 @@ namespace ProyectoBiblioteca
             bunifuPictureBox1.Hide();
             book.Show(); // Muestra el formulario
         }
+
+        private void bunifuPanel1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
