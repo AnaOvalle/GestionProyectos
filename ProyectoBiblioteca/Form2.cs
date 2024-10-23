@@ -25,9 +25,7 @@ namespace ProyectoBiblioteca
             PanelCategorias.Visible = false;
             PanelGestion.Visible = false;
             PanelPrestamos.Visible = false;
-            PanelReportes.Visible = false;
-       
-           
+                 
         }
         private void HideSubmenu()
         {
@@ -42,10 +40,6 @@ namespace ProyectoBiblioteca
             if (PanelGestion.Visible == true)
             {
                 PanelGestion.Visible = false;
-            }
-            if (PanelReportes.Visible == true)
-            {
-                PanelReportes.Visible = false;
             }
         }
 
@@ -189,10 +183,6 @@ namespace ProyectoBiblioteca
             HideSubmenu();
         }
 
-        private void btnReportes_Click(object sender, EventArgs e)
-        {
-            ShowSubmenu(PanelReportes);
-        }
 
         private void btngestion_Click_1(object sender, EventArgs e)
         {
@@ -204,18 +194,13 @@ namespace ProyectoBiblioteca
             ShowSubmenu(PanelPrestamos);
         }
 
-        private void btnReportes_Click_1(object sender, EventArgs e)
-        {
-            ShowSubmenu(PanelReportes);
-        }
+     
 
         private void btnCerrar_Click_1(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-
-        
 
 
         private void PanelContenido_Click(object sender, EventArgs e)
@@ -224,18 +209,7 @@ namespace ProyectoBiblioteca
         }
 
         private void Menu_Load(object sender, EventArgs e)
-        {
-             // Inicio home = new Inicio();
-             // home.TopLevel = false; // Establece que no es un formulario de nivel superior
-             // home.FormBorderStyle = FormBorderStyle.None; // Quita el borde del formulario
-             // home.Dock = DockStyle.Fill; // Ajusta el tamaño del formulario al panel
-
-             //PanelContenido.Controls.Clear(); // Limpia los controles anteriores en el panel
-             //PanelContenido.Controls.Add(home);
-             //bunifuPictureBox1.Hide();
-             //home.Show(); // Muestra el formulario
-
-        
+        {       
         }
 
         private void bunifuGradientPanel1_Click(object sender, EventArgs e)
@@ -245,14 +219,8 @@ namespace ProyectoBiblioteca
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
-            //PanelUsuario.Visible = !PanelUsuario.Visible;
-
             PanelUsuario.Visible = !PanelUsuario.Visible;
-            if (PanelUsuario.Visible)
-            {
-                PanelUsuario.BringToFront();
-            }
-
+      
         }
 
         private void bunifuButton6_Click(object sender, EventArgs e)
@@ -264,8 +232,8 @@ namespace ProyectoBiblioteca
         {
             if (siderbarExpand)
             {
-                sedebar.Width -= 10;
-                if (sedebar.Width <= 45)
+                sedebar.Width -= 25;
+                if (sedebar.Width <= 60)
                 {
                     siderbarExpand = false;
                     sidebarTransistor.Stop();
@@ -274,8 +242,8 @@ namespace ProyectoBiblioteca
             }
             else
             {
-                sedebar.Width += 10;
-                if (sedebar.Width >= 219)
+                sedebar.Width += 25;
+                if (sedebar.Width >= 225)
                 {
                     siderbarExpand = true;
                     sidebarTransistor.Stop();
@@ -336,7 +304,15 @@ namespace ProyectoBiblioteca
 
         private void btnReportes_Click_2(object sender, EventArgs e)
         {
-            ShowSubmenu(PanelReportes);
+            Reportes book = new Reportes();
+            book.TopLevel = false; // Establece que no es un formulario de nivel superior
+            book.FormBorderStyle = FormBorderStyle.None; // Quita el borde del formulario
+            book.Dock = DockStyle.Fill; // Ajusta el tamaño del formulario al panel
+
+            PanelContenido.Controls.Clear(); // Limpia los controles anteriores en el panel
+            PanelContenido.Controls.Add(book);
+            bunifuPictureBox1.Hide();
+            book.Show(); // Muestra el formulario
         }
 
         private void btnusuarios_Click_1(object sender, EventArgs e)

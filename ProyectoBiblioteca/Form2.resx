@@ -2648,48 +2648,6 @@
   <data name="bunifuLabel2.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Microsoft Sans Serif'; font-size: 17pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
   </data>
-  <data name="PanelReportes.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAOUAAABPCAYAAAAUTgKeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG3SURBVHhe7dWxTQRBEEXBDeVCIQISxcYllEsAiwT2WODF
-        wH2jShq11G0/zQEMejwet/M8364JPMHV3/s1biV5HNfi4+8EPMvV4b0kf39KYEBJihJWlKQoYUVJihJW
-        lKQoYUVJihJWlKQoYUVJihJWlKQoYUVJihJWlKQoYUVJihJWlKQoYUVJihJWlKQoYUVJihJWlKQoYUVJ
-        ihJWlKQoYUVJihJWlKQoYUVJihJWlKQoYUVJihJWlKQoYUVJihJWlKQoYUVJihJWlKQoYUVJihJWlKQo
-        YUVJihJWlKQoYUVJihJWlKQoYUVJihJWlKQoYUVJihJWlKQoYUVJihJWlKQoYUVJihJWlKQoYUVJihJW
-        lKQoYUVJihJWlKQoYUVJihJWlKQoYUVJihJWlKQoYUVJihJWlKQoYUVJihJWlKQoYUVJihJWlKQoYUVJ
-        ihJWlKQoYUVJihJWlKQoYUVJihJWlKQoYUVJihJWlKQoYUVJihJWlKQoYUVJihJWlKQoYUVJihJWlKQo
-        YUVJihJWlKQoYUVJHsd5nvd2wJNcHX6V5O9P+XItPv9OwH/7CfJ6ryUJ7DiOb+mRFjsQZpJIAAAAAElF
-        TkSuQmCC
-</value>
-  </data>
-  <data name="bunifuButton2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAOUAAAAUCAYAAAByB/qqAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAApSURBVHhe7cGBAAAAAMOg+VNf4AhVAAAAAAAAAAAAAAAA
-        AAAAAADAUQNHpAAB830ohQAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="bunifuButton3.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAANkAAAAUCAYAAAAAyJgcAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAoSURBVHhe7cExAQAAAMKg9U9tCj8gAAAAAAAAAAAAAAAA
-        AAAAAOCoBkPkAAHj1+59AAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="bunifuButton4.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAANkAAAAUCAYAAAAAyJgcAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAoSURBVHhe7cExAQAAAMKg9U9tCj8gAAAAAAAAAAAAAAAA
-        AAAAAOCoBkPkAAHj1+59AAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="bunifuButton5.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAANkAAAAUCAYAAAAAyJgcAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAoSURBVHhe7cExAQAAAMKg9U9tCj8gAAAAAAAAAAAAAAAA
-        AAAAAOCoBkPkAAHj1+59AAAAAElFTkSuQmCC
-</value>
-  </data>
   <data name="btnReportes.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAOUAAABBCAYAAAAuRGPuAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -2742,8 +2700,8 @@
   </data>
   <data name="PanelGestion.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAOUAAAB2CAYAAAA3O1T7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJnSURBVHhe7dWxTQRBEEXBDeVCIQISxcYllEsAiwT2WODF
+        iVBORw0KGgoAAAANSUhEUgAAAOUAAAB1CAYAAACxryZVAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJiSURBVHhe7dWxTQRBEEXBDeVCIQISxcYllEsAiwT2WODF
         wH2jShq11G0/zQEMejwet/M8364JPMHV3/s1biV5HNfi4+8EPMvV4b0kf39KYEBJihJWlKQoYUVJihJW
         lKQoYUVJihJWlKQoYUVJihJWlKQoYUVJihJWlKQoYUVJihJWlKQoYUVJihJWlKQoYUVJihJWlKQoYUVJ
         ihJWlKQoYUVJihJWlKQoYUVJihJWlKQoYUVJihJWlKQoYUVJihJWlKQoYUVJihJWlKQoYUVJihJWlKQo
@@ -2753,8 +2711,7 @@
         YUVJihJWlKQoYUVJihJWlKQoYUVJihJWlKQoYUVJihJWlKQoYUVJihJWlKQoYUVJihJWlKQoYUVJihJW
         lKQoYUVJihJWlKQoYUVJihJWlKQoYUVJihJWlKQoYUVJihJWlKQoYUVJihJWlKQoYUVJihJWlKQoYUVJ
         ihJWlKQoYUVJihJWlKQoYUVJihJWlKQoYUVJihJWlKQoYUVJihJWlKQoYUVJihJWlKQoYUVJihJWlKQo
-        YUVJihJWlORxnOd5bwc8ydXhV0n+/pQv1+Lz7wT8t58gr/daksCO4/gGDGPn7r5JwgwAAAAASUVORK5C
-        YII=
+        YUVJHsd5nvd2wJNcHX6V5O9P+XItPv9OwH/7CfJ6ryUJ7DiOb1MFX037QVEIAAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="btnsagas.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

@@ -266,3 +266,9 @@ C:\ProyectoGPS\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.Prestamo.resource
 C:\ProyectoGPS\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.Colecciones.resources
 C:\ProyectoGPS\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.RegistroColeccion.resources
 C:\ProyectoGPS\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.RegistroLibros.resources
+C:\ProyectoGPS\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.DATAClientes.resources
+C:\ProyectoGPS\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.DATAInventarioLibros.resources
+C:\ProyectoGPS\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.DATAinvSagas.resources
+C:\ProyectoGPS\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.Perdidas.resources
+C:\ProyectoGPS\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.Reportes.resources
+C:\ProyectoGPS\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.Submenu.resources
