@@ -245,13 +245,13 @@ namespace ProyectoBiblioteca
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
-            //PanelUsuario.Visible = !PanelUsuario.Visible;
-
             PanelUsuario.Visible = !PanelUsuario.Visible;
-            if (PanelUsuario.Visible)
-            {
-                PanelUsuario.BringToFront();
-            }
+
+            //PanelUsuario.Visible = !PanelUsuario.Visible;
+            //if (PanelUsuario.Visible)
+            //{
+            //    PanelUsuario.BringToFront();
+            //}
 
         }
 
@@ -477,6 +477,11 @@ namespace ProyectoBiblioteca
             PanelContenido.Controls.Add(book);
             bunifuPictureBox1.Hide();
             book.Show(); // Muestra el formulario
+        }
+
+        private void bunifuPanel1_Click(object sender, EventArgs e)
+        {
+            //
         }
     }
 }

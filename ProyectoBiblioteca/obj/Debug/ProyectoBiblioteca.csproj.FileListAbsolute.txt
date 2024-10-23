@@ -176,7 +176,6 @@ C:\Users\cesar\OneDrive\Escritorio\Biblioteca-Clonado-15-10-2024\ProyectoBibliot
 C:\Users\cesar\OneDrive\Escritorio\Biblioteca-Clonado-15-10-2024\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.Inventario.resources
 C:\Users\cesar\OneDrive\Escritorio\Biblioteca-Clonado-15-10-2024\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.Libros.resources
 C:\Users\cesar\OneDrive\Escritorio\Biblioteca-Clonado-15-10-2024\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.Properties.Resources.resources
-C:\Users\cesar\OneDrive\Escritorio\Biblioteca-Clonado-15-10-2024\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.Registro.resources
 C:\Users\cesar\OneDrive\Escritorio\Biblioteca-Clonado-15-10-2024\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.RegistroUsuarios.resources
 C:\Users\cesar\OneDrive\Escritorio\Biblioteca-Clonado-15-10-2024\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.csproj.GenerateResource.cache
 C:\Users\cesar\OneDrive\Escritorio\Biblioteca-Clonado-15-10-2024\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.exe.licenses
@@ -266,3 +265,10 @@ C:\ProyectoGPS\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.Prestamo.resource
 C:\ProyectoGPS\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.Colecciones.resources
 C:\ProyectoGPS\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.RegistroColeccion.resources
 C:\ProyectoGPS\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.RegistroLibros.resources
+C:\Users\cesar\OneDrive\Escritorio\Biblioteca-Clonado-15-10-2024\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.Clientes.resources
+C:\Users\cesar\OneDrive\Escritorio\Biblioteca-Clonado-15-10-2024\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.ConsultaPrestamos.resources
+C:\Users\cesar\OneDrive\Escritorio\Biblioteca-Clonado-15-10-2024\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.Devolucion.resources
+C:\Users\cesar\OneDrive\Escritorio\Biblioteca-Clonado-15-10-2024\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.Prestamo.resources
+C:\Users\cesar\OneDrive\Escritorio\Biblioteca-Clonado-15-10-2024\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.Colecciones.resources
+C:\Users\cesar\OneDrive\Escritorio\Biblioteca-Clonado-15-10-2024\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.RegistroColeccion.resources
+C:\Users\cesar\OneDrive\Escritorio\Biblioteca-Clonado-15-10-2024\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.RegistroLibros.resources
