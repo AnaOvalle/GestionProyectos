@@ -172,6 +172,24 @@
     <Compile Include="ConsultaPrestamos.Designer.cs">
       <DependentUpon>ConsultaPrestamos.cs</DependentUpon>
     </Compile>
+    <Compile Include="DATAClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DATAClientes.Designer.cs">
+      <DependentUpon>DATAClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DATAInventarioLibros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DATAInventarioLibros.Designer.cs">
+      <DependentUpon>DATAInventarioLibros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DATAinvSagas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DATAinvSagas.Designer.cs">
+      <DependentUpon>DATAinvSagas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Devolucion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -214,6 +232,12 @@
     <Compile Include="Libros.Designer.cs">
       <DependentUpon>Libros.cs</DependentUpon>
     </Compile>
+    <Compile Include="Perdidas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Perdidas.Designer.cs">
+      <DependentUpon>Perdidas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Prestamo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -246,11 +270,32 @@
     <Compile Include="RegistroUsuarios.Designer.cs">
       <DependentUpon>RegistroUsuarios.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes.Designer.cs">
+      <DependentUpon>Reportes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Submenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Submenu.Designer.cs">
+      <DependentUpon>Submenu.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Clientes.resx">
       <DependentUpon>Clientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ConsultaPrestamos.resx">
       <DependentUpon>ConsultaPrestamos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DATAClientes.resx">
+      <DependentUpon>DATAClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DATAInventarioLibros.resx">
+      <DependentUpon>DATAInventarioLibros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DATAinvSagas.resx">
+      <DependentUpon>DATAinvSagas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Devolucion.resx">
       <DependentUpon>Devolucion.cs</DependentUpon>
@@ -272,6 +317,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Libros.resx">
       <DependentUpon>Libros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Perdidas.resx">
+      <DependentUpon>Perdidas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Prestamo.resx">
       <DependentUpon>Prestamo.cs</DependentUpon>
@@ -298,6 +346,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RegistroUsuarios.resx">
       <DependentUpon>RegistroUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes.resx">
+      <DependentUpon>Reportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Submenu.resx">
+      <DependentUpon>Submenu.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -410,6 +464,7 @@
     <None Include="Resources\icons8-libro-100.png" />
     <None Include="Resources\icons8-guardar-50.png" />
     <None Include="Resources\icons8-devolver-libro-50.png" />
+    <None Include="Resources\icons8-imprimir-24.png" />
     <Content Include="Resources\icons8book50.png" />
     <Content Include="Resources\icons8-book-50.png" />
     <Content Include="Resources\icons8-down-30.png" />
