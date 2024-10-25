@@ -29,18 +29,18 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Prestamo));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges9 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges10 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties17 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties18 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties19 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties20 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges11 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges12 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties21 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties22 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties23 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties24 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.bunifuPanel3 = new Bunifu.UI.WinForms.BunifuPanel();
             this.btnLimpiarSaga = new Bunifu.UI.WinForms.BunifuImageButton();
             this.btnRefreshSagas = new Bunifu.UI.WinForms.BunifuImageButton();
@@ -48,6 +48,7 @@
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.bunifuPanel5 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.NumCantidadSagas = new System.Windows.Forms.NumericUpDown();
             this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
             this.btnGuardarSaga = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnAgregarSaga = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -65,6 +66,7 @@
             this.LIBROS = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.CANTIDAD = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.bunifuPanel4 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.NumCantidadLibros = new System.Windows.Forms.NumericUpDown();
             this.bunifuLabel3 = new Bunifu.UI.WinForms.BunifuLabel();
             this.label5 = new System.Windows.Forms.Label();
             this.btnGuardarLibro = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -77,15 +79,13 @@
             this.label7 = new System.Windows.Forms.Label();
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.NumCantidadLibros = new System.Windows.Forms.NumericUpDown();
-            this.NumCantidadSagas = new System.Windows.Forms.NumericUpDown();
             this.bunifuPanel3.SuspendLayout();
             this.bunifuPanel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NumCantidadSagas)).BeginInit();
             this.bunifuPanel2.SuspendLayout();
             this.bunifuPanel4.SuspendLayout();
-            this.bunifuPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NumCantidadLibros)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NumCantidadSagas)).BeginInit();
+            this.bunifuPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // bunifuPanel3
@@ -222,6 +222,14 @@
             this.bunifuPanel5.Size = new System.Drawing.Size(528, 194);
             this.bunifuPanel5.TabIndex = 1;
             // 
+            // NumCantidadSagas
+            // 
+            this.NumCantidadSagas.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NumCantidadSagas.Location = new System.Drawing.Point(127, 101);
+            this.NumCantidadSagas.Name = "NumCantidadSagas";
+            this.NumCantidadSagas.Size = new System.Drawing.Size(194, 32);
+            this.NumCantidadSagas.TabIndex = 128;
+            // 
             // bunifuLabel2
             // 
             this.bunifuLabel2.AllowParentOverrides = false;
@@ -233,7 +241,7 @@
             this.bunifuLabel2.Location = new System.Drawing.Point(364, 15);
             this.bunifuLabel2.Name = "bunifuLabel2";
             this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel2.Size = new System.Drawing.Size(106, 20);
+            this.bunifuLabel2.Size = new System.Drawing.Size(138, 25);
             this.bunifuLabel2.TabIndex = 39;
             this.bunifuLabel2.Text = "COLECCION";
             this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -258,11 +266,11 @@
             this.btnGuardarSaga.ColorContrastOnClick = 45;
             this.btnGuardarSaga.ColorContrastOnHover = 45;
             this.btnGuardarSaga.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.btnGuardarSaga.CustomizableEdges = borderEdges1;
+            borderEdges9.BottomLeft = true;
+            borderEdges9.BottomRight = true;
+            borderEdges9.TopLeft = true;
+            borderEdges9.TopRight = true;
+            this.btnGuardarSaga.CustomizableEdges = borderEdges9;
             this.btnGuardarSaga.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnGuardarSaga.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnGuardarSaga.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -320,7 +328,7 @@
             this.btnGuardarSaga.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnGuardarSaga.OnPressedState.IconLeftImage = null;
             this.btnGuardarSaga.OnPressedState.IconRightImage = null;
-            this.btnGuardarSaga.Size = new System.Drawing.Size(159, 47);
+            this.btnGuardarSaga.Size = new System.Drawing.Size(173, 47);
             this.btnGuardarSaga.TabIndex = 127;
             this.btnGuardarSaga.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGuardarSaga.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -347,11 +355,11 @@
             this.btnAgregarSaga.ColorContrastOnClick = 45;
             this.btnAgregarSaga.ColorContrastOnHover = 45;
             this.btnAgregarSaga.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.btnAgregarSaga.CustomizableEdges = borderEdges2;
+            borderEdges10.BottomLeft = true;
+            borderEdges10.BottomRight = true;
+            borderEdges10.TopLeft = true;
+            borderEdges10.TopRight = true;
+            this.btnAgregarSaga.CustomizableEdges = borderEdges10;
             this.btnAgregarSaga.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnAgregarSaga.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnAgregarSaga.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -425,7 +433,7 @@
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(37, 108);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(87, 19);
+            this.label1.Size = new System.Drawing.Size(107, 23);
             this.label1.TabIndex = 124;
             this.label1.Text = "Cantidad:";
             // 
@@ -462,26 +470,26 @@
             this.txtFechaSaga.Modified = false;
             this.txtFechaSaga.Multiline = false;
             this.txtFechaSaga.Name = "txtFechaSaga";
-            stateProperties1.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties1.FillColor = System.Drawing.Color.Empty;
-            stateProperties1.ForeColor = System.Drawing.Color.Empty;
-            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtFechaSaga.OnActiveState = stateProperties1;
-            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtFechaSaga.OnDisabledState = stateProperties2;
-            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties3.FillColor = System.Drawing.Color.Empty;
-            stateProperties3.ForeColor = System.Drawing.Color.Empty;
-            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtFechaSaga.OnHoverState = stateProperties3;
-            stateProperties4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            stateProperties4.FillColor = System.Drawing.Color.White;
-            stateProperties4.ForeColor = System.Drawing.Color.Empty;
-            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtFechaSaga.OnIdleState = stateProperties4;
+            stateProperties17.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties17.FillColor = System.Drawing.Color.Empty;
+            stateProperties17.ForeColor = System.Drawing.Color.Empty;
+            stateProperties17.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtFechaSaga.OnActiveState = stateProperties17;
+            stateProperties18.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties18.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties18.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtFechaSaga.OnDisabledState = stateProperties18;
+            stateProperties19.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties19.FillColor = System.Drawing.Color.Empty;
+            stateProperties19.ForeColor = System.Drawing.Color.Empty;
+            stateProperties19.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtFechaSaga.OnHoverState = stateProperties19;
+            stateProperties20.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            stateProperties20.FillColor = System.Drawing.Color.White;
+            stateProperties20.ForeColor = System.Drawing.Color.Empty;
+            stateProperties20.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtFechaSaga.OnIdleState = stateProperties20;
             this.txtFechaSaga.Padding = new System.Windows.Forms.Padding(3);
             this.txtFechaSaga.PasswordChar = '\0';
             this.txtFechaSaga.PlaceholderForeColor = System.Drawing.Color.Silver;
@@ -492,7 +500,7 @@
             this.txtFechaSaga.SelectionLength = 0;
             this.txtFechaSaga.SelectionStart = 0;
             this.txtFechaSaga.ShortcutsEnabled = true;
-            this.txtFechaSaga.Size = new System.Drawing.Size(194, 39);
+            this.txtFechaSaga.Size = new System.Drawing.Size(194, 43);
             this.txtFechaSaga.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtFechaSaga.TabIndex = 123;
             this.txtFechaSaga.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -511,7 +519,7 @@
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(35, 140);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(84, 38);
+            this.label2.Size = new System.Drawing.Size(106, 46);
             this.label2.TabIndex = 122;
             this.label2.Text = "Fecha \r\nPrestamo:\r\n";
             // 
@@ -521,7 +529,7 @@
             this.cbSaga.FormattingEnabled = true;
             this.cbSaga.Location = new System.Drawing.Point(127, 55);
             this.cbSaga.Name = "cbSaga";
-            this.cbSaga.Size = new System.Drawing.Size(192, 29);
+            this.cbSaga.Size = new System.Drawing.Size(192, 31);
             this.cbSaga.TabIndex = 121;
             // 
             // label3
@@ -532,7 +540,7 @@
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(37, 59);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(54, 19);
+            this.label3.Size = new System.Drawing.Size(65, 23);
             this.label3.TabIndex = 120;
             this.label3.Text = "Saga:";
             // 
@@ -542,7 +550,7 @@
             this.cbClienSaga.FormattingEnabled = true;
             this.cbClienSaga.Location = new System.Drawing.Point(127, 14);
             this.cbClienSaga.Name = "cbClienSaga";
-            this.cbClienSaga.Size = new System.Drawing.Size(192, 29);
+            this.cbClienSaga.Size = new System.Drawing.Size(192, 31);
             this.cbClienSaga.TabIndex = 119;
             // 
             // label6
@@ -553,7 +561,7 @@
             this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Location = new System.Drawing.Point(37, 24);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(67, 19);
+            this.label6.Size = new System.Drawing.Size(86, 23);
             this.label6.TabIndex = 118;
             this.label6.Text = "Cliente:";
             // 
@@ -691,6 +699,14 @@
             this.bunifuPanel4.Size = new System.Drawing.Size(528, 194);
             this.bunifuPanel4.TabIndex = 0;
             // 
+            // NumCantidadLibros
+            // 
+            this.NumCantidadLibros.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NumCantidadLibros.Location = new System.Drawing.Point(121, 101);
+            this.NumCantidadLibros.Name = "NumCantidadLibros";
+            this.NumCantidadLibros.Size = new System.Drawing.Size(194, 32);
+            this.NumCantidadLibros.TabIndex = 117;
+            // 
             // bunifuLabel3
             // 
             this.bunifuLabel3.AllowParentOverrides = false;
@@ -702,7 +718,7 @@
             this.bunifuLabel3.Location = new System.Drawing.Point(392, 15);
             this.bunifuLabel3.Name = "bunifuLabel3";
             this.bunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel3.Size = new System.Drawing.Size(67, 20);
+            this.bunifuLabel3.Size = new System.Drawing.Size(87, 25);
             this.bunifuLabel3.TabIndex = 40;
             this.bunifuLabel3.Text = "LIBROS";
             this.bunifuLabel3.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -716,7 +732,7 @@
             this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(31, 109);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(87, 19);
+            this.label5.Size = new System.Drawing.Size(107, 23);
             this.label5.TabIndex = 116;
             this.label5.Text = "Cantidad:";
             // 
@@ -739,11 +755,11 @@
             this.btnGuardarLibro.ColorContrastOnClick = 45;
             this.btnGuardarLibro.ColorContrastOnHover = 45;
             this.btnGuardarLibro.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges3.BottomLeft = true;
-            borderEdges3.BottomRight = true;
-            borderEdges3.TopLeft = true;
-            borderEdges3.TopRight = true;
-            this.btnGuardarLibro.CustomizableEdges = borderEdges3;
+            borderEdges11.BottomLeft = true;
+            borderEdges11.BottomRight = true;
+            borderEdges11.TopLeft = true;
+            borderEdges11.TopRight = true;
+            this.btnGuardarLibro.CustomizableEdges = borderEdges11;
             this.btnGuardarLibro.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnGuardarLibro.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnGuardarLibro.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -801,7 +817,7 @@
             this.btnGuardarLibro.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnGuardarLibro.OnPressedState.IconLeftImage = null;
             this.btnGuardarLibro.OnPressedState.IconRightImage = null;
-            this.btnGuardarLibro.Size = new System.Drawing.Size(159, 47);
+            this.btnGuardarLibro.Size = new System.Drawing.Size(186, 47);
             this.btnGuardarLibro.TabIndex = 115;
             this.btnGuardarLibro.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGuardarLibro.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -828,11 +844,11 @@
             this.btnAgregarLibro.ColorContrastOnClick = 45;
             this.btnAgregarLibro.ColorContrastOnHover = 45;
             this.btnAgregarLibro.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges4.BottomLeft = true;
-            borderEdges4.BottomRight = true;
-            borderEdges4.TopLeft = true;
-            borderEdges4.TopRight = true;
-            this.btnAgregarLibro.CustomizableEdges = borderEdges4;
+            borderEdges12.BottomLeft = true;
+            borderEdges12.BottomRight = true;
+            borderEdges12.TopLeft = true;
+            borderEdges12.TopRight = true;
+            this.btnAgregarLibro.CustomizableEdges = borderEdges12;
             this.btnAgregarLibro.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnAgregarLibro.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnAgregarLibro.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -931,26 +947,26 @@
             this.txtFechaLibro.Modified = false;
             this.txtFechaLibro.Multiline = false;
             this.txtFechaLibro.Name = "txtFechaLibro";
-            stateProperties5.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties5.FillColor = System.Drawing.Color.Empty;
-            stateProperties5.ForeColor = System.Drawing.Color.Empty;
-            stateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtFechaLibro.OnActiveState = stateProperties5;
-            stateProperties6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties6.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtFechaLibro.OnDisabledState = stateProperties6;
-            stateProperties7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties7.FillColor = System.Drawing.Color.Empty;
-            stateProperties7.ForeColor = System.Drawing.Color.Empty;
-            stateProperties7.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtFechaLibro.OnHoverState = stateProperties7;
-            stateProperties8.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            stateProperties8.FillColor = System.Drawing.Color.White;
-            stateProperties8.ForeColor = System.Drawing.Color.Empty;
-            stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtFechaLibro.OnIdleState = stateProperties8;
+            stateProperties21.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties21.FillColor = System.Drawing.Color.Empty;
+            stateProperties21.ForeColor = System.Drawing.Color.Empty;
+            stateProperties21.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtFechaLibro.OnActiveState = stateProperties21;
+            stateProperties22.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties22.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties22.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtFechaLibro.OnDisabledState = stateProperties22;
+            stateProperties23.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties23.FillColor = System.Drawing.Color.Empty;
+            stateProperties23.ForeColor = System.Drawing.Color.Empty;
+            stateProperties23.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtFechaLibro.OnHoverState = stateProperties23;
+            stateProperties24.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            stateProperties24.FillColor = System.Drawing.Color.White;
+            stateProperties24.ForeColor = System.Drawing.Color.Empty;
+            stateProperties24.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtFechaLibro.OnIdleState = stateProperties24;
             this.txtFechaLibro.Padding = new System.Windows.Forms.Padding(3);
             this.txtFechaLibro.PasswordChar = '\0';
             this.txtFechaLibro.PlaceholderForeColor = System.Drawing.Color.Silver;
@@ -961,7 +977,7 @@
             this.txtFechaLibro.SelectionLength = 0;
             this.txtFechaLibro.SelectionStart = 0;
             this.txtFechaLibro.ShortcutsEnabled = true;
-            this.txtFechaLibro.Size = new System.Drawing.Size(194, 39);
+            this.txtFechaLibro.Size = new System.Drawing.Size(194, 43);
             this.txtFechaLibro.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtFechaLibro.TabIndex = 113;
             this.txtFechaLibro.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -980,7 +996,7 @@
             this.label9.ForeColor = System.Drawing.Color.Black;
             this.label9.Location = new System.Drawing.Point(29, 141);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(84, 38);
+            this.label9.Size = new System.Drawing.Size(106, 46);
             this.label9.TabIndex = 105;
             this.label9.Text = "Fecha \r\nPrestamo:\r\n";
             // 
@@ -990,7 +1006,7 @@
             this.cbLibro.FormattingEnabled = true;
             this.cbLibro.Location = new System.Drawing.Point(121, 56);
             this.cbLibro.Name = "cbLibro";
-            this.cbLibro.Size = new System.Drawing.Size(192, 29);
+            this.cbLibro.Size = new System.Drawing.Size(192, 31);
             this.cbLibro.TabIndex = 104;
             // 
             // label4
@@ -1001,7 +1017,7 @@
             this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(31, 60);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(50, 19);
+            this.label4.Size = new System.Drawing.Size(62, 23);
             this.label4.TabIndex = 103;
             this.label4.Text = "Libro:";
             // 
@@ -1011,7 +1027,7 @@
             this.cbCliente.FormattingEnabled = true;
             this.cbCliente.Location = new System.Drawing.Point(121, 15);
             this.cbCliente.Name = "cbCliente";
-            this.cbCliente.Size = new System.Drawing.Size(192, 29);
+            this.cbCliente.Size = new System.Drawing.Size(192, 31);
             this.cbCliente.TabIndex = 102;
             // 
             // label7
@@ -1022,7 +1038,7 @@
             this.label7.ForeColor = System.Drawing.Color.Black;
             this.label7.Location = new System.Drawing.Point(31, 25);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(67, 19);
+            this.label7.Size = new System.Drawing.Size(86, 23);
             this.label7.TabIndex = 101;
             this.label7.Text = "Cliente:";
             // 
@@ -1048,36 +1064,20 @@
             this.bunifuLabel1.AutoEllipsis = false;
             this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel1.Font = new System.Drawing.Font("Cooper Black", 24F);
+            this.bunifuLabel1.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold);
             this.bunifuLabel1.ForeColor = System.Drawing.Color.Black;
-            this.bunifuLabel1.Location = new System.Drawing.Point(420, 12);
+            this.bunifuLabel1.Location = new System.Drawing.Point(426, 4);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(212, 36);
+            this.bunifuLabel1.Size = new System.Drawing.Size(225, 47);
             this.bunifuLabel1.TabIndex = 38;
             this.bunifuLabel1.Text = "PRESTAMOS";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // NumCantidadLibros
-            // 
-            this.NumCantidadLibros.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NumCantidadLibros.Location = new System.Drawing.Point(121, 101);
-            this.NumCantidadLibros.Name = "NumCantidadLibros";
-            this.NumCantidadLibros.Size = new System.Drawing.Size(194, 27);
-            this.NumCantidadLibros.TabIndex = 117;
-            // 
-            // NumCantidadSagas
-            // 
-            this.NumCantidadSagas.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NumCantidadSagas.Location = new System.Drawing.Point(127, 101);
-            this.NumCantidadSagas.Name = "NumCantidadSagas";
-            this.NumCantidadSagas.Size = new System.Drawing.Size(194, 27);
-            this.NumCantidadSagas.TabIndex = 128;
-            // 
             // Prestamo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1056, 624);
@@ -1092,13 +1092,13 @@
             this.bunifuPanel3.ResumeLayout(false);
             this.bunifuPanel5.ResumeLayout(false);
             this.bunifuPanel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NumCantidadSagas)).EndInit();
             this.bunifuPanel2.ResumeLayout(false);
             this.bunifuPanel4.ResumeLayout(false);
             this.bunifuPanel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NumCantidadLibros)).EndInit();
             this.bunifuPanel1.ResumeLayout(false);
             this.bunifuPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.NumCantidadLibros)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NumCantidadSagas)).EndInit();
             this.ResumeLayout(false);
 
         }

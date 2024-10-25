@@ -40,15 +40,15 @@
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.txtBuscar = new Bunifu.UI.WinForms.BunifuTextBox();
             this.PanelData = new Bunifu.UI.WinForms.BunifuPanel();
+            this.bunifuImageButton1 = new Bunifu.UI.WinForms.BunifuImageButton();
+            this.btnLimpiar = new Bunifu.UI.WinForms.BunifuImageButton();
+            this.btnRefresh = new Bunifu.UI.WinForms.BunifuImageButton();
             this.DGVColecciones = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.btnBuscar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.label1 = new System.Windows.Forms.Label();
             this.cbPeriodo = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.cbCliente = new System.Windows.Forms.ComboBox();
-            this.bunifuImageButton1 = new Bunifu.UI.WinForms.BunifuImageButton();
-            this.btnLimpiar = new Bunifu.UI.WinForms.BunifuImageButton();
-            this.btnRefresh = new Bunifu.UI.WinForms.BunifuImageButton();
             this.PanelData.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGVColecciones)).BeginInit();
             this.SuspendLayout();
@@ -61,10 +61,11 @@
             this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.Font = new System.Drawing.Font("Cooper Black", 24F);
             this.bunifuLabel1.ForeColor = System.Drawing.Color.Black;
-            this.bunifuLabel1.Location = new System.Drawing.Point(316, 21);
+            this.bunifuLabel1.Location = new System.Drawing.Point(421, 26);
+            this.bunifuLabel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(466, 36);
+            this.bunifuLabel1.Size = new System.Drawing.Size(583, 46);
             this.bunifuLabel1.TabIndex = 37;
             this.bunifuLabel1.Text = "CONSULTA DE PRESTAMOS";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -97,7 +98,8 @@
             this.txtBuscar.IconRight = null;
             this.txtBuscar.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtBuscar.Lines = new string[0];
-            this.txtBuscar.Location = new System.Drawing.Point(68, 89);
+            this.txtBuscar.Location = new System.Drawing.Point(91, 110);
+            this.txtBuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtBuscar.MaxLength = 32767;
             this.txtBuscar.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtBuscar.Modified = false;
@@ -123,7 +125,7 @@
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtBuscar.OnIdleState = stateProperties4;
-            this.txtBuscar.Padding = new System.Windows.Forms.Padding(3);
+            this.txtBuscar.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtBuscar.PasswordChar = '\0';
             this.txtBuscar.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtBuscar.PlaceholderText = "Búsqueda";
@@ -133,7 +135,7 @@
             this.txtBuscar.SelectionLength = 0;
             this.txtBuscar.SelectionStart = 0;
             this.txtBuscar.ShortcutsEnabled = true;
-            this.txtBuscar.Size = new System.Drawing.Size(376, 36);
+            this.txtBuscar.Size = new System.Drawing.Size(501, 44);
             this.txtBuscar.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtBuscar.TabIndex = 40;
             this.txtBuscar.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -156,11 +158,118 @@
             this.PanelData.Controls.Add(this.btnLimpiar);
             this.PanelData.Controls.Add(this.btnRefresh);
             this.PanelData.Controls.Add(this.DGVColecciones);
-            this.PanelData.Location = new System.Drawing.Point(12, 131);
+            this.PanelData.Location = new System.Drawing.Point(16, 161);
+            this.PanelData.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PanelData.Name = "PanelData";
             this.PanelData.ShowBorders = true;
-            this.PanelData.Size = new System.Drawing.Size(1032, 481);
+            this.PanelData.Size = new System.Drawing.Size(1376, 592);
             this.PanelData.TabIndex = 38;
+            // 
+            // bunifuImageButton1
+            // 
+            this.bunifuImageButton1.ActiveImage = null;
+            this.bunifuImageButton1.AllowAnimations = true;
+            this.bunifuImageButton1.AllowBuffering = false;
+            this.bunifuImageButton1.AllowToggling = false;
+            this.bunifuImageButton1.AllowZooming = true;
+            this.bunifuImageButton1.AllowZoomingOnFocus = false;
+            this.bunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(223)))), ((int)(((byte)(222)))));
+            this.bunifuImageButton1.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.bunifuImageButton1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.ErrorImage")));
+            this.bunifuImageButton1.FadeWhenInactive = false;
+            this.bunifuImageButton1.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
+            this.bunifuImageButton1.Image = global::ProyectoBiblioteca.Properties.Resources.icons8_health_graph_50;
+            this.bunifuImageButton1.ImageActive = null;
+            this.bunifuImageButton1.ImageLocation = null;
+            this.bunifuImageButton1.ImageMargin = 0;
+            this.bunifuImageButton1.ImageSize = new System.Drawing.Size(46, 40);
+            this.bunifuImageButton1.ImageZoomSize = new System.Drawing.Size(47, 41);
+            this.bunifuImageButton1.InitialImage = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.InitialImage")));
+            this.bunifuImageButton1.Location = new System.Drawing.Point(1304, 4);
+            this.bunifuImageButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuImageButton1.Name = "bunifuImageButton1";
+            this.bunifuImageButton1.Rotation = 0;
+            this.bunifuImageButton1.ShowActiveImage = true;
+            this.bunifuImageButton1.ShowCursorChanges = true;
+            this.bunifuImageButton1.ShowImageBorders = false;
+            this.bunifuImageButton1.ShowSizeMarkers = false;
+            this.bunifuImageButton1.Size = new System.Drawing.Size(47, 41);
+            this.bunifuImageButton1.TabIndex = 12;
+            this.bunifuImageButton1.ToolTipText = "Reporte";
+            this.bunifuImageButton1.WaitOnLoad = false;
+            this.bunifuImageButton1.Zoom = 0;
+            this.bunifuImageButton1.ZoomSpeed = 10;
+            // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.ActiveImage = null;
+            this.btnLimpiar.AllowAnimations = true;
+            this.btnLimpiar.AllowBuffering = false;
+            this.btnLimpiar.AllowToggling = false;
+            this.btnLimpiar.AllowZooming = true;
+            this.btnLimpiar.AllowZoomingOnFocus = false;
+            this.btnLimpiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(223)))), ((int)(((byte)(222)))));
+            this.btnLimpiar.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnLimpiar.ErrorImage = ((System.Drawing.Image)(resources.GetObject("btnLimpiar.ErrorImage")));
+            this.btnLimpiar.FadeWhenInactive = false;
+            this.btnLimpiar.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
+            this.btnLimpiar.Image = global::ProyectoBiblioteca.Properties.Resources.icons8_escoba_50;
+            this.btnLimpiar.ImageActive = null;
+            this.btnLimpiar.ImageLocation = null;
+            this.btnLimpiar.ImageMargin = 0;
+            this.btnLimpiar.ImageSize = new System.Drawing.Size(40, 36);
+            this.btnLimpiar.ImageZoomSize = new System.Drawing.Size(41, 37);
+            this.btnLimpiar.InitialImage = ((System.Drawing.Image)(resources.GetObject("btnLimpiar.InitialImage")));
+            this.btnLimpiar.Location = new System.Drawing.Point(1173, 7);
+            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Rotation = 0;
+            this.btnLimpiar.ShowActiveImage = true;
+            this.btnLimpiar.ShowCursorChanges = true;
+            this.btnLimpiar.ShowImageBorders = false;
+            this.btnLimpiar.ShowSizeMarkers = false;
+            this.btnLimpiar.Size = new System.Drawing.Size(41, 37);
+            this.btnLimpiar.TabIndex = 11;
+            this.btnLimpiar.ToolTipText = "";
+            this.btnLimpiar.WaitOnLoad = false;
+            this.btnLimpiar.Zoom = 0;
+            this.btnLimpiar.ZoomSpeed = 10;
+            // 
+            // btnRefresh
+            // 
+            this.btnRefresh.ActiveImage = null;
+            this.btnRefresh.AllowAnimations = true;
+            this.btnRefresh.AllowBuffering = false;
+            this.btnRefresh.AllowToggling = false;
+            this.btnRefresh.AllowZooming = true;
+            this.btnRefresh.AllowZoomingOnFocus = false;
+            this.btnRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(223)))), ((int)(((byte)(222)))));
+            this.btnRefresh.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnRefresh.ErrorImage = ((System.Drawing.Image)(resources.GetObject("btnRefresh.ErrorImage")));
+            this.btnRefresh.FadeWhenInactive = false;
+            this.btnRefresh.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
+            this.btnRefresh.Image = global::ProyectoBiblioteca.Properties.Resources.icons8_actualizar_32;
+            this.btnRefresh.ImageActive = null;
+            this.btnRefresh.ImageLocation = null;
+            this.btnRefresh.ImageMargin = 0;
+            this.btnRefresh.ImageSize = new System.Drawing.Size(38, 35);
+            this.btnRefresh.ImageZoomSize = new System.Drawing.Size(39, 36);
+            this.btnRefresh.InitialImage = ((System.Drawing.Image)(resources.GetObject("btnRefresh.InitialImage")));
+            this.btnRefresh.Location = new System.Drawing.Point(1245, 9);
+            this.btnRefresh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Rotation = 0;
+            this.btnRefresh.ShowActiveImage = true;
+            this.btnRefresh.ShowCursorChanges = true;
+            this.btnRefresh.ShowImageBorders = false;
+            this.btnRefresh.ShowSizeMarkers = false;
+            this.btnRefresh.Size = new System.Drawing.Size(39, 36);
+            this.btnRefresh.TabIndex = 10;
+            this.btnRefresh.ToolTipText = "";
+            this.btnRefresh.WaitOnLoad = false;
+            this.btnRefresh.Zoom = 0;
+            this.btnRefresh.ZoomSpeed = 10;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // DGVColecciones
             // 
@@ -170,7 +279,7 @@
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
             this.DGVColecciones.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.DGVColecciones.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.DGVColecciones.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(220)))), ((int)(((byte)(252)))));
+            this.DGVColecciones.BackgroundColor = System.Drawing.Color.White;
             this.DGVColecciones.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DGVColecciones.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.DGVColecciones.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -214,14 +323,15 @@
             this.DGVColecciones.HeaderBackColor = System.Drawing.Color.DodgerBlue;
             this.DGVColecciones.HeaderBgColor = System.Drawing.Color.Empty;
             this.DGVColecciones.HeaderForeColor = System.Drawing.Color.White;
-            this.DGVColecciones.Location = new System.Drawing.Point(13, 42);
+            this.DGVColecciones.Location = new System.Drawing.Point(17, 52);
+            this.DGVColecciones.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DGVColecciones.Name = "DGVColecciones";
             this.DGVColecciones.ReadOnly = true;
             this.DGVColecciones.RowHeadersVisible = false;
             this.DGVColecciones.RowHeadersWidth = 51;
             this.DGVColecciones.RowTemplate.Height = 40;
             this.DGVColecciones.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DGVColecciones.Size = new System.Drawing.Size(1000, 422);
+            this.DGVColecciones.Size = new System.Drawing.Size(1333, 519);
             this.DGVColecciones.TabIndex = 0;
             this.DGVColecciones.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             // 
@@ -272,7 +382,8 @@
             this.btnBuscar.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("btnBuscar.IdleIconLeftImage")));
             this.btnBuscar.IdleIconRightImage = null;
             this.btnBuscar.IndicateFocus = false;
-            this.btnBuscar.Location = new System.Drawing.Point(25, 89);
+            this.btnBuscar.Location = new System.Drawing.Point(33, 110);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnBuscar.OnDisabledState.BorderRadius = 15;
@@ -306,7 +417,7 @@
             this.btnBuscar.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnBuscar.OnPressedState.IconLeftImage = null;
             this.btnBuscar.OnPressedState.IconRightImage = null;
-            this.btnBuscar.Size = new System.Drawing.Size(37, 36);
+            this.btnBuscar.Size = new System.Drawing.Size(49, 44);
             this.btnBuscar.TabIndex = 39;
             this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnBuscar.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -320,9 +431,10 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(450, 101);
+            this.label1.Location = new System.Drawing.Point(600, 124);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(72, 19);
+            this.label1.Size = new System.Drawing.Size(90, 23);
             this.label1.TabIndex = 88;
             this.label1.Text = "Periodo:";
             // 
@@ -330,9 +442,10 @@
             // 
             this.cbPeriodo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbPeriodo.FormattingEnabled = true;
-            this.cbPeriodo.Location = new System.Drawing.Point(528, 91);
+            this.cbPeriodo.Location = new System.Drawing.Point(704, 112);
+            this.cbPeriodo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbPeriodo.Name = "cbPeriodo";
-            this.cbPeriodo.Size = new System.Drawing.Size(162, 29);
+            this.cbPeriodo.Size = new System.Drawing.Size(215, 31);
             this.cbPeriodo.TabIndex = 93;
             // 
             // label2
@@ -341,9 +454,10 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(706, 101);
+            this.label2.Location = new System.Drawing.Point(941, 124);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(67, 19);
+            this.label2.Size = new System.Drawing.Size(86, 23);
             this.label2.TabIndex = 94;
             this.label2.Text = "Cliente:";
             // 
@@ -351,119 +465,18 @@
             // 
             this.cbCliente.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbCliente.FormattingEnabled = true;
-            this.cbCliente.Location = new System.Drawing.Point(779, 91);
+            this.cbCliente.Location = new System.Drawing.Point(1039, 112);
+            this.cbCliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbCliente.Name = "cbCliente";
-            this.cbCliente.Size = new System.Drawing.Size(246, 29);
+            this.cbCliente.Size = new System.Drawing.Size(327, 31);
             this.cbCliente.TabIndex = 95;
-            // 
-            // bunifuImageButton1
-            // 
-            this.bunifuImageButton1.ActiveImage = null;
-            this.bunifuImageButton1.AllowAnimations = true;
-            this.bunifuImageButton1.AllowBuffering = false;
-            this.bunifuImageButton1.AllowToggling = false;
-            this.bunifuImageButton1.AllowZooming = true;
-            this.bunifuImageButton1.AllowZoomingOnFocus = false;
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(223)))), ((int)(((byte)(222)))));
-            this.bunifuImageButton1.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.bunifuImageButton1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.ErrorImage")));
-            this.bunifuImageButton1.FadeWhenInactive = false;
-            this.bunifuImageButton1.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
-            this.bunifuImageButton1.Image = global::ProyectoBiblioteca.Properties.Resources.icons8_health_graph_50;
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.ImageLocation = null;
-            this.bunifuImageButton1.ImageMargin = 0;
-            this.bunifuImageButton1.ImageSize = new System.Drawing.Size(34, 32);
-            this.bunifuImageButton1.ImageZoomSize = new System.Drawing.Size(35, 33);
-            this.bunifuImageButton1.InitialImage = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.InitialImage")));
-            this.bunifuImageButton1.Location = new System.Drawing.Point(978, 3);
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Rotation = 0;
-            this.bunifuImageButton1.ShowActiveImage = true;
-            this.bunifuImageButton1.ShowCursorChanges = true;
-            this.bunifuImageButton1.ShowImageBorders = false;
-            this.bunifuImageButton1.ShowSizeMarkers = false;
-            this.bunifuImageButton1.Size = new System.Drawing.Size(35, 33);
-            this.bunifuImageButton1.TabIndex = 12;
-            this.bunifuImageButton1.ToolTipText = "Reporte";
-            this.bunifuImageButton1.WaitOnLoad = false;
-            this.bunifuImageButton1.Zoom = 0;
-            this.bunifuImageButton1.ZoomSpeed = 10;
-            // 
-            // btnLimpiar
-            // 
-            this.btnLimpiar.ActiveImage = null;
-            this.btnLimpiar.AllowAnimations = true;
-            this.btnLimpiar.AllowBuffering = false;
-            this.btnLimpiar.AllowToggling = false;
-            this.btnLimpiar.AllowZooming = true;
-            this.btnLimpiar.AllowZoomingOnFocus = false;
-            this.btnLimpiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(223)))), ((int)(((byte)(222)))));
-            this.btnLimpiar.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnLimpiar.ErrorImage = ((System.Drawing.Image)(resources.GetObject("btnLimpiar.ErrorImage")));
-            this.btnLimpiar.FadeWhenInactive = false;
-            this.btnLimpiar.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
-            this.btnLimpiar.Image = global::ProyectoBiblioteca.Properties.Resources.icons8_escoba_50;
-            this.btnLimpiar.ImageActive = null;
-            this.btnLimpiar.ImageLocation = null;
-            this.btnLimpiar.ImageMargin = 0;
-            this.btnLimpiar.ImageSize = new System.Drawing.Size(30, 29);
-            this.btnLimpiar.ImageZoomSize = new System.Drawing.Size(31, 30);
-            this.btnLimpiar.InitialImage = ((System.Drawing.Image)(resources.GetObject("btnLimpiar.InitialImage")));
-            this.btnLimpiar.Location = new System.Drawing.Point(880, 6);
-            this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Rotation = 0;
-            this.btnLimpiar.ShowActiveImage = true;
-            this.btnLimpiar.ShowCursorChanges = true;
-            this.btnLimpiar.ShowImageBorders = false;
-            this.btnLimpiar.ShowSizeMarkers = false;
-            this.btnLimpiar.Size = new System.Drawing.Size(31, 30);
-            this.btnLimpiar.TabIndex = 11;
-            this.btnLimpiar.ToolTipText = "";
-            this.btnLimpiar.WaitOnLoad = false;
-            this.btnLimpiar.Zoom = 0;
-            this.btnLimpiar.ZoomSpeed = 10;
-            // 
-            // btnRefresh
-            // 
-            this.btnRefresh.ActiveImage = null;
-            this.btnRefresh.AllowAnimations = true;
-            this.btnRefresh.AllowBuffering = false;
-            this.btnRefresh.AllowToggling = false;
-            this.btnRefresh.AllowZooming = true;
-            this.btnRefresh.AllowZoomingOnFocus = false;
-            this.btnRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(223)))), ((int)(((byte)(222)))));
-            this.btnRefresh.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnRefresh.ErrorImage = ((System.Drawing.Image)(resources.GetObject("btnRefresh.ErrorImage")));
-            this.btnRefresh.FadeWhenInactive = false;
-            this.btnRefresh.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
-            this.btnRefresh.Image = global::ProyectoBiblioteca.Properties.Resources.icons8_actualizar_32;
-            this.btnRefresh.ImageActive = null;
-            this.btnRefresh.ImageLocation = null;
-            this.btnRefresh.ImageMargin = 0;
-            this.btnRefresh.ImageSize = new System.Drawing.Size(28, 28);
-            this.btnRefresh.ImageZoomSize = new System.Drawing.Size(29, 29);
-            this.btnRefresh.InitialImage = ((System.Drawing.Image)(resources.GetObject("btnRefresh.InitialImage")));
-            this.btnRefresh.Location = new System.Drawing.Point(934, 7);
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Rotation = 0;
-            this.btnRefresh.ShowActiveImage = true;
-            this.btnRefresh.ShowCursorChanges = true;
-            this.btnRefresh.ShowImageBorders = false;
-            this.btnRefresh.ShowSizeMarkers = false;
-            this.btnRefresh.Size = new System.Drawing.Size(29, 29);
-            this.btnRefresh.TabIndex = 10;
-            this.btnRefresh.ToolTipText = "";
-            this.btnRefresh.WaitOnLoad = false;
-            this.btnRefresh.Zoom = 0;
-            this.btnRefresh.ZoomSpeed = 10;
             // 
             // ConsultaPrestamos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1056, 624);
+            this.ClientSize = new System.Drawing.Size(1408, 768);
             this.Controls.Add(this.cbCliente);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.cbPeriodo);
@@ -473,6 +486,7 @@
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.bunifuLabel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ConsultaPrestamos";
             this.Text = "ConsultaPrestamos";
             this.PanelData.ResumeLayout(false);

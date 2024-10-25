@@ -18,6 +18,8 @@ namespace ProyectoBiblioteca
         {
             InitializeComponent();
             DesignCustomize();
+            originalWidth = sedebar.Width;
+            originalHeight = sedebar.Height;
         }
 
         private void DesignCustomize()
@@ -251,14 +253,30 @@ namespace ProyectoBiblioteca
 
             }
         }
-
+        private int originalWidth;
+        private int originalHeight;
+        private bool isResized = false;
         private void bunifuImageButton2_Click(object sender, EventArgs e)
         {
-            sidebarTransistor.Start();
+            if (isResized)
+            {
+                // Si el panel está en tamaño modificado, lo restauramos al tamaño original
+                sedebar.Width = originalWidth;
+                sedebar.Height = originalHeight;
+                isResized = false; // Cambiamos el estado a no modificado
+            }
+            else
+            {
+                // Si el panel está en su tamaño original, lo redimensionamos
+                sedebar.Width = 232;  // Nuevo ancho
+                sedebar.Height = 200; // Nueva altura
+                isResized = true; // Cambiamos el estado a modificado
+            }
         }
 
         private void btnLibros_Click(object sender, EventArgs e)
         {
+            sedebar.Width = 75;
             Libros book = new Libros();
             book.TopLevel = false; // Establece que no es un formulario de nivel superior
             book.FormBorderStyle = FormBorderStyle.None; // Quita el borde del formulario

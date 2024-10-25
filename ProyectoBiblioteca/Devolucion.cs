@@ -16,5 +16,15 @@ namespace ProyectoBiblioteca
         {
             InitializeComponent();
         }
+
+        private void btnDevolverLibro_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSagaDevol_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
