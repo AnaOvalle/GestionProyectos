@@ -18,7 +18,11 @@ namespace ProyectoBiblioteca
         {
             InitializeComponent();
             DesignCustomize();
+
+            
         }
+
+       
 
         private void DesignCustomize()
         {
@@ -219,8 +223,7 @@ namespace ProyectoBiblioteca
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
-            PanelUsuario.Visible = !PanelUsuario.Visible;
-      
+           PanelUsuario.Visible = !PanelUsuario.Visible;        
         }
 
         private void bunifuButton6_Click(object sender, EventArgs e)
@@ -230,6 +233,7 @@ namespace ProyectoBiblioteca
         bool siderbarExpand = true;
         private void sidebarTransistor_Tick(object sender, EventArgs e)
         {
+
             if (siderbarExpand)
             {
                 sedebar.Width -= 25;
@@ -249,8 +253,9 @@ namespace ProyectoBiblioteca
                     sidebarTransistor.Stop();
                 }
 
+                }
+
             }
-        }
 
         private void bunifuImageButton2_Click(object sender, EventArgs e)
         {

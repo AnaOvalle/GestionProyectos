@@ -21,5 +21,10 @@ namespace ProyectoBiblioteca
         {
 
         }
+
+        private void bunifuButton1_Click(object sender, EventArgs e)
+        {
+            PanelCategorias.Visible = !PanelCategorias.Visible;
+        }
     }
 }
