@@ -48,6 +48,7 @@
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.bunifuPanel5 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.NumCantidadSagas = new System.Windows.Forms.NumericUpDown();
             this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
             this.btnGuardarSaga = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnAgregarSaga = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -65,6 +66,7 @@
             this.LIBROS = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.CANTIDAD = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.bunifuPanel4 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.NumCantidadLibros = new System.Windows.Forms.NumericUpDown();
             this.bunifuLabel3 = new Bunifu.UI.WinForms.BunifuLabel();
             this.label5 = new System.Windows.Forms.Label();
             this.btnGuardarLibro = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -77,20 +79,18 @@
             this.label7 = new System.Windows.Forms.Label();
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.NumCantidadLibros = new System.Windows.Forms.NumericUpDown();
-            this.NumCantidadSagas = new System.Windows.Forms.NumericUpDown();
             this.bunifuPanel3.SuspendLayout();
             this.bunifuPanel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NumCantidadSagas)).BeginInit();
             this.bunifuPanel2.SuspendLayout();
             this.bunifuPanel4.SuspendLayout();
-            this.bunifuPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NumCantidadLibros)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NumCantidadSagas)).BeginInit();
+            this.bunifuPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // bunifuPanel3
             // 
-            this.bunifuPanel3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(234)))), ((int)(((byte)(242)))));
+            this.bunifuPanel3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(243)))), ((int)(((byte)(249)))));
             this.bunifuPanel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel3.BackgroundImage")));
             this.bunifuPanel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuPanel3.BorderColor = System.Drawing.Color.Transparent;
@@ -115,7 +115,7 @@
             this.btnLimpiarSaga.AllowToggling = false;
             this.btnLimpiarSaga.AllowZooming = true;
             this.btnLimpiarSaga.AllowZoomingOnFocus = false;
-            this.btnLimpiarSaga.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(234)))), ((int)(((byte)(242)))));
+            this.btnLimpiarSaga.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(243)))), ((int)(((byte)(249)))));
             this.btnLimpiarSaga.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnLimpiarSaga.ErrorImage = ((System.Drawing.Image)(resources.GetObject("btnLimpiarSaga.ErrorImage")));
             this.btnLimpiarSaga.FadeWhenInactive = true;
@@ -149,7 +149,7 @@
             this.btnRefreshSagas.AllowToggling = false;
             this.btnRefreshSagas.AllowZooming = true;
             this.btnRefreshSagas.AllowZoomingOnFocus = false;
-            this.btnRefreshSagas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(234)))), ((int)(((byte)(242)))));
+            this.btnRefreshSagas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(243)))), ((int)(((byte)(249)))));
             this.btnRefreshSagas.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnRefreshSagas.ErrorImage = ((System.Drawing.Image)(resources.GetObject("btnRefreshSagas.ErrorImage")));
             this.btnRefreshSagas.FadeWhenInactive = true;
@@ -198,7 +198,7 @@
             // 
             // bunifuPanel5
             // 
-            this.bunifuPanel5.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(166)))), ((int)(((byte)(207)))));
+            this.bunifuPanel5.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(210)))), ((int)(((byte)(249)))));
             this.bunifuPanel5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel5.BackgroundImage")));
             this.bunifuPanel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuPanel5.BorderColor = System.Drawing.Color.Transparent;
@@ -221,6 +221,14 @@
             this.bunifuPanel5.ShowBorders = true;
             this.bunifuPanel5.Size = new System.Drawing.Size(528, 194);
             this.bunifuPanel5.TabIndex = 1;
+            // 
+            // NumCantidadSagas
+            // 
+            this.NumCantidadSagas.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NumCantidadSagas.Location = new System.Drawing.Point(127, 101);
+            this.NumCantidadSagas.Name = "NumCantidadSagas";
+            this.NumCantidadSagas.Size = new System.Drawing.Size(194, 27);
+            this.NumCantidadSagas.TabIndex = 128;
             // 
             // bunifuLabel2
             // 
@@ -559,7 +567,7 @@
             // 
             // bunifuPanel2
             // 
-            this.bunifuPanel2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(166)))), ((int)(((byte)(207)))));
+            this.bunifuPanel2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(210)))), ((int)(((byte)(249)))));
             this.bunifuPanel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel2.BackgroundImage")));
             this.bunifuPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuPanel2.BorderColor = System.Drawing.Color.Transparent;
@@ -584,7 +592,7 @@
             this.btnLimpiar.AllowToggling = false;
             this.btnLimpiar.AllowZooming = true;
             this.btnLimpiar.AllowZoomingOnFocus = false;
-            this.btnLimpiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(166)))), ((int)(((byte)(207)))));
+            this.btnLimpiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(210)))), ((int)(((byte)(249)))));
             this.btnLimpiar.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnLimpiar.ErrorImage = ((System.Drawing.Image)(resources.GetObject("btnLimpiar.ErrorImage")));
             this.btnLimpiar.FadeWhenInactive = true;
@@ -618,7 +626,7 @@
             this.btnRefresh.AllowToggling = false;
             this.btnRefresh.AllowZooming = true;
             this.btnRefresh.AllowZoomingOnFocus = false;
-            this.btnRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(166)))), ((int)(((byte)(207)))));
+            this.btnRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(210)))), ((int)(((byte)(249)))));
             this.btnRefresh.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnRefresh.ErrorImage = ((System.Drawing.Image)(resources.GetObject("btnRefresh.ErrorImage")));
             this.btnRefresh.FadeWhenInactive = true;
@@ -667,7 +675,7 @@
             // 
             // bunifuPanel4
             // 
-            this.bunifuPanel4.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(234)))), ((int)(((byte)(242)))));
+            this.bunifuPanel4.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(243)))), ((int)(((byte)(249)))));
             this.bunifuPanel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel4.BackgroundImage")));
             this.bunifuPanel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuPanel4.BorderColor = System.Drawing.Color.Transparent;
@@ -690,6 +698,14 @@
             this.bunifuPanel4.ShowBorders = true;
             this.bunifuPanel4.Size = new System.Drawing.Size(528, 194);
             this.bunifuPanel4.TabIndex = 0;
+            // 
+            // NumCantidadLibros
+            // 
+            this.NumCantidadLibros.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NumCantidadLibros.Location = new System.Drawing.Point(121, 101);
+            this.NumCantidadLibros.Name = "NumCantidadLibros";
+            this.NumCantidadLibros.Size = new System.Drawing.Size(194, 27);
+            this.NumCantidadLibros.TabIndex = 117;
             // 
             // bunifuLabel3
             // 
@@ -1059,22 +1075,6 @@
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // NumCantidadLibros
-            // 
-            this.NumCantidadLibros.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NumCantidadLibros.Location = new System.Drawing.Point(121, 101);
-            this.NumCantidadLibros.Name = "NumCantidadLibros";
-            this.NumCantidadLibros.Size = new System.Drawing.Size(194, 27);
-            this.NumCantidadLibros.TabIndex = 117;
-            // 
-            // NumCantidadSagas
-            // 
-            this.NumCantidadSagas.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NumCantidadSagas.Location = new System.Drawing.Point(127, 101);
-            this.NumCantidadSagas.Name = "NumCantidadSagas";
-            this.NumCantidadSagas.Size = new System.Drawing.Size(194, 27);
-            this.NumCantidadSagas.TabIndex = 128;
-            // 
             // Prestamo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -1092,13 +1092,13 @@
             this.bunifuPanel3.ResumeLayout(false);
             this.bunifuPanel5.ResumeLayout(false);
             this.bunifuPanel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NumCantidadSagas)).EndInit();
             this.bunifuPanel2.ResumeLayout(false);
             this.bunifuPanel4.ResumeLayout(false);
             this.bunifuPanel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NumCantidadLibros)).EndInit();
             this.bunifuPanel1.ResumeLayout(false);
             this.bunifuPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.NumCantidadLibros)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NumCantidadSagas)).EndInit();
             this.ResumeLayout(false);
 
         }
