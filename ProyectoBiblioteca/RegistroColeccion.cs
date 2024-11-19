@@ -261,6 +261,11 @@ namespace ProyectoBiblioteca
         {
 
         }
+
+        private void cbCategoria_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }

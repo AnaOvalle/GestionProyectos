@@ -246,7 +246,7 @@ namespace ProyectoBiblioteca
 
                     string consulta = "SELECT  li.libros_id, li.titulo, li.isbn, li.año_publicacion, li.editorial," +
                         " li.descripcion, li.autor, ge.nombre AS Genero, ca.nombre AS Categoria  FROM libros li JOIN generos ge " +
-                        "ON li. genero_id = ge.genero_id JOIN categorias ca ON  li.categoria_id = ca.categorias_id WHERE ge.nombre = @categoria;";
+                        "ON li. genero_id = ge.genero_id JOIN categorias ca ON  li.categoria_id = ca.categorias_id WHERE ca.nombre = @categoria;";
 
 
                     MySqlCommand comando = new MySqlCommand(consulta, conexion);
@@ -271,7 +271,7 @@ namespace ProyectoBiblioteca
 
                     string consulta = "SELECT  li.librosSaga_id, li.titulo, li.isbn, li.año_publicacion, li.editorial," +
                         " li.descripcion, li.autor, ge.nombre AS Genero, ca.nombre AS Categoria  FROM librosSaga  li JOIN generos ge " +
-                        "ON li. genero_id = ge.genero_id JOIN categorias ca ON  li.categorias_id = ca.categorias_id WHERE ge.nombre = @categoria;";
+                        "ON li. genero_id = ge.genero_id JOIN categorias ca ON  li.categorias_id = ca.categorias_id WHERE ca.nombre = @categoria;";
 
 
                     MySqlCommand comando = new MySqlCommand(consulta, conexion);
@@ -301,7 +301,7 @@ namespace ProyectoBiblioteca
 
         private void btnCientifico_Click(object sender, EventArgs e)
         {
-            Busquedas("Cientifico");
+            Busquedas("Ciencia y tecnología");
             PanelCategorias.Visible = false;
         }
 
