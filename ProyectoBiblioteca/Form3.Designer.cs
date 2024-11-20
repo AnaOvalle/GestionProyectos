@@ -54,6 +54,7 @@
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.bunifuPanel2 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.cbIDUsuario = new System.Windows.Forms.ComboBox();
             this.txtContra = new Bunifu.UI.WinForms.BunifuTextBox();
             this.txtusuario = new Bunifu.UI.WinForms.BunifuTextBox();
             this.bunifuLabel6 = new Bunifu.UI.WinForms.BunifuLabel();
@@ -66,7 +67,6 @@
             this.btmmodificar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btmagregar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btmeliminar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.cbIDUsuario = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.PanelBarra.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -85,12 +85,12 @@
             this.bunifuLabel2.AutoEllipsis = false;
             this.bunifuLabel2.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel2.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel2.Font = new System.Drawing.Font("Cooper Black", 20F);
+            this.bunifuLabel2.Font = new System.Drawing.Font("Century", 20.25F, System.Drawing.FontStyle.Bold);
             this.bunifuLabel2.Location = new System.Drawing.Point(252, 53);
             this.bunifuLabel2.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuLabel2.Name = "bunifuLabel2";
             this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel2.Size = new System.Drawing.Size(175, 31);
+            this.bunifuLabel2.Size = new System.Drawing.Size(179, 33);
             this.bunifuLabel2.TabIndex = 15;
             this.bunifuLabel2.Text = "Crear cuenta";
             this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -345,6 +345,19 @@
             this.bunifuPanel2.Size = new System.Drawing.Size(350, 167);
             this.bunifuPanel2.TabIndex = 14;
             // 
+            // cbIDUsuario
+            // 
+            this.cbIDUsuario.FormattingEnabled = true;
+            this.cbIDUsuario.Items.AddRange(new object[] {
+            "Admin",
+            "Ventas",
+            "Maestra"});
+            this.cbIDUsuario.Location = new System.Drawing.Point(183, 15);
+            this.cbIDUsuario.Margin = new System.Windows.Forms.Padding(2);
+            this.cbIDUsuario.Name = "cbIDUsuario";
+            this.cbIDUsuario.Size = new System.Drawing.Size(140, 21);
+            this.cbIDUsuario.TabIndex = 17;
+            // 
             // txtContra
             // 
             this.txtContra.AcceptsReturn = false;
@@ -498,12 +511,12 @@
             this.bunifuLabel6.AllowParentOverrides = false;
             this.bunifuLabel6.AutoEllipsis = false;
             this.bunifuLabel6.CursorType = null;
-            this.bunifuLabel6.Font = new System.Drawing.Font("Cooper Black", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel6.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Bold);
             this.bunifuLabel6.Location = new System.Drawing.Point(74, 136);
             this.bunifuLabel6.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuLabel6.Name = "bunifuLabel6";
             this.bunifuLabel6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel6.Size = new System.Drawing.Size(103, 14);
+            this.bunifuLabel6.Size = new System.Drawing.Size(112, 16);
             this.bunifuLabel6.TabIndex = 16;
             this.bunifuLabel6.Text = "Tipo de usuarios:";
             this.bunifuLabel6.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -514,12 +527,12 @@
             this.bunifuLabel5.AllowParentOverrides = false;
             this.bunifuLabel5.AutoEllipsis = false;
             this.bunifuLabel5.CursorType = null;
-            this.bunifuLabel5.Font = new System.Drawing.Font("Cooper Black", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel5.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel5.Location = new System.Drawing.Point(102, 92);
             this.bunifuLabel5.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuLabel5.Name = "bunifuLabel5";
             this.bunifuLabel5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel5.Size = new System.Drawing.Size(70, 14);
+            this.bunifuLabel5.Size = new System.Drawing.Size(75, 16);
             this.bunifuLabel5.TabIndex = 15;
             this.bunifuLabel5.Text = "Contraseña";
             this.bunifuLabel5.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -530,12 +543,12 @@
             this.bunifuLabel4.AllowParentOverrides = false;
             this.bunifuLabel4.AutoEllipsis = false;
             this.bunifuLabel4.CursorType = null;
-            this.bunifuLabel4.Font = new System.Drawing.Font("Cooper Black", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel4.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Bold);
             this.bunifuLabel4.Location = new System.Drawing.Point(59, 54);
             this.bunifuLabel4.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuLabel4.Name = "bunifuLabel4";
             this.bunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel4.Size = new System.Drawing.Size(119, 14);
+            this.bunifuLabel4.Size = new System.Drawing.Size(127, 16);
             this.bunifuLabel4.TabIndex = 14;
             this.bunifuLabel4.Text = "Nombre de usuario:";
             this.bunifuLabel4.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -546,13 +559,13 @@
             this.bunifuLabel3.AllowParentOverrides = false;
             this.bunifuLabel3.AutoEllipsis = false;
             this.bunifuLabel3.CursorType = null;
-            this.bunifuLabel3.Font = new System.Drawing.Font("Cooper Black", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel3.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Bold);
             this.bunifuLabel3.ForeColor = System.Drawing.Color.Black;
             this.bunifuLabel3.Location = new System.Drawing.Point(108, 15);
             this.bunifuLabel3.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuLabel3.Name = "bunifuLabel3";
             this.bunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel3.Size = new System.Drawing.Size(70, 14);
+            this.bunifuLabel3.Size = new System.Drawing.Size(75, 16);
             this.bunifuLabel3.TabIndex = 13;
             this.bunifuLabel3.Text = "ID Usuario:";
             this.bunifuLabel3.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -619,7 +632,7 @@
             this.btmlimpiar.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.btmlimpiar.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btmlimpiar.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btmlimpiar.Font = new System.Drawing.Font("Cooper Black", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btmlimpiar.Font = new System.Drawing.Font("Century", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btmlimpiar.ForeColor = System.Drawing.Color.White;
             this.btmlimpiar.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btmlimpiar.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -709,7 +722,7 @@
             this.btmmodificar.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.btmmodificar.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btmmodificar.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btmmodificar.Font = new System.Drawing.Font("Cooper Black", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btmmodificar.Font = new System.Drawing.Font("Century", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btmmodificar.ForeColor = System.Drawing.Color.White;
             this.btmmodificar.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btmmodificar.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -799,7 +812,7 @@
             this.btmagregar.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.btmagregar.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btmagregar.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btmagregar.Font = new System.Drawing.Font("Cooper Black", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btmagregar.Font = new System.Drawing.Font("Century", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btmagregar.ForeColor = System.Drawing.Color.White;
             this.btmagregar.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btmagregar.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -889,7 +902,7 @@
             this.btmeliminar.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.btmeliminar.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btmeliminar.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btmeliminar.Font = new System.Drawing.Font("Cooper Black", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btmeliminar.Font = new System.Drawing.Font("Century", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btmeliminar.ForeColor = System.Drawing.Color.White;
             this.btmeliminar.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btmeliminar.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -949,19 +962,6 @@
             this.btmeliminar.TextMarginLeft = 0;
             this.btmeliminar.TextPadding = new System.Windows.Forms.Padding(0);
             this.btmeliminar.UseDefaultRadiusAndThickness = true;
-            // 
-            // cbIDUsuario
-            // 
-            this.cbIDUsuario.FormattingEnabled = true;
-            this.cbIDUsuario.Items.AddRange(new object[] {
-            "Admin",
-            "Ventas",
-            "Maestra"});
-            this.cbIDUsuario.Location = new System.Drawing.Point(183, 15);
-            this.cbIDUsuario.Margin = new System.Windows.Forms.Padding(2);
-            this.cbIDUsuario.Name = "cbIDUsuario";
-            this.cbIDUsuario.Size = new System.Drawing.Size(140, 21);
-            this.cbIDUsuario.TabIndex = 17;
             // 
             // FrmAltaUsuarios
             // 

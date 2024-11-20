@@ -582,3 +582,7 @@ C:\Users\billi\OneDrive\Escritorio\Gestion\GPS\ProyectoBiblioteca\obj\Debug\Proy
 C:\Users\billi\OneDrive\Escritorio\Gestion\GPS\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.csproj.CopyComplete
 C:\Users\billi\OneDrive\Escritorio\Gestion\GPS\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.exe
 C:\Users\billi\OneDrive\Escritorio\Gestion\GPS\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.pdb
+C:\ProyectoGPS\ProyectoBiblioteca\bin\Debug\BouncyCastle.Cryptography.dll
+C:\ProyectoGPS\ProyectoBiblioteca\bin\Debug\itextsharp.dll
+C:\ProyectoGPS\ProyectoBiblioteca\bin\Debug\BouncyCastle.Cryptography.xml
+C:\ProyectoGPS\ProyectoBiblioteca\bin\Debug\itextsharp.xml
