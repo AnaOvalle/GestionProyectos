@@ -95,6 +95,7 @@
             this.txtIBSN = new Bunifu.UI.WinForms.BunifuTextBox();
             this.txtTitulo = new Bunifu.UI.WinForms.BunifuTextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.PanelData.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGVColecciones)).BeginInit();
             this.bunifuPanel1.SuspendLayout();
@@ -852,6 +853,7 @@
             this.btnImagen.TextMarginLeft = 0;
             this.btnImagen.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnImagen.UseDefaultRadiusAndThickness = true;
+            this.btnImagen.Click += new System.EventHandler(this.btnImagen_Click);
             // 
             // Imagen
             // 
@@ -859,8 +861,10 @@
             this.Imagen.Margin = new System.Windows.Forms.Padding(4);
             this.Imagen.Name = "Imagen";
             this.Imagen.Size = new System.Drawing.Size(204, 140);
+            this.Imagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Imagen.TabIndex = 97;
             this.Imagen.TabStop = false;
+            this.Imagen.Click += new System.EventHandler(this.Imagen_Click);
             // 
             // txtDescrip
             // 
@@ -936,6 +940,7 @@
             this.txtDescrip.TextPlaceholder = "";
             this.txtDescrip.UseSystemPasswordChar = false;
             this.txtDescrip.WordWrap = true;
+            this.txtDescrip.TextChanged += new System.EventHandler(this.txtDescrip_TextChanged);
             // 
             // label8
             // 
@@ -952,6 +957,7 @@
             // 
             // cbCategoria
             // 
+            this.cbCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbCategoria.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbCategoria.FormattingEnabled = true;
             this.cbCategoria.Location = new System.Drawing.Point(145, 347);
@@ -959,6 +965,7 @@
             this.cbCategoria.Name = "cbCategoria";
             this.cbCategoria.Size = new System.Drawing.Size(205, 31);
             this.cbCategoria.TabIndex = 94;
+            this.cbCategoria.SelectedIndexChanged += new System.EventHandler(this.cbCategoria_SelectedIndexChanged);
             // 
             // label4
             // 
@@ -975,6 +982,7 @@
             // 
             // cbGenero
             // 
+            this.cbGenero.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbGenero.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbGenero.FormattingEnabled = true;
             this.cbGenero.Location = new System.Drawing.Point(145, 293);
@@ -1437,6 +1445,10 @@
             this.label5.TabIndex = 76;
             this.label5.Text = "Titulo:";
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "OfdSubir";
+            // 
             // RegistroColeccion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1494,5 +1506,6 @@
         private System.Windows.Forms.PictureBox Imagen;
         private System.Windows.Forms.Label label9;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnImagen;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }

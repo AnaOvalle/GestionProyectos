@@ -87,21 +87,25 @@
             this.DataInveLibros.HeaderBgColor = System.Drawing.Color.Empty;
             this.DataInveLibros.HeaderForeColor = System.Drawing.Color.White;
             this.DataInveLibros.Location = new System.Drawing.Point(0, 0);
+            this.DataInveLibros.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DataInveLibros.Name = "DataInveLibros";
             this.DataInveLibros.RowHeadersVisible = false;
+            this.DataInveLibros.RowHeadersWidth = 51;
             this.DataInveLibros.RowTemplate.Height = 40;
             this.DataInveLibros.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DataInveLibros.Size = new System.Drawing.Size(1000, 422);
+            this.DataInveLibros.Size = new System.Drawing.Size(1333, 519);
             this.DataInveLibros.TabIndex = 0;
             this.DataInveLibros.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
+            this.DataInveLibros.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataInveLibros_CellContentClick);
             // 
             // DATAInventarioLibros
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1000, 422);
+            this.ClientSize = new System.Drawing.Size(1333, 519);
             this.Controls.Add(this.DataInveLibros);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "DATAInventarioLibros";
             this.Text = "DATAInventarioLibros";
             ((System.ComponentModel.ISupportInitialize)(this.DataInveLibros)).EndInit();

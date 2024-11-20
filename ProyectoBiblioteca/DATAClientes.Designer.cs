@@ -87,23 +87,27 @@
             this.DATAcliente.HeaderBgColor = System.Drawing.Color.Empty;
             this.DATAcliente.HeaderForeColor = System.Drawing.Color.White;
             this.DATAcliente.Location = new System.Drawing.Point(0, 0);
+            this.DATAcliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DATAcliente.Name = "DATAcliente";
             this.DATAcliente.RowHeadersVisible = false;
+            this.DATAcliente.RowHeadersWidth = 51;
             this.DATAcliente.RowTemplate.Height = 40;
             this.DATAcliente.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DATAcliente.Size = new System.Drawing.Size(1000, 422);
+            this.DATAcliente.Size = new System.Drawing.Size(1333, 519);
             this.DATAcliente.TabIndex = 0;
             this.DATAcliente.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             // 
             // DATAClientes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1000, 422);
+            this.ClientSize = new System.Drawing.Size(1333, 519);
             this.Controls.Add(this.DATAcliente);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "DATAClientes";
             this.Text = "DATAClientes";
+            this.Load += new System.EventHandler(this.DATAClientes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DATAcliente)).EndInit();
             this.ResumeLayout(false);
 
