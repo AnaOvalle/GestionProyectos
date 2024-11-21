@@ -90,10 +90,10 @@
             this.PanelSagas.Controls.Add(this.label2);
             this.PanelSagas.Controls.Add(this.bunifuShadowPanel2);
             this.PanelSagas.Dock = System.Windows.Forms.DockStyle.Right;
-            this.PanelSagas.Location = new System.Drawing.Point(528, 132);
+            this.PanelSagas.Location = new System.Drawing.Point(526, 132);
             this.PanelSagas.Name = "PanelSagas";
             this.PanelSagas.ShowBorders = true;
-            this.PanelSagas.Size = new System.Drawing.Size(528, 492);
+            this.PanelSagas.Size = new System.Drawing.Size(530, 492);
             this.PanelSagas.TabIndex = 2;
             // 
             // bunifuLabel4
@@ -102,14 +102,14 @@
             this.bunifuLabel4.AutoEllipsis = false;
             this.bunifuLabel4.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel4.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel4.Font = new System.Drawing.Font("Century", 15F, System.Drawing.FontStyle.Bold);
+            this.bunifuLabel4.Font = new System.Drawing.Font("Cooper Black", 15F);
             this.bunifuLabel4.ForeColor = System.Drawing.Color.Black;
             this.bunifuLabel4.Location = new System.Drawing.Point(29, 34);
             this.bunifuLabel4.Name = "bunifuLabel4";
             this.bunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel4.Size = new System.Drawing.Size(134, 23);
+            this.bunifuLabel4.Size = new System.Drawing.Size(126, 23);
             this.bunifuLabel4.TabIndex = 132;
-            this.bunifuLabel4.Text = "COLECCIÓN";
+            this.bunifuLabel4.Text = "COLECCION";
             this.bunifuLabel4.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel4.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
@@ -210,7 +210,7 @@
             this.btnSagaDevol.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.btnSagaDevol.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btnSagaDevol.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btnSagaDevol.Font = new System.Drawing.Font("Century", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSagaDevol.Font = new System.Drawing.Font("Cooper Black", 14F);
             this.btnSagaDevol.ForeColor = System.Drawing.Color.Black;
             this.btnSagaDevol.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSagaDevol.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -269,6 +269,7 @@
             this.btnSagaDevol.TextMarginLeft = 0;
             this.btnSagaDevol.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnSagaDevol.UseDefaultRadiusAndThickness = true;
+            this.btnSagaDevol.Click += new System.EventHandler(this.btnSagaDevol_Click);
             // 
             // NumCantidadSaga
             // 
@@ -390,12 +391,12 @@
             this.bunifuLabel3.AutoEllipsis = false;
             this.bunifuLabel3.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel3.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel3.Font = new System.Drawing.Font("Century", 15.75F, System.Drawing.FontStyle.Bold);
+            this.bunifuLabel3.Font = new System.Drawing.Font("Cooper Black", 16F);
             this.bunifuLabel3.ForeColor = System.Drawing.Color.Black;
             this.bunifuLabel3.Location = new System.Drawing.Point(19, 34);
             this.bunifuLabel3.Name = "bunifuLabel3";
             this.bunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel3.Size = new System.Drawing.Size(88, 25);
+            this.bunifuLabel3.Size = new System.Drawing.Size(83, 24);
             this.bunifuLabel3.TabIndex = 125;
             this.bunifuLabel3.Text = "LIBROS";
             this.bunifuLabel3.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -468,6 +469,7 @@
             this.btnRefresh.WaitOnLoad = false;
             this.btnRefresh.Zoom = 10;
             this.btnRefresh.ZoomSpeed = 10;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // btnDevolverLibro
             // 
@@ -498,7 +500,7 @@
             this.btnDevolverLibro.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.btnDevolverLibro.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btnDevolverLibro.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btnDevolverLibro.Font = new System.Drawing.Font("Century", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDevolverLibro.Font = new System.Drawing.Font("Cooper Black", 14F);
             this.btnDevolverLibro.ForeColor = System.Drawing.Color.Black;
             this.btnDevolverLibro.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDevolverLibro.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -557,6 +559,7 @@
             this.btnDevolverLibro.TextMarginLeft = 0;
             this.btnDevolverLibro.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnDevolverLibro.UseDefaultRadiusAndThickness = true;
+            this.btnDevolverLibro.Click += new System.EventHandler(this.btnDevolverLibro_Click);
             // 
             // NumCantidadLibros
             // 
@@ -682,11 +685,11 @@
             this.bunifuLabel2.AutoEllipsis = false;
             this.bunifuLabel2.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel2.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel2.Font = new System.Drawing.Font("Century", 15F, System.Drawing.FontStyle.Bold);
+            this.bunifuLabel2.Font = new System.Drawing.Font("Cooper Black", 15F);
             this.bunifuLabel2.Location = new System.Drawing.Point(363, 94);
             this.bunifuLabel2.Name = "bunifuLabel2";
             this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel2.Size = new System.Drawing.Size(149, 23);
+            this.bunifuLabel2.Size = new System.Drawing.Size(151, 23);
             this.bunifuLabel2.TabIndex = 29;
             this.bunifuLabel2.Text = "Devolución de: ";
             this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -698,12 +701,12 @@
             this.bunifuLabel1.AutoEllipsis = false;
             this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel1.Font = new System.Drawing.Font("Century", 27F, System.Drawing.FontStyle.Bold);
+            this.bunifuLabel1.Font = new System.Drawing.Font("Cooper Black", 27F);
             this.bunifuLabel1.ForeColor = System.Drawing.Color.Black;
             this.bunifuLabel1.Location = new System.Drawing.Point(376, 24);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(320, 42);
+            this.bunifuLabel1.Size = new System.Drawing.Size(311, 41);
             this.bunifuLabel1.TabIndex = 28;
             this.bunifuLabel1.Text = "DEVOLUCIONES ";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -721,6 +724,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Devolucion";
             this.Text = "Devolucion";
+            this.Load += new System.EventHandler(this.Devolucion_Load);
             this.PanelSagas.ResumeLayout(false);
             this.PanelSagas.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NumCantidadSaga)).EndInit();
