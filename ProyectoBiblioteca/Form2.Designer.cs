@@ -63,6 +63,7 @@
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.Hora = new System.Windows.Forms.Timer(this.components);
             this.PanelContenido = new Bunifu.UI.WinForms.BunifuPanel();
+            this.PanelUsuario = new Bunifu.UI.WinForms.BunifuPanel();
             this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.sedebar = new Bunifu.UI.WinForms.BunifuGradientPanel();
             this.bunifuButton1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -94,7 +95,6 @@
             this.btnFiccion = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnCategorias = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnLibros = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.PanelUsuario = new Bunifu.UI.WinForms.BunifuPanel();
             this.bunifuPanel1.SuspendLayout();
             this.PanelContenido.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
@@ -154,11 +154,11 @@
             this.lblHora.AutoEllipsis = false;
             this.lblHora.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblHora.CursorType = System.Windows.Forms.Cursors.Default;
-            this.lblHora.Font = new System.Drawing.Font("Cooper Black", 13F);
+            this.lblHora.Font = new System.Drawing.Font("Century", 12.75F, System.Drawing.FontStyle.Bold);
             this.lblHora.Location = new System.Drawing.Point(70, 20);
             this.lblHora.Name = "lblHora";
             this.lblHora.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblHora.Size = new System.Drawing.Size(59, 20);
+            this.lblHora.Size = new System.Drawing.Size(56, 21);
             this.lblHora.TabIndex = 26;
             this.lblHora.Text = "bunifu";
             this.lblHora.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -243,12 +243,12 @@
             this.bunifuLabel1.AutoEllipsis = false;
             this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
+            this.bunifuLabel1.Font = new System.Drawing.Font("Century", 9.75F, System.Drawing.FontStyle.Bold);
             this.bunifuLabel1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.bunifuLabel1.Location = new System.Drawing.Point(813, 12);
+            this.bunifuLabel1.Location = new System.Drawing.Point(863, 23);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(179, 25);
+            this.bunifuLabel1.Size = new System.Drawing.Size(129, 18);
             this.bunifuLabel1.TabIndex = 0;
             this.bunifuLabel1.Text = "ADMINISTRADOR";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -276,6 +276,21 @@
             this.PanelContenido.ShowBorders = true;
             this.PanelContenido.Size = new System.Drawing.Size(1056, 624);
             this.PanelContenido.TabIndex = 30;
+            // 
+            // PanelUsuario
+            // 
+            this.PanelUsuario.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(224)))), ((int)(((byte)(217)))));
+            this.PanelUsuario.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PanelUsuario.BackgroundImage")));
+            this.PanelUsuario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.PanelUsuario.BorderColor = System.Drawing.Color.Transparent;
+            this.PanelUsuario.BorderRadius = 3;
+            this.PanelUsuario.BorderThickness = 1;
+            this.PanelUsuario.Location = new System.Drawing.Point(858, 6);
+            this.PanelUsuario.Name = "PanelUsuario";
+            this.PanelUsuario.ShowBorders = true;
+            this.PanelUsuario.Size = new System.Drawing.Size(186, 137);
+            this.PanelUsuario.TabIndex = 30;
+            this.PanelUsuario.Visible = false;
             // 
             // bunifuPictureBox1
             // 
@@ -438,13 +453,13 @@
             this.bunifuLabel2.AutoEllipsis = false;
             this.bunifuLabel2.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel2.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Bold);
-            this.bunifuLabel2.Location = new System.Drawing.Point(75, 45);
+            this.bunifuLabel2.Font = new System.Drawing.Font("Century", 17.25F, System.Drawing.FontStyle.Bold);
+            this.bunifuLabel2.Location = new System.Drawing.Point(71, 41);
             this.bunifuLabel2.Name = "bunifuLabel2";
             this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel2.Size = new System.Drawing.Size(158, 29);
+            this.bunifuLabel2.Size = new System.Drawing.Size(167, 28);
             this.bunifuLabel2.TabIndex = 29;
-            this.bunifuLabel2.Text = "Librery Island";
+            this.bunifuLabel2.Text = "Library Island";
             this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel2.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             this.bunifuLabel2.Click += new System.EventHandler(this.bunifuLabel2_Click);
@@ -2428,21 +2443,6 @@
             this.btnLibros.TextPadding = new System.Windows.Forms.Padding(25, 0, 0, 0);
             this.btnLibros.UseDefaultRadiusAndThickness = true;
             this.btnLibros.Click += new System.EventHandler(this.btnLibros_Click);
-            // 
-            // PanelUsuario
-            // 
-            this.PanelUsuario.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(224)))), ((int)(((byte)(217)))));
-            this.PanelUsuario.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PanelUsuario.BackgroundImage")));
-            this.PanelUsuario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.PanelUsuario.BorderColor = System.Drawing.Color.Transparent;
-            this.PanelUsuario.BorderRadius = 3;
-            this.PanelUsuario.BorderThickness = 1;
-            this.PanelUsuario.Location = new System.Drawing.Point(858, 6);
-            this.PanelUsuario.Name = "PanelUsuario";
-            this.PanelUsuario.ShowBorders = true;
-            this.PanelUsuario.Size = new System.Drawing.Size(186, 137);
-            this.PanelUsuario.TabIndex = 30;
-            this.PanelUsuario.Visible = false;
             // 
             // Menu
             // 

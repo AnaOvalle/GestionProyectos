@@ -236,14 +236,14 @@
             this.bunifuLabel2.AutoEllipsis = false;
             this.bunifuLabel2.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel2.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel2.Font = new System.Drawing.Font("Cooper Black", 13F);
+            this.bunifuLabel2.Font = new System.Drawing.Font("Century", 12.75F, System.Drawing.FontStyle.Bold);
             this.bunifuLabel2.ForeColor = System.Drawing.Color.Black;
             this.bunifuLabel2.Location = new System.Drawing.Point(364, 15);
             this.bunifuLabel2.Name = "bunifuLabel2";
             this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel2.Size = new System.Drawing.Size(106, 20);
+            this.bunifuLabel2.Size = new System.Drawing.Size(115, 21);
             this.bunifuLabel2.TabIndex = 39;
-            this.bunifuLabel2.Text = "COLECCION";
+            this.bunifuLabel2.Text = "COLECCIÓN";
             this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel2.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
@@ -276,7 +276,7 @@
             this.btnGuardarSaga.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.btnGuardarSaga.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btnGuardarSaga.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btnGuardarSaga.Font = new System.Drawing.Font("Cooper Black", 11F);
+            this.btnGuardarSaga.Font = new System.Drawing.Font("Century", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardarSaga.ForeColor = System.Drawing.Color.Black;
             this.btnGuardarSaga.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGuardarSaga.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -365,7 +365,7 @@
             this.btnAgregarSaga.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.btnAgregarSaga.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btnAgregarSaga.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btnAgregarSaga.Font = new System.Drawing.Font("Cooper Black", 14F);
+            this.btnAgregarSaga.Font = new System.Drawing.Font("Century", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregarSaga.ForeColor = System.Drawing.Color.Black;
             this.btnAgregarSaga.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAgregarSaga.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -713,12 +713,12 @@
             this.bunifuLabel3.AutoEllipsis = false;
             this.bunifuLabel3.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel3.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel3.Font = new System.Drawing.Font("Cooper Black", 13F);
+            this.bunifuLabel3.Font = new System.Drawing.Font("Century", 12.75F, System.Drawing.FontStyle.Bold);
             this.bunifuLabel3.ForeColor = System.Drawing.Color.Black;
             this.bunifuLabel3.Location = new System.Drawing.Point(392, 15);
             this.bunifuLabel3.Name = "bunifuLabel3";
             this.bunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel3.Size = new System.Drawing.Size(67, 20);
+            this.bunifuLabel3.Size = new System.Drawing.Size(72, 21);
             this.bunifuLabel3.TabIndex = 40;
             this.bunifuLabel3.Text = "LIBROS";
             this.bunifuLabel3.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -765,7 +765,7 @@
             this.btnGuardarLibro.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.btnGuardarLibro.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btnGuardarLibro.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btnGuardarLibro.Font = new System.Drawing.Font("Cooper Black", 11F);
+            this.btnGuardarLibro.Font = new System.Drawing.Font("Century", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardarLibro.ForeColor = System.Drawing.Color.Black;
             this.btnGuardarLibro.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGuardarLibro.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -854,7 +854,7 @@
             this.btnAgregarLibro.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.btnAgregarLibro.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btnAgregarLibro.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btnAgregarLibro.Font = new System.Drawing.Font("Cooper Black", 14F);
+            this.btnAgregarLibro.Font = new System.Drawing.Font("Century", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregarLibro.ForeColor = System.Drawing.Color.Black;
             this.btnAgregarLibro.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAgregarLibro.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -1064,14 +1064,14 @@
             this.bunifuLabel1.AutoEllipsis = false;
             this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel1.Font = new System.Drawing.Font("Cooper Black", 24F);
+            this.bunifuLabel1.Font = new System.Drawing.Font("Century", 24F, System.Drawing.FontStyle.Bold);
             this.bunifuLabel1.ForeColor = System.Drawing.Color.Black;
             this.bunifuLabel1.Location = new System.Drawing.Point(420, 12);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(212, 36);
+            this.bunifuLabel1.Size = new System.Drawing.Size(215, 38);
             this.bunifuLabel1.TabIndex = 38;
-            this.bunifuLabel1.Text = "PRESTAMOS";
+            this.bunifuLabel1.Text = "PRÉSTAMOS";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 

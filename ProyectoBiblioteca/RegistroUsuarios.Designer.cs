@@ -842,7 +842,7 @@
             this.bunifuTextBox3.BorderThickness = 1;
             this.bunifuTextBox3.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.bunifuTextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuTextBox3.DefaultFont = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuTextBox3.DefaultFont = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuTextBox3.DefaultText = "";
             this.bunifuTextBox3.FillColor = System.Drawing.Color.White;
             this.bunifuTextBox3.HideSelection = true;
@@ -888,7 +888,7 @@
             this.bunifuTextBox3.SelectionLength = 0;
             this.bunifuTextBox3.SelectionStart = 0;
             this.bunifuTextBox3.ShortcutsEnabled = true;
-            this.bunifuTextBox3.Size = new System.Drawing.Size(312, 36);
+            this.bunifuTextBox3.Size = new System.Drawing.Size(312, 40);
             this.bunifuTextBox3.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.bunifuTextBox3.TabIndex = 20;
             this.bunifuTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1424,12 +1424,12 @@
             this.bunifuLabel1.AutoEllipsis = false;
             this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel1.Font = new System.Drawing.Font("Cooper Black", 24F);
+            this.bunifuLabel1.Font = new System.Drawing.Font("Century", 24F, System.Drawing.FontStyle.Bold);
             this.bunifuLabel1.ForeColor = System.Drawing.Color.Black;
             this.bunifuLabel1.Location = new System.Drawing.Point(299, 12);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(425, 36);
+            this.bunifuLabel1.Size = new System.Drawing.Size(435, 38);
             this.bunifuLabel1.TabIndex = 2;
             this.bunifuLabel1.Text = "REGISTRO DE USUARIOS";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
