@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inicio));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuLabel3 = new Bunifu.UI.WinForms.BunifuLabel();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
@@ -44,6 +44,7 @@
             this.bunifuBarChart1 = new Bunifu.Charts.WinForms.ChartTypes.BunifuBarChart(this.components);
             this.bunifuLabel5 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuShapes1 = new Bunifu.UI.WinForms.BunifuShapes();
+            this.lblHora = new Bunifu.UI.WinForms.BunifuLabel();
             this.Hora = new System.Windows.Forms.Timer(this.components);
             this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.bunifuPanel5 = new Bunifu.UI.WinForms.BunifuPanel();
@@ -71,11 +72,11 @@
             this.bunifuLabel3.AutoEllipsis = false;
             this.bunifuLabel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(166)))), ((int)(((byte)(228)))));
             this.bunifuLabel3.CursorType = null;
-            this.bunifuLabel3.Font = new System.Drawing.Font("Century", 18F, System.Drawing.FontStyle.Bold);
+            this.bunifuLabel3.Font = new System.Drawing.Font("Cooper Black", 18F);
             this.bunifuLabel3.Location = new System.Drawing.Point(335, 12);
             this.bunifuLabel3.Name = "bunifuLabel3";
             this.bunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel3.Size = new System.Drawing.Size(133, 28);
+            this.bunifuLabel3.Size = new System.Drawing.Size(135, 27);
             this.bunifuLabel3.TabIndex = 18;
             this.bunifuLabel3.Text = "Calendario";
             this.bunifuLabel3.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -96,11 +97,11 @@
             this.bunifuLabel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(166)))), ((int)(((byte)(228)))));
             this.bunifuLabel2.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel2.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel2.Font = new System.Drawing.Font("Century", 18F, System.Drawing.FontStyle.Bold);
+            this.bunifuLabel2.Font = new System.Drawing.Font("Cooper Black", 18F);
             this.bunifuLabel2.Location = new System.Drawing.Point(78, 12);
             this.bunifuLabel2.Name = "bunifuLabel2";
             this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel2.Size = new System.Drawing.Size(134, 28);
+            this.bunifuLabel2.Size = new System.Drawing.Size(134, 27);
             this.bunifuLabel2.TabIndex = 0;
             this.bunifuLabel2.Text = "Pendientes";
             this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -238,11 +239,11 @@
             this.bunifuLabel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(166)))), ((int)(((byte)(228)))));
             this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel1.Font = new System.Drawing.Font("Century", 18F, System.Drawing.FontStyle.Bold);
+            this.bunifuLabel1.Font = new System.Drawing.Font("Cooper Black", 18F);
             this.bunifuLabel1.Location = new System.Drawing.Point(583, 12);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(441, 28);
+            this.bunifuLabel1.Size = new System.Drawing.Size(422, 27);
             this.bunifuLabel1.TabIndex = 21;
             this.bunifuLabel1.Text = "FLUJO DE CLIENTES (semana 4-6)";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -255,11 +256,11 @@
             this.bunifuLabel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(166)))), ((int)(((byte)(228)))));
             this.bunifuLabel4.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel4.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel4.Font = new System.Drawing.Font("Century", 18F, System.Drawing.FontStyle.Bold);
+            this.bunifuLabel4.Font = new System.Drawing.Font("Cooper Black", 18F);
             this.bunifuLabel4.Location = new System.Drawing.Point(272, 334);
             this.bunifuLabel4.Name = "bunifuLabel4";
             this.bunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel4.Size = new System.Drawing.Size(243, 28);
+            this.bunifuLabel4.Size = new System.Drawing.Size(227, 27);
             this.bunifuLabel4.TabIndex = 22;
             this.bunifuLabel4.Text = "FLUJO DE LIBROS";
             this.bunifuLabel4.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -354,13 +355,13 @@
             this.bunifuLabel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(166)))), ((int)(((byte)(228)))));
             this.bunifuLabel5.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel5.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel5.Font = new System.Drawing.Font("Century", 18F, System.Drawing.FontStyle.Bold);
+            this.bunifuLabel5.Font = new System.Drawing.Font("Cooper Black", 18F);
             this.bunifuLabel5.Location = new System.Drawing.Point(643, 334);
             this.bunifuLabel5.Name = "bunifuLabel5";
             this.bunifuLabel5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel5.Size = new System.Drawing.Size(326, 28);
+            this.bunifuLabel5.Size = new System.Drawing.Size(312, 27);
             this.bunifuLabel5.TabIndex = 23;
-            this.bunifuLabel5.Text = "ESTADÍSTICAS DEL AÑO";
+            this.bunifuLabel5.Text = "ESTADISTICAS DEL AÑO";
             this.bunifuLabel5.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel5.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
@@ -379,6 +380,23 @@
             this.bunifuShapes1.Size = new System.Drawing.Size(219, 70);
             this.bunifuShapes1.TabIndex = 24;
             this.bunifuShapes1.Text = "bunifuShapes1";
+            // 
+            // lblHora
+            // 
+            this.lblHora.AllowParentOverrides = false;
+            this.lblHora.AutoEllipsis = false;
+            this.lblHora.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lblHora.CursorType = System.Windows.Forms.Cursors.Default;
+            this.lblHora.Font = new System.Drawing.Font("Cooper Black", 20F);
+            this.lblHora.Location = new System.Drawing.Point(78, 564);
+            this.lblHora.Name = "lblHora";
+            this.lblHora.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblHora.Size = new System.Drawing.Size(92, 31);
+            this.lblHora.TabIndex = 25;
+            this.lblHora.Text = "bunifu";
+            this.lblHora.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.lblHora.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.lblHora.Click += new System.EventHandler(this.lblHora_Click);
             // 
             // Hora
             // 
@@ -450,11 +468,11 @@
             this.bunifuButton8.ColorContrastOnClick = 45;
             this.bunifuButton8.ColorContrastOnHover = 45;
             this.bunifuButton8.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.bunifuButton8.CustomizableEdges = borderEdges2;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.bunifuButton8.CustomizableEdges = borderEdges1;
             this.bunifuButton8.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton8.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton8.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -604,7 +622,7 @@
             // checkedListBox1
             // 
             this.checkedListBox1.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.checkedListBox1.Font = new System.Drawing.Font("Century", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkedListBox1.Font = new System.Drawing.Font("Cooper Black", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkedListBox1.FormattingEnabled = true;
             this.checkedListBox1.HorizontalScrollbar = true;
             this.checkedListBox1.Items.AddRange(new object[] {
@@ -632,6 +650,7 @@
             this.ClientSize = new System.Drawing.Size(1056, 624);
             this.ControlBox = false;
             this.Controls.Add(this.bunifuPictureBox1);
+            this.Controls.Add(this.lblHora);
             this.Controls.Add(this.bunifuShapes1);
             this.Controls.Add(this.bunifuLabel4);
             this.Controls.Add(this.bunifuLabel5);
@@ -679,6 +698,7 @@
         private Bunifu.Charts.WinForms.BunifuChartCanvas bunifuChartCanvas2;
         private Bunifu.Charts.WinForms.ChartTypes.BunifuBarChart bunifuBarChart1;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel5;
+        private Bunifu.UI.WinForms.BunifuLabel lblHora;
         private Bunifu.UI.WinForms.BunifuShapes bunifuShapes1;
         private System.Windows.Forms.Timer Hora;
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox1;

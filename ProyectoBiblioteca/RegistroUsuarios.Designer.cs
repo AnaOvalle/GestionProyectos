@@ -842,7 +842,7 @@
             this.bunifuTextBox3.BorderThickness = 1;
             this.bunifuTextBox3.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.bunifuTextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuTextBox3.DefaultFont = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuTextBox3.DefaultFont = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuTextBox3.DefaultText = "";
             this.bunifuTextBox3.FillColor = System.Drawing.Color.White;
             this.bunifuTextBox3.HideSelection = true;
@@ -888,7 +888,7 @@
             this.bunifuTextBox3.SelectionLength = 0;
             this.bunifuTextBox3.SelectionStart = 0;
             this.bunifuTextBox3.ShortcutsEnabled = true;
-            this.bunifuTextBox3.Size = new System.Drawing.Size(312, 40);
+            this.bunifuTextBox3.Size = new System.Drawing.Size(312, 36);
             this.bunifuTextBox3.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.bunifuTextBox3.TabIndex = 20;
             this.bunifuTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -987,6 +987,7 @@
             this.Registrar.TextMarginLeft = 0;
             this.Registrar.TextPadding = new System.Windows.Forms.Padding(0);
             this.Registrar.UseDefaultRadiusAndThickness = true;
+            this.Registrar.Click += new System.EventHandler(this.Registrar_Click);
             // 
             // bunifuPanel3
             // 
@@ -1072,6 +1073,7 @@
             this.btnRefresh.WaitOnLoad = false;
             this.btnRefresh.Zoom = 10;
             this.btnRefresh.ZoomSpeed = 10;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // bunifuDataGridView1
             // 
@@ -1134,6 +1136,7 @@
             this.bunifuDataGridView1.Size = new System.Drawing.Size(756, 345);
             this.bunifuDataGridView1.TabIndex = 0;
             this.bunifuDataGridView1.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
+            this.bunifuDataGridView1.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.bunifuDataGridView1_CellMouseClick);
             // 
             // Eliminar
             // 
@@ -1223,6 +1226,7 @@
             this.Eliminar.TextMarginLeft = 0;
             this.Eliminar.TextPadding = new System.Windows.Forms.Padding(0);
             this.Eliminar.UseDefaultRadiusAndThickness = true;
+            this.Eliminar.Click += new System.EventHandler(this.Eliminar_Click);
             // 
             // Buscar
             // 
@@ -1312,6 +1316,7 @@
             this.Buscar.TextMarginLeft = 0;
             this.Buscar.TextPadding = new System.Windows.Forms.Padding(0);
             this.Buscar.UseDefaultRadiusAndThickness = true;
+            this.Buscar.Click += new System.EventHandler(this.Buscar_Click);
             // 
             // Actualizar
             // 
@@ -1401,6 +1406,7 @@
             this.Actualizar.TextMarginLeft = 0;
             this.Actualizar.TextPadding = new System.Windows.Forms.Padding(0);
             this.Actualizar.UseDefaultRadiusAndThickness = true;
+            this.Actualizar.Click += new System.EventHandler(this.Actualizar_Click);
             // 
             // bunifuPanel1
             // 
@@ -1424,12 +1430,12 @@
             this.bunifuLabel1.AutoEllipsis = false;
             this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel1.Font = new System.Drawing.Font("Century", 24F, System.Drawing.FontStyle.Bold);
+            this.bunifuLabel1.Font = new System.Drawing.Font("Cooper Black", 24F);
             this.bunifuLabel1.ForeColor = System.Drawing.Color.Black;
             this.bunifuLabel1.Location = new System.Drawing.Point(299, 12);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(435, 38);
+            this.bunifuLabel1.Size = new System.Drawing.Size(425, 36);
             this.bunifuLabel1.TabIndex = 2;
             this.bunifuLabel1.Text = "REGISTRO DE USUARIOS";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;

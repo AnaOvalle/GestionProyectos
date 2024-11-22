@@ -47,8 +47,8 @@
             this.PanelContenido = new Bunifu.UI.WinForms.BunifuPanel();
             this.btnImprimir = new Bunifu.UI.WinForms.BunifuImageButton();
             this.PanelData = new Bunifu.UI.WinForms.BunifuPanel();
-            this.dgvReporte1 = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.btnRefresh = new Bunifu.UI.WinForms.BunifuImageButton();
+            this.dgvReporte1 = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.PanelContenido.SuspendLayout();
             this.PanelData.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvReporte1)).BeginInit();
@@ -60,12 +60,13 @@
             this.bunifuLabel1.AutoEllipsis = false;
             this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel1.Font = new System.Drawing.Font("Century", 30F, System.Drawing.FontStyle.Bold);
+            this.bunifuLabel1.Font = new System.Drawing.Font("Cooper Black", 30F);
             this.bunifuLabel1.ForeColor = System.Drawing.Color.Black;
-            this.bunifuLabel1.Location = new System.Drawing.Point(406, 12);
+            this.bunifuLabel1.Location = new System.Drawing.Point(541, 15);
+            this.bunifuLabel1.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(234, 47);
+            this.bunifuLabel1.Size = new System.Drawing.Size(288, 57);
             this.bunifuLabel1.TabIndex = 3;
             this.bunifuLabel1.Text = "REPORTES";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -77,9 +78,10 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(76, 96);
+            this.label1.Location = new System.Drawing.Point(101, 118);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(97, 19);
+            this.label1.Size = new System.Drawing.Size(124, 23);
             this.label1.TabIndex = 89;
             this.label1.Text = "Reporte de:";
             // 
@@ -88,9 +90,10 @@
             this.cbTipoReporte.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.cbTipoReporte.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbTipoReporte.FormattingEnabled = true;
-            this.cbTipoReporte.Location = new System.Drawing.Point(179, 92);
+            this.cbTipoReporte.Location = new System.Drawing.Point(239, 113);
+            this.cbTipoReporte.Margin = new System.Windows.Forms.Padding(4);
             this.cbTipoReporte.Name = "cbTipoReporte";
-            this.cbTipoReporte.Size = new System.Drawing.Size(246, 29);
+            this.cbTipoReporte.Size = new System.Drawing.Size(327, 31);
             this.cbTipoReporte.TabIndex = 96;
             // 
             // label2
@@ -99,9 +102,10 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(466, 96);
+            this.label2.Location = new System.Drawing.Point(621, 118);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(72, 19);
+            this.label2.Size = new System.Drawing.Size(90, 23);
             this.label2.TabIndex = 97;
             this.label2.Text = "Periodo:";
             // 
@@ -110,9 +114,10 @@
             this.cbPeriodo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.cbPeriodo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbPeriodo.FormattingEnabled = true;
-            this.cbPeriodo.Location = new System.Drawing.Point(544, 92);
+            this.cbPeriodo.Location = new System.Drawing.Point(725, 113);
+            this.cbPeriodo.Margin = new System.Windows.Forms.Padding(4);
             this.cbPeriodo.Name = "cbPeriodo";
-            this.cbPeriodo.Size = new System.Drawing.Size(162, 29);
+            this.cbPeriodo.Size = new System.Drawing.Size(215, 31);
             this.cbPeriodo.TabIndex = 98;
             // 
             // label3
@@ -121,9 +126,10 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(755, 96);
+            this.label3.Location = new System.Drawing.Point(1007, 118);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(28, 19);
+            this.label3.Size = new System.Drawing.Size(36, 23);
             this.label3.TabIndex = 99;
             this.label3.Text = "ID:";
             // 
@@ -144,17 +150,18 @@
             this.btnReportes.ImageActive = null;
             this.btnReportes.ImageLocation = null;
             this.btnReportes.ImageMargin = 0;
-            this.btnReportes.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnReportes.ImageZoomSize = new System.Drawing.Size(41, 41);
+            this.btnReportes.ImageSize = new System.Drawing.Size(54, 49);
+            this.btnReportes.ImageZoomSize = new System.Drawing.Size(55, 50);
             this.btnReportes.InitialImage = ((System.Drawing.Image)(resources.GetObject("btnReportes.InitialImage")));
-            this.btnReportes.Location = new System.Drawing.Point(932, 80);
+            this.btnReportes.Location = new System.Drawing.Point(1243, 99);
+            this.btnReportes.Margin = new System.Windows.Forms.Padding(4);
             this.btnReportes.Name = "btnReportes";
             this.btnReportes.Rotation = 0;
             this.btnReportes.ShowActiveImage = true;
             this.btnReportes.ShowCursorChanges = true;
             this.btnReportes.ShowImageBorders = false;
             this.btnReportes.ShowSizeMarkers = false;
-            this.btnReportes.Size = new System.Drawing.Size(41, 41);
+            this.btnReportes.Size = new System.Drawing.Size(55, 50);
             this.btnReportes.TabIndex = 101;
             this.btnReportes.ToolTipText = "Reporte";
             this.btnReportes.WaitOnLoad = false;
@@ -189,7 +196,8 @@
             this.txtID.IconRight = null;
             this.txtID.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtID.Lines = new string[0];
-            this.txtID.Location = new System.Drawing.Point(789, 92);
+            this.txtID.Location = new System.Drawing.Point(1052, 113);
+            this.txtID.Margin = new System.Windows.Forms.Padding(4);
             this.txtID.MaxLength = 32767;
             this.txtID.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtID.Modified = false;
@@ -215,7 +223,7 @@
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtID.OnIdleState = stateProperties4;
-            this.txtID.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.txtID.Padding = new System.Windows.Forms.Padding(4);
             this.txtID.PasswordChar = '\0';
             this.txtID.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtID.PlaceholderText = "";
@@ -225,7 +233,7 @@
             this.txtID.SelectionLength = 0;
             this.txtID.SelectionStart = 0;
             this.txtID.ShortcutsEnabled = true;
-            this.txtID.Size = new System.Drawing.Size(103, 29);
+            this.txtID.Size = new System.Drawing.Size(137, 36);
             this.txtID.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtID.TabIndex = 100;
             this.txtID.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -248,10 +256,11 @@
             this.PanelContenido.Controls.Add(this.btnImprimir);
             this.PanelContenido.Controls.Add(this.PanelData);
             this.PanelContenido.Controls.Add(this.btnRefresh);
-            this.PanelContenido.Location = new System.Drawing.Point(12, 131);
+            this.PanelContenido.Location = new System.Drawing.Point(16, 161);
+            this.PanelContenido.Margin = new System.Windows.Forms.Padding(4);
             this.PanelContenido.Name = "PanelContenido";
             this.PanelContenido.ShowBorders = true;
-            this.PanelContenido.Size = new System.Drawing.Size(1032, 481);
+            this.PanelContenido.Size = new System.Drawing.Size(1376, 592);
             this.PanelContenido.TabIndex = 39;
             // 
             // btnImprimir
@@ -271,17 +280,18 @@
             this.btnImprimir.ImageActive = null;
             this.btnImprimir.ImageLocation = null;
             this.btnImprimir.ImageMargin = 0;
-            this.btnImprimir.ImageSize = new System.Drawing.Size(28, 28);
-            this.btnImprimir.ImageZoomSize = new System.Drawing.Size(29, 29);
+            this.btnImprimir.ImageSize = new System.Drawing.Size(38, 35);
+            this.btnImprimir.ImageZoomSize = new System.Drawing.Size(39, 36);
             this.btnImprimir.InitialImage = ((System.Drawing.Image)(resources.GetObject("btnImprimir.InitialImage")));
-            this.btnImprimir.Location = new System.Drawing.Point(48, 7);
+            this.btnImprimir.Location = new System.Drawing.Point(64, 9);
+            this.btnImprimir.Margin = new System.Windows.Forms.Padding(4);
             this.btnImprimir.Name = "btnImprimir";
             this.btnImprimir.Rotation = 0;
             this.btnImprimir.ShowActiveImage = true;
             this.btnImprimir.ShowCursorChanges = true;
             this.btnImprimir.ShowImageBorders = false;
             this.btnImprimir.ShowSizeMarkers = false;
-            this.btnImprimir.Size = new System.Drawing.Size(29, 29);
+            this.btnImprimir.Size = new System.Drawing.Size(39, 36);
             this.btnImprimir.TabIndex = 12;
             this.btnImprimir.ToolTipText = "";
             this.btnImprimir.WaitOnLoad = false;
@@ -298,11 +308,48 @@
             this.PanelData.BorderRadius = 3;
             this.PanelData.BorderThickness = 1;
             this.PanelData.Controls.Add(this.dgvReporte1);
-            this.PanelData.Location = new System.Drawing.Point(13, 42);
+            this.PanelData.Location = new System.Drawing.Point(17, 52);
+            this.PanelData.Margin = new System.Windows.Forms.Padding(4);
             this.PanelData.Name = "PanelData";
             this.PanelData.ShowBorders = true;
-            this.PanelData.Size = new System.Drawing.Size(1000, 422);
+            this.PanelData.Size = new System.Drawing.Size(1333, 519);
             this.PanelData.TabIndex = 11;
+            // 
+            // btnRefresh
+            // 
+            this.btnRefresh.ActiveImage = null;
+            this.btnRefresh.AllowAnimations = true;
+            this.btnRefresh.AllowBuffering = false;
+            this.btnRefresh.AllowToggling = false;
+            this.btnRefresh.AllowZooming = true;
+            this.btnRefresh.AllowZoomingOnFocus = false;
+            this.btnRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(223)))), ((int)(((byte)(222)))));
+            this.btnRefresh.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnRefresh.ErrorImage = ((System.Drawing.Image)(resources.GetObject("btnRefresh.ErrorImage")));
+            this.btnRefresh.FadeWhenInactive = false;
+            this.btnRefresh.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
+            this.btnRefresh.Image = global::ProyectoBiblioteca.Properties.Resources.icons8_actualizar_32;
+            this.btnRefresh.ImageActive = null;
+            this.btnRefresh.ImageLocation = null;
+            this.btnRefresh.ImageMargin = 0;
+            this.btnRefresh.ImageSize = new System.Drawing.Size(38, 35);
+            this.btnRefresh.ImageZoomSize = new System.Drawing.Size(39, 36);
+            this.btnRefresh.InitialImage = ((System.Drawing.Image)(resources.GetObject("btnRefresh.InitialImage")));
+            this.btnRefresh.Location = new System.Drawing.Point(17, 9);
+            this.btnRefresh.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Rotation = 0;
+            this.btnRefresh.ShowActiveImage = true;
+            this.btnRefresh.ShowCursorChanges = true;
+            this.btnRefresh.ShowImageBorders = false;
+            this.btnRefresh.ShowSizeMarkers = false;
+            this.btnRefresh.Size = new System.Drawing.Size(39, 36);
+            this.btnRefresh.TabIndex = 10;
+            this.btnRefresh.ToolTipText = "";
+            this.btnRefresh.WaitOnLoad = false;
+            this.btnRefresh.Zoom = 0;
+            this.btnRefresh.ZoomSpeed = 10;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // dgvReporte1
             // 
@@ -323,7 +370,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvReporte1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvReporte1.ColumnHeadersHeight = 40;
+            this.dgvReporte1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvReporte1.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             this.dgvReporte1.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             this.dgvReporte1.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
@@ -357,57 +404,21 @@
             this.dgvReporte1.HeaderBgColor = System.Drawing.Color.Empty;
             this.dgvReporte1.HeaderForeColor = System.Drawing.Color.White;
             this.dgvReporte1.Location = new System.Drawing.Point(0, 0);
-            this.dgvReporte1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvReporte1.Name = "dgvReporte1";
             this.dgvReporte1.RowHeadersVisible = false;
             this.dgvReporte1.RowHeadersWidth = 51;
             this.dgvReporte1.RowTemplate.Height = 40;
             this.dgvReporte1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvReporte1.Size = new System.Drawing.Size(1000, 422);
+            this.dgvReporte1.Size = new System.Drawing.Size(1333, 519);
             this.dgvReporte1.TabIndex = 1;
             this.dgvReporte1.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             // 
-            // btnRefresh
-            // 
-            this.btnRefresh.ActiveImage = null;
-            this.btnRefresh.AllowAnimations = true;
-            this.btnRefresh.AllowBuffering = false;
-            this.btnRefresh.AllowToggling = false;
-            this.btnRefresh.AllowZooming = true;
-            this.btnRefresh.AllowZoomingOnFocus = false;
-            this.btnRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(223)))), ((int)(((byte)(222)))));
-            this.btnRefresh.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnRefresh.ErrorImage = ((System.Drawing.Image)(resources.GetObject("btnRefresh.ErrorImage")));
-            this.btnRefresh.FadeWhenInactive = false;
-            this.btnRefresh.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
-            this.btnRefresh.Image = global::ProyectoBiblioteca.Properties.Resources.icons8_actualizar_32;
-            this.btnRefresh.ImageActive = null;
-            this.btnRefresh.ImageLocation = null;
-            this.btnRefresh.ImageMargin = 0;
-            this.btnRefresh.ImageSize = new System.Drawing.Size(28, 28);
-            this.btnRefresh.ImageZoomSize = new System.Drawing.Size(29, 29);
-            this.btnRefresh.InitialImage = ((System.Drawing.Image)(resources.GetObject("btnRefresh.InitialImage")));
-            this.btnRefresh.Location = new System.Drawing.Point(13, 7);
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Rotation = 0;
-            this.btnRefresh.ShowActiveImage = true;
-            this.btnRefresh.ShowCursorChanges = true;
-            this.btnRefresh.ShowImageBorders = false;
-            this.btnRefresh.ShowSizeMarkers = false;
-            this.btnRefresh.Size = new System.Drawing.Size(29, 29);
-            this.btnRefresh.TabIndex = 10;
-            this.btnRefresh.ToolTipText = "";
-            this.btnRefresh.WaitOnLoad = false;
-            this.btnRefresh.Zoom = 0;
-            this.btnRefresh.ZoomSpeed = 10;
-            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
-            // 
             // Reportes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1040, 624);
+            this.ClientSize = new System.Drawing.Size(1408, 768);
             this.Controls.Add(this.btnReportes);
             this.Controls.Add(this.txtID);
             this.Controls.Add(this.label3);
@@ -418,6 +429,7 @@
             this.Controls.Add(this.PanelContenido);
             this.Controls.Add(this.bunifuLabel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Reportes";
             this.Text = "Reportes";
             this.Load += new System.EventHandler(this.Reportes_Load);
