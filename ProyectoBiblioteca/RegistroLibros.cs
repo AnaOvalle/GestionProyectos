@@ -244,5 +244,10 @@ namespace ProyectoBiblioteca
             CargarGeneros();
             CargarCategorias();
         }
+
+        private void txtAutor_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
