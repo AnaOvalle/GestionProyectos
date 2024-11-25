@@ -1,4 +1,4 @@
-﻿namespace ProyectoBiblioteca
+namespace ProyectoBiblioteca
 {
     partial class FrmAltaUsuarios
     {
