@@ -266,47 +266,6 @@ namespace ProyectoBiblioteca
         {
 
         }
-
-        private void DGVColecciones_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            txtTitulo.Text = DGVColecciones.CurrentRow.Cells[1].Value.ToString();
-            txtAutor.Text = DGVColecciones.CurrentRow.Cells[6].Value.ToString();
-            txtIBSN.Text = DGVColecciones.CurrentRow.Cells[2].Value.ToString();
-            txtEditorial.Text = DGVColecciones.CurrentRow.Cells[3].Value.ToString();
-            txtAño.Text = DGVColecciones.CurrentRow.Cells[4].Value.ToString();
-            cbGenero.Text = DGVColecciones.CurrentRow.Cells[7].Value.ToString();
-            cbCategoria.Text = DGVColecciones.CurrentRow.Cells[8].Value.ToString();
-            txtDescrip.Text = DGVColecciones.CurrentRow.Cells[5].Value.ToString();
-
-            int id = int.Parse(DGVColecciones.CurrentRow.Cells[0].Value.ToString());
-            conexion.Open();
-
-            string sql = "SELECT imagensag FROM librosSaga WHERE librosSaga_id='" + id + "'";
-            MySqlCommand comando = new MySqlCommand(sql, conexion);
-            MySqlDataReader reader = comando.ExecuteReader();
-            try
-            {
-                if (reader.HasRows)
-                {
-                    reader.Read();
-                    MemoryStream ms = new MemoryStream((byte[])reader["imagensag"]);
-                    Bitmap bm = new Bitmap(ms);
-                    Imagen.Visible = true;
-                    Imagen.Image = bm;
-                }
-                else
-                {
-                    MessageBox.Show("No se cuenta con imagen");
-                    Imagen.Visible = false;
-                }
-            }
-            catch
-            {
-                MessageBox.Show("No se cuenta con imagene");
-                Imagen.Visible = false;
-            }
-            conexion.Close();
-        }
     }
 
 }

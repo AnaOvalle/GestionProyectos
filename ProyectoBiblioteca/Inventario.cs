@@ -1,4 +1,5 @@
-﻿using MySql.Data.MySqlClient;
+﻿
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,7 +16,7 @@ namespace ProyectoBiblioteca
 
     public partial class Inventario : Form
     {
-        public MySqlConnection conexion = new MySqlConnection("Server=BilliJo; Database=BibliotecaGestion; Uid=DELL; Pwd=1423; Port = 3306;");
+        public MySqlConnection conexion = new MySqlConnection("Server=localhost;Database=Biblio6;Uid=root;Pwd=hola123");
         public Inventario()
         {
             InitializeComponent();
@@ -59,36 +60,13 @@ namespace ProyectoBiblioteca
                     txtIDLibro.Enabled = false;
                     dgvInventarioColecciones.Visible = true;
                     dvgInventarioLibros.Visible = false;
-                    MotrarLibros();
+                    MostrarColecciones();  // Cambié el nombre de la función aquí
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
-            
-        }
-        public void MotrarLibros()
-        {
-
-            
-            try
-            {
-                conexion.Open();
-                string consulta = "SELECT DISTINCT sa.*, stock.cantidad_stock, stock.fecha_entrada  FROM sagas sa " +
-                                  "JOIN stock_libros_saga stock ";
-
-                MySqlCommand comando = new MySqlCommand(consulta, conexion);
-                MySqlDataAdapter adaptador = new MySqlDataAdapter(comando);
-                DataTable dataTable = new DataTable();
-
-                adaptador.Fill(dataTable);
-
-                dgvInventarioColecciones.DataSource = dataTable;
-                conexion.Close();
-            }catch(Exception ex)
-            {
-                MessageBox.Show(ex.Message);            }
         }
 
         public void MostrarLi()
@@ -96,8 +74,23 @@ namespace ProyectoBiblioteca
             try
             {
                 conexion.Open();
-                string consulta = "SELECT DISTINCT li.*, stock.cantidad_stock_libros, stock.fecha_entrada  FROM libros li " +
-                                  "JOIN stock_libros stock ";
+                string consulta = @"
+            SELECT 
+                li.libros_id,
+                li.titulo,
+                li.isbn,
+                li.año_publicacion,
+                li.editorial,
+                li.descripcion,
+                IFNULL(SUM(stock.cantidad_stock_libros), 0) AS cantidad_total_libros,
+                MAX(stock.fecha_entrada) AS fecha_entrada
+            FROM 
+                libros li
+            LEFT JOIN 
+                stock_libros stock ON li.libros_id = stock.libros_id
+            GROUP BY 
+                li.libros_id, li.titulo, li.isbn, li.año_publicacion, 
+                li.editorial, li.descripcion";
 
                 MySqlCommand comando = new MySqlCommand(consulta, conexion);
                 MySqlDataAdapter adaptador = new MySqlDataAdapter(comando);
@@ -106,13 +99,67 @@ namespace ProyectoBiblioteca
                 adaptador.Fill(dataTable);
 
                 dvgInventarioLibros.DataSource = dataTable;
-                conexion.Close();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
+            finally
+            {
+                conexion.Close();
+            }
         }
+
+        public void MostrarColecciones()
+        {
+            try
+            {
+                conexion.Open();
+                string consulta = @"
+       
+SELECT 
+    MIN(sa.sagas_id) AS sagas_id,    -- Usa el ID mínimo o máximo en el grupo de nombres
+    sa.nombre, 
+    IFNULL(SUM(stock.cantidad_stock), 0) AS cantidad_total_stock, 
+    MAX(stock.fecha_entrada) AS ultima_fecha
+FROM 
+    sagas sa
+LEFT JOIN 
+    stock_libros_saga stock ON sa.sagas_id = stock.librosSaga_id
+GROUP BY 
+    sa.nombre
+ORDER BY 
+    sa.nombre;";
+
+                MySqlCommand comando = new MySqlCommand(consulta, conexion);
+                MySqlDataAdapter adaptador = new MySqlDataAdapter(comando);
+                DataTable dataTable = new DataTable();
+
+                adaptador.Fill(dataTable);
+
+                // Mostrar las sagas que tienen 0 stock
+                foreach (DataRow row in dataTable.Rows)
+                {
+                    if (Convert.ToInt32(row["cantidad_total_stock"]) == 0)
+                    {
+                        // Acción a tomar si el stock es 0 (ej. agregar stock o marcar de alguna forma)
+                        row["nombre"] = row["nombre"] + " (Sin stock)";
+                    }
+                }
+
+                dgvInventarioColecciones.DataSource = dataTable;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conexion.Close();
+            }
+        }
+
+
 
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
@@ -152,8 +199,9 @@ namespace ProyectoBiblioteca
                 else if (cbInventario.Text == "Colecciones")
                 {
                     conexion.Open();
-                    string consulta = "SELECT DISTINCT sa.*, stock.cantidad_stock, stock.fecha_entrada  FROM sagas sa " +
-                                      "JOIN stock_libros_saga stock  WHERE sa.nombre = '" + bu + "'";
+                    string consulta = "SELECT DISTINCT sa.*, stock.cantidad_stock, stock.fecha_entrada FROM sagas sa " +
+                                      "JOIN stock_libros_saga stock ON sa.librosSaga_id = stock.librosSaga_id " +
+                                      "WHERE sa.nombre = '" + bu + "'";  // Esta es la consulta corregida
 
                     MySqlCommand comando = new MySqlCommand(consulta, conexion);
                     MySqlDataAdapter adaptador = new MySqlDataAdapter(comando);
@@ -164,6 +212,7 @@ namespace ProyectoBiblioteca
                     dgvInventarioColecciones.DataSource = dataTable;
                     conexion.Close();
                 }
+
             }
             catch (Exception ex) { MessageBox.Show(ex.Message); }
 
@@ -172,9 +221,9 @@ namespace ProyectoBiblioteca
 
         private void btnRefresh_Click(object sender, EventArgs e)
         {
-            
+
             MostrarLi();
-            MotrarLibros();
+            MostrarColecciones();
             MessageBox.Show("Actualizado");
         }
 
@@ -212,7 +261,8 @@ namespace ProyectoBiblioteca
                     conexion.Close();
 
                 }
-            }catch(Exception ex)
+            }
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
@@ -254,7 +304,7 @@ namespace ProyectoBiblioteca
 
                 }
             }
-            catch(Exception ex) { MessageBox.Show(ex.Message); }
+            catch (Exception ex) { MessageBox.Show(ex.Message); }
         }
 
         private void btnActualizar_Click(object sender, EventArgs e)
@@ -296,7 +346,9 @@ namespace ProyectoBiblioteca
                 }
             }
             catch (Exception ex) { MessageBox.Show(ex.Message); }
-            
+
         }
     }
 }
+
+

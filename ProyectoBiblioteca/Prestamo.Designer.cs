@@ -101,10 +101,10 @@
             this.bunifuPanel3.Controls.Add(this.ListSagas);
             this.bunifuPanel3.Controls.Add(this.bunifuPanel5);
             this.bunifuPanel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.bunifuPanel3.Location = new System.Drawing.Point(528, 51);
+            this.bunifuPanel3.Location = new System.Drawing.Point(555, 51);
             this.bunifuPanel3.Name = "bunifuPanel3";
             this.bunifuPanel3.ShowBorders = true;
-            this.bunifuPanel3.Size = new System.Drawing.Size(528, 573);
+            this.bunifuPanel3.Size = new System.Drawing.Size(501, 573);
             this.bunifuPanel3.TabIndex = 2;
             // 
             // btnLimpiarSaga
@@ -140,6 +140,7 @@
             this.btnLimpiarSaga.WaitOnLoad = false;
             this.btnLimpiarSaga.Zoom = 10;
             this.btnLimpiarSaga.ZoomSpeed = 10;
+            this.btnLimpiarSaga.Click += new System.EventHandler(this.btnLimpiarSaga_Click_1);
             // 
             // btnRefreshSagas
             // 
@@ -174,6 +175,7 @@
             this.btnRefreshSagas.WaitOnLoad = false;
             this.btnRefreshSagas.Zoom = 10;
             this.btnRefreshSagas.ZoomSpeed = 10;
+            this.btnRefreshSagas.Click += new System.EventHandler(this.btnRefreshSagas_Click);
             // 
             // ListSagas
             // 
@@ -219,7 +221,7 @@
             this.bunifuPanel5.Location = new System.Drawing.Point(0, 0);
             this.bunifuPanel5.Name = "bunifuPanel5";
             this.bunifuPanel5.ShowBorders = true;
-            this.bunifuPanel5.Size = new System.Drawing.Size(528, 194);
+            this.bunifuPanel5.Size = new System.Drawing.Size(501, 194);
             this.bunifuPanel5.TabIndex = 1;
             // 
             // NumCantidadSagas
@@ -236,14 +238,14 @@
             this.bunifuLabel2.AutoEllipsis = false;
             this.bunifuLabel2.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel2.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel2.Font = new System.Drawing.Font("Century", 12.75F, System.Drawing.FontStyle.Bold);
+            this.bunifuLabel2.Font = new System.Drawing.Font("Cooper Black", 13F);
             this.bunifuLabel2.ForeColor = System.Drawing.Color.Black;
             this.bunifuLabel2.Location = new System.Drawing.Point(364, 15);
             this.bunifuLabel2.Name = "bunifuLabel2";
             this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel2.Size = new System.Drawing.Size(115, 21);
+            this.bunifuLabel2.Size = new System.Drawing.Size(106, 20);
             this.bunifuLabel2.TabIndex = 39;
-            this.bunifuLabel2.Text = "COLECCIÓN";
+            this.bunifuLabel2.Text = "COLECCION";
             this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel2.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
@@ -276,7 +278,7 @@
             this.btnGuardarSaga.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.btnGuardarSaga.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btnGuardarSaga.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btnGuardarSaga.Font = new System.Drawing.Font("Century", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardarSaga.Font = new System.Drawing.Font("Cooper Black", 11F);
             this.btnGuardarSaga.ForeColor = System.Drawing.Color.Black;
             this.btnGuardarSaga.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGuardarSaga.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -335,6 +337,7 @@
             this.btnGuardarSaga.TextMarginLeft = 0;
             this.btnGuardarSaga.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnGuardarSaga.UseDefaultRadiusAndThickness = true;
+            this.btnGuardarSaga.Click += new System.EventHandler(this.btnGuardarSaga_Click);
             // 
             // btnAgregarSaga
             // 
@@ -365,7 +368,7 @@
             this.btnAgregarSaga.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.btnAgregarSaga.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btnAgregarSaga.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btnAgregarSaga.Font = new System.Drawing.Font("Century", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarSaga.Font = new System.Drawing.Font("Cooper Black", 14F);
             this.btnAgregarSaga.ForeColor = System.Drawing.Color.Black;
             this.btnAgregarSaga.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAgregarSaga.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -424,6 +427,7 @@
             this.btnAgregarSaga.TextMarginLeft = 0;
             this.btnAgregarSaga.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnAgregarSaga.UseDefaultRadiusAndThickness = true;
+            this.btnAgregarSaga.Click += new System.EventHandler(this.btnAgregarSaga_Click);
             // 
             // label1
             // 
@@ -494,7 +498,7 @@
             this.txtFechaSaga.PasswordChar = '\0';
             this.txtFechaSaga.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtFechaSaga.PlaceholderText = "";
-            this.txtFechaSaga.ReadOnly = true;
+            this.txtFechaSaga.ReadOnly = false;
             this.txtFechaSaga.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txtFechaSaga.SelectedText = "";
             this.txtFechaSaga.SelectionLength = 0;
@@ -617,6 +621,7 @@
             this.btnLimpiar.WaitOnLoad = false;
             this.btnLimpiar.Zoom = 10;
             this.btnLimpiar.ZoomSpeed = 10;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // btnRefresh
             // 
@@ -651,6 +656,7 @@
             this.btnRefresh.WaitOnLoad = false;
             this.btnRefresh.Zoom = 10;
             this.btnRefresh.ZoomSpeed = 10;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // ListLibros
             // 
@@ -713,12 +719,12 @@
             this.bunifuLabel3.AutoEllipsis = false;
             this.bunifuLabel3.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel3.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel3.Font = new System.Drawing.Font("Century", 12.75F, System.Drawing.FontStyle.Bold);
+            this.bunifuLabel3.Font = new System.Drawing.Font("Cooper Black", 13F);
             this.bunifuLabel3.ForeColor = System.Drawing.Color.Black;
             this.bunifuLabel3.Location = new System.Drawing.Point(392, 15);
             this.bunifuLabel3.Name = "bunifuLabel3";
             this.bunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel3.Size = new System.Drawing.Size(72, 21);
+            this.bunifuLabel3.Size = new System.Drawing.Size(67, 20);
             this.bunifuLabel3.TabIndex = 40;
             this.bunifuLabel3.Text = "LIBROS";
             this.bunifuLabel3.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -765,7 +771,7 @@
             this.btnGuardarLibro.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.btnGuardarLibro.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btnGuardarLibro.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btnGuardarLibro.Font = new System.Drawing.Font("Century", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardarLibro.Font = new System.Drawing.Font("Cooper Black", 11F);
             this.btnGuardarLibro.ForeColor = System.Drawing.Color.Black;
             this.btnGuardarLibro.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGuardarLibro.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -824,6 +830,7 @@
             this.btnGuardarLibro.TextMarginLeft = 0;
             this.btnGuardarLibro.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnGuardarLibro.UseDefaultRadiusAndThickness = true;
+            this.btnGuardarLibro.Click += new System.EventHandler(this.btnGuardarLibro_Click);
             // 
             // btnAgregarLibro
             // 
@@ -854,7 +861,7 @@
             this.btnAgregarLibro.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.btnAgregarLibro.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btnAgregarLibro.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btnAgregarLibro.Font = new System.Drawing.Font("Century", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarLibro.Font = new System.Drawing.Font("Cooper Black", 14F);
             this.btnAgregarLibro.ForeColor = System.Drawing.Color.Black;
             this.btnAgregarLibro.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAgregarLibro.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -913,6 +920,7 @@
             this.btnAgregarLibro.TextMarginLeft = 0;
             this.btnAgregarLibro.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnAgregarLibro.UseDefaultRadiusAndThickness = true;
+            this.btnAgregarLibro.Click += new System.EventHandler(this.btnAgregarLibro_Click);
             // 
             // txtFechaLibro
             // 
@@ -971,7 +979,7 @@
             this.txtFechaLibro.PasswordChar = '\0';
             this.txtFechaLibro.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtFechaLibro.PlaceholderText = "";
-            this.txtFechaLibro.ReadOnly = true;
+            this.txtFechaLibro.ReadOnly = false;
             this.txtFechaLibro.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txtFechaLibro.SelectedText = "";
             this.txtFechaLibro.SelectionLength = 0;
@@ -1064,14 +1072,14 @@
             this.bunifuLabel1.AutoEllipsis = false;
             this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel1.Font = new System.Drawing.Font("Century", 24F, System.Drawing.FontStyle.Bold);
+            this.bunifuLabel1.Font = new System.Drawing.Font("Cooper Black", 24F);
             this.bunifuLabel1.ForeColor = System.Drawing.Color.Black;
             this.bunifuLabel1.Location = new System.Drawing.Point(420, 12);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(215, 38);
+            this.bunifuLabel1.Size = new System.Drawing.Size(212, 36);
             this.bunifuLabel1.TabIndex = 38;
-            this.bunifuLabel1.Text = "PRÉSTAMOS";
+            this.bunifuLabel1.Text = "PRESTAMOS";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
@@ -1089,6 +1097,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Prestamo";
             this.Text = "Prestamo";
+            this.Load += new System.EventHandler(this.Prestamo_Load);
             this.bunifuPanel3.ResumeLayout(false);
             this.bunifuPanel5.ResumeLayout(false);
             this.bunifuPanel5.PerformLayout();

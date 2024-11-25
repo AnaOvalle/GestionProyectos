@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -24,7 +24,7 @@ namespace ProyectoBiblioteca
 
         private void Hora_Tick(object sender, EventArgs e)
         {
-            //lblHora.Text = DateTime.Now.ToString("HH:mm:ss");
+            lblHora.Text = DateTime.Now.ToString("HH:mm:ss");
         }
 
         private void bunifuCircleProgress1_ProgressChanged(object sender, Bunifu.UI.WinForms.BunifuCircleProgress.ProgressChangedEventArgs e)

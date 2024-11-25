@@ -1,31 +1,19 @@
-﻿using MySql.Data.MySqlClient;
+
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
+using MySql.Data.MySqlClient; // Cambiar SqlClient a MySqlClient
 using System.Drawing;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ProyectoBiblioteca
 {
     public partial class RegistroLibros : Form
     {
-        public MySqlConnection conexion = new MySqlConnection("Server=BilliJo; Database=BibliotecaGestion3; Uid=DELL; Pwd=1423; Port = 3306;");
+        MySqlConnection conexion = new MySqlConnection("Server=127.0.0.1;Database=Biblio2;Uid=root;Pwd=hola123;");
+
         public RegistroLibros()
         {
             InitializeComponent();
-            CargarGeneros();
-            CargarCategorias();
-            MostrarLi();
-        }
-
-        private void bunifuPanel1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void btnRegistrar_Click(object sender, EventArgs e)
@@ -33,7 +21,7 @@ namespace ProyectoBiblioteca
             MySqlCommand altas = new MySqlCommand("INSERT INTO libros (titulo, autor, isbn, editorial, año_publicacion, genero_id, categoria_id) VALUES (@titulo, @autor, @isbn, @editorial, @año_publicacion, @genero_id, @categoria_id)", conexion);
 
             altas.Parameters.AddWithValue("@titulo", txtTitulo.Text);
-            altas.Parameters.AddWithValue("@autor", txtAutor.Text);
+            altas.Parameters.AddWithValue("@autor", txtApellido.Text);
             altas.Parameters.AddWithValue("@isbn", txtIBSN.Text);
             altas.Parameters.AddWithValue("@editorial", txtEditorial.Text);
             altas.Parameters.AddWithValue("@año_publicacion", txtAño.Text);
@@ -55,28 +43,27 @@ namespace ProyectoBiblioteca
                 conexion.Close();
                 RefrescarLibros();
             }
-
         }
 
         private void btnActualizar_Click(object sender, EventArgs e)
         {
-           
+            int idLibro;
 
-            
-            
+            if (int.TryParse(txtID.Text, out idLibro))
+            {
                 MySqlCommand actualizar = new MySqlCommand(
-                    "UPDATE libros SET titulo = @titulo, autor = @autor, isbn = @isbn, editorial = @editorial, año_publicacion = @año_publicacion, genero_id = @genero_id, categoria_id = @categoria_id WHERE titulo = @titulo",
+                    "UPDATE libros SET titulo = @titulo, autor = @autor, isbn = @isbn, editorial = @editorial, año_publicacion = @año_publicacion, genero_id = @genero_id, categoria_id = @categoria_id WHERE libros_id = @id",
                     conexion
                 );
 
                 actualizar.Parameters.AddWithValue("@titulo", txtTitulo.Text);
-                actualizar.Parameters.AddWithValue("@autor", txtAutor.Text);
+                actualizar.Parameters.AddWithValue("@autor", txtApellido.Text);
                 actualizar.Parameters.AddWithValue("@isbn", txtIBSN.Text);
                 actualizar.Parameters.AddWithValue("@editorial", txtEditorial.Text);
                 actualizar.Parameters.AddWithValue("@año_publicacion", txtAño.Text);
                 actualizar.Parameters.AddWithValue("@genero_id", cbGenero.SelectedValue);
                 actualizar.Parameters.AddWithValue("@categoria_id", cbCategoria.SelectedValue);
-                
+                actualizar.Parameters.AddWithValue("@id", idLibro);
 
                 try
                 {
@@ -93,57 +80,44 @@ namespace ProyectoBiblioteca
                     conexion.Close();
                     RefrescarLibros();
                 }
-            
-
+            }
+            else
+            {
+                MessageBox.Show("Por favor, ingrese un ID válido.");
+            }
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            MySqlCommand eliminar = new MySqlCommand("DELETE FROM libros WHERE libros_id = @id", conexion);
-            eliminar.Parameters.AddWithValue("@titulo", txtTitulo.Text);
+            int idLibro;
 
-            try
+            if (int.TryParse(txtID.Text, out idLibro))
             {
-                conexion.Open();
-                int filasAfectadas = eliminar.ExecuteNonQuery();
-                MessageBox.Show(filasAfectadas > 0 ? "Libro eliminado correctamente." : "No se encontró un libro con ese ID.");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error: " + ex.Message);
-            }
-            finally
-            {
-                conexion.Close();
-                RefrescarLibros();
-            }
+                MySqlCommand eliminar = new MySqlCommand("DELETE FROM libros WHERE libros_id = @id", conexion);
+                eliminar.Parameters.AddWithValue("@id", idLibro);
 
+                try
+                {
+                    conexion.Open();
+                    int filasAfectadas = eliminar.ExecuteNonQuery();
+                    MessageBox.Show(filasAfectadas > 0 ? "Libro eliminado correctamente." : "No se encontró un libro con ese ID.");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
+                finally
+                {
+                    conexion.Close();
+                    RefrescarLibros();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Por favor, ingrese un ID válido.");
+            }
         }
-        public void MostrarLi()
-        {
-            try
-            {
-                conexion.Open();
-                string consulta = "SELECT DISTINCT li.titulo, li.isbn, li.año_publicacion, li.editorial, li.descripcion, li.autor, gen.nombre AS genero, ca.nombre AS categoria " +
-                                  "FROM libros li " +
-                                  "JOIN generos gen ON li.genero_id = gen.genero_id " +
-                                  "JOIN categorias ca ON li.categoria_id = ca.categorias_id";
 
-                MySqlCommand comando = new MySqlCommand(consulta, conexion);
-                MySqlDataAdapter adaptador = new MySqlDataAdapter(comando);
-                DataTable dataTable = new DataTable();
-
-                adaptador.Fill(dataTable);
-
-                DGVLibros.DataSource = dataTable;
-                conexion.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-
-        }
         private void RefrescarLibros()
         {
             try
@@ -169,6 +143,7 @@ namespace ProyectoBiblioteca
                 conexion.Close();
             }
         }
+
         private void CargarGeneros()
         {
             try
@@ -256,61 +231,18 @@ namespace ProyectoBiblioteca
             {
                 MessageBox.Show("Por favor, ingrese un criterio de búsqueda.");
             }
-
         }
 
-        private void DGVLibros_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        
+
+        private void bunifuPanel1_Click(object sender, EventArgs e)
         {
-            txtTitulo.Text = DGVLibros.CurrentRow.Cells[1].Value.ToString();
-            txtAutor.Text = DGVLibros.CurrentRow.Cells[6].Value.ToString();
-            txtIBSN.Text = DGVLibros.CurrentRow.Cells[2].Value.ToString();
-            txtEditorial.Text = DGVLibros.CurrentRow.Cells[3].Value.ToString();
-            txtAño.Text = DGVLibros.CurrentRow.Cells[4].Value.ToString();
-            cbGenero.Text = DGVLibros.CurrentRow.Cells[7].Value.ToString();
-            cbCategoria.Text = DGVLibros.CurrentRow.Cells[8].Value.ToString();
-            txtDescrip.Text = DGVLibros.CurrentRow.Cells[5].Value.ToString();
-
-            int id = int.Parse(DGVLibros.CurrentRow.Cells[0].Value.ToString());
-            conexion.Open();
-
-            string sql = "SELECT imagensag FROM librosSaga WHERE librosSaga_id='" + id + "'";
-            MySqlCommand comando = new MySqlCommand(sql, conexion);
-            MySqlDataReader reader = comando.ExecuteReader();
-            try
-            {
-                if (reader.HasRows)
-                {
-                    reader.Read();
-                    MemoryStream ms = new MemoryStream((byte[])reader["imagensag"]);
-                    Bitmap bm = new Bitmap(ms);
-                    Imagen.Visible = true;
-                    Imagen.Image = bm;
-                }
-                else
-                {
-                    MessageBox.Show("No se cuenta con imagen");
-                    Imagen.Visible = false;
-                }
-            }
-            catch
-            {
-                MessageBox.Show("No se cuenta con imagene");
-                Imagen.Visible = false;
-            }
-            conexion.Close();
+           
         }
-
-        private void btnImagen_Click(object sender, EventArgs e)
+        private void RegistroLibros_Load(object sender, EventArgs e)
         {
-            OpenFileDialog ofd = new OpenFileDialog();
-            ofd.Filter = "Imagenes|*.jpg; *.png";
-            ofd.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-            ofd.Title = "Seleccionar imagen";
-
-            if (ofd.ShowDialog() == DialogResult.OK)
-            {
-                Imagen.Image = Image.FromFile(ofd.FileName);
-            }
+            CargarGeneros();
+            CargarCategorias();
         }
     }
 }
