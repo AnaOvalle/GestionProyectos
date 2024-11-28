@@ -3,40 +3,96 @@
   "WorkspaceRootPath": "C:\\Users\\asfix\\OneDrive\\Escritorio\\GPSproyecto\\GestionProyectos\\ProyectoBiblioteca\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|c:\\users\\asfix\\onedrive\\escritorio\\gpsproyecto\\gestionproyectos\\proyectobiblioteca\\colecciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|solutionrelative:colecciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|c:\\users\\asfix\\onedrive\\escritorio\\gpsproyecto\\gestionproyectos\\proyectobiblioteca\\colecciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|solutionrelative:colecciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|c:\\users\\asfix\\onedrive\\escritorio\\gpsproyecto\\gestionproyectos\\proyectobiblioteca\\reportes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|C:\\Users\\asfix\\OneDrive\\Escritorio\\GPSproyecto\\GestionProyectos\\ProyectoBiblioteca\\reportes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|solutionrelative:reportes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|c:\\users\\asfix\\onedrive\\escritorio\\gpsproyecto\\gestionproyectos\\proyectobiblioteca\\perdidas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|c:\\users\\asfix\\onedrive\\escritorio\\gpsproyecto\\gestionproyectos\\proyectobiblioteca\\registrousuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|solutionrelative:registrousuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|c:\\users\\asfix\\onedrive\\escritorio\\gpsproyecto\\gestionproyectos\\proyectobiblioteca\\registrolibros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|solutionrelative:registrolibros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|c:\\users\\asfix\\onedrive\\escritorio\\gpsproyecto\\gestionproyectos\\proyectobiblioteca\\registrolibros.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|solutionrelative:registrolibros.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|c:\\users\\asfix\\onedrive\\escritorio\\gpsproyecto\\gestionproyectos\\proyectobiblioteca\\registrolibros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|solutionrelative:registrolibros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|c:\\users\\asfix\\onedrive\\escritorio\\gpsproyecto\\gestionproyectos\\proyectobiblioteca\\registrocoleccion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|solutionrelative:registrocoleccion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|c:\\users\\asfix\\onedrive\\escritorio\\gpsproyecto\\gestionproyectos\\proyectobiblioteca\\prestamo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|solutionrelative:prestamo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|C:\\Users\\asfix\\OneDrive\\Escritorio\\GPSproyecto\\GestionProyectos\\ProyectoBiblioteca\\perdidas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|solutionrelative:perdidas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|c:\\users\\asfix\\onedrive\\escritorio\\gpsproyecto\\gestionproyectos\\proyectobiblioteca\\inventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|c:\\users\\asfix\\onedrive\\escritorio\\gpsproyecto\\gestionproyectos\\proyectobiblioteca\\libros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|solutionrelative:libros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|C:\\Users\\asfix\\OneDrive\\Escritorio\\GPSproyecto\\GestionProyectos\\ProyectoBiblioteca\\inventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|solutionrelative:inventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|c:\\users\\asfix\\onedrive\\escritorio\\gpsproyecto\\gestionproyectos\\proyectobiblioteca\\devolucion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|solutionrelative:devolucion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|C:\\Users\\asfix\\OneDrive\\Escritorio\\GPSproyecto\\GestionProyectos\\ProyectoBiblioteca\\inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|solutionrelative:inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|c:\\users\\asfix\\onedrive\\escritorio\\gpsproyecto\\gestionproyectos\\proyectobiblioteca\\devolucion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|solutionrelative:devolucion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|c:\\users\\asfix\\onedrive\\escritorio\\gpsproyecto\\gestionproyectos\\proyectobiblioteca\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|solutionrelative:form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|c:\\users\\asfix\\onedrive\\escritorio\\gpsproyecto\\gestionproyectos\\proyectobiblioteca\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|C:\\Users\\asfix\\OneDrive\\Escritorio\\GPSproyecto\\GestionProyectos\\ProyectoBiblioteca\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|solutionrelative:form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|c:\\users\\asfix\\onedrive\\escritorio\\gpsproyecto\\gestionproyectos\\proyectobiblioteca\\inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|solutionrelative:inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|C:\\Users\\asfix\\OneDrive\\Escritorio\\GPSproyecto\\GestionProyectos\\ProyectoBiblioteca\\devolucion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|solutionrelative:devolucion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|C:\\Users\\asfix\\OneDrive\\Escritorio\\GPSproyecto\\GestionProyectos\\ProyectoBiblioteca\\devolucion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|solutionrelative:devolucion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|c:\\users\\asfix\\onedrive\\escritorio\\gpsproyecto\\gestionproyectos\\proyectobiblioteca\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|c:\\users\\asfix\\onedrive\\escritorio\\gpsproyecto\\gestionproyectos\\proyectobiblioteca\\datainvsagas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|solutionrelative:datainvsagas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|c:\\users\\asfix\\onedrive\\escritorio\\gpsproyecto\\gestionproyectos\\proyectobiblioteca\\datainventariolibros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|solutionrelative:datainventariolibros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|c:\\users\\asfix\\onedrive\\escritorio\\gpsproyecto\\gestionproyectos\\proyectobiblioteca\\dataclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|solutionrelative:dataclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|c:\\users\\asfix\\onedrive\\escritorio\\gpsproyecto\\gestionproyectos\\proyectobiblioteca\\consultaprestamos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|solutionrelative:consultaprestamos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|C:\\Users\\asfix\\OneDrive\\Escritorio\\GPSproyecto\\GestionProyectos\\ProyectoBiblioteca\\colecciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|solutionrelative:colecciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|c:\\users\\asfix\\onedrive\\escritorio\\gpsproyecto\\gestionproyectos\\proyectobiblioteca\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|solutionrelative:clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|c:\\users\\asfix\\onedrive\\escritorio\\gpsproyecto\\gestionproyectos\\proyectobiblioteca\\colecciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D227019F-2ABD-4319-A582-DF2AF13B2E80}|ProyectoBiblioteca.csproj|solutionrelative:colecciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,7 +102,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 345,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 24,
           "Children": [
             {
               "$type": "Bookmark",
@@ -86,7 +142,177 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "RegistroUsuarios.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\asfix\\OneDrive\\Escritorio\\GPSproyecto\\GestionProyectos\\ProyectoBiblioteca\\RegistroUsuarios.cs",
+              "RelativeDocumentMoniker": "RegistroUsuarios.cs",
+              "ToolTip": "C:\\Users\\asfix\\OneDrive\\Escritorio\\GPSproyecto\\GestionProyectos\\ProyectoBiblioteca\\RegistroUsuarios.cs [Dise\u00F1o]",
+              "RelativeToolTip": "RegistroUsuarios.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T20:33:16.36Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RegistroLibros.cs",
+              "DocumentMoniker": "C:\\Users\\asfix\\OneDrive\\Escritorio\\GPSproyecto\\GestionProyectos\\ProyectoBiblioteca\\RegistroLibros.cs",
+              "RelativeDocumentMoniker": "RegistroLibros.cs",
+              "ToolTip": "C:\\Users\\asfix\\OneDrive\\Escritorio\\GPSproyecto\\GestionProyectos\\ProyectoBiblioteca\\RegistroLibros.cs",
+              "RelativeToolTip": "RegistroLibros.cs",
+              "ViewState": "AgIAAOsAAAAAAAAAAADwv/kAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T20:02:11.677Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RegistroLibros.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\asfix\\OneDrive\\Escritorio\\GPSproyecto\\GestionProyectos\\ProyectoBiblioteca\\RegistroLibros.Designer.cs",
+              "RelativeDocumentMoniker": "RegistroLibros.Designer.cs",
+              "ToolTip": "C:\\Users\\asfix\\OneDrive\\Escritorio\\GPSproyecto\\GestionProyectos\\ProyectoBiblioteca\\RegistroLibros.Designer.cs",
+              "RelativeToolTip": "RegistroLibros.Designer.cs",
+              "ViewState": "AgIAAIYEAAAAAAAAAAAmwI0EAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T19:45:40.39Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RegistroLibros.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\asfix\\OneDrive\\Escritorio\\GPSproyecto\\GestionProyectos\\ProyectoBiblioteca\\RegistroLibros.cs",
+              "RelativeDocumentMoniker": "RegistroLibros.cs",
+              "ToolTip": "C:\\Users\\asfix\\OneDrive\\Escritorio\\GPSproyecto\\GestionProyectos\\ProyectoBiblioteca\\RegistroLibros.cs [Dise\u00F1o]",
+              "RelativeToolTip": "RegistroLibros.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T19:45:23.813Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RegistroColeccion.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\asfix\\OneDrive\\Escritorio\\GPSproyecto\\GestionProyectos\\ProyectoBiblioteca\\RegistroColeccion.cs",
+              "RelativeDocumentMoniker": "RegistroColeccion.cs",
+              "ToolTip": "C:\\Users\\asfix\\OneDrive\\Escritorio\\GPSproyecto\\GestionProyectos\\ProyectoBiblioteca\\RegistroColeccion.cs [Dise\u00F1o]",
+              "RelativeToolTip": "RegistroColeccion.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T19:44:21.554Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Libros.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\asfix\\OneDrive\\Escritorio\\GPSproyecto\\GestionProyectos\\ProyectoBiblioteca\\Libros.cs",
+              "RelativeDocumentMoniker": "Libros.cs",
+              "ToolTip": "C:\\Users\\asfix\\OneDrive\\Escritorio\\GPSproyecto\\GestionProyectos\\ProyectoBiblioteca\\Libros.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Libros.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T19:36:07.119Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Form3.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\asfix\\OneDrive\\Escritorio\\GPSproyecto\\GestionProyectos\\ProyectoBiblioteca\\Form3.cs",
+              "RelativeDocumentMoniker": "Form3.cs",
+              "ToolTip": "C:\\Users\\asfix\\OneDrive\\Escritorio\\GPSproyecto\\GestionProyectos\\ProyectoBiblioteca\\Form3.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Form3.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T19:21:28.72Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\asfix\\OneDrive\\Escritorio\\GPSproyecto\\GestionProyectos\\ProyectoBiblioteca\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\asfix\\OneDrive\\Escritorio\\GPSproyecto\\GestionProyectos\\ProyectoBiblioteca\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T19:15:39.04Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "DATAinvSagas.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\asfix\\OneDrive\\Escritorio\\GPSproyecto\\GestionProyectos\\ProyectoBiblioteca\\DATAinvSagas.cs",
+              "RelativeDocumentMoniker": "DATAinvSagas.cs",
+              "ToolTip": "C:\\Users\\asfix\\OneDrive\\Escritorio\\GPSproyecto\\GestionProyectos\\ProyectoBiblioteca\\DATAinvSagas.cs [Dise\u00F1o]",
+              "RelativeToolTip": "DATAinvSagas.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T19:09:17.863Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "DATAInventarioLibros.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\asfix\\OneDrive\\Escritorio\\GPSproyecto\\GestionProyectos\\ProyectoBiblioteca\\DATAInventarioLibros.cs",
+              "RelativeDocumentMoniker": "DATAInventarioLibros.cs",
+              "ToolTip": "C:\\Users\\asfix\\OneDrive\\Escritorio\\GPSproyecto\\GestionProyectos\\ProyectoBiblioteca\\DATAInventarioLibros.cs [Dise\u00F1o]",
+              "RelativeToolTip": "DATAInventarioLibros.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T19:09:16.512Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "DATAClientes.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\asfix\\OneDrive\\Escritorio\\GPSproyecto\\GestionProyectos\\ProyectoBiblioteca\\DATAClientes.cs",
+              "RelativeDocumentMoniker": "DATAClientes.cs",
+              "ToolTip": "C:\\Users\\asfix\\OneDrive\\Escritorio\\GPSproyecto\\GestionProyectos\\ProyectoBiblioteca\\DATAClientes.cs [Dise\u00F1o]",
+              "RelativeToolTip": "DATAClientes.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T19:09:14.723Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ConsultaPrestamos.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\asfix\\OneDrive\\Escritorio\\GPSproyecto\\GestionProyectos\\ProyectoBiblioteca\\ConsultaPrestamos.cs",
+              "RelativeDocumentMoniker": "ConsultaPrestamos.cs",
+              "ToolTip": "C:\\Users\\asfix\\OneDrive\\Escritorio\\GPSproyecto\\GestionProyectos\\ProyectoBiblioteca\\ConsultaPrestamos.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ConsultaPrestamos.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T19:05:25.315Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Clientes.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\asfix\\OneDrive\\Escritorio\\GPSproyecto\\GestionProyectos\\ProyectoBiblioteca\\Clientes.cs",
+              "RelativeDocumentMoniker": "Clientes.cs",
+              "ToolTip": "C:\\Users\\asfix\\OneDrive\\Escritorio\\GPSproyecto\\GestionProyectos\\ProyectoBiblioteca\\Clientes.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Clientes.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T18:51:00.613Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Prestamo.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\asfix\\OneDrive\\Escritorio\\GPSproyecto\\GestionProyectos\\ProyectoBiblioteca\\Prestamo.cs",
+              "RelativeDocumentMoniker": "Prestamo.cs",
+              "ToolTip": "C:\\Users\\asfix\\OneDrive\\Escritorio\\GPSproyecto\\GestionProyectos\\ProyectoBiblioteca\\Prestamo.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Prestamo.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T18:47:16.654Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
               "Title": "Colecciones.cs",
               "DocumentMoniker": "C:\\Users\\asfix\\OneDrive\\Escritorio\\GPSproyecto\\GestionProyectos\\ProyectoBiblioteca\\Colecciones.cs",
               "RelativeDocumentMoniker": "Colecciones.cs",
@@ -99,7 +325,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Reportes.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\asfix\\OneDrive\\Escritorio\\GPSproyecto\\GestionProyectos\\ProyectoBiblioteca\\Reportes.cs",
               "RelativeDocumentMoniker": "Reportes.cs",
@@ -111,7 +337,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "Perdidas.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\asfix\\OneDrive\\Escritorio\\GPSproyecto\\GestionProyectos\\ProyectoBiblioteca\\Perdidas.cs",
               "RelativeDocumentMoniker": "Perdidas.cs",
@@ -123,7 +349,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "Inventario.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\asfix\\OneDrive\\Escritorio\\GPSproyecto\\GestionProyectos\\ProyectoBiblioteca\\Inventario.cs",
               "RelativeDocumentMoniker": "Inventario.cs",
@@ -135,20 +361,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 14,
               "Title": "Devolucion.cs",
               "DocumentMoniker": "C:\\Users\\asfix\\OneDrive\\Escritorio\\GPSproyecto\\GestionProyectos\\ProyectoBiblioteca\\Devolucion.cs",
               "RelativeDocumentMoniker": "Devolucion.cs",
               "ToolTip": "C:\\Users\\asfix\\OneDrive\\Escritorio\\GPSproyecto\\GestionProyectos\\ProyectoBiblioteca\\Devolucion.cs",
               "RelativeToolTip": "Devolucion.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFoBAAAAAAAAAAAAAIAAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-25T18:33:29.68Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 13,
               "Title": "Devolucion.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\asfix\\OneDrive\\Escritorio\\GPSproyecto\\GestionProyectos\\ProyectoBiblioteca\\Devolucion.cs",
               "RelativeDocumentMoniker": "Devolucion.cs",
@@ -160,7 +386,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 12,
               "Title": "Form2.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\asfix\\OneDrive\\Escritorio\\GPSproyecto\\GestionProyectos\\ProyectoBiblioteca\\Form2.cs",
               "RelativeDocumentMoniker": "Form2.cs",
@@ -172,7 +398,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Inicio.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\asfix\\OneDrive\\Escritorio\\GPSproyecto\\GestionProyectos\\ProyectoBiblioteca\\Inicio.cs",
               "RelativeDocumentMoniker": "Inicio.cs",
@@ -184,7 +410,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 20,
               "Title": "Colecciones.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\asfix\\OneDrive\\Escritorio\\GPSproyecto\\GestionProyectos\\ProyectoBiblioteca\\Colecciones.cs",
               "RelativeDocumentMoniker": "Colecciones.cs",
