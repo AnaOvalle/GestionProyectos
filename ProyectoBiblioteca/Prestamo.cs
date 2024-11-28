@@ -38,13 +38,13 @@ namespace ProyectoBiblioteca
                 MessageBox.Show("Por favor, selecciona un libro.");
             }
         }
-
+        
         private void btnGuardarLibro_Click(object sender, EventArgs e)
         {
             if (DateTime.TryParse(txtFechaLibro.Text, out DateTime fechaPrestamo))
             {
                 int clienteId = Convert.ToInt32(cbCliente.SelectedValue);
-                string connectionString = "Server=localhost;Database=Biblio6;Uid=root;Pwd=hola123;";
+                string connectionString = "Server=BilliJo; Database=BibliotecaGestion5; Uid=DELL; Pwd=1423; Port = 3306;";
 
                 using (MySqlConnection conn = new MySqlConnection(connectionString))
                 {
@@ -126,7 +126,7 @@ namespace ProyectoBiblioteca
             if (DateTime.TryParse(txtFechaSaga.Text, out DateTime fechaPrestamo))
             {
                 int clienteId = Convert.ToInt32(cbClienSaga.SelectedValue);
-                string connectionString = "Server=localhost;Database=Biblio6;Uid=root;Pwd=hola123;";
+                string connectionString = "Server=BilliJo; Database=BibliotecaGestion5; Uid=DELL; Pwd=1423; Port = 3306;";
 
                 using (MySqlConnection conn = new MySqlConnection(connectionString))
                 {
@@ -135,41 +135,54 @@ namespace ProyectoBiblioteca
 
                     try
                     {
+                        MySqlCommand cmdPrestamo = new MySqlCommand("INSERT INTO prestamos (cliente_id, fecha_prestamo) VALUES (@clienteId, @fechaPrestamo); SELECT LAST_INSERT_ID();", conn);
+                        cmdPrestamo.Parameters.AddWithValue("@clienteId", clienteId);
+                        cmdPrestamo.Parameters.AddWithValue("@fechaPrestamo", fechaPrestamo);
+                        cmdPrestamo.Transaction = transaction;
+
+                        int prestamosId = Convert.ToInt32(cmdPrestamo.ExecuteScalar());
+
                         foreach (ListViewItem item in ListSagas.Items)
                         {
-                            int sagaId = Convert.ToInt32(item.SubItems[1].Text);
+                            int libroId = Convert.ToInt32(item.SubItems[1].Text);
                             int cantidadPrestada = (int)NumCantidadSagas.Value;
 
-                            MySqlCommand cmdVerificarStockSaga = new MySqlCommand("SELECT cantidad_stock FROM stock_libros_saga WHERE librosSaga_id = @sagaId", conn);
-                            cmdVerificarStockSaga.Parameters.AddWithValue("@sagaId", sagaId);
-                            cmdVerificarStockSaga.Transaction = transaction;
-                            int cantidadDisponible = Convert.ToInt32(cmdVerificarStockSaga.ExecuteScalar());
+                            MySqlCommand cmdVerificarStock = new MySqlCommand("SELECT cantidad_stock FROM stock_libros_saga WHERE librosSaga_id = @librosId", conn);
+                            cmdVerificarStock.Parameters.AddWithValue("@librosId", libroId);
+                            cmdVerificarStock.Transaction = transaction;
+                            int cantidadDisponible = Convert.ToInt32(cmdVerificarStock.ExecuteScalar());
 
                             if (cantidadDisponible >= cantidadPrestada)
                             {
-                                // Insertar directamente en la tabla `prestamos_saga` la cantidad prestada
-                                MySqlCommand cmdRegistrarPrestamoSaga = new MySqlCommand("INSERT INTO prestamos_saga (cliente_id, sagas_id, fecha_prestamo, cantidad_prestamo) VALUES (@clienteId, @sagaId, @fechaPrestamo, @cantidadPrestada)", conn);
-                                cmdRegistrarPrestamoSaga.Parameters.AddWithValue("@clienteId", clienteId);
-                                cmdRegistrarPrestamoSaga.Parameters.AddWithValue("@sagaId", sagaId);
-                                cmdRegistrarPrestamoSaga.Parameters.AddWithValue("@fechaPrestamo", fechaPrestamo);
-                                cmdRegistrarPrestamoSaga.Parameters.AddWithValue("@cantidadPrestada", cantidadPrestada);
-                                cmdRegistrarPrestamoSaga.Transaction = transaction;
-                                cmdRegistrarPrestamoSaga.ExecuteNonQuery();
+                                MySqlCommand cmdPrestamosLibros = new MySqlCommand("INSERT INTO prestamos_sagass (prestamos_id, librosSaga_id, cantidad_prestada) VALUES (@prestamosId, @librosSaga_id, @cantidadPrestada)", conn);
+                                cmdPrestamosLibros.Parameters.AddWithValue("@prestamosId", prestamosId);
+                                cmdPrestamosLibros.Parameters.AddWithValue("@librosSaga_id", libroId);
+                                cmdPrestamosLibros.Parameters.AddWithValue("@cantidadPrestada", cantidadPrestada);
+                                cmdPrestamosLibros.Transaction = transaction;
+                                cmdPrestamosLibros.ExecuteNonQuery();
+
+                                 MySqlCommand cmdRestaStocSaga = new MySqlCommand("UPDATE stock_libros_saga SET cantidad_stock = cantidad_stock - @Prestada WHERE librosSaga_id = @librosSagaid AND cantidad_stock >= @Prestada", conn);
+                                cmdRestaStocSaga.Parameters.AddWithValue("@librosSagaid", libroId);
+                                cmdRestaStocSaga.Parameters.AddWithValue("@Prestada", cantidadPrestada);
+                                cmdRestaStocSaga.Transaction = transaction;
+                                cmdRestaStocSaga.ExecuteNonQuery();
+
+
                             }
                             else
                             {
-                                MessageBox.Show($"No hay suficiente stock para la saga: {item.Text}. Disponibles: {cantidadDisponible}, solicitados: {cantidadPrestada}");
+                                MessageBox.Show($"No hay suficiente stock para el libro: {item.Text}. Disponibles: {cantidadDisponible}, solicitados: {cantidadPrestada}");
                             }
                         }
 
                         transaction.Commit();
-                        MessageBox.Show("Todos los préstamos de sagas han sido registrados exitosamente.");
-                        ListSagas.Items.Clear();
+                        MessageBox.Show("Todos los préstamos de libros han sido registrados exitosamente.");
+                        ListLibros.Items.Clear();
                     }
                     catch (Exception ex)
                     {
                         transaction.Rollback();
-                        MessageBox.Show("Error al registrar el préstamo de sagas: " + ex.Message);
+                        MessageBox.Show("Error al registrar el préstamo de libros: " + ex.Message);
                     }
                 }
             }
@@ -187,7 +200,7 @@ namespace ProyectoBiblioteca
         // Métodos de carga de datos para los ComboBoxes y ListView
         private void CargarDatosComboBox()
         {
-            string connectionString = "Server=localhost;Database=Biblio6;Uid=root;Pwd=hola123;";
+            string connectionString = "Server=BilliJo; Database=BibliotecaGestion5; Uid=DELL; Pwd=1423; Port = 3306;";
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 conn.Open();
@@ -213,11 +226,11 @@ namespace ProyectoBiblioteca
                 cbLibro.DataSource = dtLibros;
 
                 // Sagas
-                MySqlCommand cmdSagas = new MySqlCommand("SELECT MIN(sagas_id) AS sagas_id, nombre FROM sagas GROUP BY nombre", conn);
+                MySqlCommand cmdSagas = new MySqlCommand("SELECT librosSaga_id, titulo FROM sagas ", conn);
                 DataTable dtSagas = new DataTable();
                 new MySqlDataAdapter(cmdSagas).Fill(dtSagas);
-                cbSaga.DisplayMember = "nombre";
-                cbSaga.ValueMember = "sagas_id";
+                cbSaga.DisplayMember = "titulo";
+                cbSaga.ValueMember = "librosSaga_id";
                 cbSaga.DataSource = dtSagas;
 
             }

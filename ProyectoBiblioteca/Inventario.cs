@@ -16,7 +16,7 @@ namespace ProyectoBiblioteca
 
     public partial class Inventario : Form
     {
-        public MySqlConnection conexion = new MySqlConnection("Server=localhost;Database=Biblio6;Uid=root;Pwd=hola123");
+        public MySqlConnection conexion = new MySqlConnection("Server=BilliJo; Database=BibliotecaGestion5; Uid=DELL; Pwd=1423; Port = 3306;");
         public Inventario()
         {
             InitializeComponent();
@@ -116,36 +116,28 @@ namespace ProyectoBiblioteca
             {
                 conexion.Open();
                 string consulta = @"
-       
-SELECT 
-    MIN(sa.sagas_id) AS sagas_id,    -- Usa el ID mínimo o máximo en el grupo de nombres
-    sa.nombre, 
-    IFNULL(SUM(stock.cantidad_stock), 0) AS cantidad_total_stock, 
-    MAX(stock.fecha_entrada) AS ultima_fecha
-FROM 
-    sagas sa
-LEFT JOIN 
-    stock_libros_saga stock ON sa.sagas_id = stock.librosSaga_id
-GROUP BY 
-    sa.nombre
-ORDER BY 
-    sa.nombre;";
+                SELECT 
+                li.librosSaga_id,
+                li.titulo,
+                li.isbn,
+                li.año_publicacion,
+                li.editorial,
+                li.descripcion,
+                IFNULL(SUM(stock.cantidad_stock), 0) AS cantidad_total_libros,
+                MAX(stock.fecha_entrada) AS fecha_entrada
+            FROM 
+                sagas li
+            LEFT JOIN 
+                stock_libros_saga stock ON li.librosSaga_id = stock_libros_saga_id
+            GROUP BY 
+                li.librosSaga_id, li.titulo, li.isbn, li.año_publicacion, 
+                li.editorial, li.descripcion";
 
                 MySqlCommand comando = new MySqlCommand(consulta, conexion);
                 MySqlDataAdapter adaptador = new MySqlDataAdapter(comando);
                 DataTable dataTable = new DataTable();
 
                 adaptador.Fill(dataTable);
-
-                // Mostrar las sagas que tienen 0 stock
-                foreach (DataRow row in dataTable.Rows)
-                {
-                    if (Convert.ToInt32(row["cantidad_total_stock"]) == 0)
-                    {
-                        // Acción a tomar si el stock es 0 (ej. agregar stock o marcar de alguna forma)
-                        row["nombre"] = row["nombre"] + " (Sin stock)";
-                    }
-                }
 
                 dgvInventarioColecciones.DataSource = dataTable;
             }
@@ -161,7 +153,7 @@ ORDER BY
 
 
 
-        private void btnLimpiar_Click(object sender, EventArgs e)
+            private void btnLimpiar_Click(object sender, EventArgs e)
         {
             dgvInventarioColecciones.Visible = false;
             dvgInventarioLibros.Visible = false;
@@ -201,7 +193,7 @@ ORDER BY
                     conexion.Open();
                     string consulta = "SELECT DISTINCT sa.*, stock.cantidad_stock, stock.fecha_entrada FROM sagas sa " +
                                       "JOIN stock_libros_saga stock ON sa.librosSaga_id = stock.librosSaga_id " +
-                                      "WHERE sa.nombre = '" + bu + "'";  // Esta es la consulta corregida
+                                      "WHERE sa.titulo = '" + bu + "'";  // Esta es la consulta corregida
 
                     MySqlCommand comando = new MySqlCommand(consulta, conexion);
                     MySqlDataAdapter adaptador = new MySqlDataAdapter(comando);

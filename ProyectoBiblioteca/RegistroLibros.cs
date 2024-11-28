@@ -4,12 +4,15 @@ using System.Data;
 using MySql.Data.MySqlClient; // Cambiar SqlClient a MySqlClient
 using System.Drawing;
 using System.Windows.Forms;
+using System.Drawing.Imaging;
+using System.IO;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace ProyectoBiblioteca
 {
     public partial class RegistroLibros : Form
     {
-        MySqlConnection conexion = new MySqlConnection("Server=127.0.0.1;Database=Biblio2;Uid=root;Pwd=hola123;");
+        MySqlConnection conexion = new MySqlConnection("Server=BilliJo; Database=BibliotecaGestion5; Uid=DELL; Pwd=1423; Port = 3306;");
 
         public RegistroLibros()
         {
@@ -18,15 +21,22 @@ namespace ProyectoBiblioteca
 
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
-            MySqlCommand altas = new MySqlCommand("INSERT INTO libros (titulo, autor, isbn, editorial, año_publicacion, genero_id, categoria_id) VALUES (@titulo, @autor, @isbn, @editorial, @año_publicacion, @genero_id, @categoria_id)", conexion);
+            MemoryStream ms = new MemoryStream();
+            Imagen.Image.Save(ms, ImageFormat.Jpeg);
+            byte[] data = ms.ToArray();
+            string estado = "Activo";
+            MySqlCommand altas = new MySqlCommand("INSERT INTO libros (titulo, autor, isbn, editorial, año_publicacion, genero_id, categoria_id, descripcion, imagen, estado) VALUES (@titulo, @autor, @isbn, @editorial, @año_publicacion, @genero_id, @categoria_id,@descripcion, @imagen, @estado)", conexion);
 
             altas.Parameters.AddWithValue("@titulo", txtTitulo.Text);
-            altas.Parameters.AddWithValue("@autor", txtApellido.Text);
+            altas.Parameters.AddWithValue("@autor", txtAutor.Text);
             altas.Parameters.AddWithValue("@isbn", txtIBSN.Text);
             altas.Parameters.AddWithValue("@editorial", txtEditorial.Text);
             altas.Parameters.AddWithValue("@año_publicacion", txtAño.Text);
             altas.Parameters.AddWithValue("@genero_id", cbGenero.SelectedValue);
             altas.Parameters.AddWithValue("@categoria_id", cbCategoria.SelectedValue);
+            altas.Parameters.AddWithValue("@descripcion", txtDescrip.Text);
+            altas.Parameters.AddWithValue("@imagen", data);
+            altas.Parameters.AddWithValue("@estado", estado);
 
             try
             {
@@ -47,74 +57,61 @@ namespace ProyectoBiblioteca
 
         private void btnActualizar_Click(object sender, EventArgs e)
         {
-            int idLibro;
+            MemoryStream ms = new MemoryStream();
+            Imagen.Image.Save(ms, ImageFormat.Jpeg);
+            byte[] data = ms.ToArray();
 
-            if (int.TryParse(txtID.Text, out idLibro))
+            MySqlCommand actualizar = new MySqlCommand(
+                "UPDATE libros SET titulo = @titulo, autor = @autor, isbn = @isbn, editorial = @editorial, año_publicacion = @año_publicacion, genero_id = @genero_id, categoria_id = @categoria_id, descripcion = @descripcion, imagen = @imagen WHERE titulo = @titulo",
+                conexion
+            );
+            actualizar.Parameters.AddWithValue("@titulo", txtTitulo.Text);
+            actualizar.Parameters.AddWithValue("@autor", txtAutor.Text);
+            actualizar.Parameters.AddWithValue("@isbn", txtIBSN.Text);
+            actualizar.Parameters.AddWithValue("@editorial", txtEditorial.Text);
+            actualizar.Parameters.AddWithValue("@año_publicacion", txtAño.Text);
+            actualizar.Parameters.AddWithValue("@genero_id", cbGenero.SelectedValue);
+            actualizar.Parameters.AddWithValue("@categoria_id", cbCategoria.SelectedValue);
+            actualizar.Parameters.AddWithValue("@descripcion", txtDescrip.Text);
+            actualizar.Parameters.AddWithValue("@imagen", data);
+
+            try
             {
-                MySqlCommand actualizar = new MySqlCommand(
-                    "UPDATE libros SET titulo = @titulo, autor = @autor, isbn = @isbn, editorial = @editorial, año_publicacion = @año_publicacion, genero_id = @genero_id, categoria_id = @categoria_id WHERE libros_id = @id",
-                    conexion
-                );
-
-                actualizar.Parameters.AddWithValue("@titulo", txtTitulo.Text);
-                actualizar.Parameters.AddWithValue("@autor", txtApellido.Text);
-                actualizar.Parameters.AddWithValue("@isbn", txtIBSN.Text);
-                actualizar.Parameters.AddWithValue("@editorial", txtEditorial.Text);
-                actualizar.Parameters.AddWithValue("@año_publicacion", txtAño.Text);
-                actualizar.Parameters.AddWithValue("@genero_id", cbGenero.SelectedValue);
-                actualizar.Parameters.AddWithValue("@categoria_id", cbCategoria.SelectedValue);
-                actualizar.Parameters.AddWithValue("@id", idLibro);
-
-                try
-                {
-                    conexion.Open();
-                    int filasAfectadas = actualizar.ExecuteNonQuery();
-                    MessageBox.Show(filasAfectadas > 0 ? "Libro actualizado correctamente." : "No se encontró un libro con ese ID.");
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Error: " + ex.Message);
-                }
-                finally
-                {
-                    conexion.Close();
-                    RefrescarLibros();
-                }
+                conexion.Open();
+                int filasAfectadas = actualizar.ExecuteNonQuery();
+                MessageBox.Show(filasAfectadas > 0 ? "Libro actualizado correctamente." : "No se encontró un libro con ese ID.");
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Por favor, ingrese un ID válido.");
+                MessageBox.Show("Error: " + ex.Message);
+            }
+            finally
+            {
+                conexion.Close();
+                RefrescarLibros();
             }
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            int idLibro;
-
-            if (int.TryParse(txtID.Text, out idLibro))
+            string estado = "Inactivo";
+            MySqlCommand eliminar = new MySqlCommand("UPDATE libros SET estado = @estado WHERE titulo = @titulo ", conexion);
+            eliminar.Parameters.AddWithValue("@estado", estado);
+            eliminar.Parameters.AddWithValue("@titulo", txtTitulo.Text);
+            try
             {
-                MySqlCommand eliminar = new MySqlCommand("DELETE FROM libros WHERE libros_id = @id", conexion);
-                eliminar.Parameters.AddWithValue("@id", idLibro);
-
-                try
-                {
-                    conexion.Open();
-                    int filasAfectadas = eliminar.ExecuteNonQuery();
-                    MessageBox.Show(filasAfectadas > 0 ? "Libro eliminado correctamente." : "No se encontró un libro con ese ID.");
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Error: " + ex.Message);
-                }
-                finally
-                {
-                    conexion.Close();
-                    RefrescarLibros();
-                }
+                conexion.Open();
+                int filasAfectadas = eliminar.ExecuteNonQuery();
+                MessageBox.Show(filasAfectadas > 0 ? "Libro eliminado correctamente." : "No se encontró un libro con ese ID.");
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Por favor, ingrese un ID válido.");
+                MessageBox.Show("Error: " + ex.Message);
+            }
+            finally
+            {
+                conexion.Close();
+                RefrescarLibros();
             }
         }
 
@@ -123,24 +120,23 @@ namespace ProyectoBiblioteca
             try
             {
                 conexion.Open();
-                MySqlCommand cmd = new MySqlCommand("SELECT * FROM libros", conexion);
+                string consulta = "SELECT DISTINCT li.libros_id, li.titulo, li.isbn, li.año_publicacion, li.editorial, li.descripcion, li.autor,  gen.nombre AS genero, ca.nombre AS categoria, li.estado " +
+                                  "FROM libros li " +
+                                  "JOIN generos gen ON li.genero_id = gen.genero_id " +
+                                  "JOIN categorias ca ON li.categoria_id = ca.categorias_id";
 
+                MySqlCommand comando = new MySqlCommand(consulta, conexion);
+                MySqlDataAdapter adaptador = new MySqlDataAdapter(comando);
                 DataTable dataTable = new DataTable();
-                using (MySqlDataReader reader = cmd.ExecuteReader())
-                {
-                    dataTable.Load(reader);
-                }
+
+                adaptador.Fill(dataTable);
 
                 DGVLibros.DataSource = dataTable;
-                DGVLibros.BackgroundColor = Color.White;
+                conexion.Close();
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error al cargar los datos: " + ex.Message);
-            }
-            finally
-            {
-                conexion.Close();
+                MessageBox.Show(ex.Message);
             }
         }
 
@@ -243,11 +239,101 @@ namespace ProyectoBiblioteca
         {
             CargarGeneros();
             CargarCategorias();
+            RefrescarLibros();
         }
 
         private void txtAutor_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void DGVLibros_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtTitulo.Text = DGVLibros.CurrentRow.Cells[1].Value.ToString();
+            txtAutor.Text = DGVLibros.CurrentRow.Cells[6].Value.ToString();
+            txtIBSN.Text = DGVLibros.CurrentRow.Cells[2].Value.ToString();
+            txtEditorial.Text = DGVLibros.CurrentRow.Cells[4].Value.ToString();
+            txtAño.Text = DGVLibros.CurrentRow.Cells[3].Value.ToString();
+            cbGenero.Text = DGVLibros.CurrentRow.Cells[7].Value.ToString();
+            cbCategoria.Text = DGVLibros.CurrentRow.Cells[8].Value.ToString();
+            txtDescrip.Text = DGVLibros.CurrentRow.Cells[5].Value.ToString();
+            int id = int.Parse(DGVLibros.CurrentRow.Cells[0].Value.ToString());
+            conexion.Open();
+            try
+            {
+                
+                string sql = "SELECT imagen FROM libros WHERE libros_id='" + id + "'";
+                MySqlCommand comando = new MySqlCommand(sql, conexion);
+                MySqlDataReader reader = comando.ExecuteReader();
+
+                if (reader.HasRows)
+                {
+                    reader.Read();
+                    MemoryStream ms = new MemoryStream((byte[])reader["imagen"]);
+                    Bitmap bm = new Bitmap(ms);
+                    Imagen.Visible = true;
+                    Imagen.Image = bm;
+                }
+                else
+                {
+                    MessageBox.Show("No se cuenta con imagen");
+                    Imagen.Visible = false;
+                }
+            }
+            catch
+            {
+                MessageBox.Show("No se cuenta con imagene");
+                Imagen.Visible = false;
+            }
+            conexion.Close();
+
+        }
+
+        private void btnImagen_Click(object sender, EventArgs e)
+        {
+            Imagen.Visible = true;
+            OpenFileDialog ofd = new OpenFileDialog();
+            ofd.Filter = "Imagenes|*.jpg; *.png";
+            ofd.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            ofd.Title = "Seleccionar imagen";
+
+            if (ofd.ShowDialog() == DialogResult.OK)
+            {
+                Imagen.Image = Image.FromFile(ofd.FileName);
+            }
+        }
+
+        private void DGVLibros_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            if (DGVLibros.Columns[e.ColumnIndex].Name == "estado")
+            {
+                string estado = e.Value?.ToString();
+
+                if (estado == "Inactivo")
+                {
+                    // Cambia el color de fondo de toda la fila
+                    DGVLibros.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.Red;
+                    DGVLibros.Rows[e.RowIndex].DefaultCellStyle.ForeColor = Color.White;
+                }
+                else if (estado == "Activo")
+                {
+                    // Restaurar los colores si es necesario
+                    DGVLibros.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.White;
+                    DGVLibros.Rows[e.RowIndex].DefaultCellStyle.ForeColor = Color.Black;
+                }
+            }
+        }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            txtTitulo.Text = "";
+            txtAutor.Text = "";
+            txtIBSN.Text = "";
+            txtEditorial.Text = "";
+            txtAño.Text = "";
+            cbGenero.Text = "";
+            cbCategoria.Text = "";
+            txtDescrip.Text = "";
         }
     }
 }
