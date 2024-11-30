@@ -86,33 +86,41 @@ namespace ProyectoBiblioteca
             conexion.Open();
             try
             {
-                
-                string ti = txtTitulo.Text;
-                string isbn = txtIBSN.Text;
-                string edi = txtEditorial.Text;
-                int anio = int.Parse(txtAño.Text);
-                string des = txtDescrip.Text;
-                int cat = (int)cbCategoria.SelectedValue;
-                int gen = (int)cbGenero.SelectedValue;
-                string aut = txtAutor.Text;
-                string estado = "Activo";
-                //convierte la imagen a byte
-                MemoryStream ms = new MemoryStream();
-                Imagen.Image.Save(ms, ImageFormat.Jpeg);
-                byte[] data = ms.ToArray();
+                try
+                {
 
-                MySqlCommand cmd = new MySqlCommand();
-                cmd.Connection = conexion;
-                cmd.CommandText = ("insert into sagas(titulo,isbn,año_publicacion,editorial,descripcion,genero_id,categorias_id, autor, imagensag, estado) " +
-                    "values('"+ ti+"','"+isbn+"',"+anio+",'"+edi+"','"+des+"',"+gen+","+cat+",'"+aut+ "', @imagensag, '"+estado+"');");
-                cmd.Parameters.AddWithValue("imagensag", data);
-                cmd.ExecuteNonQuery();
+                    string ti = txtTitulo.Text;
+                    string isbn = txtIBSN.Text;
+                    string edi = txtEditorial.Text;
+                    int anio = int.Parse(txtAño.Text);
+                    string des = txtDescrip.Text;
+                    int cat = (int)cbCategoria.SelectedValue;
+                    int gen = (int)cbGenero.SelectedValue;
+                    string aut = txtAutor.Text;
+                    string estado = "Activo";
+                    //convierte la imagen a byte
+                    MemoryStream ms = new MemoryStream();
+                    Imagen.Image.Save(ms, ImageFormat.Jpeg);
+                    byte[] data = ms.ToArray();
 
-                MessageBox.Show("Libro de coleccion agregada");
-                Imagen.Image = null;
-                
-            } 
-            catch(MySqlException ex) { MessageBox.Show("Error al guar imagen " + ex.Message); }
+                    MySqlCommand cmd = new MySqlCommand();
+                    cmd.Connection = conexion;
+                    cmd.CommandText = ("insert into sagas(titulo,isbn,año_publicacion,editorial,descripcion,genero_id,categorias_id, autor, imagensag, estado) " +
+                        "values('" + ti + "','" + isbn + "'," + anio + ",'" + edi + "','" + des + "'," + gen + "," + cat + ",'" + aut + "', @imagensag, '" + estado + "');");
+                    cmd.Parameters.AddWithValue("imagensag", data);
+                    cmd.ExecuteNonQuery();
+
+                    MessageBox.Show("Libro de coleccion agregada");
+                    Imagen.Image = null;
+
+                }
+                catch (MySqlException ex)
+                { MessageBox.Show("Error al guar imagen " + ex.Message); }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Error al aregar: " + ex.Message);
+            };
             conexion.Close();
         }
         public void MostrarLi()
@@ -150,17 +158,25 @@ namespace ProyectoBiblioteca
             txtAño.Text="";
             txtDescrip.Text= "";
             txtAutor.Text = "";
+            Imagen.Image = null;
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
+            string criterioBusqueda = txtBuscar.Text;
             try
             {
                 conexion.Open();
-                string consulta = "SELECT DISTINCT li.titulo, li.isbn, li.año_publicacion,li.editorial, li.descripcion,li.autor, gen.nombre, ca.nombre  FROM sagas li " +
-                                  "JOIN generos gen  JOIN categorias ca where li.titulo = '"+ txtBuscar.Text+ "'";
+                string consulta = "SELECT DISTINCT li.librosSaga_id, li.titulo, li.isbn, li.año_publicacion, li.editorial, li.descripcion, li.autor, gen.nombre AS genero, ca.nombre AS categoria, li.estado " +
+                                  "FROM sagas li " +
+                                  "JOIN generos gen ON li.genero_id = gen.genero_id " +
+                                  "JOIN categorias ca ON li.categorias_id = ca.categorias_id " +
+                                  "WHERE titulo LIKE @criterio OR autor LIKE @criterio OR isbn LIKE @criterio ";
+                /*"SELECT li.titulo, li.isbn, li.año_publicacion,li.editorial, li.descripcion,li.autor, gen.nombre, ca.nombre  FROM sagas li " +
+                              "JOIN generos gen  JOIN categorias ca WHERE titulo LIKE @criterio OR autor LIKE @criterio OR isbn LIKE @criterio ";*/
 
                 MySqlCommand comando = new MySqlCommand(consulta, conexion);
+                comando.Parameters.AddWithValue("@criterio", "%" + criterioBusqueda + "%");
                 MySqlDataAdapter adaptador = new MySqlDataAdapter(comando);
                 DataTable dataTable = new DataTable();
 
@@ -185,7 +201,7 @@ namespace ProyectoBiblioteca
             conexion.Open();
             try
             {
-
+                int id = int.Parse(DGVColecciones.CurrentRow.Cells[0].Value.ToString());
                 string ti = txtTitulo.Text;
                 string isbn = txtIBSN.Text;
                 string edi = txtEditorial.Text;
@@ -201,18 +217,8 @@ namespace ProyectoBiblioteca
 
                 MySqlCommand cmd = new MySqlCommand();
                 cmd.Connection = conexion;
-                cmd.CommandText = ("UPDATE sagas SET " +
-                      "titulo = '" + ti + "', " +
-                      "isbn = '" + isbn + "', " +
-                      "año_publicacion = " + anio + ", " +
-                      "editorial = '" + edi + "', " +
-                      "descripcion = '" + des + "', " +
-                      "genero_id = " + gen + ", " +
-                      "categorias_id = " + cat + " " +
-                      "autor = " + aut + "," +
-                      "imagensag = @imagensag" +
-                      "WHERE titulo = '" +ti+"';");
-                cmd.Parameters.AddWithValue("imagensag", data);
+                cmd.CommandText = ("UPDATE sagas SET titulo = '" + ti + "', isbn = '" + isbn + "', año_publicacion = " + anio + ", editorial = '" + edi + "', descripcion = '" + des + "', genero_id = " + gen + ", categorias_id = " + cat + ", autor = '" + aut + "',imagensag = @imagensag WHERE librosSaga_id = '" + id+"'");
+                cmd.Parameters.AddWithValue("@imagensag", data);
                 cmd.ExecuteNonQuery();
 
                 MessageBox.Show("Libro de coleccion actualizado");
@@ -283,8 +289,8 @@ namespace ProyectoBiblioteca
             txtTitulo.Text = DGVColecciones.CurrentRow.Cells[1].Value.ToString();
             txtAutor.Text = DGVColecciones.CurrentRow.Cells[6].Value.ToString();
             txtIBSN.Text = DGVColecciones.CurrentRow.Cells[2].Value.ToString();
-            txtEditorial.Text = DGVColecciones.CurrentRow.Cells[3].Value.ToString();
-            txtAño.Text = DGVColecciones.CurrentRow.Cells[4].Value.ToString();
+            txtEditorial.Text = DGVColecciones.CurrentRow.Cells[4].Value.ToString();
+            txtAño.Text = DGVColecciones.CurrentRow.Cells[3].Value.ToString();
             cbGenero.Text = DGVColecciones.CurrentRow.Cells[7].Value.ToString();
             cbCategoria.Text = DGVColecciones.CurrentRow.Cells[8].Value.ToString();
             txtDescrip.Text = DGVColecciones.CurrentRow.Cells[5].Value.ToString();

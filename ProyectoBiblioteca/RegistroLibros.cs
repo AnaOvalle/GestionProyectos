@@ -7,6 +7,7 @@ using System.Windows.Forms;
 using System.Drawing.Imaging;
 using System.IO;
 using System.Windows.Forms.DataVisualization.Charting;
+using Bunifu.UI.WinForms;
 
 namespace ProyectoBiblioteca
 {
@@ -205,13 +206,9 @@ namespace ProyectoBiblioteca
                     conexion.Open();
                     MySqlCommand buscar = new MySqlCommand(query, conexion);
                     buscar.Parameters.AddWithValue("@criterio", "%" + criterioBusqueda + "%");
-
+                    MySqlDataAdapter adaptador = new MySqlDataAdapter(buscar);
                     DataTable dataTable = new DataTable();
-                    using (MySqlDataReader reader = buscar.ExecuteReader())
-                    {
-                        dataTable.Load(reader);
-                    }
-
+                    adaptador.Fill(dataTable);
                     DGVLibros.DataSource = dataTable;
                 }
                 catch (Exception ex)
@@ -334,6 +331,12 @@ namespace ProyectoBiblioteca
             cbGenero.Text = "";
             cbCategoria.Text = "";
             txtDescrip.Text = "";
+            Imagen.Image = null;
+        }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            RefrescarLibros();
         }
     }
 }

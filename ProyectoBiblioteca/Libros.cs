@@ -16,7 +16,7 @@ namespace ProyectoBiblioteca
 {
     public partial class Libros : Form
     {
-        public MySqlConnection conexion = new MySqlConnection("Server=BilliJo; Database=BibliotecaGestion3; Uid=DELL; Pwd=1423; Port = 3306;");
+        public MySqlConnection conexion = new MySqlConnection("Server=BilliJo; Database=BibliotecaGestion5; Uid=DELL; Pwd=1423; Port = 3306;");
         public int bandera = 0;
         public Libros()
         {
@@ -49,7 +49,7 @@ namespace ProyectoBiblioteca
                 else if(bandera == 1)
                 {
                     string consulta = "SELECT  li.librosSaga_id, li.titulo, li.isbn, li.año_publicacion, li.editorial," +
-                        " li.descripcion, li.autor, ge.nombre AS Genero, ca.nombre AS Categoria  FROM librosSaga li JOIN generos ge " +
+                        " li.descripcion, li.autor, ge.nombre AS Genero, ca.nombre AS Categoria  FROM sagas li JOIN generos ge " +
                         "ON li. genero_id = ge.genero_id JOIN categorias ca ON  li.categorias_id = ca.categorias_id;";
 
 
@@ -80,6 +80,7 @@ namespace ProyectoBiblioteca
             TextAutor.Text = "";
             TextAnio.Text = "";
             TxtDesc.Text = "";
+            pbImagenLibro.Image = null;
         }
 
         private void bunifuButton1_Click(object sender, EventArgs e)
@@ -131,7 +132,7 @@ namespace ProyectoBiblioteca
                     {
 
                         string consulta = "SELECT li.librosSaga_id, li.titulo, li.isbn, li.año_publicacion, li.editorial, li.descripcion, li.autor, ge.nombre AS Genero," +
-                            " ca.nombre AS Categoria  FROM librosSaga li JOIN generos ge ON li. genero_id = ge.genero_id JOIN categorias ca ON  li.categorias_id = ca.categorias_id WHERE " +
+                            " ca.nombre AS Categoria  FROM sagas li JOIN generos ge ON li. genero_id = ge.genero_id JOIN categorias ca ON  li.categorias_id = ca.categorias_id WHERE " +
                             "li.titulo LIKE @criterio OR li.autor LIKE @criterio OR li.isbn LIKE @criterio OR li.editorial LIKE @criterio";
 
                         MySqlCommand comando = new MySqlCommand(consulta, conexion);
@@ -174,7 +175,7 @@ namespace ProyectoBiblioteca
                 if (bandera == 1)
                 {
                 
-                    string sql = "SELECT imagensag FROM librosSaga WHERE librosSaga_id='" + id + "'";
+                    string sql = "SELECT imagensag FROM sagas WHERE librosSaga_id='" + id + "'";
                     MySqlCommand comando = new MySqlCommand(sql, conexion);
                     MySqlDataReader reader = comando.ExecuteReader();
 
@@ -200,7 +201,7 @@ namespace ProyectoBiblioteca
                     if (reader.HasRows)
                     {
                         reader.Read();
-                        MemoryStream ms = new MemoryStream((byte[])reader["imagensag"]);
+                        MemoryStream ms = new MemoryStream((byte[])reader["imagen"]);
                         Bitmap bm = new Bitmap(ms);
                         pbImagenLibro.Visible = true;
                         pbImagenLibro.Image = bm;
@@ -270,7 +271,7 @@ namespace ProyectoBiblioteca
                 {
 
                     string consulta = "SELECT  li.librosSaga_id, li.titulo, li.isbn, li.año_publicacion, li.editorial," +
-                        " li.descripcion, li.autor, ge.nombre AS Genero, ca.nombre AS Categoria  FROM librosSaga  li JOIN generos ge " +
+                        " li.descripcion, li.autor, ge.nombre AS Genero, ca.nombre AS Categoria  FROM sagas  li JOIN generos ge " +
                         "ON li. genero_id = ge.genero_id JOIN categorias ca ON  li.categorias_id = ca.categorias_id WHERE ca.nombre = @categoria;";
 
 
@@ -301,7 +302,7 @@ namespace ProyectoBiblioteca
 
         private void btnCientifico_Click(object sender, EventArgs e)
         {
-            Busquedas("Ciencia y tecnología");
+            Busquedas("Tecnología");
             PanelCategorias.Visible = false;
         }
 

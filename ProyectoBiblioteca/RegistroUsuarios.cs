@@ -14,9 +14,10 @@ namespace ProyectoBiblioteca
         public RegistroUsuarios()
         {
             InitializeComponent();
+            mostraruse();
         }
 
-        MySqlConnection conexion = new MySqlConnection("Server=127.0.0.1;Database=Biblio3;Uid=root;Pwd=hola123;");
+        MySqlConnection conexion = new MySqlConnection("Server=BilliJo; Database=BibliotecaGestion3; Uid=DELL; Pwd=1423; Port = 3306;");
 
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
@@ -177,8 +178,7 @@ namespace ProyectoBiblioteca
                 MessageBox.Show("Por favor, ingrese un ID válido.");
             }
         }
-
-        private void btnRefresh_Click(object sender, EventArgs e)
+        private void mostraruse()
         {
             try
             {
@@ -204,6 +204,10 @@ namespace ProyectoBiblioteca
             {
                 conexion.Close();
             }
+        }
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+           mostraruse();
         }
 
         private void Buscar_Click(object sender, EventArgs e)
@@ -269,6 +273,28 @@ namespace ProyectoBiblioteca
             NumeroContactoU.Clear();
             bunifuTextBox2.Clear();
 
+        }
+
+        private void bunifuDataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            Id_User.Text = bunifuDataGridView1.CurrentRow.Cells[0].Value.ToString();
+            NombreU.Text = bunifuDataGridView1.CurrentRow.Cells[1].Value.ToString();
+            ApellidoPU.Text = bunifuDataGridView1.CurrentRow.Cells[2].Value.ToString();
+            bunifuTextBox1.Text = bunifuDataGridView1.CurrentRow.Cells[3].Value.ToString();
+            bunifuTextBox4.Text = bunifuDataGridView1.CurrentRow.Cells[4].Value.ToString();
+            NumeroContactoU.Text = bunifuDataGridView1.CurrentRow.Cells[5].Value.ToString();
+            bunifuTextBox2.Text = bunifuDataGridView1.CurrentRow.Cells[6].Value.ToString();
+        }
+
+        private void btnLimpiar_Click_1(object sender, EventArgs e)
+        {
+            Id_User.Text = "";
+            NombreU.Text = "";
+            ApellidoPU.Text = "";
+            bunifuTextBox1.Text = "";
+            bunifuTextBox4.Text = "";
+            NumeroContactoU.Text = "";
+            bunifuTextBox2.Text = "";
         }
     }
 }

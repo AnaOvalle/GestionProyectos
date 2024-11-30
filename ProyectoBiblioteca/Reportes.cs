@@ -21,7 +21,7 @@ namespace ProyectoBiblioteca
 {
     public partial class Reportes : Form
     {
-        public MySqlConnection conexion = new MySqlConnection("Server=localhost; Database=BibliotecaGestion; Uid=root; Pwd=SB1299; Port = 3306;");
+        public MySqlConnection conexion = new MySqlConnection("Server=BilliJo; Database=BibliotecaGestion3; Uid=DELL; Pwd=1423; Port = 3306;");
 
         public Reportes()
         {
