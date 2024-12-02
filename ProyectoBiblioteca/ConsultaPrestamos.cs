@@ -9,7 +9,7 @@ namespace ProyectoBiblioteca
     public partial class ConsultaPrestamos : Form
     {
         // Conexión a la base de datos MySQL
-        public MySqlConnection conexion = new MySqlConnection("Server=localhost;Database=Biblio3;Uid=root;Pwd=hola123;");
+        public MySqlConnection conexion = new MySqlConnection("Server=BilliJo; Database=BibliotecaGestion5; Uid=DELL; Pwd=1423; Port = 3306;");
 
         public ConsultaPrestamos()
         {
@@ -70,9 +70,9 @@ namespace ProyectoBiblioteca
 
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
-            Inventario inve = new Inventario();
-            inve.Show();
-            this.Hide();
+            cbCliente.Text = "";
+            cbPeriodo.Text = "";
+            txtBuscar.Text = "";
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
@@ -196,6 +196,7 @@ namespace ProyectoBiblioteca
             }
         }
 
+       
     }
 }
 

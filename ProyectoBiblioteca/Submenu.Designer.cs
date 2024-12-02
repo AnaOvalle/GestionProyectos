@@ -49,9 +49,10 @@
             this.PanelUsuario.Controls.Add(this.btnCerrar);
             this.PanelUsuario.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PanelUsuario.Location = new System.Drawing.Point(0, 0);
+            this.PanelUsuario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PanelUsuario.Name = "PanelUsuario";
             this.PanelUsuario.ShowBorders = true;
-            this.PanelUsuario.Size = new System.Drawing.Size(186, 137);
+            this.PanelUsuario.Size = new System.Drawing.Size(248, 169);
             this.PanelUsuario.TabIndex = 29;
             this.PanelUsuario.Visible = false;
             // 
@@ -96,13 +97,14 @@
             this.btnRegistro.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
             this.btnRegistro.IconSize = 25;
             this.btnRegistro.IdleBorderColor = System.Drawing.Color.Transparent;
-            this.btnRegistro.IdleBorderRadius = 37;
+            this.btnRegistro.IdleBorderRadius = 46;
             this.btnRegistro.IdleBorderThickness = 1;
             this.btnRegistro.IdleFillColor = System.Drawing.Color.Transparent;
             this.btnRegistro.IdleIconLeftImage = global::ProyectoBiblioteca.Properties.Resources.icons8_editar_propiedad_50;
             this.btnRegistro.IdleIconRightImage = null;
             this.btnRegistro.IndicateFocus = false;
-            this.btnRegistro.Location = new System.Drawing.Point(0, 13);
+            this.btnRegistro.Location = new System.Drawing.Point(0, 16);
+            this.btnRegistro.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnRegistro.Name = "btnRegistro";
             this.btnRegistro.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnRegistro.OnDisabledState.BorderRadius = 1;
@@ -136,13 +138,14 @@
             this.btnRegistro.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnRegistro.OnPressedState.IconLeftImage = null;
             this.btnRegistro.OnPressedState.IconRightImage = null;
-            this.btnRegistro.Size = new System.Drawing.Size(183, 39);
+            this.btnRegistro.Size = new System.Drawing.Size(244, 48);
             this.btnRegistro.TabIndex = 2;
             this.btnRegistro.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnRegistro.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnRegistro.TextMarginLeft = 0;
             this.btnRegistro.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnRegistro.UseDefaultRadiusAndThickness = true;
+            this.btnRegistro.Click += new System.EventHandler(this.btnRegistro_Click);
             // 
             // btnCerrar
             // 
@@ -185,13 +188,14 @@
             this.btnCerrar.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
             this.btnCerrar.IconSize = 25;
             this.btnCerrar.IdleBorderColor = System.Drawing.Color.Transparent;
-            this.btnCerrar.IdleBorderRadius = 38;
+            this.btnCerrar.IdleBorderRadius = 47;
             this.btnCerrar.IdleBorderThickness = 1;
             this.btnCerrar.IdleFillColor = System.Drawing.Color.Transparent;
             this.btnCerrar.IdleIconLeftImage = global::ProyectoBiblioteca.Properties.Resources.icons8_cerrar_sesión_32;
             this.btnCerrar.IdleIconRightImage = null;
             this.btnCerrar.IndicateFocus = false;
-            this.btnCerrar.Location = new System.Drawing.Point(3, 58);
+            this.btnCerrar.Location = new System.Drawing.Point(4, 71);
+            this.btnCerrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnCerrar.OnDisabledState.BorderRadius = 1;
@@ -225,7 +229,7 @@
             this.btnCerrar.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnCerrar.OnPressedState.IconLeftImage = null;
             this.btnCerrar.OnPressedState.IconRightImage = null;
-            this.btnCerrar.Size = new System.Drawing.Size(180, 40);
+            this.btnCerrar.Size = new System.Drawing.Size(240, 49);
             this.btnCerrar.TabIndex = 1;
             this.btnCerrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCerrar.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -235,11 +239,12 @@
             // 
             // Submenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(186, 137);
+            this.ClientSize = new System.Drawing.Size(248, 169);
             this.Controls.Add(this.PanelUsuario);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Submenu";
             this.Text = "Submenu";
             this.PanelUsuario.ResumeLayout(false);

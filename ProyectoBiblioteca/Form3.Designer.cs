@@ -87,11 +87,11 @@ namespace ProyectoBiblioteca
             this.bunifuLabel2.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel2.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel2.Font = new System.Drawing.Font("Century", 20.25F, System.Drawing.FontStyle.Bold);
-            this.bunifuLabel2.Location = new System.Drawing.Point(252, 53);
-            this.bunifuLabel2.Margin = new System.Windows.Forms.Padding(2);
+            this.bunifuLabel2.Location = new System.Drawing.Point(336, 65);
+            this.bunifuLabel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bunifuLabel2.Name = "bunifuLabel2";
             this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel2.Size = new System.Drawing.Size(179, 33);
+            this.bunifuLabel2.Size = new System.Drawing.Size(218, 40);
             this.bunifuLabel2.TabIndex = 15;
             this.bunifuLabel2.Text = "Crear cuenta";
             this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -99,15 +99,18 @@ namespace ProyectoBiblioteca
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(28, 322);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
+            this.dataGridView1.Location = new System.Drawing.Point(37, 396);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(639, 158);
+            this.dataGridView1.Size = new System.Drawing.Size(852, 194);
             this.dataGridView1.TabIndex = 12;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // bunifuElipse2
             // 
@@ -155,13 +158,14 @@ namespace ProyectoBiblioteca
             this.btnCerrarSesion.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
             this.btnCerrarSesion.IconSize = 25;
             this.btnCerrarSesion.IdleBorderColor = System.Drawing.Color.Transparent;
-            this.btnCerrarSesion.IdleBorderRadius = 42;
+            this.btnCerrarSesion.IdleBorderRadius = 52;
             this.btnCerrarSesion.IdleBorderThickness = 1;
             this.btnCerrarSesion.IdleFillColor = System.Drawing.Color.Transparent;
             this.btnCerrarSesion.IdleIconLeftImage = global::ProyectoBiblioteca.Properties.Resources.icons8_cerrar_sesión_32;
             this.btnCerrarSesion.IdleIconRightImage = null;
             this.btnCerrarSesion.IndicateFocus = false;
-            this.btnCerrarSesion.Location = new System.Drawing.Point(524, 53);
+            this.btnCerrarSesion.Location = new System.Drawing.Point(699, 65);
+            this.btnCerrarSesion.Margin = new System.Windows.Forms.Padding(4);
             this.btnCerrarSesion.Name = "btnCerrarSesion";
             this.btnCerrarSesion.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnCerrarSesion.OnDisabledState.BorderRadius = 1;
@@ -195,7 +199,7 @@ namespace ProyectoBiblioteca
             this.btnCerrarSesion.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnCerrarSesion.OnPressedState.IconLeftImage = null;
             this.btnCerrarSesion.OnPressedState.IconRightImage = null;
-            this.btnCerrarSesion.Size = new System.Drawing.Size(160, 44);
+            this.btnCerrarSesion.Size = new System.Drawing.Size(213, 54);
             this.btnCerrarSesion.TabIndex = 19;
             this.btnCerrarSesion.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCerrarSesion.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -219,9 +223,10 @@ namespace ProyectoBiblioteca
             this.PanelBarra.Dock = System.Windows.Forms.DockStyle.Top;
             this.PanelBarra.ForeColor = System.Drawing.Color.Black;
             this.PanelBarra.Location = new System.Drawing.Point(0, 0);
+            this.PanelBarra.Margin = new System.Windows.Forms.Padding(4);
             this.PanelBarra.Name = "PanelBarra";
             this.PanelBarra.ShowBorders = true;
-            this.PanelBarra.Size = new System.Drawing.Size(705, 48);
+            this.PanelBarra.Size = new System.Drawing.Size(940, 59);
             this.PanelBarra.TabIndex = 18;
             // 
             // bunifuImageButton1
@@ -241,17 +246,18 @@ namespace ProyectoBiblioteca
             this.bunifuImageButton1.ImageActive = null;
             this.bunifuImageButton1.ImageLocation = null;
             this.bunifuImageButton1.ImageMargin = 10;
-            this.bunifuImageButton1.ImageSize = new System.Drawing.Size(34, 32);
-            this.bunifuImageButton1.ImageZoomSize = new System.Drawing.Size(44, 42);
+            this.bunifuImageButton1.ImageSize = new System.Drawing.Size(49, 42);
+            this.bunifuImageButton1.ImageZoomSize = new System.Drawing.Size(59, 52);
             this.bunifuImageButton1.InitialImage = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.InitialImage")));
-            this.bunifuImageButton1.Location = new System.Drawing.Point(640, 5);
+            this.bunifuImageButton1.Location = new System.Drawing.Point(853, 6);
+            this.bunifuImageButton1.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuImageButton1.Name = "bunifuImageButton1";
             this.bunifuImageButton1.Rotation = 0;
             this.bunifuImageButton1.ShowActiveImage = true;
             this.bunifuImageButton1.ShowCursorChanges = true;
             this.bunifuImageButton1.ShowImageBorders = true;
             this.bunifuImageButton1.ShowSizeMarkers = false;
-            this.bunifuImageButton1.Size = new System.Drawing.Size(44, 42);
+            this.bunifuImageButton1.Size = new System.Drawing.Size(59, 52);
             this.bunifuImageButton1.TabIndex = 33;
             this.bunifuImageButton1.ToolTipText = "";
             this.bunifuImageButton1.WaitOnLoad = false;
@@ -276,17 +282,18 @@ namespace ProyectoBiblioteca
             this.bunifuImageButton3.ImageActive = null;
             this.bunifuImageButton3.ImageLocation = null;
             this.bunifuImageButton3.ImageMargin = 10;
-            this.bunifuImageButton3.ImageSize = new System.Drawing.Size(34, 32);
-            this.bunifuImageButton3.ImageZoomSize = new System.Drawing.Size(44, 42);
+            this.bunifuImageButton3.ImageSize = new System.Drawing.Size(49, 42);
+            this.bunifuImageButton3.ImageZoomSize = new System.Drawing.Size(59, 52);
             this.bunifuImageButton3.InitialImage = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton3.InitialImage")));
-            this.bunifuImageButton3.Location = new System.Drawing.Point(12, 5);
+            this.bunifuImageButton3.Location = new System.Drawing.Point(16, 6);
+            this.bunifuImageButton3.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuImageButton3.Name = "bunifuImageButton3";
             this.bunifuImageButton3.Rotation = 0;
             this.bunifuImageButton3.ShowActiveImage = true;
             this.bunifuImageButton3.ShowCursorChanges = true;
             this.bunifuImageButton3.ShowImageBorders = true;
             this.bunifuImageButton3.ShowSizeMarkers = false;
-            this.bunifuImageButton3.Size = new System.Drawing.Size(44, 42);
+            this.bunifuImageButton3.Size = new System.Drawing.Size(59, 52);
             this.bunifuImageButton3.TabIndex = 32;
             this.bunifuImageButton3.ToolTipText = "";
             this.bunifuImageButton3.WaitOnLoad = false;
@@ -302,10 +309,11 @@ namespace ProyectoBiblioteca
             this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel1.ForeColor = System.Drawing.Color.Black;
-            this.bunifuLabel1.Location = new System.Drawing.Point(276, 12);
+            this.bunifuLabel1.Location = new System.Drawing.Point(368, 15);
+            this.bunifuLabel1.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(151, 23);
+            this.bunifuLabel1.Size = new System.Drawing.Size(194, 28);
             this.bunifuLabel1.TabIndex = 0;
             this.bunifuLabel1.Text = "ADMINISTRADOR";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -316,9 +324,10 @@ namespace ProyectoBiblioteca
             this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox2.BackColor = System.Drawing.Color.Black;
             this.pictureBox2.Image = global::ProyectoBiblioteca.Properties.Resources.usuari1;
-            this.pictureBox2.Location = new System.Drawing.Point(-223, 3);
+            this.pictureBox2.Location = new System.Drawing.Point(-297, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(38, 34);
+            this.pictureBox2.Size = new System.Drawing.Size(51, 42);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 5;
             this.pictureBox2.TabStop = false;
@@ -339,24 +348,21 @@ namespace ProyectoBiblioteca
             this.bunifuPanel2.Controls.Add(this.bunifuLabel4);
             this.bunifuPanel2.Controls.Add(this.bunifuLabel3);
             this.bunifuPanel2.Controls.Add(this.cmbTusuario);
-            this.bunifuPanel2.Location = new System.Drawing.Point(169, 88);
-            this.bunifuPanel2.Margin = new System.Windows.Forms.Padding(2);
+            this.bunifuPanel2.Location = new System.Drawing.Point(225, 108);
+            this.bunifuPanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bunifuPanel2.Name = "bunifuPanel2";
             this.bunifuPanel2.ShowBorders = true;
-            this.bunifuPanel2.Size = new System.Drawing.Size(350, 167);
+            this.bunifuPanel2.Size = new System.Drawing.Size(467, 206);
             this.bunifuPanel2.TabIndex = 14;
             // 
             // cbIDUsuario
             // 
+            this.cbIDUsuario.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbIDUsuario.FormattingEnabled = true;
-            this.cbIDUsuario.Items.AddRange(new object[] {
-            "Admin",
-            "Ventas",
-            "Maestra"});
-            this.cbIDUsuario.Location = new System.Drawing.Point(183, 15);
-            this.cbIDUsuario.Margin = new System.Windows.Forms.Padding(2);
+            this.cbIDUsuario.Location = new System.Drawing.Point(244, 18);
+            this.cbIDUsuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbIDUsuario.Name = "cbIDUsuario";
-            this.cbIDUsuario.Size = new System.Drawing.Size(140, 21);
+            this.cbIDUsuario.Size = new System.Drawing.Size(185, 24);
             this.cbIDUsuario.TabIndex = 17;
             // 
             // txtContra
@@ -386,7 +392,8 @@ namespace ProyectoBiblioteca
             this.txtContra.IconRight = null;
             this.txtContra.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtContra.Lines = new string[0];
-            this.txtContra.Location = new System.Drawing.Point(183, 92);
+            this.txtContra.Location = new System.Drawing.Point(244, 113);
+            this.txtContra.Margin = new System.Windows.Forms.Padding(4);
             this.txtContra.MaxLength = 32767;
             this.txtContra.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtContra.Modified = false;
@@ -412,7 +419,7 @@ namespace ProyectoBiblioteca
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtContra.OnIdleState = stateProperties4;
-            this.txtContra.Padding = new System.Windows.Forms.Padding(3);
+            this.txtContra.Padding = new System.Windows.Forms.Padding(4);
             this.txtContra.PasswordChar = '\0';
             this.txtContra.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtContra.PlaceholderText = "Enter text";
@@ -422,7 +429,7 @@ namespace ProyectoBiblioteca
             this.txtContra.SelectionLength = 0;
             this.txtContra.SelectionStart = 0;
             this.txtContra.ShortcutsEnabled = true;
-            this.txtContra.Size = new System.Drawing.Size(140, 20);
+            this.txtContra.Size = new System.Drawing.Size(187, 25);
             this.txtContra.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtContra.TabIndex = 15;
             this.txtContra.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -460,7 +467,8 @@ namespace ProyectoBiblioteca
             this.txtusuario.IconRight = null;
             this.txtusuario.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtusuario.Lines = new string[0];
-            this.txtusuario.Location = new System.Drawing.Point(183, 54);
+            this.txtusuario.Location = new System.Drawing.Point(244, 66);
+            this.txtusuario.Margin = new System.Windows.Forms.Padding(4);
             this.txtusuario.MaxLength = 32767;
             this.txtusuario.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtusuario.Modified = false;
@@ -486,7 +494,7 @@ namespace ProyectoBiblioteca
             stateProperties8.ForeColor = System.Drawing.Color.Empty;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtusuario.OnIdleState = stateProperties8;
-            this.txtusuario.Padding = new System.Windows.Forms.Padding(3);
+            this.txtusuario.Padding = new System.Windows.Forms.Padding(4);
             this.txtusuario.PasswordChar = '\0';
             this.txtusuario.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtusuario.PlaceholderText = "Enter text";
@@ -496,7 +504,7 @@ namespace ProyectoBiblioteca
             this.txtusuario.SelectionLength = 0;
             this.txtusuario.SelectionStart = 0;
             this.txtusuario.ShortcutsEnabled = true;
-            this.txtusuario.Size = new System.Drawing.Size(140, 20);
+            this.txtusuario.Size = new System.Drawing.Size(187, 25);
             this.txtusuario.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtusuario.TabIndex = 14;
             this.txtusuario.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -513,11 +521,11 @@ namespace ProyectoBiblioteca
             this.bunifuLabel6.AutoEllipsis = false;
             this.bunifuLabel6.CursorType = null;
             this.bunifuLabel6.Font = new System.Drawing.Font("Century", 9F);
-            this.bunifuLabel6.Location = new System.Drawing.Point(74, 136);
-            this.bunifuLabel6.Margin = new System.Windows.Forms.Padding(2);
+            this.bunifuLabel6.Location = new System.Drawing.Point(99, 167);
+            this.bunifuLabel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bunifuLabel6.Name = "bunifuLabel6";
             this.bunifuLabel6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel6.Size = new System.Drawing.Size(95, 16);
+            this.bunifuLabel6.Size = new System.Drawing.Size(121, 18);
             this.bunifuLabel6.TabIndex = 16;
             this.bunifuLabel6.Text = "Tipo de usuarios:";
             this.bunifuLabel6.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -529,11 +537,11 @@ namespace ProyectoBiblioteca
             this.bunifuLabel5.AutoEllipsis = false;
             this.bunifuLabel5.CursorType = null;
             this.bunifuLabel5.Font = new System.Drawing.Font("Century", 9F);
-            this.bunifuLabel5.Location = new System.Drawing.Point(102, 92);
-            this.bunifuLabel5.Margin = new System.Windows.Forms.Padding(2);
+            this.bunifuLabel5.Location = new System.Drawing.Point(136, 113);
+            this.bunifuLabel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bunifuLabel5.Name = "bunifuLabel5";
             this.bunifuLabel5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel5.Size = new System.Drawing.Size(65, 16);
+            this.bunifuLabel5.Size = new System.Drawing.Size(81, 18);
             this.bunifuLabel5.TabIndex = 15;
             this.bunifuLabel5.Text = "Contraseña";
             this.bunifuLabel5.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -545,11 +553,11 @@ namespace ProyectoBiblioteca
             this.bunifuLabel4.AutoEllipsis = false;
             this.bunifuLabel4.CursorType = null;
             this.bunifuLabel4.Font = new System.Drawing.Font("Century", 9F);
-            this.bunifuLabel4.Location = new System.Drawing.Point(59, 54);
-            this.bunifuLabel4.Margin = new System.Windows.Forms.Padding(2);
+            this.bunifuLabel4.Location = new System.Drawing.Point(79, 66);
+            this.bunifuLabel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bunifuLabel4.Name = "bunifuLabel4";
             this.bunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel4.Size = new System.Drawing.Size(109, 16);
+            this.bunifuLabel4.Size = new System.Drawing.Size(138, 18);
             this.bunifuLabel4.TabIndex = 14;
             this.bunifuLabel4.Text = "Nombre de usuario:";
             this.bunifuLabel4.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -562,27 +570,27 @@ namespace ProyectoBiblioteca
             this.bunifuLabel3.CursorType = null;
             this.bunifuLabel3.Font = new System.Drawing.Font("Century", 9F);
             this.bunifuLabel3.ForeColor = System.Drawing.Color.Black;
-            this.bunifuLabel3.Location = new System.Drawing.Point(108, 15);
-            this.bunifuLabel3.Margin = new System.Windows.Forms.Padding(2);
+            this.bunifuLabel3.Location = new System.Drawing.Point(144, 18);
+            this.bunifuLabel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bunifuLabel3.Name = "bunifuLabel3";
             this.bunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel3.Size = new System.Drawing.Size(64, 16);
+            this.bunifuLabel3.Size = new System.Drawing.Size(60, 18);
             this.bunifuLabel3.TabIndex = 13;
-            this.bunifuLabel3.Text = "ID Usuario:";
+            this.bunifuLabel3.Text = "Usuario:";
             this.bunifuLabel3.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel3.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // cmbTusuario
             // 
+            this.cmbTusuario.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbTusuario.FormattingEnabled = true;
             this.cmbTusuario.Items.AddRange(new object[] {
-            "Admin",
-            "Ventas",
-            "Maestra"});
-            this.cmbTusuario.Location = new System.Drawing.Point(183, 129);
-            this.cmbTusuario.Margin = new System.Windows.Forms.Padding(2);
+            "Administrador.",
+            "Trabajador."});
+            this.cmbTusuario.Location = new System.Drawing.Point(244, 159);
+            this.cmbTusuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbTusuario.Name = "cmbTusuario";
-            this.cmbTusuario.Size = new System.Drawing.Size(140, 21);
+            this.cmbTusuario.Size = new System.Drawing.Size(185, 24);
             this.cmbTusuario.TabIndex = 16;
             // 
             // bunifuPanel1
@@ -597,11 +605,11 @@ namespace ProyectoBiblioteca
             this.bunifuPanel1.Controls.Add(this.btmmodificar);
             this.bunifuPanel1.Controls.Add(this.btmagregar);
             this.bunifuPanel1.Controls.Add(this.btmeliminar);
-            this.bunifuPanel1.Location = new System.Drawing.Point(89, 259);
-            this.bunifuPanel1.Margin = new System.Windows.Forms.Padding(2);
+            this.bunifuPanel1.Location = new System.Drawing.Point(119, 319);
+            this.bunifuPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bunifuPanel1.Name = "bunifuPanel1";
             this.bunifuPanel1.ShowBorders = true;
-            this.bunifuPanel1.Size = new System.Drawing.Size(504, 59);
+            this.bunifuPanel1.Size = new System.Drawing.Size(672, 73);
             this.bunifuPanel1.TabIndex = 13;
             // 
             // btmlimpiar
@@ -651,8 +659,8 @@ namespace ProyectoBiblioteca
             this.btmlimpiar.IdleIconLeftImage = null;
             this.btmlimpiar.IdleIconRightImage = null;
             this.btmlimpiar.IndicateFocus = false;
-            this.btmlimpiar.Location = new System.Drawing.Point(376, 12);
-            this.btmlimpiar.Margin = new System.Windows.Forms.Padding(2);
+            this.btmlimpiar.Location = new System.Drawing.Point(501, 15);
+            this.btmlimpiar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btmlimpiar.Name = "btmlimpiar";
             this.btmlimpiar.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btmlimpiar.OnDisabledState.BorderRadius = 28;
@@ -686,7 +694,7 @@ namespace ProyectoBiblioteca
             this.btmlimpiar.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btmlimpiar.OnPressedState.IconLeftImage = null;
             this.btmlimpiar.OnPressedState.IconRightImage = null;
-            this.btmlimpiar.Size = new System.Drawing.Size(112, 32);
+            this.btmlimpiar.Size = new System.Drawing.Size(149, 39);
             this.btmlimpiar.TabIndex = 3;
             this.btmlimpiar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btmlimpiar.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -742,8 +750,8 @@ namespace ProyectoBiblioteca
             this.btmmodificar.IdleIconLeftImage = null;
             this.btmmodificar.IdleIconRightImage = null;
             this.btmmodificar.IndicateFocus = false;
-            this.btmmodificar.Location = new System.Drawing.Point(144, 12);
-            this.btmmodificar.Margin = new System.Windows.Forms.Padding(2);
+            this.btmmodificar.Location = new System.Drawing.Point(192, 15);
+            this.btmmodificar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btmmodificar.Name = "btmmodificar";
             this.btmmodificar.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btmmodificar.OnDisabledState.BorderRadius = 28;
@@ -777,7 +785,7 @@ namespace ProyectoBiblioteca
             this.btmmodificar.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btmmodificar.OnPressedState.IconLeftImage = null;
             this.btmmodificar.OnPressedState.IconRightImage = null;
-            this.btmmodificar.Size = new System.Drawing.Size(112, 32);
+            this.btmmodificar.Size = new System.Drawing.Size(149, 39);
             this.btmmodificar.TabIndex = 1;
             this.btmmodificar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btmmodificar.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -833,8 +841,8 @@ namespace ProyectoBiblioteca
             this.btmagregar.IdleIconLeftImage = null;
             this.btmagregar.IdleIconRightImage = null;
             this.btmagregar.IndicateFocus = false;
-            this.btmagregar.Location = new System.Drawing.Point(28, 12);
-            this.btmagregar.Margin = new System.Windows.Forms.Padding(2);
+            this.btmagregar.Location = new System.Drawing.Point(37, 15);
+            this.btmagregar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btmagregar.Name = "btmagregar";
             this.btmagregar.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btmagregar.OnDisabledState.BorderRadius = 28;
@@ -868,7 +876,7 @@ namespace ProyectoBiblioteca
             this.btmagregar.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btmagregar.OnPressedState.IconLeftImage = null;
             this.btmagregar.OnPressedState.IconRightImage = null;
-            this.btmagregar.Size = new System.Drawing.Size(112, 32);
+            this.btmagregar.Size = new System.Drawing.Size(149, 39);
             this.btmagregar.TabIndex = 0;
             this.btmagregar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btmagregar.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -924,8 +932,8 @@ namespace ProyectoBiblioteca
             this.btmeliminar.IdleIconLeftImage = null;
             this.btmeliminar.IdleIconRightImage = null;
             this.btmeliminar.IndicateFocus = false;
-            this.btmeliminar.Location = new System.Drawing.Point(260, 12);
-            this.btmeliminar.Margin = new System.Windows.Forms.Padding(2);
+            this.btmeliminar.Location = new System.Drawing.Point(347, 15);
+            this.btmeliminar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btmeliminar.Name = "btmeliminar";
             this.btmeliminar.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btmeliminar.OnDisabledState.BorderRadius = 28;
@@ -959,7 +967,7 @@ namespace ProyectoBiblioteca
             this.btmeliminar.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btmeliminar.OnPressedState.IconLeftImage = null;
             this.btmeliminar.OnPressedState.IconRightImage = null;
-            this.btmeliminar.Size = new System.Drawing.Size(112, 32);
+            this.btmeliminar.Size = new System.Drawing.Size(149, 39);
             this.btmeliminar.TabIndex = 2;
             this.btmeliminar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btmeliminar.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -985,17 +993,18 @@ namespace ProyectoBiblioteca
             this.btnRefresh.ImageActive = null;
             this.btnRefresh.ImageLocation = null;
             this.btnRefresh.ImageMargin = 10;
-            this.btnRefresh.ImageSize = new System.Drawing.Size(31, 32);
-            this.btnRefresh.ImageZoomSize = new System.Drawing.Size(41, 42);
+            this.btnRefresh.ImageSize = new System.Drawing.Size(45, 42);
+            this.btnRefresh.ImageZoomSize = new System.Drawing.Size(55, 52);
             this.btnRefresh.InitialImage = ((System.Drawing.Image)(resources.GetObject("btnRefresh.InitialImage")));
-            this.btnRefresh.Location = new System.Drawing.Point(626, 275);
+            this.btnRefresh.Location = new System.Drawing.Point(835, 338);
+            this.btnRefresh.Margin = new System.Windows.Forms.Padding(4);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Rotation = 0;
             this.btnRefresh.ShowActiveImage = true;
             this.btnRefresh.ShowCursorChanges = true;
             this.btnRefresh.ShowImageBorders = false;
             this.btnRefresh.ShowSizeMarkers = false;
-            this.btnRefresh.Size = new System.Drawing.Size(41, 42);
+            this.btnRefresh.Size = new System.Drawing.Size(55, 52);
             this.btnRefresh.TabIndex = 124;
             this.btnRefresh.ToolTipText = "Refresh";
             this.btnRefresh.WaitOnLoad = false;
@@ -1005,10 +1014,10 @@ namespace ProyectoBiblioteca
             // 
             // FrmAltaUsuarios
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
-            this.ClientSize = new System.Drawing.Size(705, 491);
+            this.ClientSize = new System.Drawing.Size(940, 604);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.btnCerrarSesion);
             this.Controls.Add(this.PanelBarra);
@@ -1017,7 +1026,9 @@ namespace ProyectoBiblioteca
             this.Controls.Add(this.bunifuPanel1);
             this.Controls.Add(this.dataGridView1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmAltaUsuarios";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Form3";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.PanelBarra.ResumeLayout(false);

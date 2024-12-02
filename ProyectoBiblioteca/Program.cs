@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
+using System.Linq;  
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -16,7 +16,7 @@ namespace ProyectoBiblioteca
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Libros());
+            Application.Run(new Perdidas());
         }
     }
 }
