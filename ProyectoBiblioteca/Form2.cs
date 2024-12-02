@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.RightsManagement;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls;
@@ -82,58 +83,69 @@ namespace ProyectoBiblioteca
 
         private void btnFiccion_Click(object sender, EventArgs e)
         {
-            // codigo
-
-            HideSubmenu();
+            abriribroscat("Ficción");
+       
         }
 
         private void btnNoFiccion_Click(object sender, EventArgs e)
         {
-            // codigo
+            
 
-            HideSubmenu();
+            abriribroscat("Novela");
         }
 
         private void btnInfantil_Click(object sender, EventArgs e)
         {
             // codigo
 
-            HideSubmenu();
+            abriribroscat("Infantil");
         }
 
         private void btnJuvenil_Click(object sender, EventArgs e)
         {
             // codigo
-
-            HideSubmenu();
+            abriribroscat("Juvenil");
+           
         }
 
         private void btnAcade_Click(object sender, EventArgs e)
         {
-            // codigo
+            abriribroscat("Académico");
+        }
+        private void abriribroscat(string cate)
+        {
+            Libros book = new Libros();
+            book.TopLevel = false; // Establece que no es un formulario de nivel superior
+            book.FormBorderStyle = FormBorderStyle.None; // Quita el borde del formulario
+            book.Dock = DockStyle.Fill; // Ajusta el tamaño del formulario al panel
 
+            PanelContenido.Controls.Clear(); // Limpia los controles anteriores en el panel
+            PanelContenido.Controls.Add(book);
+            bunifuPictureBox1.Hide();
+            book.Busquedas(cate);
+            book.Show(); // Muestra el formulario
             HideSubmenu();
         }
-
         private void btnCientifico_Click(object sender, EventArgs e)
         {
-            // codigo
 
-            HideSubmenu();
+            abriribroscat("Tecnología");
+           
+           
         }
 
         private void btnFantasy_Click(object sender, EventArgs e)
         {
             // codigo
-
-            HideSubmenu();
+                abriribroscat("Fantasía");
+            
         }
 
         private void Arte_Click(object sender, EventArgs e)
         {
-            // codigo
 
-            HideSubmenu();
+
+            abriribroscat("Historia y Arte");
         }
 
 
@@ -319,7 +331,15 @@ namespace ProyectoBiblioteca
             bunifuPictureBox1.Hide();
             book.Show(); // Muestra el formulario
         }
-
+        public void name(string nombre)
+        {
+            bunifuLabel1.Text =nombre;
+        }
+        public void trab()
+        {
+            btnusuarios.Enabled = false;
+            btnRegistro.Enabled = false;
+        }
         private void btnusuarios_Click_1(object sender, EventArgs e)
         {
           
@@ -463,6 +483,22 @@ namespace ProyectoBiblioteca
         private void bunifuLabel2_Click(object sender, EventArgs e)
         {
             //
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+          
+
+            Login login = new Login();
+            login.Show();
+           
+            this.Hide();
+        }
+
+        private void btnRegistro_Click(object sender, EventArgs e)
+        {
+            FrmAltaUsuarios login = new FrmAltaUsuarios();
+            login.Show();
         }
     }
 }

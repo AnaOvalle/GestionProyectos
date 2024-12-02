@@ -13,7 +13,7 @@ namespace ProyectoBiblioteca
 {
     public partial class Colecciones : Form
     {
-        public MySqlConnection conexion = new MySqlConnection("Server=BilliJo; Database=BibliotecaGestion3; Uid=DELL; Pwd=1423; Port = 3306;");
+        public MySqlConnection conexion = new MySqlConnection("Server=BilliJo; Database=BibliotecaGestion5; Uid=DELL; Pwd=1423; Port = 3306;");
 
         public Colecciones()
         {
@@ -91,7 +91,7 @@ namespace ProyectoBiblioteca
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
-            DatosImagen("Harry Potter");
+            DatosImagen("Saga Harry Potter");
         }
 
         private void bunifuImageButton3_Click(object sender, EventArgs e)

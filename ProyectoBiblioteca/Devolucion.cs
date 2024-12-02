@@ -14,103 +14,122 @@ namespace ProyectoBiblioteca
 
         private void btnSagaDevol_Click(object sender, EventArgs e)
         {
-            if (cbPrestamoSaga.SelectedValue != null)
+            if (cbPrestamoSaga.SelectedValue == null || cbTipoDevolucion.SelectedValue == null)
             {
-                int libroId = Convert.ToInt32(cbPrestamoSaga.SelectedValue); // Obtener el ID del libro seleccionado
-                int cantidadADevolver = (int)NumCantidadSaga.Value;
+                MessageBox.Show("Seleccione una saga y un cliente para devolver.");
+                return;
+            }
 
-                if (cantidadADevolver <= 0)
+            int sagaId = Convert.ToInt32(cbPrestamoSaga.SelectedValue);
+            int clienteId = Convert.ToInt32(cbTipoDevolucion.SelectedValue);
+            int cantidadADevolver = (int)NumCantidadSaga.Value;
+
+            if (cantidadADevolver <= 0)
+            {
+                MessageBox.Show("La cantidad a devolver debe ser mayor a cero.");
+                return;
+            }
+
+            string connectionString = "Server=BilliJo; Database=BibliotecaGestion5; Uid=DELL; Pwd=1423; Port = 3306;";
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                conn.Open();
+                using (MySqlTransaction transaction = conn.BeginTransaction())
                 {
-                    MessageBox.Show("La cantidad a devolver debe ser mayor a cero.");
-                    return;
-                }
-
-                string connectionString = "Server=BilliJo; Database=BibliotecaGestion5; Uid=DELL; Pwd=1423; Port = 3306;";
-                using (MySqlConnection conn = new MySqlConnection(connectionString))
-                {
-                    conn.Open();
-                    MySqlTransaction transaction = conn.BeginTransaction(); // Iniciar una transacción
-
                     try
                     {
-                        // Obtener la cantidad prestada del libro
-                        MySqlCommand cmdCantidadPrestada = new MySqlCommand(
-                            "SELECT SUM(pl.cantidad_prestada) AS total_prestada " +
-                            "FROM prestamos_sagass pl " +
-                            "JOIN prestamos p ON pl.prestamos_id = p.prestamos_id " +
-                            "WHERE p.cliente_id = @clienteId AND pl.prestamos_sagass_id = @libroId", conn, transaction);
-                        cmdCantidadPrestada.Parameters.AddWithValue("@clienteId", cbTipoDevolucion.SelectedValue);
-                        cmdCantidadPrestada.Parameters.AddWithValue("@libroId", libroId);
+                        // Obtener el ID del préstamo asociado
+                        MySqlCommand cmdObtenerPrestamoId = new MySqlCommand(
+                            @"SELECT ps.prestamos_id, ps.cantidad_prestada 
+                  FROM prestamos_sagass ps 
+                  JOIN prestamos p ON ps.prestamos_id = p.prestamos_id 
+                  WHERE p.cliente_id = @clienteId AND ps.librosSaga_id = @sagaId", conn, transaction);
+                        cmdObtenerPrestamoId.Parameters.AddWithValue("@clienteId", clienteId);
+                        cmdObtenerPrestamoId.Parameters.AddWithValue("@sagaId", sagaId);
 
-                        object result = cmdCantidadPrestada.ExecuteScalar();
-                        int cantidadPrestada = result != DBNull.Value ? Convert.ToInt32(result) : 0;
-
-                        if (cantidadPrestada == 0)
+                        using (MySqlDataReader reader = cmdObtenerPrestamoId.ExecuteReader())
                         {
-                            MessageBox.Show("El cliente no tiene préstamos de este libro.");
-                            return;
-                        }
+                            if (!reader.Read())
+                            {
+                                MessageBox.Show("El cliente no tiene préstamos de esta saga.");
+                                return;
+                            }
 
-                        if (cantidadADevolver > cantidadPrestada)
-                        {
-                            MessageBox.Show($"El cliente solo tiene {cantidadPrestada} libro(s) en préstamo.");
-                            return;
-                        }
+                            int prestamoId = reader.GetInt32(0);
+                            int cantidadPrestada = reader.GetInt32(1);
 
-                        // Actualizar el stock
-                        MySqlCommand cmdActualizarStock = new MySqlCommand(
-                            "UPDATE stock_libros_saga SET cantidad_stock = cantidad_stock + @cantidadADevolver WHERE librosSaga_id = @libroId", conn, transaction);
-                        cmdActualizarStock.Parameters.AddWithValue("@cantidadADevolver", cantidadADevolver);
-                        cmdActualizarStock.Parameters.AddWithValue("@libroId", libroId);
-                        int rowsUpdated = cmdActualizarStock.ExecuteNonQuery();
+                            reader.Close();
 
-                        if (rowsUpdated == 0)
-                        {
-                            throw new Exception("No se pudo actualizar el stock. Verifique los datos.");
-                        }
+                            if (cantidadADevolver > cantidadPrestada)
+                            {
+                                MessageBox.Show($"El cliente solo tiene {cantidadPrestada} saga(s) en préstamo.");
+                                return;
+                            }
 
-                        // Actualizar la cantidad prestada o eliminar el préstamo si se devuelve todo
-                        if (cantidadADevolver < cantidadPrestada)
-                        {
-                            // Reducir la cantidad prestada
-                            MySqlCommand cmdActualizarPrestamo = new MySqlCommand(
-                                "UPDATE prestamos_sagass pl " +
-                                "JOIN prestamos p ON pl.prestamos_id = p.prestamos_id " +
-                                "SET pl.cantidad_prestada = pl.cantidad_prestada - @cantidadADevolver " +
-                                "WHERE p.cliente_id = @clienteId AND pl.librosSaga_id = @libroId", conn, transaction);
-                            cmdActualizarPrestamo.Parameters.AddWithValue("@cantidadADevolver", cantidadADevolver);
-                            cmdActualizarPrestamo.Parameters.AddWithValue("@clienteId", cbTipoDevolucion.SelectedValue);
-                            cmdActualizarPrestamo.Parameters.AddWithValue("@libroId", libroId);
-                            cmdActualizarPrestamo.ExecuteNonQuery();
-                        }
-                        else
-                        {
-                            // Eliminar el préstamo si se devuelve toda la cantidad
-                            MySqlCommand cmdEliminarPrestamo = new MySqlCommand(
-                                "DELETE pl " +
-                                "FROM prestamos_sagass pl " +
-                                "JOIN prestamos p ON pl.prestamos_id = p.prestamos_id " +
-                                "WHERE p.cliente_id = @clienteId AND pl.librosSaga_id = @libroId", conn, transaction);
-                            cmdEliminarPrestamo.Parameters.AddWithValue("@clienteId", cbTipoDevolucion.SelectedValue);
-                            cmdEliminarPrestamo.Parameters.AddWithValue("@libroId", libroId);
-                            cmdEliminarPrestamo.ExecuteNonQuery();
+                            // Actualizar stock
+                            MySqlCommand cmdActualizarStock = new MySqlCommand(
+                                @"UPDATE stock_libros_saga 
+                      SET cantidad_stock = cantidad_stock + @cantidadADevolver 
+                      WHERE librosSaga_id = @sagaId", conn, transaction);
+                            cmdActualizarStock.Parameters.AddWithValue("@cantidadADevolver", cantidadADevolver);
+                            cmdActualizarStock.Parameters.AddWithValue("@sagaId", sagaId);
+                            cmdActualizarStock.ExecuteNonQuery();
+
+                            // Actualizar préstamo
+                            if (cantidadADevolver < cantidadPrestada)
+                            {
+                                MySqlCommand cmdActualizarPrestamo = new MySqlCommand(
+                                    @"UPDATE prestamos_sagass 
+                          SET cantidad_prestada = cantidad_prestada - @cantidadADevolver 
+                          WHERE prestamos_id = @prestamoId AND librosSaga_id = @sagaId", conn, transaction);
+                                cmdActualizarPrestamo.Parameters.AddWithValue("@cantidadADevolver", cantidadADevolver);
+                                cmdActualizarPrestamo.Parameters.AddWithValue("@prestamoId", prestamoId);
+                                cmdActualizarPrestamo.Parameters.AddWithValue("@sagaId", sagaId);
+                                cmdActualizarPrestamo.ExecuteNonQuery();
+                            }
+                            else
+                            {
+                                MySqlCommand cmdEliminarPrestamo = new MySqlCommand(
+                                    @"DELETE FROM prestamos_sagass 
+                          WHERE prestamos_id = @prestamoId AND librosSaga_id = @sagaId", conn, transaction);
+                                cmdEliminarPrestamo.Parameters.AddWithValue("@prestamoId", prestamoId);
+                                cmdEliminarPrestamo.Parameters.AddWithValue("@sagaId", sagaId);
+                                cmdEliminarPrestamo.ExecuteNonQuery();
+                            }
+
+                            // Verificar si el préstamo específico ya no tiene más sagas y actualizar su estado
+                            MySqlCommand cmdVerificarEstado = new MySqlCommand(
+                                @"SELECT COUNT(*) 
+                      FROM prestamos_sagass 
+                      WHERE prestamos_id = @prestamoId", conn, transaction);
+                            cmdVerificarEstado.Parameters.AddWithValue("@prestamoId", prestamoId);
+
+                            int prestamosActivos = Convert.ToInt32(cmdVerificarEstado.ExecuteScalar() ?? 0);
+
+                            if (prestamosActivos == 0)
+                            {
+                                MySqlCommand cmdActualizarEstado = new MySqlCommand(
+                                    @"UPDATE prestamos 
+                          SET estado = 'devuelto', fecha_devuelto = CURDATE() 
+                          WHERE prestamos_id = @prestamoId", conn, transaction);
+                                cmdActualizarEstado.Parameters.AddWithValue("@prestamoId", prestamoId);
+                                cmdActualizarEstado.ExecuteNonQuery();
+                            }
                         }
 
                         transaction.Commit();
-                        MessageBox.Show("El libro ha sido devuelto correctamente.");
-                        CargarPrestamosCliente(); // Actualizar los datos en pantalla
+                        MessageBox.Show("La saga ha sido devuelta correctamente.");
+                        CargarPrestamosCliente();
                     }
                     catch (Exception ex)
                     {
                         transaction.Rollback();
-                        MessageBox.Show("Error al devolver el libro: " + ex.Message);
+                        MessageBox.Show("Error al devolver la saga: " + ex.Message);
                     }
                 }
             }
-            else
-            {
-                MessageBox.Show("Seleccione un libro para devolver.");
-            }
+
+
         }
 
 
@@ -120,6 +139,7 @@ namespace ProyectoBiblioteca
             if (cbLibro.SelectedValue != null && cbTipoDevolucion.SelectedValue != null)
             {
                 int libroId = Convert.ToInt32(cbLibro.SelectedValue);
+                int clienteId = Convert.ToInt32(cbTipoDevolucion.SelectedValue);
                 int cantidadADevolver = (int)NumCantidadLibros.Value;
 
                 if (cantidadADevolver <= 0)
@@ -136,77 +156,87 @@ namespace ProyectoBiblioteca
 
                     try
                     {
-                        // Obtener la cantidad prestada
+                        // Obtener la cantidad prestada y el ID del préstamo
                         MySqlCommand cmdCantidadPrestada = new MySqlCommand(
-                            "SELECT pl.cantidad_prestada " +
-                            "FROM prestamos_libros pl " +
-                            "JOIN prestamos p ON pl.prestamos_id = p.prestamos_id " +
-                            "WHERE p.cliente_id = @clienteId AND pl.libros_id = @libroId", conn, transaction);
-                        cmdCantidadPrestada.Parameters.AddWithValue("@clienteId", cbTipoDevolucion.SelectedValue);
+                            @"SELECT pl.prestamos_id, pl.cantidad_prestada 
+                  FROM prestamos_libros pl 
+                  JOIN prestamos p ON pl.prestamos_id = p.prestamos_id 
+                  WHERE p.cliente_id = @clienteId AND pl.libros_id = @libroId", conn, transaction);
+                        cmdCantidadPrestada.Parameters.AddWithValue("@clienteId", clienteId);
                         cmdCantidadPrestada.Parameters.AddWithValue("@libroId", libroId);
 
-                        object result = cmdCantidadPrestada.ExecuteScalar();
-                        int cantidadPrestada = result != DBNull.Value ? Convert.ToInt32(result) : 0;
-
-                        if (cantidadPrestada == 0)
+                        using (MySqlDataReader reader = cmdCantidadPrestada.ExecuteReader())
                         {
-                            MessageBox.Show("El cliente no tiene préstamos de este libro.");
-                            return;
-                        }
+                            if (!reader.Read())
+                            {
+                                MessageBox.Show("El cliente no tiene préstamos de este libro.");
+                                return;
+                            }
 
-                        if (cantidadADevolver > cantidadPrestada)
-                        {
-                            MessageBox.Show($"El cliente solo tiene {cantidadPrestada} libro(s) en préstamo.");
-                            return;
-                        }
+                            int prestamoId = reader.GetInt32(0);
+                            int cantidadPrestada = reader.GetInt32(1);
 
-                        // Actualizar el stock
-                        MySqlCommand cmdActualizarStock = new MySqlCommand(
-                            "UPDATE stock_libros SET cantidad_stock_libros = cantidad_stock_libros + @cantidadADevolver WHERE libros_id = @libroId", conn, transaction);
-                        cmdActualizarStock.Parameters.AddWithValue("@cantidadADevolver", cantidadADevolver);
-                        cmdActualizarStock.Parameters.AddWithValue("@libroId", libroId);
-                        if (cmdActualizarStock.ExecuteNonQuery() == 0)
-                        {
-                            throw new Exception("No se pudo actualizar el stock.");
-                        }
+                            if (cantidadADevolver > cantidadPrestada)
+                            {
+                                MessageBox.Show($"El cliente solo tiene {cantidadPrestada} libro(s) en préstamo.");
+                                return;
+                            }
 
-                        // Actualizar préstamo o eliminarlo
-                        if (cantidadADevolver < cantidadPrestada)
-                        {
-                            MySqlCommand cmdActualizarPrestamo = new MySqlCommand(
-                                "UPDATE prestamos_libros pl " +
-                                "JOIN prestamos p ON pl.prestamos_id = p.prestamos_id " +
-                                "SET pl.cantidad_prestada = pl.cantidad_prestada - @cantidadADevolver " +
-                                "WHERE p.cliente_id = @clienteId AND pl.libros_id = @libroId", conn, transaction);
-                            cmdActualizarPrestamo.Parameters.AddWithValue("@cantidadADevolver", cantidadADevolver);
-                            cmdActualizarPrestamo.Parameters.AddWithValue("@clienteId", cbTipoDevolucion.SelectedValue);
-                            cmdActualizarPrestamo.Parameters.AddWithValue("@libroId", libroId);
-                            cmdActualizarPrestamo.ExecuteNonQuery();
-                        }
-                        else
-                        {
-                            MySqlCommand cmdEliminarPrestamo = new MySqlCommand(
-                                "DELETE pl " +
-                                "FROM prestamos_libros pl " +
-                                "JOIN prestamos p ON pl.prestamos_id = p.prestamos_id " +
-                                "WHERE p.cliente_id = @clienteId AND pl.libros_id = @libroId", conn, transaction);
-                            cmdEliminarPrestamo.Parameters.AddWithValue("@clienteId", cbTipoDevolucion.SelectedValue);
-                            cmdEliminarPrestamo.Parameters.AddWithValue("@libroId", libroId);
-                            cmdEliminarPrestamo.ExecuteNonQuery();
-                        }
+                            reader.Close();
 
-                        transaction.Commit();
-                        MessageBox.Show("El libro ha sido devuelto correctamente.");
-                        CargarPrestamosCliente();
+                            // Actualizar el stock
+                            MySqlCommand cmdActualizarStock = new MySqlCommand(
+                                "UPDATE stock_libros SET cantidad_stock_libros = cantidad_stock_libros + @cantidadADevolver WHERE libros_id = @libroId", conn, transaction);
+                            cmdActualizarStock.Parameters.AddWithValue("@cantidadADevolver", cantidadADevolver);
+                            cmdActualizarStock.Parameters.AddWithValue("@libroId", libroId);
+                            cmdActualizarStock.ExecuteNonQuery();
+
+                            // Actualizar o eliminar préstamo
+                            if (cantidadADevolver < cantidadPrestada)
+                            {
+                                MySqlCommand cmdActualizarPrestamo = new MySqlCommand(
+                                    @"UPDATE prestamos_libros 
+                          SET cantidad_prestada = cantidad_prestada - @cantidadADevolver 
+                          WHERE prestamos_id = @prestamoId AND libros_id = @libroId", conn, transaction);
+                                cmdActualizarPrestamo.Parameters.AddWithValue("@cantidadADevolver", cantidadADevolver);
+                                cmdActualizarPrestamo.Parameters.AddWithValue("@prestamoId", prestamoId);
+                                cmdActualizarPrestamo.Parameters.AddWithValue("@libroId", libroId);
+                                cmdActualizarPrestamo.ExecuteNonQuery();
+                            }
+                            else
+                            {
+                                MySqlCommand cmdEliminarPrestamo = new MySqlCommand(
+                                    "DELETE FROM prestamos_libros WHERE prestamos_id = @prestamoId AND libros_id = @libroId", conn, transaction);
+                                cmdEliminarPrestamo.Parameters.AddWithValue("@prestamoId", prestamoId);
+                                cmdEliminarPrestamo.Parameters.AddWithValue("@libroId", libroId);
+                                cmdEliminarPrestamo.ExecuteNonQuery();
+                            }
+
+                            // Verificar si no hay más préstamos activos para este préstamo
+                            MySqlCommand cmdVerificarEstado = new MySqlCommand(
+                                "SELECT COUNT(*) FROM prestamos_libros WHERE prestamos_id = @prestamoId", conn, transaction);
+                            cmdVerificarEstado.Parameters.AddWithValue("@prestamoId", prestamoId);
+
+                            int prestamosRestantes = Convert.ToInt32(cmdVerificarEstado.ExecuteScalar());
+                            if (prestamosRestantes == 0)
+                            {
+                                MySqlCommand cmdActualizarEstado = new MySqlCommand(
+                                    @"UPDATE prestamos 
+                          SET estado = 'devuelto', fecha_devuelto = CURDATE() 
+                          WHERE prestamos_id = @prestamoId", conn, transaction);
+                                cmdActualizarEstado.Parameters.AddWithValue("@prestamoId", prestamoId);
+                                cmdActualizarEstado.ExecuteNonQuery();
+                            }
+
+                            transaction.Commit();
+                            MessageBox.Show("El libro ha sido devuelto correctamente.");
+                            CargarPrestamosCliente();
+                        }
                     }
                     catch (Exception ex)
                     {
                         transaction.Rollback();
                         MessageBox.Show("Error al devolver el libro: " + ex.Message);
-                    }
-                    finally
-                    {
-                        conn.Close();
                     }
                 }
             }
@@ -214,6 +244,8 @@ namespace ProyectoBiblioteca
             {
                 MessageBox.Show("Seleccione un libro y un cliente para devolver.");
             }
+
+
 
         }
 
@@ -231,6 +263,7 @@ namespace ProyectoBiblioteca
             ListSagadevol.Columns.Clear();
             ListSagadevol.Columns.Add("Saga", 200); // Columna para el nombre de la saga
             ListSagadevol.Columns.Add("Cantidad", 100); // Columna para la cantidad
+
         }
 
         private void CargarDatosCliente()
@@ -347,8 +380,19 @@ namespace ProyectoBiblioteca
 
         private void btnRefresh_Click(object sender, EventArgs e)
         {
-            Inventario inve = new Inventario();
-            inve.Show();
+            CargarPrestamosCliente();
+        }
+
+        private void btnRefreshSagas_Click(object sender, EventArgs e)
+        {
+            CargarPrestamosCliente();
+        }
+
+        private void ListLibrosDevol_SelectedIndexChanged(object sender, EventArgs e)
+        {
+           
+           
+            
         }
     }
 }

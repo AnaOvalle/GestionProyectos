@@ -13,9 +13,10 @@ namespace ProyectoBiblioteca
         public Clientes()
         {
             InitializeComponent();
+            mostrar();
         }
 
-        MySqlConnection conexion = new MySqlConnection("Server=localhost;Database=Biblio3;Uid=root;Pwd=hola123;");
+        MySqlConnection conexion = new MySqlConnection("Server=BilliJo; Database=BibliotecaGestion5; Uid=DELL; Pwd=1423; Port = 3306;");
 
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
@@ -86,7 +87,7 @@ namespace ProyectoBiblioteca
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Error: " + ex.Message);
+                    MessageBox.Show("Error: Elimine primero el Loin del usuario antes de eliminar el usuario");
                 }
                 finally
                 {
@@ -156,9 +157,10 @@ namespace ProyectoBiblioteca
                 MessageBox.Show("Por favor, ingrese un ID válido.");
             }
         }
-
-        private void btnRefresh_Click(object sender, EventArgs e)
+        private void mostrar()
         {
+
+
             try
             {
                 conexion.Open();
@@ -183,6 +185,10 @@ namespace ProyectoBiblioteca
             {
                 conexion.Close();
             }
+        }
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            mostrar();
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)

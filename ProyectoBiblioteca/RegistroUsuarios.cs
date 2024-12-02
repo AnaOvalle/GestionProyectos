@@ -29,7 +29,7 @@ namespace ProyectoBiblioteca
 
         private void btnAltasCuenta_Click(object sender, EventArgs e)
         {
-            this.Hide();
+           
             FrmAltaUsuarios login = new FrmAltaUsuarios();
             login.Show();
         }

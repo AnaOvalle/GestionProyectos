@@ -1,5 +1,6 @@
 ﻿using Bunifu.UI.WinForms;
 using MySql.Data.MySqlClient;
+using MySqlX.XDevAPI.Common;
 using System;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -12,7 +13,6 @@ namespace ProyectoBiblioteca
         {
             InitializeComponent();
         }
-
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -60,7 +60,7 @@ namespace ProyectoBiblioteca
             string password = bunifuTextBox2.Text;
 
             // Conexión a la base de datos MySQL
-            using (MySqlConnection conn = new MySqlConnection("Server=127.0.0.1; Database=Biblio3; Uid=root; Pwd=hola123;"))
+            using (MySqlConnection conn = new MySqlConnection("Server=BilliJo; Database=BibliotecaGestion5; Uid=DELL; Pwd=1423; Port = 3306;"))
             {
                 try
                 {
@@ -79,12 +79,16 @@ namespace ProyectoBiblioteca
                         {
                             Menu principal = new Menu();
                             principal.Show();
+                            principal.name(username);
                             this.Hide();
                         }
                         else if (acceso == 2) // Usuario
                         {
                             Menu principal = new Menu();
+                            principal.trab();
+                            principal.name(username);
                             principal.Show();
+                            
                             this.Hide();
                         }
                     }

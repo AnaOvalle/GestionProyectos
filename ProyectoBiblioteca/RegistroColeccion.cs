@@ -43,6 +43,7 @@ namespace ProyectoBiblioteca
 
                 string consulta = "SELECT genero_id, nombre FROM generos";
                 MySqlCommand comando = new MySqlCommand(consulta, conexion);
+
                 MySqlDataAdapter adaptador = new MySqlDataAdapter(comando);
                 DataTable dataTable = new DataTable();
 

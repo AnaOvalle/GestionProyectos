@@ -177,7 +177,7 @@ namespace ProyectoBiblioteca
 
                         transaction.Commit();
                         MessageBox.Show("Todos los préstamos de libros han sido registrados exitosamente.");
-                        ListLibros.Items.Clear();
+                        ListSagas.Items.Clear();
                     }
                     catch (Exception ex)
                     {
