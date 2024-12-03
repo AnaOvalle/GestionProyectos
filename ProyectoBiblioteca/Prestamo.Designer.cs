@@ -127,7 +127,7 @@
             this.btnLimpiarSaga.ImageSize = new System.Drawing.Size(31, 32);
             this.btnLimpiarSaga.ImageZoomSize = new System.Drawing.Size(41, 42);
             this.btnLimpiarSaga.InitialImage = ((System.Drawing.Image)(resources.GetObject("btnLimpiarSaga.InitialImage")));
-            this.btnLimpiarSaga.Location = new System.Drawing.Point(93, 271);
+            this.btnLimpiarSaga.Location = new System.Drawing.Point(63, 271);
             this.btnLimpiarSaga.Name = "btnLimpiarSaga";
             this.btnLimpiarSaga.Rotation = 0;
             this.btnLimpiarSaga.ShowActiveImage = true;
@@ -162,7 +162,7 @@
             this.btnRefreshSagas.ImageSize = new System.Drawing.Size(31, 32);
             this.btnRefreshSagas.ImageZoomSize = new System.Drawing.Size(41, 42);
             this.btnRefreshSagas.InitialImage = ((System.Drawing.Image)(resources.GetObject("btnRefreshSagas.InitialImage")));
-            this.btnRefreshSagas.Location = new System.Drawing.Point(93, 223);
+            this.btnRefreshSagas.Location = new System.Drawing.Point(63, 223);
             this.btnRefreshSagas.Name = "btnRefreshSagas";
             this.btnRefreshSagas.Rotation = 0;
             this.btnRefreshSagas.ShowActiveImage = true;
@@ -183,7 +183,7 @@
             this.columnHeader1,
             this.columnHeader2});
             this.ListSagas.HideSelection = false;
-            this.ListSagas.Location = new System.Drawing.Point(140, 221);
+            this.ListSagas.Location = new System.Drawing.Point(110, 221);
             this.ListSagas.Name = "ListSagas";
             this.ListSagas.Size = new System.Drawing.Size(362, 340);
             this.ListSagas.TabIndex = 2;
@@ -1074,7 +1074,7 @@
             this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.Font = new System.Drawing.Font("Century", 24F, System.Drawing.FontStyle.Bold);
             this.bunifuLabel1.ForeColor = System.Drawing.Color.Black;
-            this.bunifuLabel1.Location = new System.Drawing.Point(418, 7);
+            this.bunifuLabel1.Location = new System.Drawing.Point(444, 3);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel1.Size = new System.Drawing.Size(215, 38);
@@ -1096,6 +1096,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Prestamo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Prestamo";
             this.Load += new System.EventHandler(this.Prestamo_Load);
             this.bunifuPanel3.ResumeLayout(false);

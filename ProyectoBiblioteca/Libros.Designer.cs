@@ -188,7 +188,7 @@
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.TxtDesc.OnIdleState = stateProperties4;
-            this.TxtDesc.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.TxtDesc.Padding = new System.Windows.Forms.Padding(3);
             this.TxtDesc.PasswordChar = '\0';
             this.TxtDesc.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.TxtDesc.PlaceholderText = "DESCRIPCIÓN";
@@ -262,7 +262,7 @@
             stateProperties8.ForeColor = System.Drawing.Color.Empty;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.TextAnio.OnIdleState = stateProperties8;
-            this.TextAnio.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.TextAnio.Padding = new System.Windows.Forms.Padding(3);
             this.TextAnio.PasswordChar = '\0';
             this.TextAnio.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.TextAnio.PlaceholderText = "AÑO PUBLICACION";
@@ -336,7 +336,7 @@
             stateProperties12.ForeColor = System.Drawing.Color.Empty;
             stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.TextAutor.OnIdleState = stateProperties12;
-            this.TextAutor.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.TextAutor.Padding = new System.Windows.Forms.Padding(3);
             this.TextAutor.PasswordChar = '\0';
             this.TextAutor.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.TextAutor.PlaceholderText = "AUTOR";
@@ -410,7 +410,7 @@
             stateProperties16.ForeColor = System.Drawing.Color.Empty;
             stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.Txtisbn.OnIdleState = stateProperties16;
-            this.Txtisbn.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.Txtisbn.Padding = new System.Windows.Forms.Padding(3);
             this.Txtisbn.PasswordChar = '\0';
             this.Txtisbn.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.Txtisbn.PlaceholderText = "ISBN";
@@ -484,7 +484,7 @@
             stateProperties20.ForeColor = System.Drawing.Color.Empty;
             stateProperties20.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.TxtEditorial.OnIdleState = stateProperties20;
-            this.TxtEditorial.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.TxtEditorial.Padding = new System.Windows.Forms.Padding(3);
             this.TxtEditorial.PasswordChar = '\0';
             this.TxtEditorial.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.TxtEditorial.PlaceholderText = "EDITORIAL";
@@ -558,7 +558,7 @@
             stateProperties24.ForeColor = System.Drawing.Color.Empty;
             stateProperties24.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtTitulo.OnIdleState = stateProperties24;
-            this.txtTitulo.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.txtTitulo.Padding = new System.Windows.Forms.Padding(3);
             this.txtTitulo.PasswordChar = '\0';
             this.txtTitulo.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtTitulo.PlaceholderText = "TITULO";
@@ -692,10 +692,10 @@
             this.bunifuPanel3.Controls.Add(this.btnLimpiar);
             this.bunifuPanel3.Controls.Add(this.btnRefresh);
             this.bunifuPanel3.Controls.Add(this.bunifuDataGridView1);
-            this.bunifuPanel3.Location = new System.Drawing.Point(306, 106);
+            this.bunifuPanel3.Location = new System.Drawing.Point(306, 110);
             this.bunifuPanel3.Name = "bunifuPanel3";
             this.bunifuPanel3.ShowBorders = true;
-            this.bunifuPanel3.Size = new System.Drawing.Size(738, 506);
+            this.bunifuPanel3.Size = new System.Drawing.Size(722, 502);
             this.bunifuPanel3.TabIndex = 11;
             // 
             // PanelCategorias
@@ -1943,7 +1943,7 @@
             this.bunifuDataGridView1.RowHeadersWidth = 51;
             this.bunifuDataGridView1.RowTemplate.Height = 40;
             this.bunifuDataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.bunifuDataGridView1.Size = new System.Drawing.Size(716, 435);
+            this.bunifuDataGridView1.Size = new System.Drawing.Size(697, 435);
             this.bunifuDataGridView1.TabIndex = 0;
             this.bunifuDataGridView1.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             this.bunifuDataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bunifuDataGridView1_CellContentClick);
@@ -2001,7 +2001,7 @@
             stateProperties28.ForeColor = System.Drawing.Color.Empty;
             stateProperties28.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.Busueda.OnIdleState = stateProperties28;
-            this.Busueda.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.Busueda.Padding = new System.Windows.Forms.Padding(3);
             this.Busueda.PasswordChar = '\0';
             this.Busueda.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.Busueda.PlaceholderText = "Búsqueda";
@@ -2216,6 +2216,7 @@
             this.Controls.Add(this.PanelInfo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Libros";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Libros";
             this.Load += new System.EventHandler(this.Libros_Load);
             this.PanelInfo.ResumeLayout(false);

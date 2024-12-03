@@ -26,7 +26,8 @@ namespace ProyectoBiblioteca
 
                 string query = "SELECT p.prestamos_id, c.nombre AS cliente, p.fecha_prestamo, p.fecha_devolucion, p.estado " +
                                "FROM prestamos p " +
-                               "JOIN clientes c ON p.cliente_id = c.cliente_id";
+                               "JOIN clientes c ON p.cliente_id = c.cliente_id " +
+                               "ORDER BY p.prestamos_id DESC;";
 
                 MySqlDataAdapter adapter = new MySqlDataAdapter(query, conexion);
                 DataTable prestamosTable = new DataTable();
@@ -71,7 +72,7 @@ namespace ProyectoBiblioteca
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
             cbCliente.Text = "";
-            cbPeriodo.Text = "";
+            
             txtBuscar.Text = "";
         }
 

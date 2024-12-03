@@ -16,7 +16,7 @@ namespace ProyectoBiblioteca
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Perdidas());
+            Application.Run(new Login());
         }
     }
 }

@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Devolucion));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.PanelSagas = new Bunifu.UI.WinForms.BunifuPanel();
             this.bunifuLabel4 = new Bunifu.UI.WinForms.BunifuLabel();
             this.btnLimpiarSaga = new Bunifu.UI.WinForms.BunifuImageButton();
@@ -90,11 +90,10 @@
             this.PanelSagas.Controls.Add(this.label2);
             this.PanelSagas.Controls.Add(this.bunifuShadowPanel2);
             this.PanelSagas.Dock = System.Windows.Forms.DockStyle.Right;
-            this.PanelSagas.Location = new System.Drawing.Point(701, 162);
-            this.PanelSagas.Margin = new System.Windows.Forms.Padding(4);
+            this.PanelSagas.Location = new System.Drawing.Point(526, 132);
             this.PanelSagas.Name = "PanelSagas";
             this.PanelSagas.ShowBorders = true;
-            this.PanelSagas.Size = new System.Drawing.Size(707, 606);
+            this.PanelSagas.Size = new System.Drawing.Size(530, 492);
             this.PanelSagas.TabIndex = 2;
             // 
             // bunifuLabel4
@@ -105,11 +104,10 @@
             this.bunifuLabel4.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel4.Font = new System.Drawing.Font("Century", 16F, System.Drawing.FontStyle.Bold);
             this.bunifuLabel4.ForeColor = System.Drawing.Color.Black;
-            this.bunifuLabel4.Location = new System.Drawing.Point(23, 42);
-            this.bunifuLabel4.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuLabel4.Location = new System.Drawing.Point(17, 34);
             this.bunifuLabel4.Name = "bunifuLabel4";
             this.bunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel4.Size = new System.Drawing.Size(182, 33);
+            this.bunifuLabel4.Size = new System.Drawing.Size(141, 25);
             this.bunifuLabel4.TabIndex = 132;
             this.bunifuLabel4.Text = "COLECCION";
             this.bunifuLabel4.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -132,18 +130,17 @@
             this.btnLimpiarSaga.ImageActive = null;
             this.btnLimpiarSaga.ImageLocation = null;
             this.btnLimpiarSaga.ImageMargin = 10;
-            this.btnLimpiarSaga.ImageSize = new System.Drawing.Size(45, 42);
-            this.btnLimpiarSaga.ImageZoomSize = new System.Drawing.Size(55, 52);
+            this.btnLimpiarSaga.ImageSize = new System.Drawing.Size(31, 32);
+            this.btnLimpiarSaga.ImageZoomSize = new System.Drawing.Size(41, 42);
             this.btnLimpiarSaga.InitialImage = ((System.Drawing.Image)(resources.GetObject("btnLimpiarSaga.InitialImage")));
-            this.btnLimpiarSaga.Location = new System.Drawing.Point(219, 336);
-            this.btnLimpiarSaga.Margin = new System.Windows.Forms.Padding(4);
+            this.btnLimpiarSaga.Location = new System.Drawing.Point(164, 273);
             this.btnLimpiarSaga.Name = "btnLimpiarSaga";
             this.btnLimpiarSaga.Rotation = 0;
             this.btnLimpiarSaga.ShowActiveImage = true;
             this.btnLimpiarSaga.ShowCursorChanges = true;
             this.btnLimpiarSaga.ShowImageBorders = false;
             this.btnLimpiarSaga.ShowSizeMarkers = false;
-            this.btnLimpiarSaga.Size = new System.Drawing.Size(55, 52);
+            this.btnLimpiarSaga.Size = new System.Drawing.Size(41, 42);
             this.btnLimpiarSaga.TabIndex = 131;
             this.btnLimpiarSaga.ToolTipText = "Limpiar";
             this.btnLimpiarSaga.WaitOnLoad = false;
@@ -167,18 +164,17 @@
             this.btnRefreshSagas.ImageActive = null;
             this.btnRefreshSagas.ImageLocation = null;
             this.btnRefreshSagas.ImageMargin = 10;
-            this.btnRefreshSagas.ImageSize = new System.Drawing.Size(45, 42);
-            this.btnRefreshSagas.ImageZoomSize = new System.Drawing.Size(55, 52);
+            this.btnRefreshSagas.ImageSize = new System.Drawing.Size(31, 32);
+            this.btnRefreshSagas.ImageZoomSize = new System.Drawing.Size(41, 42);
             this.btnRefreshSagas.InitialImage = ((System.Drawing.Image)(resources.GetObject("btnRefreshSagas.InitialImage")));
-            this.btnRefreshSagas.Location = new System.Drawing.Point(219, 42);
-            this.btnRefreshSagas.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRefreshSagas.Location = new System.Drawing.Point(164, 34);
             this.btnRefreshSagas.Name = "btnRefreshSagas";
             this.btnRefreshSagas.Rotation = 0;
             this.btnRefreshSagas.ShowActiveImage = true;
             this.btnRefreshSagas.ShowCursorChanges = true;
             this.btnRefreshSagas.ShowImageBorders = false;
             this.btnRefreshSagas.ShowSizeMarkers = false;
-            this.btnRefreshSagas.Size = new System.Drawing.Size(55, 52);
+            this.btnRefreshSagas.Size = new System.Drawing.Size(41, 42);
             this.btnRefreshSagas.TabIndex = 130;
             this.btnRefreshSagas.ToolTipText = "Refresh";
             this.btnRefreshSagas.WaitOnLoad = false;
@@ -205,11 +201,11 @@
             this.btnSagaDevol.ColorContrastOnClick = 45;
             this.btnSagaDevol.ColorContrastOnHover = 45;
             this.btnSagaDevol.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.btnSagaDevol.CustomizableEdges = borderEdges1;
+            borderEdges3.BottomLeft = true;
+            borderEdges3.BottomRight = true;
+            borderEdges3.TopLeft = true;
+            borderEdges3.TopRight = true;
+            this.btnSagaDevol.CustomizableEdges = borderEdges3;
             this.btnSagaDevol.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnSagaDevol.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnSagaDevol.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -233,8 +229,7 @@
             this.btnSagaDevol.IdleIconLeftImage = global::ProyectoBiblioteca.Properties.Resources.icons8_devolver_libro_50;
             this.btnSagaDevol.IdleIconRightImage = null;
             this.btnSagaDevol.IndicateFocus = false;
-            this.btnSagaDevol.Location = new System.Drawing.Point(39, 418);
-            this.btnSagaDevol.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSagaDevol.Location = new System.Drawing.Point(29, 340);
             this.btnSagaDevol.Name = "btnSagaDevol";
             this.btnSagaDevol.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnSagaDevol.OnDisabledState.BorderRadius = 35;
@@ -268,7 +263,7 @@
             this.btnSagaDevol.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnSagaDevol.OnPressedState.IconLeftImage = null;
             this.btnSagaDevol.OnPressedState.IconRightImage = null;
-            this.btnSagaDevol.Size = new System.Drawing.Size(235, 58);
+            this.btnSagaDevol.Size = new System.Drawing.Size(176, 47);
             this.btnSagaDevol.TabIndex = 129;
             this.btnSagaDevol.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnSagaDevol.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -281,10 +276,9 @@
             // 
             this.NumCantidadSaga.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.NumCantidadSaga.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NumCantidadSaga.Location = new System.Drawing.Point(39, 295);
-            this.NumCantidadSaga.Margin = new System.Windows.Forms.Padding(4);
+            this.NumCantidadSaga.Location = new System.Drawing.Point(29, 240);
             this.NumCantidadSaga.Name = "NumCantidadSaga";
-            this.NumCantidadSaga.Size = new System.Drawing.Size(237, 32);
+            this.NumCantidadSaga.Size = new System.Drawing.Size(178, 27);
             this.NumCantidadSaga.TabIndex = 128;
             // 
             // label1
@@ -293,10 +287,9 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(33, 252);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(25, 205);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(199, 23);
+            this.label1.Size = new System.Drawing.Size(160, 19);
             this.label1.TabIndex = 127;
             this.label1.Text = "Cantidad devuelta:\r\n";
             // 
@@ -305,10 +298,9 @@
             this.cbPrestamoSaga.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.cbPrestamoSaga.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbPrestamoSaga.FormattingEnabled = true;
-            this.cbPrestamoSaga.Location = new System.Drawing.Point(39, 177);
-            this.cbPrestamoSaga.Margin = new System.Windows.Forms.Padding(4);
+            this.cbPrestamoSaga.Location = new System.Drawing.Point(29, 144);
             this.cbPrestamoSaga.Name = "cbPrestamoSaga";
-            this.cbPrestamoSaga.Size = new System.Drawing.Size(233, 31);
+            this.cbPrestamoSaga.Size = new System.Drawing.Size(176, 29);
             this.cbPrestamoSaga.TabIndex = 126;
             // 
             // label2
@@ -317,10 +309,9 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(33, 134);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(25, 109);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(106, 23);
+            this.label2.Size = new System.Drawing.Size(84, 19);
             this.label2.TabIndex = 125;
             this.label2.Text = "Préstamo:";
             // 
@@ -333,8 +324,7 @@
             this.bunifuShadowPanel2.Controls.Add(this.ListSagadevol);
             this.bunifuShadowPanel2.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
             this.bunifuShadowPanel2.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
-            this.bunifuShadowPanel2.Location = new System.Drawing.Point(281, 42);
-            this.bunifuShadowPanel2.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuShadowPanel2.Location = new System.Drawing.Point(211, 34);
             this.bunifuShadowPanel2.Name = "bunifuShadowPanel2";
             this.bunifuShadowPanel2.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(183)))), ((int)(((byte)(226)))));
             this.bunifuShadowPanel2.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(183)))), ((int)(((byte)(226)))));
@@ -343,7 +333,7 @@
             this.bunifuShadowPanel2.ShadowDepth = 5;
             this.bunifuShadowPanel2.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
             this.bunifuShadowPanel2.ShadowTopLeftVisible = false;
-            this.bunifuShadowPanel2.Size = new System.Drawing.Size(379, 528);
+            this.bunifuShadowPanel2.Size = new System.Drawing.Size(284, 429);
             this.bunifuShadowPanel2.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
             this.bunifuShadowPanel2.TabIndex = 1;
             // 
@@ -354,10 +344,9 @@
             this.columnHeader2,
             this.columnHeader3});
             this.ListSagadevol.HideSelection = false;
-            this.ListSagadevol.Location = new System.Drawing.Point(21, 21);
-            this.ListSagadevol.Margin = new System.Windows.Forms.Padding(4);
+            this.ListSagadevol.Location = new System.Drawing.Point(16, 17);
             this.ListSagadevol.Name = "ListSagadevol";
-            this.ListSagadevol.Size = new System.Drawing.Size(335, 484);
+            this.ListSagadevol.Size = new System.Drawing.Size(252, 394);
             this.ListSagadevol.TabIndex = 1;
             this.ListSagadevol.UseCompatibleStateImageBehavior = false;
             // 
@@ -391,11 +380,10 @@
             this.PanelLibros.Controls.Add(this.label4);
             this.PanelLibros.Controls.Add(this.bunifuShadowPanel1);
             this.PanelLibros.Dock = System.Windows.Forms.DockStyle.Left;
-            this.PanelLibros.Location = new System.Drawing.Point(0, 162);
-            this.PanelLibros.Margin = new System.Windows.Forms.Padding(4);
+            this.PanelLibros.Location = new System.Drawing.Point(0, 132);
             this.PanelLibros.Name = "PanelLibros";
             this.PanelLibros.ShowBorders = true;
-            this.PanelLibros.Size = new System.Drawing.Size(704, 606);
+            this.PanelLibros.Size = new System.Drawing.Size(528, 492);
             this.PanelLibros.TabIndex = 1;
             // 
             // bunifuLabel3
@@ -406,11 +394,10 @@
             this.bunifuLabel3.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel3.Font = new System.Drawing.Font("Century", 16F, System.Drawing.FontStyle.Bold);
             this.bunifuLabel3.ForeColor = System.Drawing.Color.Black;
-            this.bunifuLabel3.Location = new System.Drawing.Point(25, 42);
-            this.bunifuLabel3.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuLabel3.Location = new System.Drawing.Point(19, 34);
             this.bunifuLabel3.Name = "bunifuLabel3";
             this.bunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel3.Size = new System.Drawing.Size(113, 33);
+            this.bunifuLabel3.Size = new System.Drawing.Size(88, 25);
             this.bunifuLabel3.TabIndex = 125;
             this.bunifuLabel3.Text = "LIBROS";
             this.bunifuLabel3.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -433,18 +420,17 @@
             this.btnLimpiar.ImageActive = null;
             this.btnLimpiar.ImageLocation = null;
             this.btnLimpiar.ImageMargin = 10;
-            this.btnLimpiar.ImageSize = new System.Drawing.Size(45, 42);
-            this.btnLimpiar.ImageZoomSize = new System.Drawing.Size(55, 52);
+            this.btnLimpiar.ImageSize = new System.Drawing.Size(31, 32);
+            this.btnLimpiar.ImageZoomSize = new System.Drawing.Size(41, 42);
             this.btnLimpiar.InitialImage = ((System.Drawing.Image)(resources.GetObject("btnLimpiar.InitialImage")));
-            this.btnLimpiar.Location = new System.Drawing.Point(209, 336);
-            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnLimpiar.Location = new System.Drawing.Point(157, 273);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Rotation = 0;
             this.btnLimpiar.ShowActiveImage = true;
             this.btnLimpiar.ShowCursorChanges = true;
             this.btnLimpiar.ShowImageBorders = false;
             this.btnLimpiar.ShowSizeMarkers = false;
-            this.btnLimpiar.Size = new System.Drawing.Size(55, 52);
+            this.btnLimpiar.Size = new System.Drawing.Size(41, 42);
             this.btnLimpiar.TabIndex = 124;
             this.btnLimpiar.ToolTipText = "Limpiar";
             this.btnLimpiar.WaitOnLoad = false;
@@ -468,18 +454,17 @@
             this.btnRefresh.ImageActive = null;
             this.btnRefresh.ImageLocation = null;
             this.btnRefresh.ImageMargin = 10;
-            this.btnRefresh.ImageSize = new System.Drawing.Size(45, 42);
-            this.btnRefresh.ImageZoomSize = new System.Drawing.Size(55, 52);
+            this.btnRefresh.ImageSize = new System.Drawing.Size(31, 32);
+            this.btnRefresh.ImageZoomSize = new System.Drawing.Size(41, 42);
             this.btnRefresh.InitialImage = ((System.Drawing.Image)(resources.GetObject("btnRefresh.InitialImage")));
-            this.btnRefresh.Location = new System.Drawing.Point(224, 53);
-            this.btnRefresh.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRefresh.Location = new System.Drawing.Point(168, 43);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Rotation = 0;
             this.btnRefresh.ShowActiveImage = true;
             this.btnRefresh.ShowCursorChanges = true;
             this.btnRefresh.ShowImageBorders = false;
             this.btnRefresh.ShowSizeMarkers = false;
-            this.btnRefresh.Size = new System.Drawing.Size(55, 52);
+            this.btnRefresh.Size = new System.Drawing.Size(41, 42);
             this.btnRefresh.TabIndex = 123;
             this.btnRefresh.ToolTipText = "Refresh";
             this.btnRefresh.WaitOnLoad = false;
@@ -506,11 +491,11 @@
             this.btnDevolverLibro.ColorContrastOnClick = 45;
             this.btnDevolverLibro.ColorContrastOnHover = 45;
             this.btnDevolverLibro.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.btnDevolverLibro.CustomizableEdges = borderEdges2;
+            borderEdges4.BottomLeft = true;
+            borderEdges4.BottomRight = true;
+            borderEdges4.TopLeft = true;
+            borderEdges4.TopRight = true;
+            this.btnDevolverLibro.CustomizableEdges = borderEdges4;
             this.btnDevolverLibro.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnDevolverLibro.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnDevolverLibro.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -534,8 +519,7 @@
             this.btnDevolverLibro.IdleIconLeftImage = global::ProyectoBiblioteca.Properties.Resources.icons8_devolver_libro_50;
             this.btnDevolverLibro.IdleIconRightImage = null;
             this.btnDevolverLibro.IndicateFocus = false;
-            this.btnDevolverLibro.Location = new System.Drawing.Point(29, 418);
-            this.btnDevolverLibro.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDevolverLibro.Location = new System.Drawing.Point(22, 340);
             this.btnDevolverLibro.Name = "btnDevolverLibro";
             this.btnDevolverLibro.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnDevolverLibro.OnDisabledState.BorderRadius = 35;
@@ -569,7 +553,7 @@
             this.btnDevolverLibro.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnDevolverLibro.OnPressedState.IconLeftImage = null;
             this.btnDevolverLibro.OnPressedState.IconRightImage = null;
-            this.btnDevolverLibro.Size = new System.Drawing.Size(235, 58);
+            this.btnDevolverLibro.Size = new System.Drawing.Size(176, 47);
             this.btnDevolverLibro.TabIndex = 122;
             this.btnDevolverLibro.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnDevolverLibro.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -582,10 +566,9 @@
             // 
             this.NumCantidadLibros.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.NumCantidadLibros.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NumCantidadLibros.Location = new System.Drawing.Point(29, 295);
-            this.NumCantidadLibros.Margin = new System.Windows.Forms.Padding(4);
+            this.NumCantidadLibros.Location = new System.Drawing.Point(22, 240);
             this.NumCantidadLibros.Name = "NumCantidadLibros";
-            this.NumCantidadLibros.Size = new System.Drawing.Size(237, 32);
+            this.NumCantidadLibros.Size = new System.Drawing.Size(178, 27);
             this.NumCantidadLibros.TabIndex = 121;
             // 
             // label5
@@ -594,10 +577,9 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(24, 252);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(18, 205);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(199, 23);
+            this.label5.Size = new System.Drawing.Size(160, 19);
             this.label5.TabIndex = 120;
             this.label5.Text = "Cantidad devuelta:\r\n";
             // 
@@ -606,10 +588,9 @@
             this.cbLibro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.cbLibro.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbLibro.FormattingEnabled = true;
-            this.cbLibro.Location = new System.Drawing.Point(29, 177);
-            this.cbLibro.Margin = new System.Windows.Forms.Padding(4);
+            this.cbLibro.Location = new System.Drawing.Point(22, 144);
             this.cbLibro.Name = "cbLibro";
-            this.cbLibro.Size = new System.Drawing.Size(233, 31);
+            this.cbLibro.Size = new System.Drawing.Size(176, 29);
             this.cbLibro.TabIndex = 119;
             // 
             // label4
@@ -618,10 +599,9 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(24, 134);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(18, 109);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(106, 23);
+            this.label4.Size = new System.Drawing.Size(84, 19);
             this.label4.TabIndex = 118;
             this.label4.Text = "Préstamo:";
             // 
@@ -634,8 +614,7 @@
             this.bunifuShadowPanel1.Controls.Add(this.ListLibrosDevol);
             this.bunifuShadowPanel1.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
             this.bunifuShadowPanel1.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
-            this.bunifuShadowPanel1.Location = new System.Drawing.Point(287, 42);
-            this.bunifuShadowPanel1.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuShadowPanel1.Location = new System.Drawing.Point(215, 34);
             this.bunifuShadowPanel1.Name = "bunifuShadowPanel1";
             this.bunifuShadowPanel1.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(183)))), ((int)(((byte)(226)))));
             this.bunifuShadowPanel1.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(183)))), ((int)(((byte)(226)))));
@@ -644,7 +623,7 @@
             this.bunifuShadowPanel1.ShadowDepth = 5;
             this.bunifuShadowPanel1.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
             this.bunifuShadowPanel1.ShadowTopLeftVisible = false;
-            this.bunifuShadowPanel1.Size = new System.Drawing.Size(379, 528);
+            this.bunifuShadowPanel1.Size = new System.Drawing.Size(284, 429);
             this.bunifuShadowPanel1.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
             this.bunifuShadowPanel1.TabIndex = 0;
             // 
@@ -655,10 +634,9 @@
             this.Cantidad,
             this.Devuelto});
             this.ListLibrosDevol.HideSelection = false;
-            this.ListLibrosDevol.Location = new System.Drawing.Point(21, 23);
-            this.ListLibrosDevol.Margin = new System.Windows.Forms.Padding(4);
+            this.ListLibrosDevol.Location = new System.Drawing.Point(16, 19);
             this.ListLibrosDevol.Name = "ListLibrosDevol";
-            this.ListLibrosDevol.Size = new System.Drawing.Size(335, 484);
+            this.ListLibrosDevol.Size = new System.Drawing.Size(252, 394);
             this.ListLibrosDevol.TabIndex = 0;
             this.ListLibrosDevol.UseCompatibleStateImageBehavior = false;
             this.ListLibrosDevol.SelectedIndexChanged += new System.EventHandler(this.ListLibrosDevol_SelectedIndexChanged);
@@ -688,10 +666,9 @@
             this.bunifuPanel1.Controls.Add(this.bunifuLabel1);
             this.bunifuPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.bunifuPanel1.Location = new System.Drawing.Point(0, 0);
-            this.bunifuPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuPanel1.Name = "bunifuPanel1";
             this.bunifuPanel1.ShowBorders = true;
-            this.bunifuPanel1.Size = new System.Drawing.Size(1408, 162);
+            this.bunifuPanel1.Size = new System.Drawing.Size(1056, 132);
             this.bunifuPanel1.TabIndex = 0;
             // 
             // cbTipoDevolucion
@@ -699,10 +676,9 @@
             this.cbTipoDevolucion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.cbTipoDevolucion.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbTipoDevolucion.FormattingEnabled = true;
-            this.cbTipoDevolucion.Location = new System.Drawing.Point(716, 108);
-            this.cbTipoDevolucion.Margin = new System.Windows.Forms.Padding(4);
+            this.cbTipoDevolucion.Location = new System.Drawing.Point(537, 88);
             this.cbTipoDevolucion.Name = "cbTipoDevolucion";
-            this.cbTipoDevolucion.Size = new System.Drawing.Size(277, 31);
+            this.cbTipoDevolucion.Size = new System.Drawing.Size(209, 29);
             this.cbTipoDevolucion.TabIndex = 30;
             // 
             // bunifuLabel2
@@ -712,11 +688,10 @@
             this.bunifuLabel2.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel2.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel2.Font = new System.Drawing.Font("Century", 15F, System.Drawing.FontStyle.Bold);
-            this.bunifuLabel2.Location = new System.Drawing.Point(505, 116);
-            this.bunifuLabel2.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuLabel2.Location = new System.Drawing.Point(379, 94);
             this.bunifuLabel2.Name = "bunifuLabel2";
             this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel2.Size = new System.Drawing.Size(181, 29);
+            this.bunifuLabel2.Size = new System.Drawing.Size(149, 23);
             this.bunifuLabel2.TabIndex = 29;
             this.bunifuLabel2.Text = "Devolución de: ";
             this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -730,11 +705,10 @@
             this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.Font = new System.Drawing.Font("Century", 27F, System.Drawing.FontStyle.Bold);
             this.bunifuLabel1.ForeColor = System.Drawing.Color.Black;
-            this.bunifuLabel1.Location = new System.Drawing.Point(501, 30);
-            this.bunifuLabel1.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuLabel1.Location = new System.Drawing.Point(391, 21);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(395, 53);
+            this.bunifuLabel1.Size = new System.Drawing.Size(320, 42);
             this.bunifuLabel1.TabIndex = 28;
             this.bunifuLabel1.Text = "DEVOLUCIONES ";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -742,16 +716,16 @@
             // 
             // Devolucion
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1408, 768);
+            this.ClientSize = new System.Drawing.Size(1056, 624);
             this.Controls.Add(this.PanelSagas);
             this.Controls.Add(this.PanelLibros);
             this.Controls.Add(this.bunifuPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Devolucion";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Devolucion";
             this.Load += new System.EventHandler(this.Devolucion_Load);
             this.PanelSagas.ResumeLayout(false);
