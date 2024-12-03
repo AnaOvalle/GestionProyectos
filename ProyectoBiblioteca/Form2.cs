@@ -235,7 +235,8 @@ namespace ProyectoBiblioteca
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
-           PanelUsuario.Visible = !PanelUsuario.Visible;        
+
+
         }
 
         private void bunifuButton6_Click(object sender, EventArgs e)
@@ -339,6 +340,7 @@ namespace ProyectoBiblioteca
         {
             btnusuarios.Enabled = false;
             btnRegistro.Enabled = false;
+           
         }
         private void btnusuarios_Click_1(object sender, EventArgs e)
         {
@@ -483,6 +485,7 @@ namespace ProyectoBiblioteca
         private void bunifuLabel2_Click(object sender, EventArgs e)
         {
             //
+           
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
@@ -499,6 +502,11 @@ namespace ProyectoBiblioteca
         {
             FrmAltaUsuarios login = new FrmAltaUsuarios();
             login.Show();
+        }
+
+        private void PanelContenido_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

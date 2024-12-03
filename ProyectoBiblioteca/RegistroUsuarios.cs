@@ -17,7 +17,7 @@ namespace ProyectoBiblioteca
             mostraruse();
         }
 
-        MySqlConnection conexion = new MySqlConnection("Server=BilliJo; Database=BibliotecaGestion3; Uid=DELL; Pwd=1423; Port = 3306;");
+        MySqlConnection conexion = new MySqlConnection("Server=BilliJo; Database=BibliotecaGestion5; Uid=DELL; Pwd=1423; Port = 3306;");
 
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
