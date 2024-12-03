@@ -17,6 +17,7 @@ namespace ProyectoBiblioteca
     public partial class Inventario : Form
     {
         public MySqlConnection conexion = new MySqlConnection("Server=BilliJo; Database=BibliotecaGestion5; Uid=DELL; Pwd=1423; Port = 3306;");
+        //public MySqlConnection conexion = new MySqlConnection("Server=localhost; Database=BibliotecaGestion3; Uid=root; Pwd=SB1299; Port =3306;");
         public Inventario()
         {
             InitializeComponent();
@@ -283,29 +284,35 @@ ORDER BY
             {
                 conexion.Open();
                 if (cbInventario.Text == "Libros")
-
                 {
-                   
-                    string fecha = txtFechaLibro.Text;
+                
+                    DateTime fechaConvertida = DateTime.Parse(txtFechaLibro.Text);
+                    string fechaFormateada = fechaConvertida.ToString("yyyy-MM-dd");
+
+                    //string fecha = txtFechaLibro.Text;
                     int cant = int.Parse(txtCantidadLibro.Text);
                     int id = int.Parse(txtIDLibro.Text);
                     MySqlCommand comando = new MySqlCommand();
                     comando.Connection = conexion;
-                    comando.CommandText = ("insert into  add_libros(libros_id,cantidad_add_libros,fecha_agregado_libro) values(" + id + "," + cant + ",'" + fecha + "');");
+                    comando.CommandText = ("insert into  add_libros(libros_id,cantidad_add_libros,fecha_agregado_libro) values(" + id + "," + cant + ",'" + fechaFormateada + "');");
                     comando.ExecuteNonQuery();
 
                     MessageBox.Show("Libros agregados");
-                   
+                    
+
                 }
                 else if (cbInventario.Text == "Colecciones")
                 {
-                    
-                    string fecha = txtFechaColeccion.Text;
+                    DateTime fechaConvertida = DateTime.Parse(txtFechaLibro.Text);
+                    string fechaFormateada = fechaConvertida.ToString("yyyy-MM-dd");
+
+
+                    //string fecha = txtFechaColeccion.Text;
                     int cant = int.Parse(txtCantidadColeccion.Text);
                     int id = int.Parse(txtIDcoleccion.Text);
                     MySqlCommand comando = new MySqlCommand();
                     comando.Connection = conexion;
-                    comando.CommandText = ("insert into  add_libros_saga(librosSaga_id,cantidad_add,fecha_agregado) values(" + id + "," + cant + ",'" + fecha + "');");
+                    comando.CommandText = ("insert into  add_libros_saga(librosSaga_id,cantidad_add,fecha_agregado) values(" + id + "," + cant + ",'" + fechaFormateada + "');");
                     comando.ExecuteNonQuery();
 
                     MessageBox.Show("Libros agregados");
@@ -334,12 +341,16 @@ ORDER BY
                 if (cbInventario.Text == "Libros")
 
                 {
-                    string fecha = txtFechaLibro.Text;
+                    DateTime fechaConvertida = DateTime.Parse(txtFechaLibro.Text);
+                    string fechaFormateada = fechaConvertida.ToString("yyyy-MM-dd");
+
+
+                    //string fecha = txtFechaLibro.Text;
                     int cant = int.Parse(txtCantidadLibro.Text);
                     int id = int.Parse(txtIDLibro.Text);
                     MySqlCommand comando = new MySqlCommand();
                     comando.Connection = conexion;
-                    comando.CommandText = ("insert into  dell_libros(libros_id,cantidad_borra_libro,fecha_eliminado_libro) values(" + id + "," + cant + ",'" + fecha + "');");
+                    comando.CommandText = ("insert into  dell_libros(libros_id,cantidad_borra_libro,fecha_eliminado_libro) values(" + id + "," + cant + ",'" + fechaFormateada + "');");
                     comando.ExecuteNonQuery();
 
                     MessageBox.Show("Libros eliminados");
@@ -348,13 +359,15 @@ ORDER BY
                 }
                 else if (cbInventario.Text == "Colecciones")
                 {
-                    
-                    string fecha = txtFechaColeccion.Text;
+                    DateTime fechaConvertida = DateTime.Parse(txtFechaLibro.Text);
+                    string fechaFormateada = fechaConvertida.ToString("yyyy-MM-dd");
+
+                    //string fecha = txtFechaColeccion.Text;
                     int cant = int.Parse(txtCantidadColeccion.Text);
                     int id = int.Parse(txtIDcoleccion.Text);
                     MySqlCommand comando = new MySqlCommand();
                     comando.Connection = conexion;
-                    comando.CommandText = ("insert into dell_libros_saga(librosSaga_id,cantidad_borra_libro,fecha_eliminado_libro) values(" + id + "," + cant + ",'" + fecha + "');");
+                    comando.CommandText = ("insert into dell_libros_saga(librosSaga_id,cantidad_borra_libro,fecha_eliminado_libro) values(" + id + "," + cant + ",'" + fechaFormateada + "');");
                     comando.ExecuteNonQuery();
 
                     MessageBox.Show("Libros eliminados");
@@ -378,14 +391,17 @@ ORDER BY
                 if (cbInventario.Text == "Libros")
 
                 {
-                    
-                    string fecha = txtFechaLibro.Text;
+
+                    DateTime fechaConvertida = DateTime.Parse(txtFechaLibro.Text);
+                    string fechaFormateada = fechaConvertida.ToString("yyyy-MM-dd");
+
+                    //string fecha = txtFechaLibro.Text;
                     int cant = int.Parse(txtCantidadLibro.Text);
                     int id = int.Parse(txtIDLibro.Text);
 
                     MySqlCommand comando = new MySqlCommand();
                     comando.Connection = conexion;
-                    comando.CommandText = ("UPDATE stock_libros SET libros_id = " + id + ", cantidad_stock_libros = " + cant + ", fecha_entrada = '" + fecha + "' WHERE libros_id = '" + id + "'");
+                    comando.CommandText = ("UPDATE stock_libros SET libros_id = " + id + ", cantidad_stock_libros = " + cant + ", fecha_entrada = '" + fechaFormateada + "' WHERE libros_id = '" + id + "'");
                     comando.ExecuteNonQuery();
 
                     MessageBox.Show("Libros actualizados");
@@ -394,14 +410,17 @@ ORDER BY
                 }
                 else if (cbInventario.Text == "Colecciones")
                 {
-          
-                    string fecha = txtFechaColeccion.Text;
+
+                    DateTime fechaConvertida = DateTime.Parse(txtFechaLibro.Text);
+                    string fechaFormateada = fechaConvertida.ToString("yyyy-MM-dd");
+
+                    //string fecha = txtFechaColeccion.Text;
                     int cant = int.Parse(txtCantidadColeccion.Text);
                     int id = int.Parse(txtIDcoleccion.Text);
                     MySqlCommand comando = new MySqlCommand();
 
                     comando.Connection = conexion;
-                    comando.CommandText = ("UPDATE stock_libros_saga SET librosSaga_id = " + id + ", cantidad_stock = " + cant + ", fecha_entrada = '" + fecha + "' WHERE librosSaga_id = '" + id + "'");
+                    comando.CommandText = ("UPDATE stock_libros_saga SET librosSaga_id = " + id + ", cantidad_stock = " + cant + ", fecha_entrada = '" + fechaFormateada + "' WHERE librosSaga_id = '" + id + "'");
                     comando.ExecuteNonQuery();
 
                     MessageBox.Show("Libros actualizados");
