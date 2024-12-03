@@ -280,7 +280,7 @@ namespace ProyectoBiblioteca
             Libros book = new Libros();
             book.TopLevel = false; // Establece que no es un formulario de nivel superior
             book.FormBorderStyle = FormBorderStyle.None; // Quita el borde del formulario
-            book.Dock = DockStyle.Fill; // Ajusta el tamaño del formulario al panel
+            //book.Dock = DockStyle.Fill; // Ajusta el tamaño del formulario al panel
 
             PanelContenido.Controls.Clear(); // Limpia los controles anteriores en el panel
             PanelContenido.Controls.Add(book);

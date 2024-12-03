@@ -692,10 +692,10 @@
             this.bunifuPanel3.Controls.Add(this.btnLimpiar);
             this.bunifuPanel3.Controls.Add(this.btnRefresh);
             this.bunifuPanel3.Controls.Add(this.bunifuDataGridView1);
-            this.bunifuPanel3.Location = new System.Drawing.Point(306, 106);
+            this.bunifuPanel3.Location = new System.Drawing.Point(306, 110);
             this.bunifuPanel3.Name = "bunifuPanel3";
             this.bunifuPanel3.ShowBorders = true;
-            this.bunifuPanel3.Size = new System.Drawing.Size(738, 506);
+            this.bunifuPanel3.Size = new System.Drawing.Size(722, 502);
             this.bunifuPanel3.TabIndex = 11;
             // 
             // PanelCategorias
@@ -1943,7 +1943,7 @@
             this.bunifuDataGridView1.RowHeadersWidth = 51;
             this.bunifuDataGridView1.RowTemplate.Height = 40;
             this.bunifuDataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.bunifuDataGridView1.Size = new System.Drawing.Size(716, 435);
+            this.bunifuDataGridView1.Size = new System.Drawing.Size(697, 435);
             this.bunifuDataGridView1.TabIndex = 0;
             this.bunifuDataGridView1.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             this.bunifuDataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bunifuDataGridView1_CellContentClick);
